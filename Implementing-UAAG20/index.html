@@ -11,7 +11,7 @@
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
-
+.gl-only {background-color:#FFFFCC}
                
 
 h2.principle {
@@ -217,22 +217,22 @@ ul.sc-notes {
 <body>
 
 <div class="techs-only"> 
- <p align="center">[<a href="#toc">Contents</a>] [<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/">Guidelines</a>]</p> 
+ <p align="center">[<a href="#toc">Contents</a>] [<a href="http://jspellman.github.io/UAAG/UAAG20/">Guidelines</a>]</p> 
 <div class="head">
 	<p><a href="http://www.w3.org/"><img height="48" width="72" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p> 
  
     <h1><a name="title" id="title"></a>Implementing UAAG 2.0</h1>
 	<h2><a id="subtitle" name="subtitle"></a>A guide to understanding and implementing User Agent Accessibility Guidelines 2.0</h2>
-    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 10 April
+    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 17 April
 2014</h2>
     <dl> 
-  <dt>This version:</dt> 
-  <dd><a href="http://www.w3.org/WAI/UA/2014/ED-IMPLEMENTING-UAAG20-20140410/">http://www.w3.org/WAI/UA/2014/ED-IMPLEMENTING-UAAG20-20140410/</a></dd> 
+  <dt>This version (Github):</dt> 
+  <dd><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/">http://jspellman.github.io/UAAG/Implementing-UAAG20/</a></dd> 
   <dt>Latest version:</dt> 
   <dd><a
       href="http://www.w3.org/TR/IMPLEMENTING-UAAG20/">http://www.w3.org/TR/IMPLEMENTING-UAAG20/</a></dd> 
-  <dt>Previous version:</dt> 
-  <dd><a href="http://www.w3.org/WAI/UA/2014/ED-IMPLEMENTING-UAAG20-20140403/">http://www.w3.org/WAI/UA/2014/ED-IMPLEMENTING-UAAG20-20140403/</a></dd>
+  <dt>Previous version (pre-Github):</dt> 
+  <dd><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/">http://jspellman.github.io/UAAG/Implementing-UAAG20/</a></dd>
   <dt>Latest Editor's Draft:</dt>
   <dd><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/">http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/</a></dd> 
   <dt>Editors:</dt>
@@ -413,7 +413,7 @@ href="http://www.w3.org/2004/01/pp-impl/36791/status">public list of any patent 
 <hr />
 <h2><a name="introduction" id="introduction">Introduction</a></h2>
 <div class="techs-only">
-<p>This document &ndash;  Implementing UAAG 2.0 &ndash; is a companion document to  <a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/">User Agent Accessibility Guidelines (UAAG)  2.0</a>.</p>
+<p>This document &ndash;  Implementing UAAG 2.0 &ndash; is a companion document to  <a href="http://jspellman.github.io/UAAG/UAAG20/">User Agent Accessibility Guidelines (UAAG)  2.0</a>.</p>
 <p>UAAG 2.0  provides three layers of guidance for lowering barriers to accessibility: overall principles, general guidelines, and testable success criteria. The principles, guidelines and success criteria are <a class="dfn-instance" href="#def-normative"
 title="definition: Normative">normative</a>, meaning user agent developers are required to follow them to claim conformance to UAAG 2.0.</p>
 <p>Implementing  UAAG 2.0  is <a class="dfn-instance" title="definition: informative" href="#def-informative">informative</a>. It provides more detail for each success criterion, including explanatory intent, examples of how the criterion may apply in different user situations, and links to resources. It also contains more detail on levels of conformance, the definition of user agent, the relationship between UAAG 2.0 and with WCAG 2.0 requirements, and the role of user agents and web authoring. </p>
@@ -455,7 +455,7 @@ disability. </p>
 
 <p>A user agent is any software that retrieves, renders and facilitates end-user interaction with web content. See the Glossary definition of <a href="#def-user-agent">user agent</a> for details. </p>
 <p>The classic user agent is a browser. A media player, which only performs these functions for time-based media, is also user agent. Web applications and some mobile apps that render web content are also user agents. </p>
-<p> For information on authoring tool features included in user agents: see <a href="http://www.w3.org/WAI/UA/2014/ED-IMPLEMENTING-UAAG20-20140410/#intro-atag">Relationship to the Authoring Tool Accessibility Guidelines (ATAG) 2.0</a>. For information on the difference between web applications and  content see  <a href="http://www.w3.org/WAI/UA/2014/ED-IMPLEMENTING-UAAG20-20140410/#intro-wcag">Relationship to the Web Content Accessibility Guidelines</a>. </p>
+<p> For information on authoring tool features included in user agents: see <a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#intro-atag">Relationship to the Authoring Tool Accessibility Guidelines (ATAG) 2.0</a>. For information on the difference between web applications and  content see  <a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#intro-wcag">Relationship to the Web Content Accessibility Guidelines</a>. </p>
 </div><!--gl-only--><!--gl-only-->
 <!--techs-only-->
 <!--gl-only-->
@@ -503,7 +503,7 @@ and rendered content are perceivable</h2>
 <a name="gl-access-alternative-content" id="gl-access-alternative-content"></a> 
 <span class="techs-only">Implementing </span>
 Guideline 1.1 - Provide access to alternative content 
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-access-alternative-content">Guideline 1.1</a>]</span></h3>
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-access-alternative-content">Guideline 1.1</a>]</span></h3>
 <p class="summary" id="summary11"><strong>Summary</strong>: The user can  choose to render any type of alternative content available. (1.1.1). The user can also choose at least one alternative such as alt text to be always displayed (1.1.3), but it's recommended that users also be
 able to specify a cascade (1.1.5), such as alt text if it's there, otherwise longdesc, otherwise filename, etc. It's recommended that the user can configure the caption text and that text or sign language alternative cannot obscure the video or the controls (1.1.4). The user can configure the size and position of media alternatives (1.1.6). </p>
 
@@ -522,7 +522,7 @@ agent</a></span> allow the user to choose whether the alternative content replac
 
 	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_111">Return to 1.1.1 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_111">Return to 1.1.1 in Guidelines</a></div>
 	   </div>
 
       <div class="techs-only">
@@ -562,7 +562,7 @@ title="definition: Conditional content">alternative content</a> is present. <spa
 
 	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_112">Return to 1.1.2 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_112">Return to 1.1.2 in Guidelines</a></div>
 	   </div>
 
       <div class="techs-only">
@@ -594,7 +594,7 @@ href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a
 
 	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_113">Return to 1.1.3 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_113">Return to 1.1.3 in Guidelines</a></div>
 	   </div>
 
       <div class="techs-only">
@@ -639,7 +639,7 @@ title="definition: Conditional content">alternative content</a> to render by def
 
 	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_114">Return to 1.1.4 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_114">Return to 1.1.4 in Guidelines</a></div>
 	   </div>
 
       <div class="techs-only">
@@ -677,7 +677,7 @@ title="definition: Conditional content">alternative content</a> to render by def
 
 	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_115">Return to 1.1.5 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_115">Return to 1.1.5 in Guidelines</a></div>
 	   </div>
 
       <div class="techs-only">
@@ -716,7 +716,7 @@ title="definition: Conditional content">alternative content</a> to render by def
 
 	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_116">Return to 1.1.6 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_116">Return to 1.1.6 in Guidelines</a></div>
 	   </div>
 
       <div class="techs-only">
@@ -744,7 +744,7 @@ title="definition: Conditional content">alternative content</a> to render by def
 <a name="gl-missing-alt" id="gl-missing-alt"></a>
 <span class="techs-only">Implementing </span>
 Guideline 1.2 - Repair missing content 
-<span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-missing-alt">Guideline 1.2</a>]</span>
+<span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-missing-alt">Guideline 1.2</a>]</span>
 </h3>
 <p class="summary" id="summary12"><strong>Summary</strong>: The user can request useful alternative content when the author fails to provide it. For example,  showing metadata in place of missing  or empty (1.2.1) alt text. The user can ask the browser to predict missing structural information, such as field labels, table headings or section headings (1.2.2).</p>
 
@@ -764,7 +764,7 @@ title="definition: repair text">repair</a> the text alternatives by substituting
   
 	   
       <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_121">Return to 1.2.1 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_121">Return to 1.2.1 in Guidelines</a></div>
       </div>
       <div class="techs-only">
         <div class="implementing-section">
@@ -797,7 +797,7 @@ agent</a> should attempt to insert the following types of structural markup on t
 
 	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_122">Return to 1.2.2 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_122">Return to 1.2.2 in Guidelines</a></div>
 	   </div>
        
       <div class="techs-only">
@@ -830,7 +830,7 @@ agent</a> should attempt to insert the following types of structural markup on t
 <span class="techs-only">Implementing </span>
 Guideline 1.3 - Provide highlighting for selection, keyboard focus, enabled elements, visited links
 
-<span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-interaction-highlight">Guideline 1.2</a>]</span>
+<span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-interaction-highlight">Guideline 1.2</a>]</span>
 </h3>
 <p class="summary" id="summary13"><strong>Summary</strong>: The user can visually distinguish selected, focused, and enabled items, and recently visited links (1.3.1), with a choice of highlighting options that at least include foreground and background colors, and border color and thickness (1.3.2).</p>
 
@@ -848,7 +848,7 @@ Guideline 1.3 - Provide highlighting for selection, keyboard focus, enabled elem
 
 	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_131">Return to 1.3.1 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_131">Return to 1.3.1 in Guidelines</a></div>
 	   </div>
       <div class="techs-only">
         <div class="implementing-section">
@@ -900,7 +900,7 @@ Guideline 1.3 - Provide highlighting for selection, keyboard focus, enabled elem
 
 	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_132">Return to 1.3.2 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_132">Return to 1.3.2 in Guidelines</a></div>
 	   </div>
        
       <div class="techs-only">
@@ -935,7 +935,7 @@ Guideline 1.3 - Provide highlighting for selection, keyboard focus, enabled elem
 <span class="techs-only">Implementing </span>
 Guideline 1.4 - Provide text configuration 
 
-<span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-text-config">Guideline 1.4</a>]</span>
+<span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-text-config">Guideline 1.4</a>]</span>
 </h3>
 <p class="summary" id="summary14"><strong>Summary:</strong> The user can set text scale, color, and font   family globally (1.4.1, Level A); set text size, color, and font family   for element types (1.4.2, Level AA); set line spacing, character spacing,   word spacing, text style, and  justification globally (1.4.3,   Level AA); set text style, margins, and borders for elements (1.4.5,   Level AAA); set line spacing,  capitalization,   hyphenation, margins, and borders globally (1.4.6, Level AAA); and print   configured and  reflowed text (1.4.4 Level AA). </p>
 <p><em class="note-handle">Note 1: </em>Success criteria 1.4.1, 1.4.3, and 1.4.6 address configuration at a <strong>global</strong> level, that is, it changes all of the text. Success criteria 1.4.2 and 1.4.5 are at an <strong>element type</strong> level, such as configuring just the heading text. </p>
@@ -956,7 +956,7 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
   
   	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_141">Return to 1.4.1 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_141">Return to 1.4.1 in Guidelines</a></div>
 	   </div>
        
       <div class="techs-only">
@@ -1006,7 +1006,7 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
 </ul>
   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_142">Return to 1.4.2 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_142">Return to 1.4.2 in Guidelines</a></div>
 	   </div>
        
       <div class="techs-only">
@@ -1123,7 +1123,7 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
 <div class="techs-only">
 
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_145">Return to 1.4.5 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_145">Return to 1.4.5 in Guidelines</a></div>
 	   </div> 
 
       <div class="techs-only">
@@ -1157,7 +1157,7 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
 <p><em class="note-handle">Note:</em> This success criteria does not apply  to text entered as all caps. Content authors are encouraged to use styles instead of typing text as all caps.</p>
 
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_146">Return to 1.4.6 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_146">Return to 1.4.6 in Guidelines</a></div>
 	   </div> 
 
     <div class="techs-only">
@@ -1194,7 +1194,7 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
 <span class="techs-only">Implementing </span>
 Guideline 1.5 - Provide volume configuration
 
-<span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-volume-config">Guideline 1.5</a>]</span>
+<span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-volume-config">Guideline 1.5</a>]</span>
 </h3>
 <p class="summary" id="summary15"><strong>Summary</strong>: The user can adjust the volume of each audio track relative to the global volume level (1.5.1).</p>
 
@@ -1210,7 +1210,7 @@ title="definition: Operating environment">operating environment</a> mechanisms. 
 
   	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_151">Return to 1.5.1 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_151">Return to 1.5.1 in Guidelines</a></div>
 	   </div> 
 
       <div class="techs-only">
@@ -1247,7 +1247,7 @@ preferences dialog that is retained across sessions.</li>
 <span class="techs-only">Implementing </span>
 Guideline 1.6 - Provide synthesized speech configuration 
 
-<span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-speech-config">Guideline 1.6</a>]</span>
+<span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-speech-config">Guideline 1.6</a>]</span>
 </h3>
 <p class="summary" id="summary16"><strong>Summary</strong>: If synthesized speech is produced, the user can specify speech   rate, volume, and voice (1.6.1, Level A), pitch and pitch range (1.6.2,   Level AA), advanced synthesizer speech characteristics such as emphasis   (1.6.3, Level AAA) and features such as spelling (1.6.4, Level AAA).</p>
 
@@ -1263,7 +1263,7 @@ Guideline 1.6 - Provide synthesized speech configuration
 
   	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_161">Return to 1.6.1 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_161">Return to 1.6.1 in Guidelines</a></div>
 	   </div> 
 
 </div>
@@ -1281,7 +1281,7 @@ Guideline 1.6 - Provide synthesized speech configuration
 
   	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_162">Return to 1.6.2 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_162">Return to 1.6.2 in Guidelines</a></div>
 	   </div> 
 
 </div>
@@ -1294,7 +1294,7 @@ Guideline 1.6 - Provide synthesized speech configuration
   
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_163">Return to 1.6.3 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_163">Return to 1.6.3 in Guidelines</a></div>
 	   </div> 
 
 <div class="techs-only">
@@ -1334,7 +1334,7 @@ and three point five" for 1203.5).</li>
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_164">Return to 1.6.4 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_164">Return to 1.6.4 in Guidelines</a></div>
 	   </div> 
 
       <div class="techs-only">
@@ -1360,7 +1360,7 @@ and three point five" for 1203.5).</li>
 <p class="sc-text">  If synthesized speech is produced and more than one language is available,  the user can change the language. <span class="level">(Level&nbsp;AA)</span></p>
 
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_165">Return to 1.6.5 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_165">Return to 1.6.5 in Guidelines</a></div>
 	   </div> 
 
       <div class="techs-only">
@@ -1402,7 +1402,7 @@ he returns to the main article he was reading.</li>
 <span class="techs-only">Implementing </span>
 Guideline 1.7 - Enable configuration of user stylesheets 
 
-<span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-style-sheets-config">Guideline 1.7</a>]</span>
+<span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-style-sheets-config">Guideline 1.7</a>]</span>
 </h3>
 <p class="summary" id="summary17"><strong>Summary</strong>: The user agent supports user stylesheets (1.7.1, Level A), the 
 user can choose which if any user-supplied (1.7.2, Level A) and 
@@ -1417,7 +1417,7 @@ save stylesheets (1.7.4, Level AA).</p>
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_171">Return to 1.7.1 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_171">Return to 1.7.1 in Guidelines</a></div>
 	   </div> 
 
 <h4 class="sc-title"><a id="sc_172" name="sc_172"></a>1.7.2 Apply User Stylesheets: </h4> <p class="sc-text"> If <a  class="dfn-instance"  href="#def-user-stylesheet" title="definition: User Stylesheet">user stylesheets</a> are supported, then the      user can enable or disable user stylesheets for:   <span class="level">(Level&nbsp;A)</span>
@@ -1428,7 +1428,7 @@ save stylesheets (1.7.4, Level AA).</p>
 </ul>
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_172">Return to 1.7.2 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_172">Return to 1.7.2 in Guidelines</a></div>
 	   </div> 
        
 <h4 class="sc-title"><a id="sc_173" name="sc_173"></a>1.7.3 Disable Author Stylesheets: </h4>
@@ -1438,7 +1438,7 @@ save stylesheets (1.7.4, Level AA).</p>
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_173">Return to 1.7.3 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_173">Return to 1.7.3 in Guidelines</a></div>
 	   </div> 
 
       <div class="techs-only">
@@ -1468,7 +1468,7 @@ save stylesheets (1.7.4, Level AA).</p>
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_174">Return to 1.7.4 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_174">Return to 1.7.4 in Guidelines</a></div>
 	   </div> 
        
       <div class="techs-only">
@@ -1498,7 +1498,7 @@ save stylesheets (1.7.4, Level AA).</p>
 <span class="techs-only">Implementing </span>
 Guideline 1.8 - Help users to orient  within, and control, windows and viewports
 
-<span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-viewport-orient">Guideline 1.8</a>]</span>
+<span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-viewport-orient">Guideline 1.8</a>]</span>
 </h3>
 <p class="summary" id="summary18"><strong>Summary</strong>:  The user agent provides programmatic and visual cues to keep 
 the user oriented. These include highlighting the viewport (1.8.1, Level 
@@ -1523,7 +1523,7 @@ items in a webpage and use shortcuts to navigate back to marked items.
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_181">Return to 1.8.1 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_181">Return to 1.8.1 in Guidelines</a></div>
 	   </div> 
        
       <div class="techs-only">
@@ -1558,7 +1558,7 @@ title="definition: viewport">viewport</a>'s content moves as necessary to ensure
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_182">Return to 1.8.2 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_182">Return to 1.8.2 in Guidelines</a></div>
 	   </div> 
 
       <div class="techs-only">
@@ -1601,7 +1601,7 @@ title="definition: Override">overriding</a> any values specified by the author.
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_183">Return to 1.8.3 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_183">Return to 1.8.3 in Guidelines</a></div>
 	   </div> 
 
       <div class="techs-only">
@@ -1632,7 +1632,7 @@ content</a>. <span class="level">(Level&nbsp;A)</span></p>
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_184">Return to 1.8.4 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_184">Return to 1.8.4 in Guidelines</a></div>
 	   </div> 
 
 
@@ -1663,7 +1663,7 @@ content</a>. <span class="level">(Level&nbsp;A)</span></p>
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_185">Return to 1.8.5 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_185">Return to 1.8.5 in Guidelines</a></div>
 	   </div> 
        
       <div class="techs-only">
@@ -1698,7 +1698,7 @@ regard">point of regard</a>
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_186">Return to 1.8.6 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_186">Return to 1.8.6 in Guidelines</a></div>
 	   </div> 
        
       <div class="techs-only">
@@ -1727,7 +1727,7 @@ regard">point of regard</a>
  <p class="diff-old">The user can specify that text content in a graphical top-level viewport reflows so the text forms a single column that fits within the width of the viewport. (Level&nbsp;A) </p>
  
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_187">Return to 1.8.7 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_187">Return to 1.8.7 in Guidelines</a></div>
 	   </div>
 
   <!--sc-level--></div>
@@ -1739,7 +1739,7 @@ regard">point of regard</a>
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_188">Return to 1.8.8 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_188">Return to 1.8.8 in Guidelines</a></div>
 	   </div> 
 
       <div class="techs-only">
@@ -1771,7 +1771,7 @@ href="#def-override" title="definition: Override">overriding</a> any values spec
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_189">Return to 1.8.9 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_189">Return to 1.8.9 in Guidelines</a></div>
 	   </div> 
 
       <div class="techs-only">
@@ -1809,7 +1809,7 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_1810">Return to 1.8.10 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_1810">Return to 1.8.10 in Guidelines</a></div>
 	   </div> 
 
 <h4 class="sc-title"><a id="sc_1811" name="sc_1811"></a>1.8.11 Allow Top-Level Viewport Open on Request: </h4>
@@ -1817,7 +1817,7 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_1811">Return to 1.8.11 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_1811">Return to 1.8.11 in Guidelines</a></div>
 	   </div> 
 
 <h4 class="sc-title"><a id="sc_1812" name="sc_1812"></a>1.8.12 Allow Top-Level Viewport Focus Control: </h4>
@@ -1826,7 +1826,7 @@ title="definition: keyboard focus">keyboard focus</a> when they open.  <span cla
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_1812">Return to 1.8.12 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_1812">Return to 1.8.12 in Guidelines</a></div>
 	   </div> 
 
       <div class="techs-only">
@@ -1856,7 +1856,7 @@ href="#def-viewport-toplevel">top-level viewports</a> (e.g. windows or tabs) fol
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_1813">Return to 1.8.13 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_1813">Return to 1.8.13 in Guidelines</a></div>
 	   </div> 
        
       <div class="techs-only">
@@ -1971,7 +1971,7 @@ href="#def-viewport-toplevel">top-level viewports</a> (e.g. windows or tabs) fol
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_1814">Return to 1.8.14 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_1814">Return to 1.8.14 in Guidelines</a></div>
 	   </div> 
        
       <div class="techs-only">
@@ -2003,7 +2003,7 @@ href="#def-viewport-toplevel">top-level viewports</a> (e.g. windows or tabs) fol
 <span class="techs-only">Implementing </span>
 Guideline 1.9 - Provide alternative views
 
-<span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-alternative-views">Guideline 1.9</a>]</span>
+<span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-alternative-views">Guideline 1.9</a>]</span>
 </h3>
 <p class="summary" id="summary110"><strong>Summary</strong>: The user can view the source of content (1.9.2, Level AAA), and an outline view of  content. (1.9.1, Level AA).</p>
 
@@ -2018,7 +2018,7 @@ title="definition: Rendered content">rendered content</a> that allows focus to b
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_191">Return to 1.9.1 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_191">Return to 1.9.1 in Guidelines</a></div>
 	   </div> 
        
       <div class="techs-only">
@@ -2054,7 +2054,7 @@ agent</a>.  <span class="level">(Level&nbsp;AAA)</span> </p>
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_192">Return to 1.9.2 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_192">Return to 1.9.2 in Guidelines</a></div>
 	   </div> 
 
       <div class="techs-only">
@@ -2085,7 +2085,7 @@ image he wants to access. As a last resort, George examines the source to see th
 <span class="techs-only">Implementing </span>
 Guideline 1.10 - Provide element information
 
-<span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-info-link">Guideline 1.10</a>]</span>
+<span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-info-link">Guideline 1.10</a>]</span>
 </h3>
 <p class="summary" id="summary111"><strong>Summary</strong>: The user can access information about relationships between elements
 (e.g. form labels, table headers) (1.10.1, Level AA), and extended link 
@@ -2097,7 +2097,7 @@ information (e.g. title, internal vs. external) (1.10.2, Level AAA)</p>
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_1101">Return to 1.10.1 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_1101">Return to 1.10.1 in Guidelines</a></div>
 	   </div> 
        
       <div class="techs-only">
@@ -2122,7 +2122,7 @@ Practices: 4. Relationships</a></li></ul></div></div>
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_1102">Return to 1.10.2 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_1102">Return to 1.10.2 in Guidelines</a></div>
 	   </div> 
        
       <div class="techs-only">
@@ -2154,7 +2154,7 @@ Practices: 4. Relationships</a></li></ul></div></div>
 <h3 class="guideline">
 <a name="gl-keyboard-access" id="gl-keyboard-access"></a>
 <span class="techs-only">Implementing </span>Guideline 2.1 - Ensure full keyboard access 
-<span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-keyboard-access">Guideline 2.1</a>]</span>
+<span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-keyboard-access">Guideline 2.1</a>]</span>
 </h3>
 <p class="summary" id="summary21"><strong>Summary</strong>:   Every viewport has a keyboard focus (2.1.2, Level A). Users can 
 operate all functions using just the keyboard (2.1.1, Level A), activate 
@@ -2176,7 +2176,7 @@ hand drawing). This does not forbid and should not discourage providing other in
 
     	   
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_211">Return to 2.1.1 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_211">Return to 2.1.1 in Guidelines</a></div>
 	   </div> 
        
       <div class="techs-only">
@@ -2213,7 +2213,7 @@ hand drawing). This does not forbid and should not discourage providing other in
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_211-r" name="sc_211-r"></a>Related Resources for Success Criterion 2.1.1:</h5>
             <ul>
-              <li><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#intro-modality-independence">Modality Independent Controls</a></li>
+              <li><a href="http://jspellman.github.io/UAAG/UAAG20/#intro-modality-independence">Modality Independent Controls</a></li>
               <li><a href="#sc_213">2.1.3 No Keyboard Trap</a></li></ul></div></div>
 
 <h4 class="sc-title"><a id="sc_212" name="sc_212"></a>2.1.2 Show Keyboard Focus: </h4>
@@ -2222,7 +2222,7 @@ has an active or inactive <a class="dfn-instance" href="#def-keyboard-focus" tit
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_212">Return to 2.1.2 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_212">Return to 2.1.2 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2251,7 +2251,7 @@ has an active or inactive <a class="dfn-instance" href="#def-keyboard-focus" tit
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_213">Return to 2.1.3 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_213">Return to 2.1.3 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2280,7 +2280,7 @@ Activation: </h4>
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_214">Return to 2.1.4 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_214">Return to 2.1.4 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2312,7 +2312,7 @@ Activation: </h4>
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_215">Return to 2.1.5 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_215">Return to 2.1.5 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2341,7 +2341,7 @@ agent</a> user interface includes mechanisms to make keyboard access more effici
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_216">Return to 2.1.6 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_216">Return to 2.1.6 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2374,7 +2374,7 @@ agent</a> user interface includes mechanisms to make keyboard access more effici
 <a name="gl-sequential-navigation" id="gl-sequential-navigation"></a>
 <span class="techs-only">Implementing </span>
 Guideline 2.2 - Provide sequential navigation 
-<span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-sequential-navigation">Guideline 2.2</a>]</span>
+<span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-sequential-navigation">Guideline 2.2</a>]</span>
 </h3>
 
 <p class="summary" id="summary22"><strong>Summary</strong>:<strong> </strong>Users can use the keyboard to navigate sequentially to all the 
@@ -2388,7 +2388,7 @@ a signal when wrapping occurs (2.2.4, Level AA).</p>
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_221">Return to 2.2.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_221">Return to 2.2.1 in Guidelines</a></div>
 </div> 
 
         <div class="techs-only">
@@ -2441,7 +2441,7 @@ a viewport. <span class="level">(Level&nbsp;A)</span></p>
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_222">Return to 2.2.2 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_222">Return to 2.2.2 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2480,7 +2480,7 @@ document order. <span class="level">(Level&nbsp;A)</span></p>
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_223">Return to 2.2.3 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_223">Return to 2.2.3 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2505,7 +2505,7 @@ title="definition: sequential navigation">sequential navigation</a> wraps at the
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_224">Return to 2.2.4 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_224">Return to 2.2.4 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2532,7 +2532,7 @@ title="definition: sequential navigation">sequential navigation</a> wraps at the
 <a name="gl-direct-navigation-and-activation" id="gl-direct-navigation-and-activation"></a>
 <span class="techs-only">Implementing </span>
 Guideline 2.3 - Provide direct navigation and activation  
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-direct-navigation-and-activation">Guideline 2.3</a>]</span></h3>
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-direct-navigation-and-activation">Guideline 2.3</a>]</span></h3>
 <p class="summary" id="summary23"><strong>Summary</strong>: Users can navigate directly (e.g. using keyboard shortcuts) to 
  elements (2.3.1, Level AA) with the option of immediate 
 activation of the operable elements (2.3.2, Level AA). Display commands 
@@ -2546,7 +2546,7 @@ with the elements to make it easier for users to discover the commands
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_231">Return to 2.3.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_231">Return to 2.3.1 in Guidelines</a></div>
 </div> 
   
       <div class="techs-only">
@@ -2575,7 +2575,7 @@ with the elements to make it easier for users to discover the commands
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_232">Return to 2.3.2 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_232">Return to 2.3.2 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2601,7 +2601,7 @@ with the elements to make it easier for users to discover the commands
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_233">Return to 2.3.3 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_233">Return to 2.3.3 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2633,7 +2633,7 @@ with the elements to make it easier for users to discover the commands
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_234">Return to 2.3.4 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_234">Return to 2.3.4 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2665,7 +2665,7 @@ overtax her hands.</li>
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_235">Return to 2.3.5 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_235">Return to 2.3.5 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2709,7 +2709,7 @@ now works correctly.</li>
 <a name="gl-search-text" id="gl-search-text"></a>
 <span class="techs-only">Implementing </span>
 Guideline 2.4 - Provide text search 
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-search-text">Guideline 2.4</a>]</span></h3>
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-search-text">Guideline 2.4</a>]</span></h3>
 <p class="summary" id="summary24"><strong>Summary</strong>: Users can search rendered content (2.4.1, Level A) forward or 
 backward (2.4.2, Level A) and can have the matched content highlighted 
 in the viewport (2.4.3, Level A). The user is notified if there is no 
@@ -2724,7 +2724,7 @@ title="definition: Document character set">document character set</a>. <span cla
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_241">Return to 2.4.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_241">Return to 2.4.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2753,7 +2753,7 @@ title="definition: Document character set">document character set</a>. <span cla
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_242">Return to 2.4.2 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_242">Return to 2.4.2 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2777,7 +2777,7 @@ title="definition: Document character set">document character set</a>. <span cla
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_243">Return to 2.4.3 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_243">Return to 2.4.3 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2807,7 +2807,7 @@ title="definition: notify">notification</a> when there is no match to a search o
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_244">Return to 2.4.4 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_244">Return to 2.4.4 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2836,7 +2836,7 @@ title="definition: notify">notification</a> when there is no match to a search o
   
   
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_245">Return to 2.4.5 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_245">Return to 2.4.5 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2864,7 +2864,7 @@ title="definition: notify">notification</a> when there is no match to a search o
 <h3 class="guideline">
 <a name="gl-nav-structure" id="gl-nav-structure"></a>
 <span class="techs-only">Implementing </span>Guideline 2.5 - Provide structural navigation 
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-nav-structure">Guideline 2.5</a>]</span></h3>
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-nav-structure">Guideline 2.5</a>]</span></h3>
 <p class="summary" id="summary25"><strong>Summary</strong>: Users can view (2.5.1, Level AA), navigate (2.5.2, Level A), and 
 configure the elements used in navigating (2.5.3, Level AAA) content 
 hierarchy.
@@ -2877,7 +2877,7 @@ hierarchy.
 
   
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_251">Return to 2.5.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_251">Return to 2.5.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2906,7 +2906,7 @@ hierarchy.
 
   
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_252">Return to 2.5.2 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_252">Return to 2.5.2 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2936,7 +2936,7 @@ hierarchy.
 
   
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_253">Return to 2.5.3 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_253">Return to 2.5.3 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -2965,7 +2965,7 @@ hierarchy.
 <span class="techs-only">Implementing </span>
 Guideline 2.6 - Provide access to event handlers
 
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-device-independent-handlers">Guideline 2.6</a>]</span></h3>
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-device-independent-handlers">Guideline 2.6</a>]</span></h3>
 
 <p class="summary" id="summary26"><strong>Summary</strong>: Users can interact with web content by mouse, keyboard, voice input, gesture, or a combination of input methods. Users can discover what event handlers (e.g. onmouseover) are available at each element and  activate an element's events individually (2.6.1). </p>
 
@@ -2975,7 +2975,7 @@ Guideline 2.6 - Provide access to event handlers
  
    
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_261">Return to 2.6.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_261">Return to 2.6.1 in Guidelines</a></div>
 </div> 
  
       <div class="techs-only">
@@ -2996,7 +2996,8 @@ Guideline 2.6 - Provide access to event handlers
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_261-r" name="sc_261-r"></a>Related Resources for Success Criterion 2.6.1:</h5>
             <ul>
-              <li><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#intro-modality-independence">Modality      Independent Controls</a></li>
+              <li><a href="http://jspellman.github.io/UAAG/UAAG20/#intro-modality-independence">Modality      Independent Controls</a></li>
+              <li><a href="http://www.w3.org/WAI/intro/indieui.php">Independent User Interface Working Group</a></li>
               <li><a href="#sc_131">1.3.1 Highlighted Items </a></li></ul></div></div>
 
 </div>
@@ -3008,7 +3009,7 @@ Guideline 2.6 - Provide access to event handlers
 <span class="techs-only">Implementing </span>
 Guideline 2.7 - Configure and store preference settings
 
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-store-prefs">Guideline 2.7</a>]</span></h3>
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-store-prefs">Guideline 2.7</a>]</span></h3>
 <p class="summary" id="summary27"><strong>Summary</strong>: Users can restore preference settings to default (2.7.2, Level 
 A), and accessibility settings persist between sessions (2.7.1, Level 
 A). Users can manage multiple sets of preference settings (2.7.3, Level 
@@ -3022,7 +3023,7 @@ transport settings to compatible systems (2.7.5, Level AA).</p>
 
    
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_271">Return to 2.7.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_271">Return to 2.7.1 in Guidelines</a></div>
 </div> 
 
         <div class="techs-only">
@@ -3048,7 +3049,7 @@ transport settings to compatible systems (2.7.5, Level AA).</p>
  
     
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_272">Return to 2.7.2 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_272">Return to 2.7.2 in Guidelines</a></div>
 </div> 
 
        <div class="techs-only">
@@ -3072,7 +3073,7 @@ transport settings to compatible systems (2.7.5, Level AA).</p>
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_273">Return to 2.7.3 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_273">Return to 2.7.3 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3098,7 +3099,7 @@ transport settings to compatible systems (2.7.5, Level AA).</p>
   
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_274">Return to 2.7.4 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_274">Return to 2.7.4 in Guidelines</a></div>
 </div> 
 
         <div class="techs-only">
@@ -3127,7 +3128,7 @@ transport settings to compatible systems (2.7.5, Level AA).</p>
  
  
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_275">Return to 2.7.5 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_275">Return to 2.7.5 in Guidelines</a></div>
 </div> 
  
        <div class="techs-only">
@@ -3176,7 +3177,7 @@ customizing her computer.
 <a name="gl-configure-controls" id="gl-configure-controls"></a>
 <span class="techs-only">Implementing </span>
 Guideline 2.8 - Customize display of graphical controls 
-  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-configure-controls">Guideline 2.8</a>]</span></h3>
+  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-configure-controls">Guideline 2.8</a>]</span></h3>
 <p class="summary" id="summary28"><strong>Summary</strong>: It's recommended that users can add, remove, reposition, and 
 assign shortcuts to user agent controls, and restore them to their 
 default settings (2.8.1, Level AA).</p>
@@ -3206,7 +3207,7 @@ by hiding some controls). </li>
 
  
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_281">Return to 2.8.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_281">Return to 2.8.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3264,7 +3265,7 @@ When Jennifer is done, she changes the controls back to Linda's original setting
 <h3 class="guideline">
 <a name="gl-time-independent" id="gl-time-independent"></a>
 <span class="techs-only">Implementing </span>Guideline 2.9 - Allow time-independent interaction 
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-time-independent">Guideline 2.9</a>]</span></h3>
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-time-independent">Guideline 2.9</a>]</span></h3>
 <p class="summary" id="summary29"><strong>Summary</strong>: Users can extend the time limits for user input when such 
   limits are controllable by the user agent (2.9.1, Level A).
 </p>
@@ -3289,7 +3290,7 @@ The user agent user interface does not include time limits or at least one of th
 </ol>
  
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_291">Return to 2.9.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_291">Return to 2.9.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3316,7 +3317,7 @@ The user agent user interface does not include time limits or at least one of th
 <div class="guideline-box" id="g-2-10">
 <h3 class="guideline"><a name="gl-prevent-flash"
 id="gl-prevent-flash"></a><span class="techs-only">Implementing </span>Guideline 2.10 - Help users avoid flashing that could cause seizures  
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-prevent-flash">Guideline 2.10</a>]</span></h3>
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-prevent-flash">Guideline 2.10</a>]</span></h3>
 <p class="summary" id="summary210"><strong>Summary</strong>: To help users avoid seizures, the default configuration 
 prevents the browser user interface  from flashing 
 more than three times a second above luminescence or color thresholds 
@@ -3329,7 +3330,7 @@ more than three times a second above luminescence or color thresholds
 
  
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_2101">Return to 2.10.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_2101">Return to 2.10.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3357,7 +3358,7 @@ more than three times a second above luminescence or color thresholds
 
  
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_2102">Return to 2.10.2 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_2102">Return to 2.10.2 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3386,7 +3387,7 @@ more than three times a second above luminescence or color thresholds
 <h3 class="guideline"><a name="gl-control-inaccessible-content"
 id="gl-control-inaccessible-content"><span class="techs-only">Implementing </span>Guideline 2.11 - </a> Provide control of
 time-based media 
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-control-inaccessible-content">Guideline 2.11</a>]</span></h3>
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-control-inaccessible-content">Guideline 2.11</a>]</span></h3>
 
 <p class="summary" id="summary211"><strong>Summary</strong>: The user can present placeholders for time-based media (2.11.1, 
 Level A) and executable regions (2.11.2, Level A), or block all 
@@ -3407,7 +3408,7 @@ title="definition: Explicit user request">explicit user request</a>. <span class
 
  
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_2111">Return to 2.11.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_2111">Return to 2.11.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3454,7 +3455,7 @@ execute. <span class="level">(Level&nbsp;A)</span></p>
 
  
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_2112">Return to 2.11.2 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_2112">Return to 2.11.2 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3484,7 +3485,7 @@ execute. <span class="level">(Level&nbsp;A)</span></p>
   
    
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_2113">Return to 2.11.3 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_2113">Return to 2.11.3 in Guidelines</a></div>
 </div> 
 
         <div class="techs-only">
@@ -3517,7 +3518,7 @@ execute. <span class="level">(Level&nbsp;A)</span></p>
 
    
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_2114">Return to 2.11.4 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_2114">Return to 2.11.4 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3549,7 +3550,7 @@ rate. <span class="level">(Level&nbsp;A)</span> </p>
 
    
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_2115">Return to 2.11.5 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_2115">Return to 2.11.5 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3579,7 +3580,7 @@ rate. <span class="level">(Level&nbsp;A)</span> </p>
 href="#def-relative-time-units" rel="glossary" title="definition: relative time units">relative time units</a>. <span class="level">(Level&nbsp;A)</span></p> 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_2116">Return to 2.11.6 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_2116">Return to 2.11.6 in Guidelines</a></div>
 </div> 
       <div class="techs-only">
        <div class="implementing-section">
@@ -3606,7 +3607,7 @@ href="#def-relative-time-units" rel="glossary" title="definition: relative time 
 
    
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_2117">Return to 2.11.7 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_2117">Return to 2.11.7 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3633,7 +3634,7 @@ href="#def-relative-time-units" rel="glossary" title="definition: relative time 
 
    
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_2118">Return to 2.11.8 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_2118">Return to 2.11.8 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3658,7 +3659,7 @@ href="#def-relative-time-units" rel="glossary" title="definition: relative time 
 <div class="guideline-box" id="g-2-12">
 <h3 class="guideline"><a name="gl-other-devices"
 id="gl-other-devices"><span class="techs-only">Implementing </span>Guideline 2.12 - </a> Support other input devices  
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-other-devices">Guideline 2.12</a>]</span></h3>
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-other-devices">Guideline 2.12</a>]</span></h3>
       
       <p class="summary" id="summary212"><strong>Summary</strong>: User agents support all of the platform's text input devices 
 (2.12.1, Level A), and for all input devices the user can input text 
@@ -3673,7 +3674,7 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>
 
    
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_2121">Return to 2.12.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_2121">Return to 2.12.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3702,7 +3703,7 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>, a
 
    
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_2122">Return to 2.12.2 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_2122">Return to 2.12.2 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3731,7 +3732,7 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>, a
 
    
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_2123">Return to 2.12.3 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_2123">Return to 2.12.3 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3761,7 +3762,7 @@ understandable</h2>
 <h3 class="guideline"><a name="gl-avoid-unnecessary-messages"
 id="gl-avoid-unnecessary-messages"></a><span class="techs-only">Implementing </span>Guideline 3.1 - Help users avoid
 unnecessary messages 
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#gl-avoid-unnecessary-messages">Guideline 3.1</a>]</span></h3>
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/#gl-avoid-unnecessary-messages">Guideline 3.1</a>]</span></h3>
 
 <p class="summary" id="summary31"><strong>Summary</strong>: Users can turn off messages from the author or user-agent (3.1.1, Level AA).</p>
 
@@ -3776,7 +3777,7 @@ unnecessary messages
 
    
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_311">Return to 3.1.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_311">Return to 3.1.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3805,7 +3806,7 @@ unnecessary messages
 <h3 class="guideline"><a name="gl-avoid-mistakes"
 id="gl-avoid-mistakes"><span class="techs-only">Implementing </span>Guideline 3.2 - </a> Help users avoid and correct
 mistakes 
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-avoid-mistakes">Guideline 3.2</a>]</span></h3>
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-avoid-mistakes">Guideline 3.2</a>]</span></h3>
 
   <p class="summary" id="summary32"><strong>Summary</strong>: Users can have form submissions require confirmation (3.2.1, 
 Level AA), go back after navigating (3.2.2, Level AA), have their text 
@@ -3820,7 +3821,7 @@ indications of progress activity (3.2.6, Level A).</p>
   
      
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_321">Return to 3.2.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_321">Return to 3.2.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3850,7 +3851,7 @@ that the form won't be submitted until she selects the submit button.</li>
 
      
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_322">Return to 3.2.2 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_322">Return to 3.2.2 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3879,7 +3880,7 @@ quadraplegic who is using speech input in a relatively noisy room. The program h
 
      
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_323">Return to 3.2.3 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_323">Return to 3.2.3 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3908,7 +3909,7 @@ quadraplegic who is using speech input in a relatively noisy room. The program h
 
      
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_324">Return to 3.2.4 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_324">Return to 3.2.4 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3935,7 +3936,7 @@ quadraplegic who is using speech input in a relatively noisy room. The program h
 
      
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_325">Return to 3.2.5 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_325">Return to 3.2.5 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3960,7 +3961,7 @@ quadraplegic who is using speech input in a relatively noisy room. The program h
 
      
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_326">Return to 3.2.6 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_326">Return to 3.2.6 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -3996,7 +3997,7 @@ message that the purchase has timed out.</li>
 <h3 class="guideline"><a name="gl-doc-access-features"
 id="gl-doc-access-features"><span class="techs-only">Implementing </span>Guideline 3.3 - </a> Document the user agent user
 interface including  accessibility features 
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-doc-access-features">Guideline 3.3</a>]</span></h3>
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-doc-access-features">Guideline 3.3</a>]</span></h3>
 <p class="summary" id="summary33"><strong>Summary</strong>:  User documentation is available in an accessible format (3.3.1, 
 Level A), it includes accessibility features (3.3.2, Level A), 
 delineates differences between versions (3.3.3, Level AA), provides a 
@@ -4009,7 +4010,7 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
 
      
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_331">Return to 3.3.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_331">Return to 3.3.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4042,7 +4043,7 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
 </ol>
      
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_332">Return to 3.3.2 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_332">Return to 3.3.2 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4082,7 +4083,7 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
 
      
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_333">Return to 3.3.3 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_333">Return to 3.3.3 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4107,7 +4108,7 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
 
      
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_334">Return to 3.3.4 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_334">Return to 3.3.4 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4132,7 +4133,7 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
 
 <div class="guideline-box" id="g-3-4">
 <h3 class="guideline"><a name="gl-predictable-operation" id="gl-predictable-operation"></a><span class="techs-only">Implementing </span>Guideline 3.4 - Make the user agent behave in  predictable ways 
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-predictable-operation">Guideline 3.4</a>]</span></h3>
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-predictable-operation">Guideline 3.4</a>]</span></h3>
 <p class="summary" id="summary34"><strong>Summary</strong>: Users can prevent non-requested focus changes (3.4.1, Level A).
 </p>
 <div class="sc-level">
@@ -4141,7 +4142,7 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_341">Return to 3.4.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_341">Return to 3.4.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4175,7 +4176,7 @@ id="principle-AT-access"></a>PRINCIPLE 4: Facilitate programmatic access</h2>
 <div class="guideline-box" id="g-4-1">
 <h3 class="guideline"><a name="gl-AT-access" id="gl-AT-access"></a><span class="techs-only">Implementing </span>Guideline 4.1 - <span class="principle">Facilitate
 programmatic access to assistive technology </span> 
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-AT-access">Guideline 4.1</a>]</span></h3>
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-AT-access">Guideline 4.1</a>]</span></h3>
 <p class="summary" id="summary41"><strong>Summary</strong>: The user agent supports platform accessibility services (4.1.1, 
 Level A) that are quick and responsive (4.1.7, Level A), including 
 providing information about all controls and operation (4.1.2, Level A &amp; 
@@ -4192,7 +4193,7 @@ standard window in place of a customized window (4.1.3, Level A).</p>
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_411">Return to 4.1.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_411">Return to 4.1.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4237,7 +4238,7 @@ standard window in place of a customized window (4.1.3, Level A).</p>
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_412">Return to 4.1.2 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_412">Return to 4.1.2 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4279,7 +4280,7 @@ standard window in place of a customized window (4.1.3, Level A).</p>
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_413">Return to 4.1.3 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_413">Return to 4.1.3 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4306,7 +4307,7 @@ made <a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" t
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_414">Return to 4.1.4 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_414">Return to 4.1.4 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4345,7 +4346,7 @@ made <a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" t
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_415">Return to 4.1.5 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_415">Return to 4.1.5 in Guidelines</a></div>
 </div> 
  
       <div class="techs-only">
@@ -4380,7 +4381,7 @@ made <a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" t
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_416">Return to 4.1.6 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_416">Return to 4.1.6 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4408,7 +4409,7 @@ made <a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" t
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_417">Return to 4.1.7 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_417">Return to 4.1.7 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4439,7 +4440,7 @@ specifications and conventions</h2>
 <div class="guideline-box" id="g-5-1">
 <h3 class="guideline"><a name="gl-obs-env-conventions"
 id="gl-obs-env-conventions"></a><span class="techs-only">Implementing </span>Guideline 5.1 - Comply with applicable specifications and conventions 
-	  <span class="techs-only">[<a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/Overview.html#gl-obs-env-conventions">Guideline 5.1</a>]</span></h3> 
+	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-obs-env-conventions">Guideline 5.1</a>]</span></h3> 
 <p class="summary" id="summary52"><strong>Summary</strong>: When the browser's controls are authored in HTML or similar 
 standards, they need to meet W3C's Web Content Accessibility Guidelines 
 (5.1.1, Levels A, AA, AAA). The user agent supports the accessibility 
@@ -4458,7 +4459,7 @@ web-based (e.g. help systems).</li></ul>
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_511">Return to 5.1.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_511">Return to 5.1.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4493,7 +4494,7 @@ requirement of the other specification and still satisfy this guideline.</li></u
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_512">Return to 5.1.2 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_512">Return to 5.1.2 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4526,7 +4527,7 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>. <
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_513">Return to 5.1.3 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_513">Return to 5.1.3 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4534,7 +4535,7 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>. <
         <h5 class="implementing-heading"><a id="sc_513-i" name="sc_513-i"></a>Intent  of  Success Criterion 5.1.3:</h5>
           <p>User agent user interfaces that are not web applications need to be accessible to people with disabilities. Accessibility guidelines already exist for many platforms. Most operating systems have conventions and expectations that aid accessibility,  such as keyboard behavior, support of an accessibility API, user interface design. User agents need to comply with the basic accessibility requirements of the platform in use. Developers have the flexibility to conform with the appropriate accessibility guidelines or legislation for their platform or markets.</p>
         <p>The user should be able to easily discover detailed information about the user agent's adherence to accessibility standards, platform standards such as MSAA or JAA, and third-party standards such as ISO 9241-171, and should be able to do so without installing and testing the accessibility features.</p>
-        <p><em>Note:</em> In the <a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#conformance">conformance claim</a>, list the requirements you fully comply with, list the requirements you partially comply with and explain, and list the requirements you do not comply with and explain. Where applicable, these explanations can be general and cover several sections at once.
+        <p><em>Note:</em> In the <a href="http://jspellman.github.io/UAAG/UAAG20/#conformance">conformance claim</a>, list the requirements you fully comply with, list the requirements you partially comply with and explain, and list the requirements you do not comply with and explain. Where applicable, these explanations can be general and cover several sections at once.
         </p>
         </div>
        <div class="implementing-section">
@@ -4606,7 +4607,7 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>. <
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_515">Return to 5.1.5 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_515">Return to 5.1.5 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4634,7 +4635,7 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>. <
 
 
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#sc_516">Return to 5.1.6 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_516">Return to 5.1.6 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
@@ -4706,8 +4707,9 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
     <li>Name and manufacturer</li>
     <li>Version number or version range</li>
     <li>Required patches or updates, human language of the user interface and documentation</li>
-    <li>Configuration changes to the user agent that are needed to meet the success criteria   (e.g. ignore author foreground/background color, turn on Carat Browsing)</li>
     <li>Plugins or extensions (including version numbers)  needed to meet the success criteria (e.g. mouseless browsing)</li>
+    <li>Configuration changes to the user agent, plugins and extensions that are needed to meet the success criteria   (e.g. ignore author foreground/background color, turn on Carat Browsing)</li>
+    
   </ol>
 </li>
 <li><strong>Platform:</strong> Provide relevant information about the software and/or hardware platform(s) that the user agent relies on for conformance. This information may include:
@@ -5013,7 +5015,7 @@ recognize. </dd>
   <dt><dfn>informative (non-normative)</dfn></dt>
   <dd>see <a class="dfn-instance" href="#def-informative">normative</a></dd>
   <dt class="glossary"><a name="k" id="k"></a><a name="def-keyboard" id="def-keyboard"></a><dfn>keyboard</dfn></dt>
-  <dd>The letter, symbol and command keys or key indicators that allow a user to control a computing device. Assistive technologies have traditionally relied on the keyboard interface as a universal, or modality independent interface. In this document references to keyboard include keyboard emulators and <a class="dfn-instance" href="#def-keyboard-interface">keyboard interfaces</a> that make use of the keyboard's role as a modality independent interface (see <a class="dfn-instance" href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/#intro-modality-independence">Modality Independent Controls</a>). Keyboard emulators and interfaces may be used on devices which do not have a physical keyboard, such as mobile devices based on touchscreen input.</dd>
+  <dd>The letter, symbol and command keys or key indicators that allow a user to control a computing device. Assistive technologies have traditionally relied on the keyboard interface as a universal, or modality independent interface. In this document references to keyboard include keyboard emulators and <a class="dfn-instance" href="#def-keyboard-interface">keyboard interfaces</a> that make use of the keyboard's role as a modality independent interface (see <a class="dfn-instance" href="http://jspellman.github.io/UAAG/UAAG20/#intro-modality-independence">Modality Independent Controls</a>). Keyboard emulators and interfaces may be used on devices which do not have a physical keyboard, such as mobile devices based on touchscreen input.</dd>
   <dt><a name="def-keyboard-interface" id="def-keyboard-interface"><dfn>keyboard interface</dfn></a></dt>
   <dd>Keyboard interfaces are programmatic services provided by many platforms   that allow operation in a device independent manner. A keyboard   interface can allow keystroke input even if particular devices do not   contain a hardware keyboard (e.g. a touchscreen-controlled device can   have a keyboard interface built into its <a class="dfn-instance" href="#def-operating-system" rel="glossary" title="definition: operating system">operating system</a> to support   onscreen keyboards as well as external keyboards that may be connected). <br />
     <em>Note:</em> Keyboard-operated mouse emulators, such as MouseKeys,   do not qualify as operation through a keyboard interface because these   emulators use pointing device interfaces, not keyboard interfaces.</dd>
