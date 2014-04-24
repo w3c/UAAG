@@ -11,7 +11,8 @@
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
-
+.gl-only {background-color:#FFFFCC}
+.techs-only {background-color:#CCFFCC}
                
 
 h2.principle {
@@ -224,16 +225,16 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 10 April
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 17 April
 2014</h2>
 <dl>
-  <dt>This version:</dt>
-    <dd><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/">http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/</a></dd>
+  <dt>This version (Github):</dt>
+    <dd><a href="http://jspellman.github.io/UAAG/UAAG20/">http://jspellman.github.io/UAAG/UAAG20/</a></dd>
   <dt>Latest version:</dt>
     <dd><a
       href="http://www.w3.org/TR/UAAG20/">http://www.w3.org/TR/UAAG20/</a></dd>
-  <dt>Previous version:</dt>
-    <dd><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140403/">http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140403/</a></dd>
+  <dt>Previous version (pre-Github):</dt>
+    <dd><a href="http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410//">http://www.w3.org/WAI/UA/2014/ED-UAAG20-20140410/</a></dd>
     <dt>Latest Editor's Draft:</dt>
     <dd><a href="http://www.w3.org/WAI/UA/UAAG20/">http://www.w3.org/WAI/UA/UAAG20/</a></dd>
   <dt>Editors:</dt>
@@ -447,8 +448,7 @@ title="definition: User agent">user agent</a> developers that will lower barrier
 
 <p>Improving accessibility means considering a wide range of disabilities. These include visual,
 auditory, physical, speech, cognitive, language, learning, neurological
-disabilities, and disabilities related to aging. The goal of UAAG 2.0 is to ensure that all users, including users with disabilities, have
-control over their environment for accessing the web. </p>
+disabilities, and disabilities related to aging. The goal of UAAG 2.0 is to ensure that all users, including users with disabilities, have equal control over the environment they use to access the web.</p>
 <p>Some users  have more than one disability, and the needs of different
   disabilities may conflict. Thus, many UAAG 2.0 requirements  
   use configuration  to ensure that a functionality designed to
@@ -2587,8 +2587,9 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
     <li>Name and manufacturer</li>
     <li>Version number or version range</li>
     <li>Required patches or updates, human language of the user interface and documentation</li>
-    <li>Configuration changes to the user agent that are needed to meet the success criteria   (e.g. ignore author foreground/background color, turn on Carat Browsing)</li>
     <li>Plugins or extensions (including version numbers)  needed to meet the success criteria (e.g. mouseless browsing)</li>
+    <li>Configuration changes to the user agent, plugins and extensions that are needed to meet the success criteria   (e.g. ignore author foreground/background color, turn on Carat Browsing)</li>
+    
   </ol>
 </li>
 <li><strong>Platform:</strong> Provide relevant information about the software and/or hardware platform(s) that the user agent relies on for conformance. This information may include:
