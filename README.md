@@ -4,4 +4,4 @@ Editors Draft of the User Agent Accessibility Guidelines from the Web Accessibil
 
 ====
 
-Please only make edits to the MasterUAAG.html file. 
+Please only make edits to the MasterUAAG.html file. Select the Fork button to make a copy to your own Github account. When you are finished with the edits, select the  Pull Request button. 
