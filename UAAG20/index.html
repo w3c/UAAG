@@ -11,8 +11,7 @@
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
-.gl-only {background-color:#FFFFCC}
-.techs-only {background-color:#CCFFCC}
+
                
 
 h2.principle {
@@ -225,7 +224,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 22 May
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 4 June
 2014</h2>
 <dl>
   <dt>This version (Github):</dt>
@@ -495,8 +494,8 @@ when the user would not otherwise be able to access that content.</p>
     contractual agreements. <br />
     <br />
     Each success criterion is assigned a level. The  levels are designed to meet the needs
-    of different groups and different situations: A (low, or basic, conformance),
-    AA (recommended conformance), and AAA (highest conformance). Additional
+    of different groups and different situations: A (<span class="proposed-text">minimum</span> conformance),
+    AA (recommended conformance), and AAA (<span class="proposed-text"> advanced</span> conformance). Additional
     information on UAAG levels can be found in the <a href="http://jspellman.github.io/UAAG/UAAG20/#intro-conf-levels">Levels of Conformance</a>
 section.</li>
 </ol>
@@ -536,7 +535,7 @@ components of web development and interaction work together, see</p>
   Conformance</h3>
 
 <p>User agents  may  conform to UAAG 2.0 at one of three conformance
-levels: levels A (basic), AA (recommended), and AAA (advanced). These levels provide a path for user agent   developers to improve their product over time and to prioritize new   ways to improve accessibility.  </p>
+levels: levels A (<span class="proposed-text">minimum</span>), AA (recommended), and AAA (advanced). These levels provide a path for user agent   developers to improve their product over time and to prioritize new   ways to improve accessibility.  </p>
 <p> UAAG 2.0 has many options that can be managed through preference settings. Having too many  options may be    overwhelming for some users.  The levels can  help user agent   developers  decide  which options to provide in a basic   user interface, and which to provide through progressive disclosure to   advanced users.</p>
 <div class="gl-only">
 <p>See <a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#intro-conf-levels">Implementing UAAG 2.0 Levels of Conformance</a> for more information. </p></div>
@@ -568,8 +567,8 @@ title="definition: Normative"></a>. Guideline summaries are <a class="dfn-instan
 <ol>
   <li><strong class="handle">Recognized Content Only: </strong>UAAG 2.0 success criteria only apply to web content and its behaviors that can be <a class="dfn-instance"
 href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a> by user agents.</li>
-  <li> <strong class="handle">Optional Settings:</strong> Throughout UAAG 2.0, all required behaviors may be      provided as optional preference settings unless a success      criterion explicitly says otherwise. For example, if a success      criteria requires high contrast between foreground text and its      background, the user agent may also provide choices      with low contrast. A required behavior does not need to be the      default option unless the success criteria explicitly says      otherwise.</li>
-  <li><strong class="handle">RFC 2119 language not used: </strong>UAAG 2.0 does not use RFC 2119 language (must, may, should) because these are guidelines and not  interoperable specifications. These words in UAAG 2.0 don't have the same sense as they do in RFC 2119. </li>
+  <li> <strong class="handle">Optional Settings:</strong> Throughout UAAG 2.0, all  behaviors <span class="proposed-text">required by UAAG 2.0 </span>may be      provided as optional preference settings unless a success      criterion explicitly says otherwise. For example, if a success      criterion requires high contrast between foreground text and its      background, the user agent may also provide choices      with low contrast. A required behavior does not need to be the      default option unless the success criterion explicitly says      otherwise.</li>
+  <li><strong class="handle">RFC 2119 language not used: </strong>UAAG 2.0 does not use RFC 2119 language (must, may, should) because these are guidelines and not  interoperable specifications. These words in UAAG 2.0 don't<span class="proposed-text"> have the stricter meaning</span> as they do in RFC 2119. </li>
   <li><strong class="handle">Simultaneous satisfaction of success criteria: </strong>Users can access  all behaviors required by UAAG 2.0 at the same time (e.g. when the user resizes the viewport per 1.8.9, content is reflowed per 1.8.6), except where those behaviors are mutually exclusive.</li>
   <li><strong class="handle">Vertical layout languages</strong>: 
     When user agents render vertical layout languages (e.g. Mongolian, Han), success criteria normally relating to horizontal rendering should be applied to vertical rendering instead.
@@ -2548,9 +2547,9 @@ in full.</p>
  <ul>
   <li>Level A: For level A conformance (the minimum level of conformance), the 
   user agent satisfies all the Level A success criteria.</li>
-  <li>Level AA: For level AA conformance, the user agent satisfies all  
+  <li>Level AA: For level AA conformance (<span class="proposed-text">recommended</span>), the user agent satisfies all  
   level A and level AA Success Criteria.</li>
-  <li>Level AAA: For level AAA conformance, the user agent satisfies all  
+  <li>Level AAA: For level AAA conformance (<span class="proposed-text">advanced</span>), the user agent satisfies all  
   level A, level AA and level AAA Success Criteria.</li>
 </ul> 
 <p>  Note: Although conformance can only be achieved at the stated levels, 
@@ -2558,7 +2557,6 @@ in full.</p>
   meeting success criteria from all levels beyond the achieved level of 
   conformance. </p>
  <h3><a name="conformance-claims" id="conformance-claims"></a>Conformance Claims</h3>
-<p>User agents can conform to UAAG 2.0 without making a claim. If a   conformance claim is made, the conformance claim must meet the following   conditions and include the following information:</p>
 <h4><a name="conformance-conditions" id="conformance-conditions"></a>Conditions on Conformance Claims</h4>
 <p>If a conformance claim is made, the conformance claim must meet the following conditions:</p>
 <ul>
@@ -2602,7 +2600,7 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
     <li>Configuration changes to the platform that are needed to meet the success criteria (e.g. turn on Sticky Keys, use High Contrast Mode)</li>
   </ol>
 </li>
-<li> <strong>Platform Limitations:</strong> If the platform (hardware or operating system) does not support a capability necessary for a given UAAG 2.0 success criterion, list the success criterion and the feature (e.g. a mobile operating system does not support platform accessibility services, therefore the user agent cannot meet success criterion 4.1.2). For these listed technologies, the user agent can claim that the success criteria do not apply. </li>
+<li> <strong>Platform Limitations:</strong> If the platform (hardware or operating system) does not support a capability necessary for a given UAAG 2.0 success criterion, list the success criterion and the feature (e.g. a mobile operating system does not support platform accessibility services, therefore the user agent cannot meet success criterion 4.1.2). For these listed <span class="proposed-text">features</span>, the user agent can claim that the success criteria do not apply. </li>
 <li><strong>Web Content Technologies:</strong> List the web content technologies rendered by the user agent that are included in the claim. If there are any web content technologies rendered by the user agent that are excluded from the conformance claim, list these separately. Examples of web content technologies include web markup languages such HTML, XML, CSS, SVG, and MathML, image formats such as PNG, JPG and GIF, scripting languages such as JavaScript/EcmaScript, specific video codecs, and proprietary document formats. </li>
 <li><strong>Declarations:</strong> For each success criterion, provide a declaration of either
   <ol type="a">
@@ -2613,8 +2611,8 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
     </ol>
 </li>
 </ol>
-<h4><a name="conformance-limited" id="conformance-limited"></a>Limited Conformance for Extensions</h4>
-<p> This option may be used for a user agent extension or plug-in with limited functionality that wishes to claim UAAG 2.0 conformance. An extension or plugin can claim conformance for a specific success criterion or a narrow range of success criteria as stated in the claim. All other success criteria may be denoted as Not Applicable. The add-in must not cause the combined user agent (hosting user agent plus installed extension or plug-in) to fail any success criteria that the hosting user agent would otherwise pass.</p>
+<h4><a name="conformance-limited" id="conformance-limited"></a>Limited Conformance for Add-ons</h4>
+<p> This option may be used for a user agent extension or plug-in with limited functionality that wishes to claim UAAG 2.0 conformance. An extension or plugin can claim conformance for a specific success criterion or a narrow range of success criteria as stated in the claim. All other success criteria may be denoted as Not Applicable. The add-on must not cause the combined user agent (hosting user agent plus installed extension or plug-in) to fail any success criteria that the hosting user agent would otherwise pass.</p>
 <h4><a name="conformance-opt-components" id="conformance-opt-conponents"></a>Optional Components of an UAAG 2.0 Conformance Claim</h4>
 <p>A description of how the UAAG 2.0 success criteria were met where this 
 may not be obvious. </p>
@@ -3202,8 +3200,8 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
       <li>Authoring tools that only display a source view of the web content being edited (e.g. Notepad, Vim).</li>
     </ul>
   </dd>
-  <dt class="glossary"><a name="def-extension" id="def-extension"></a><dfn>user agent extension (add-in)</dfn></dt>
-  <dd>Software installed into a <a class="dfn-instance" href="#def-user-agent">user agent</a> that adds one or more additional features that modify the behavior of the user agent. Two common capabilities for user agent extensions are the ability to:
+  <dt class="glossary"><a name="def-extension" id="def-extension"></a><dfn>user agent <span class="proposed-text">add-on (add-in, extension, plugin)</span></dfn></dt>
+  <dd>Software installed into a <a class="dfn-instance" href="#def-user-agent">user agent</a> that adds one or more additional features that modify the behavior of the user agent. Extensions and plugins are types of add-ons. Two common capabilities for user agent add-ons are the ability to
     <ul>
       <li>modify the <a class="dfn-instance" href="#def-content">content</a> before the user agent renders it (e.g. to add highlights if certain types of alternative content are present), and</li>
       <li>modify the user agent's own <a href="#def-ua-ui"> user interface</a> (e.g. add a headings view).</li>
