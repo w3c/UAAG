@@ -11,6 +11,7 @@
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
+
                
 
 h2.principle {
@@ -423,7 +424,7 @@ title="definition: Normative">normative</a>, meaning user agent developers are r
   Conformance</h3>
 
 <p>User agents  may  conform to UAAG 2.0 at one of three conformance
-levels: levels A (<span class="proposed-text">minimum</span>), AA (recommended), and AAA (advanced). These levels provide a path for user agent   developers to improve their product over time and to prioritize new   ways to improve accessibility. <span class="techs-only">The three levels of UAAG 2.0 conformance are based on the corresponding level designations (A, AA, or AAA) of the individual success criteria (i.e., specific requirements). The user agent can conform to a   level by meeting the success criteria of that level and the levels below   it. </span> </p>
+levels: levels A (minimum), AA (recommended), and AAA (advanced). These levels provide a path for user agent   developers to improve their product over time and to prioritize new   ways to improve accessibility. <span class="techs-only">The three levels of UAAG 2.0 conformance are based on the corresponding level designations (A, AA, or AAA) of the individual success criteria (i.e., specific requirements). The user agent can conform to a   level by meeting the success criteria of that level and the levels below   it. </span> </p>
 <p> UAAG 2.0 has many options that can be managed through preference settings. Having too many  options may be    overwhelming for some users.  The levels can  help user agent   developers  decide  which options to provide in a basic   user interface, and which to provide through progressive disclosure to   advanced users.</p>
 
 </div>
@@ -483,8 +484,8 @@ User agent developers should consult ATAG 2.0 to understand the ways in which we
 <ol>
   <li><strong class="handle">Recognized Content Only: </strong>UAAG 2.0 success criteria only apply to web content and its behaviors that can be <a class="dfn-instance"
 href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a> by user agents.</li>
-  <li> <strong class="handle">Optional Settings:</strong> Throughout UAAG 2.0, all  behaviors <span class="proposed-text">required by UAAG 2.0 </span>may be      provided as optional preference settings unless a success      criterion explicitly says otherwise. For example, if a success      criterion requires high contrast between foreground text and its      background, the user agent may also provide choices      with low contrast. A required behavior does not need to be the      default option unless the success criterion explicitly says      otherwise.</li>
-  <li><strong class="handle">RFC 2119 language not used: </strong>UAAG 2.0 does not use RFC 2119 language (must, may, should) because these are guidelines and not  interoperable specifications. These words in UAAG 2.0 don't<span class="proposed-text"> have the stricter meaning</span> as they do in RFC 2119. </li>
+  <li> <strong class="handle">Optional Settings:</strong> Throughout UAAG 2.0, all  behaviors required by UAAG 2.0 may be      provided as optional preference settings unless a success      criterion explicitly says otherwise. For example, if a success      criterion requires high contrast between foreground text and its      background, the user agent may also provide choices      with low contrast. A required behavior does not need to be the      default option unless the success criterion explicitly says      otherwise.</li>
+  <li><strong class="handle">RFC 2119 language not used: </strong>UAAG 2.0 does not use RFC 2119 language (must, may, should) because these are guidelines and not  interoperable specifications. These words in UAAG 2.0 don't have the stricter meaning as they do in RFC 2119. </li>
   <li><strong class="handle">Simultaneous satisfaction of success criteria: </strong>Users can access  all behaviors required by UAAG 2.0 at the same time (e.g. when the user resizes the viewport per 1.8.9, content is reflowed per 1.8.6), except where those behaviors are mutually exclusive.</li>
   <li><strong class="handle">Vertical layout languages</strong>: 
     When user agents render vertical layout languages (e.g. Mongolian, Han), success criteria normally relating to horizontal rendering should be applied to vertical rendering instead.
@@ -2464,7 +2465,7 @@ a viewport. <span class="level">(Level&nbsp;A)</span></p>
             <ul>
               <li class="unclassified-ex">Sooj has a repetitive stress injury and cannot use a mouse, so she moves the keyboard focus to   the next pane by pressing F6 or to the previous pane by pressing Shift+F6.   She moves between tabbed document views by pressing Ctrl+Tab and   Shift+Ctrl+Tab. </li>
               <li class="unclassified-ex">Sooj  is working in her web browser, where one document window (viewport) is active (has the active keyboard focus). When she switches to her word processor, the web browser's window and its keyboard focus become inactive, and it hides its cursor. When Sooj switches back to the browser window, it reactivates that viewport, its keyboard focus becomes active again, and its cursor reappears in the same location as when she switched to a different application. </li>
-              <li class="unclassified-ex">A developer creates an extension to a user agent that allows the user to   add notes about each web page being visited. Sooj  presses a   shortcut key to move focus to the user interface of this extension and   interact with the functionality offered by the extension. Similarly, Sooj presses another key to move focus back to the main viewport for   the user agent in the same location as when she moved to the plugin. </li>
+              <li class="unclassified-ex">A developer creates an extension to a user agent that allows the user to   add notes about each web page being visited. Sooj  presses a   shortcut key to move focus to the user interface of this extension and   interact with the functionality offered by the extension. Similarly, Sooj presses another key to move focus back to the main viewport for   the user agent in the same location as when she moved to the plug-in. </li>
             </ul></div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_222-r" name="sc_222-r"></a>Related Resources for Success Criterion 2.2.2:</h5>
@@ -4627,7 +4628,7 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>. <
         <h5 class="implementing-heading"><a id="sc_515-e" name="sc_515-e"></a>Examples for Success Criterion 5.1.5:</h5>
             <ul>
               <li class="unclassified-ex">George is blind. His browser supports the VIDEO tag and adds its own play and pause controls, but George prefers to view the video content in a third-party application that provides much more sophisticated navigation controls such as bookmarks, skip-forward and backwards, and the ability to speed playback without increasing pitch of the audio track. In the browser, he right-clicks on the video to display a context menu, and from that chooses "Open in…", and then chooses his preferred video player. The browser launches the player to show that video file.</li>
-              <li class="unclassified-ex">Jukka is blind and uses a screenreader.  He is  a scientist whose uses mathematical  models.  Many of the journals he reads online use MathML to display equations.  Jukka finds the native  support for MathML accessibility in his web browser to be generally compatible  with his screen reader, but it can become unreliable for extremely complex  equations. In those cases, Jukka selects an alternate rendering plugin  to make the MathML understandable to his screen reader.<br />
+              <li class="unclassified-ex">Jukka is blind and uses a screenreader.  He is  a scientist whose uses mathematical  models.  Many of the journals he reads online use MathML to display equations.  Jukka finds the native  support for MathML accessibility in his web browser to be generally compatible  with his screen reader, but it can become unreliable for extremely complex  equations. In those cases, Jukka selects an alternate rendering plug-in  to make the MathML understandable to his screen reader.<br />
               </li>
           </ul>        </div>
         <div class="implementing-section">
@@ -4676,9 +4677,9 @@ in full.</p>
  <ul>
   <li>Level A: For level A conformance (the minimum level of conformance), the 
   user agent satisfies all the Level A success criteria.</li>
-  <li>Level AA: For level AA conformance (<span class="proposed-text">recommended</span>), the user agent satisfies all  
+  <li>Level AA: For level AA conformance (recommended), the user agent satisfies all  
   level A and level AA Success Criteria.</li>
-  <li>Level AAA: For level AAA conformance (<span class="proposed-text">advanced</span>), the user agent satisfies all  
+  <li>Level AAA: For level AAA conformance (advanced), the user agent satisfies all  
   level A, level AA and level AAA Success Criteria.</li>
 </ul> 
 <p>  Note: Although conformance can only be achieved at the stated levels, 
@@ -4714,7 +4715,7 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
     <li>Version number or version range</li>
     <li>Required patches or updates, human language of the user interface and documentation</li>
     <li>Plugins or extensions (including version numbers)  needed to meet the success criteria (e.g. mouseless browsing)</li>
-    <li>Configuration changes to the user agent, plugins and extensions that are needed to meet the success criteria   (e.g. ignore author foreground/background color, turn on Carat Browsing)</li>
+    <li>Configuration changes to the user agent, plug-ins and extensions that are needed to meet the success criteria   (e.g. ignore author foreground/background color, turn on Carat Browsing)</li>
     
   </ol>
 </li>
@@ -4729,19 +4730,24 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
     <li>Configuration changes to the platform that are needed to meet the success criteria (e.g. turn on Sticky Keys, use High Contrast Mode)</li>
   </ol>
 </li>
-<li> <strong>Platform Limitations:</strong> If the platform (hardware or operating system) does not support a capability necessary for a given UAAG 2.0 success criterion, list the success criterion and the feature (e.g. a mobile operating system does not support platform accessibility services, therefore the user agent cannot meet success criterion 4.1.2). For these listed <span class="proposed-text">features</span>, the user agent can claim that the success criteria do not apply. </li>
+<li> <strong>Platform Limitations:</strong> If the platform (hardware or operating system) does not support a capability necessary for a given UAAG 2.0 success criterion, list the success criterion and the feature (e.g. a mobile operating system does not support platform accessibility services, therefore the user agent cannot meet success criterion 4.1.2). For these listed features, the user agent can claim that the success criteria do not apply (see 9.b.1 following). </li>
 <li><strong>Web Content Technologies:</strong> List the web content technologies rendered by the user agent that are included in the claim. If there are any web content technologies rendered by the user agent that are excluded from the conformance claim, list these separately. Examples of web content technologies include web markup languages such HTML, XML, CSS, SVG, and MathML, image formats such as PNG, JPG and GIF, scripting languages such as JavaScript/EcmaScript, specific video codecs, and proprietary document formats. </li>
 <li><strong>Declarations:</strong> For each success criterion, provide a declaration of either
   <ol type="a">
     <li>whether or not the success criterion has been 
       satisfied; or </li>
     <li>declaration that the success criterion is not applicable and a 
-      rationale for why not</li>
+      rationale for why not, from the following choices: </li>
+      <ol>
+       <li> <strong>Platform</strong>: not applicable due constraints of the platform, per Paragraph 7 above (e.g. color handling on a monochrome device, video handling in a purely audio browser, or interprocess communication on an operating system that does not support multitasking). Describe the specific platform limitation. </li>
+       <li><strong>Input</strong>: not applicable due to a constrained input set (e.g. a help system that only displays the HTML files included with the product)</li>
+       <li><strong>Output</strong>: not applicable due to intentionally limited output modalities (e.g. video handling in a browser that only does audio output, even though the platform may support video)</li>
+      </ol>
     </ol>
 </li>
 </ol>
 <h4><a name="conformance-limited" id="conformance-limited"></a>Limited Conformance for Add-ons</h4>
-<p> This option may be used for a user agent extension or plug-in with limited functionality that wishes to claim UAAG 2.0 conformance. An extension or plugin can claim conformance for a specific success criterion or a narrow range of success criteria as stated in the claim. All other success criteria may be denoted as Not Applicable. The add-on must not cause the combined user agent (hosting user agent plus installed extension or plug-in) to fail any success criteria that the hosting user agent would otherwise pass.</p>
+<p> This option may be used for a user agent extension or plug-in with limited functionality that wishes to claim UAAG 2.0 conformance. An extension or plug-in can claim conformance for a specific success criterion or a narrow range of success criteria as stated in the claim. All other success criteria may be denoted as Not Applicable. The add-on must not cause the combined user agent (hosting user agent plus installed extension or plug-in) to fail any success criteria that the hosting user agent would otherwise pass.</p>
 <h4><a name="conformance-opt-components" id="conformance-opt-conponents"></a>Optional Components of an UAAG 2.0 Conformance Claim</h4>
 <p>A description of how the UAAG 2.0 success criteria were met where this 
 may not be obvious. </p>
@@ -5329,8 +5335,8 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
       <li>Authoring tools that only display a source view of the web content being edited (e.g. Notepad, Vim).</li>
     </ul>
   </dd>
-  <dt class="glossary"><a name="def-extension" id="def-extension"></a><dfn>user agent <span class="proposed-text">add-on (add-in, extension, plugin)</span></dfn></dt>
-  <dd>Software installed into a <a class="dfn-instance" href="#def-user-agent">user agent</a> that adds one or more additional features that modify the behavior of the user agent. Extensions and plugins are types of add-ons. Two common capabilities for user agent add-ons are the ability to
+  <dt class="glossary"><a name="def-extension" id="def-extension"></a><dfn>user agent add-on (add-in, extension, plug-in)</dfn></dt>
+  <dd>Software installed into a <a class="dfn-instance" href="#def-user-agent">user agent</a> that adds one or more additional features that modify the behavior of the user agent. Extensions and plug-ins are types of add-ons. Two common capabilities for user agent add-ons are the ability to
     <ul>
       <li>modify the <a class="dfn-instance" href="#def-content">content</a> before the user agent renders it (e.g. to add highlights if certain types of alternative content are present), and</li>
       <li>modify the user agent's own <a href="#def-ua-ui"> user interface</a> (e.g. add a headings view).</li>
