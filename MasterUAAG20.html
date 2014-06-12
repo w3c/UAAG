@@ -225,7 +225,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 5 June
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 11 June
 2014</h2>
 <dl>
   <dt>This version (Github):</dt>
@@ -263,7 +263,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
  
     <h1><a name="title" id="title"></a>Implementing UAAG 2.0</h1>
 	<h2><a id="subtitle" name="subtitle"></a>A guide to understanding and implementing User Agent Accessibility Guidelines 2.0</h2>
-    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 5 June
+    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 11 June
 2014</h2>
     <dl> 
   <dt>This version (Github):</dt> 
@@ -734,7 +734,12 @@ href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a
   <li><strong class="handle">Vertical layout languages</strong>: 
     When user agents render vertical layout languages (e.g. Mongolian, Han), success criteria normally relating to horizontal rendering should be applied to vertical rendering instead.
   </li>
-  <li><strong class="handle">Extensions:</strong> Success criteria can be met by a user agent alone or in conjunction with extensions and add-ons, as long as those are available to users. See <a href="#conformance-req-components">Components of UAAG 2.0 Conformance Claims</a>.</li>
+  <li><strong class="handle">Add-ons (Extensions and Plug-ins):</strong> Success criteria can be met by a user agent alone or in conjunction with add-ons, as long as those are: 
+  <ol type="a"><li>discoverable by t he user</li>
+  <li>no extra cost to the user</li>
+  <li>easily installed (i.e. not requiring expert knowledge or editing of
+
+configuration files, databases, or registry entries)</li></ol> See <a href="#conformance-req-components">Components of UAAG 2.0 Conformance Claims</a>.</li>
   <li><strong class="handle">Relationship with operating system or platform</strong>: The user agent does      not need to implement every behavior itself. A required      behavior may be provided by the platform, user agent, user      agent extensions, or potentially other layers. All are      acceptable, as long as they are enumerated in the conformance      claim.</li>
 </ol>
 
@@ -5179,6 +5184,8 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
 <li>Claimant name and affiliation</li>
 <li>Claimant contact information</li>
 <li>Date of the claim</li>
+<li>Type of compliance: [ ] User Agent (full) [ ] <a href="#def-extension">Add-on</a> only 
+(limited) </li>
 <li>Conformance level satisfied</li>
 <li><strong>User agent information</strong>:
 <ol type="a">
@@ -5218,7 +5225,21 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
 </li>
 </ol>
 <h4><a name="conformance-limited" id="conformance-limited"></a>Limited Conformance for Add-ons</h4>
-<p> This option may be used for a user agent extension or plug-in with limited functionality that wishes to claim UAAG 2.0 conformance. An extension or plug-in can claim conformance for a specific success criterion or a narrow range of success criteria as stated in the claim. All other success criteria may be denoted as Not Applicable. The add-on must not cause the combined user agent (hosting user agent plus installed extension or plug-in) to fail any success criteria that the hosting user agent would otherwise pass.</p>
+<p> This option may be used for a user agent extension or plug-in with 
+limited functionality that wishes to claim UAAG 2.0 conformance. An 
+extension or plugin can claim conformance for a specific success 
+criterion or a narrow range of success criteria as stated in the claim. 
+All other success criteria may be denoted as Not Applicable. </p>
+<p>UAAG 
+  recognizes that some extensions may be so specialized to the needs of a 
+  particular disability that the extension is be mutually exclusive with 
+  other success criteria of UAAG, but the goal would be for extensions to 
+  work with the user agent so that any features of the user agent needed 
+  for UAAG conformance are not broken by one extension. If the extension 
+  limits other accessibility features of the user agent, then include a 
+  statement to that effect, such as: "This extension breaks success criterion  
+  x.x.x because it is intended to meet [foo] need 
+  of [this] class of user." An example would be a (hypothetical) extention that breaks 1.8.2 and 1.8.3 (viewport navigation) to provide a simplified page for people with  high distraction levels. </p>
 <h4><a name="conformance-opt-components" id="conformance-opt-conponents"></a>Optional Components of an UAAG 2.0 Conformance Claim</h4>
 <p>A description of how the UAAG 2.0 success criteria were met where this 
 may not be obvious. </p>
