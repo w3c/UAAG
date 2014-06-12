@@ -842,7 +842,7 @@ title="definition: Conditional content">alternative content</a> is present. <spa
 <h4 class="sc-title"><a id="sc_113" name="sc_113"></a>1.1.3 Replace Non-Text Content: </h4>
 <p class="sc-text">
 The user can request a placeholder that incorporates <a class="dfn-instance"
-href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a> text alternative content instead of recognized non-text content, until explicit user request to render the non-text content. <span class="level">(Level&nbsp;A)</span>
+href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a> text alternative content instead of recognized non-text content, until an explicit user request to render the non-text content. <span class="level">(Level&nbsp;A)</span>
 </p>
 
 	   <div class="gl-only">
@@ -1268,7 +1268,7 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
 <div class="sc-level"><!--AA-->
 
 <h4 class="sc-title"><a id="sc_142" name="sc_142"></a>1.4.2 Text Size, Color and Font (by Element): </h4>
-<p class="sc-text">The user can set all of the following characteristics of visually rendered text content for text element types including at least headings, input fields, and links: <span class="level">(Level&nbsp;AA) </span> </p>
+<p class="sc-text">The user can set all of the following characteristics of visually rendered text content for text element types including at least headings, input fields, and links:  <span class="level">(Level&nbsp;AA) </span> </p>
 <ul class="sc-bullets">
   <li>Text size or scale</li>
   <li>Text color and background color, choosing from all platform color options</li>
@@ -2201,7 +2201,7 @@ href="#def-viewport-toplevel">top-level viewports</a> (e.g. windows or tabs) fol
               <li> <a href="#sc_274">2.7.3 Multiple Sets of Preference Settings</a></li></ul></div></div>
               
 <h4 class="sc-title"><a id="sc_1814" name="sc_1814"></a>1.8.14 Multi-Column Text Reflow: </h4>
-<p class="sc-text">The user can specify that recognized multi-column text blocks each be reflowed into a single column.  <span class="level">(Level&nbsp;AA)</span> </p>
+<p class="sc-text">The user can specify that recognized multi-column text blocks each be reflowed into a single column.   <span class="level">(Level&nbsp;AA)</span> </p>
 <p><em class="sc-notes">Note</em>: Some layouts may become unusable if author-specified layout is overridden. In this case, the user can turn linearization off and try another strategy. It is recommended that user agents provide a convenient way for the user to turn this behavior on and off.</p>
 
     	   <div class="gl-only">
@@ -2933,7 +2933,7 @@ with the elements to make it easier for users to discover the commands
 <div class="sc-level">
 
 <h4 class="sc-title"><a id="sc_232" name="sc_232"></a>2.3.2 Allow Direct Activation of Enabled Elements: </h4>
-<p class="sc-text"> The user can, in a single action, move keyboard focus directly to any <a class="dfn-instance" href="#def-enabled-element" rel="glossary" title="definition: enabled element">enabled element</a> in the rendered content and perform an activation action on that element. <span class="level">(Level&nbsp;AA)</span>  </p>
+<p class="sc-text"> The user can, in a single action, move keyboard focus <a class="dfn-instance" href="#def-direct-command" rel="glossary" title="definition: direct command">directly</a> to any <a class="dfn-instance" href="#def-enabled-element" rel="glossary" title="definition: enabled element">enabled element</a> in the rendered content and perform an activation action on that element. <span class="level">(Level&nbsp;AA)</span>  </p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#sc_232">Implementing 2.3.2</a></div>
@@ -5404,8 +5404,8 @@ recognize. </dd>
   <dt class="glossary"><a name="def-command" id="def-command"></a><dfn>command</dfn>s</dt>
   <dd>Actions made by users to control the <span class="glossary"><a href="#def-user-agent">user agent</a></span>. These include:
     <ul>
-      <li><dfn><span class="glossary"><a name="def-direct-command" id="def-direct-command"></a></span>direct commands</dfn>: Commands that apply to a specified item (e.g. button) or action (e.g. save function), regardless of the current focus location:
-        <ul>
+      <li><dfn><span class="glossary"><a name="def-direct-command" id="def-direct-command"></a></span>direct commands</dfn>: Commands that apply to a specified item (e.g. button) or action (e.g. save function), regardless of the current focus location. Also see <a href="#def-keyboard-command"><dfn>keyboard command</dfn></a>
+<ul>
           <li><dfn class="glossary"><a name="def-direct-navigation" id="def-direct-navigation"></a>direct navigation commands</dfn>: Commands that move focus to a specified item.</li>
           <li><dfn class="glossary"><a name="def-direct-activation" id="def-direct-activation"></a>direct activation commands</dfn>: Commands that activate the specified item (and may also move focus to it) or action.</li>
         </ul>
@@ -5429,6 +5429,8 @@ recognize. </dd>
   <dd class="glossary"> When interacting with a time-based media presentation, a continuous scale allows user (or programmatic) action to set the active playback position to any time point on the presentation timeline. The granularity of the positioning is determined by the smallest resolvable time unit in the media timebase.</dd>
   <dt><a name="d" id="d"></a><dfn>default</dfn><span class="glossary"></span></dt>
   <dd>see <a href="#def-Properties-and-Values"><dfn>properties</dfn></a></dd>
+  <dt class="glossary"><dfn>directly</dfn></dt>
+  <dd>using a <a href="#def-direct-command"><dfn>direct command</dfn></a></dd>
   <dt class="glossary"><dfn>disabled element</dfn></dt>
   <dd>see <a href="#def-element"><strong>element</strong></a><strong></strong></dd>
   <dt class="glossary"> <a name="def-doc-char-set" id="def-doc-char-set"><dfn>document character set</dfn></a></dt>
