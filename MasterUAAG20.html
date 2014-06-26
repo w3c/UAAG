@@ -225,7 +225,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 11 June
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 26 June
 2014</h2>
 <dl>
   <dt>This version (Github):</dt>
@@ -263,7 +263,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
  
     <h1><a name="title" id="title"></a>Implementing UAAG 2.0</h1>
 	<h2><a id="subtitle" name="subtitle"></a>A guide to understanding and implementing User Agent Accessibility Guidelines 2.0</h2>
-    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 11 June
+    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 26 June
 2014</h2>
     <dl> 
   <dt>This version (Github):</dt> 
@@ -751,7 +751,7 @@ and rendered content are perceivable</h2>
 <span class="techs-only">Implementing </span>
 Guideline 1.1 - Provide access to alternative content <span class="gl-only">[<a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#gl-access-alternative-content">Implementing 1.1</a>] </span>
 	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-access-alternative-content">Guideline 1.1</a>]</span></h3>
-<p class="summary" id="summary11"><strong>Summary</strong>: The user can choose to render any type of alternative content available (1.1.1). The user can also choose, at least one alternative such as alt text, to be always displayed (1.1.3). It's recommended that users also specify alternative content as a cascade (1.1.5). For example, firstly alt text, otherwise longdesc, otherwise a descriptive filename etc. It's recommended that the user can configure caption text and that a text, or sign language alternative cannot obscure the video or the controls (1.1.4). The user can configure the size and position of media alternatives (1.1.6).</p>
+<p class="summary" id="summary11"><strong>Summary</strong>: The user can choose to render any type of alternative content available (1.1.1). The user can also choose, at least one alternative such as alt text, to be always displayed (1.1.3). It's recommended that users also specify alternative content as a cascade (1.1.5) -- e.g alt text, otherwise longdesc, otherwise a  filename etc. It's recommended that the user can configure caption text and that a text, or sign language alternative cannot obscure the video or the controls (1.1.4). The user can configure the size and position of media alternatives (1.1.6).</p>
 
 <div class="sc-level"><!--A-->
 
@@ -1095,7 +1095,7 @@ Guideline 1.3 - Provide highlighting for selection, keyboard focus, enabled elem
 <span class="gl-only">[<a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#gl-interaction-highlight">Implementing 1.3</a>] </span>
 <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-interaction-highlight">Guideline 1.2</a>]</span>
 </h3>
-<p class="summary" id="summary13"><strong>Summary</strong>: The user can visually distinguish selected, focused, enabled items, and recently visited links (1.3.1), with a choice of highlighting options that at least include foreground and background colors, and border color and thickness (1.3.2).</p>
+<p class="summary" id="summary13"><strong>Summary</strong>: The user can visually distinguish between selected, focused, and enabled items; and recently visited links (1.3.1); with a choice of highlighting options that at least include foreground and background colors, and border color and thickness (1.3.2).</p>
 
 <div class="sc-level"><!--A-->
 
@@ -2900,7 +2900,7 @@ with the elements to make it easier for users to discover the commands
 
 <div class="sc-level">
 <h4 class="sc-title"><a id="sc_231" name="sc_231"></a>2.3.1 Allow Direct Navigation to Enabled Elements: </h4>
-<p class="sc-text"> The user can move keyboard focus <a class="dfn-instance" href="#def-direct-command" rel="glossary" title="definition: direct command">directly</a> to any <a class="dfn-instance" href="#def-enabled-element" rel="glossary" title="definition: enabled element">enabled element</a> in the rendered content. <span class="level">(Level&nbsp;AA)</span></p>
+<p class="sc-text"> The user can move keyboard focus <a class="dfn-instance" href="#def-directly" rel="glossary" title="definition: directly">directly</a> to any <a class="dfn-instance" href="#def-enabled-element" rel="glossary" title="definition: enabled element">enabled element</a> in the rendered content. <span class="level">(Level&nbsp;AA)</span></p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#sc_231">Implementing 2.3.1</a></div>
@@ -2931,7 +2931,7 @@ with the elements to make it easier for users to discover the commands
 <div class="sc-level">
 
 <h4 class="sc-title"><a id="sc_232" name="sc_232"></a>2.3.2 Allow Direct Activation of Enabled Elements: </h4>
-<p class="sc-text"> The user can, in a single action, move keyboard focus <a class="dfn-instance" href="#def-direct-command" rel="glossary" title="definition: direct command">directly</a> to any <a class="dfn-instance" href="#def-enabled-element" rel="glossary" title="definition: enabled element">enabled element</a> in the rendered content and perform an activation action on that element. <span class="level">(Level&nbsp;AA)</span>  </p>
+<p class="sc-text"> The user can, in a single action, move keyboard focus <a class="dfn-instance" href="#def-directly" rel="glossary" title="definition: directly">directly</a> to any <a class="dfn-instance" href="#def-enabled-element" rel="glossary" title="definition: enabled element">enabled element</a> in the rendered content and perform an activation action on that element. <span class="level">(Level&nbsp;AA)</span>  </p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#sc_232">Implementing 2.3.2</a></div>
@@ -3797,8 +3797,8 @@ time-based media <span class="gl-only">[<a href="http://jspellman.github.io/UAAG
 Level A) and executable regions (2.11.2, Level A), or block all 
 executable content (2.11.3, Level A), adjust playback (2.11.4, Level A), 
 stop/pause/resume (2.11.5, Level A), navigate by time (2.11.6, Level A) 
-or semantic structures such as chapter (2.1.7, Level AA), and adjust contrast and brightness of 
-visual time-based media (2.11.9, Level AAA).
+or semantic structures such as chapter (2.11.7, Level AA). It is recommended that the user can adjust contrast and brightness of 
+visual time-based media (2.11.8, Level AAA).
 Enable or disable tracks is included in <a href="#sc_111">1.1.1 Render Alternative Content</a>.</p>
 
 
@@ -5426,7 +5426,7 @@ recognize. </dd>
   <dd class="glossary"> When interacting with a time-based media presentation, a continuous scale allows user (or programmatic) action to set the active playback position to any time point on the presentation timeline. The granularity of the positioning is determined by the smallest resolvable time unit in the media timebase.</dd>
   <dt><a name="d" id="d"></a><dfn>default</dfn><span class="glossary"></span></dt>
   <dd>see <a href="#def-Properties-and-Values"><dfn>properties</dfn></a></dd>
-  <dt class="glossary"><dfn>directly</dfn></dt>
+  <dt class="glossary"><a name="def-directly" id="def-directly"></a><dfn>directly</dfn></dt>
   <dd>using a <a href="#def-direct-command"><dfn>direct command</dfn></a></dd>
   <dt class="glossary"><dfn>disabled element</dfn></dt>
   <dd>see <a href="#def-element"><strong>element</strong></a><strong></strong></dd>
