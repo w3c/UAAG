@@ -569,17 +569,14 @@ disabilities, and disabilities related to aging. The goal of UAAG 2.0 is to ensu
 <p>Some users  have more than one disability, and the needs of different
   disabilities may conflict. Thus, many UAAG 2.0 requirements  
   use configuration  to ensure that a functionality designed to
-  improve accessibility for one user does not interfere with accessibility for
+  improve accessibility, for one user, does not interfere with accessibility for
   another. UAAG 2.0 encourages
-  configuration requirements rather than requirements for default settings, because a default user agent setting may be useful for one user but
-  interfere with accessibility for another. For example, a feature required by UAAG 2.0 may be ineffective or cause
-  content to be less accessible, making it imperative that the user be able to
-  turn off the feature. To avoid overwhelming users with an abundance of
-  configuration options, UAAG 2.0 includes requirements that promote documentation and ease
-  of configuration. </p>
+  configuration requirements rather than requirements for default settings. This is because a default user agent setting may be useful for one user but
+  interfere with the needs of another user. 
+For example, if some feature required by UAAG 2.0 inadvertently caused   some content to be less accessible, it would be imperative that the user   be able to turn off that feature. Therefore, to avoid overwhelming users   with an abundance of configuration options, UAAG 2.0 includes   requirements that promote clear documentation and ease of configuration.</p>
 
-<p>Although author preferences are important, UAAG 2.0 includes requirements to override certain author preferences
-when the user would not otherwise be able to access that content.</p>
+<p>In some cases, UAAG 2.0 includes requirements to override certain author preferences
+  when the user would not otherwise be able to access that content.</p>
 <p>The UAWG expects that software that satisfies the requirements of UAAG 2.0 will be more flexible, manageable, extensible, and beneficial for a broad range of users. </p>
 
 <h3 id="layers_guide">UAAG 2.0 Layers of Guidance</h3>
@@ -587,9 +584,10 @@ when the user would not otherwise be able to access that content.</p>
   <strong>guidelines</strong>, and testable <strong>success criteria</strong>. There is more detail for each success criterion in a separate document, <a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/">Implementing UAAG 2.0</a>,  including  explanatory intent, examples of how the criterion may apply in different user situations,  and links to resources. </p>
   <ol>
     <li><strong>Principles</strong> &ndash;  Five principles provide a foundation for accessible
-    user agents. Principles 1, 2, and 3 are parallel to Web Content Accessibility Guidelines (WCAG) 2.0. Principles 4 and 5 are specific to user agents. 
-    <ul>
-    <li>Principle 1 ensures that the user agent is
+    user agents. Principles 1, 2, and 3 are parallel to Web Content Accessibility Guidelines (WCAG) 2.0. Principles 4 and 5 are specific to user agents. <br />
+    <br />
+<ul>
+  <li>Principle 1 ensures that the user agent is
     perceivable, so users can access user agent output</li>
     <li>Principle 2 ensures that the user agent is operable, so
     users can communicate with the user agent</li>
@@ -635,7 +633,7 @@ users, and others are encouraged to contribute examples and resources to <em>Imp
 <h3><a name="intro-components" id="intro-components"></a>Components of Web
 Accessibility</h3>
 
-<p>Web accessibility depends on accessible user agents and accessible content. The accessibility of content  is  influenced
+<p>Web accessibility depends on accessible user agents and accessible content. The level of accessibility of content  is  largely influenced
   by the authoring tool used to create it. For an overview of how these
 components of web development and interaction work together, see</p>
 <ul>
@@ -654,7 +652,7 @@ components of web development and interaction work together, see</p>
 
 <p>User agents  may  conform to UAAG 2.0 at one of three conformance
 levels: levels A (minimum), AA (recommended), and AAA (advanced). These levels provide a path for user agent   developers to improve their product over time and to prioritize new   ways to improve accessibility. <span class="techs-only">The three levels of UAAG 2.0 conformance are based on the corresponding level designations (A, AA, or AAA) of the individual success criteria (i.e., specific requirements). The user agent can conform to a   level by meeting the success criteria of that level and the levels below   it. </span> </p>
-<p> UAAG 2.0 has many options that can be managed through preference settings. Having too many  options may be    overwhelming for some users.  The levels can  help user agent   developers  decide  which options to provide in a basic   user interface, and which to provide through progressive disclosure to   advanced users.</p>
+<p> UAAG 2.0 has many options that can be managed through preference settings.   The levels can  help user agent   developers  decide  which options to provide in a basic   user interface, and which to provide through progressive disclosure to   advanced users. UAAG 2.0 has many options that can be managed through preference settings.</p>
 <div class="gl-only">
 <p>See <a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#intro-conf-levels">Implementing UAAG 2.0 Levels of Conformance</a> for more information. </p></div>
 </div>
@@ -728,8 +726,8 @@ title="definition: Normative"></a>. Guideline summaries are <a class="dfn-instan
 <ol>
   <li><strong class="handle">Recognized Content Only: </strong>UAAG 2.0 success criteria only apply to web content and its behaviors that can be <a class="dfn-instance"
 href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a> by user agents.</li>
-  <li> <strong class="handle">Optional Settings:</strong> Throughout UAAG 2.0, all  behaviors required by UAAG 2.0 may be      provided as optional preference settings unless a success      criterion explicitly says otherwise. For example, if a success      criterion requires high contrast between foreground text and its      background, the user agent may also provide choices      with low contrast. A required behavior does not need to be the      default option unless the success criterion explicitly says      otherwise.</li>
-  <li><strong class="handle">RFC 2119 language not used: </strong>UAAG 2.0 does not use RFC 2119 language (must, may, should) because these are guidelines and not  interoperable specifications. These words in UAAG 2.0 don't have the stricter meaning as they do in RFC 2119. </li>
+  <li> <strong class="handle">Optional Settings:</strong> Throughout UAAG 2.0, all  required behaviors  may be      provided as optional preference settings unless a success      criterion explicitly says otherwise. For example, if a success      criterion requires high contrast between foreground text and its      background, the user agent may also provide choices      with low contrast. While it is preferred to have a  required behavior as a default option, it does not need to be,  unless the success criterion explicitly says      otherwise.</li>
+  <li><strong class="handle">RFC 2119 language not used: </strong>UAAG 2.0 does not use RFC 2119 language (must, may, should) as it is not  an interoperable specifications. Note, even if these terms appear they do not have  the stricter RFC 2119 meaning. </li>
   <li><strong class="handle">Simultaneous satisfaction of success criteria: </strong>Users can access  all behaviors required by UAAG 2.0 at the same time (e.g. when the user resizes the viewport per 1.8.9, content is reflowed per 1.8.6), except where those behaviors are mutually exclusive.</li>
   <li><strong class="handle">Vertical layout languages</strong>: 
     When user agents render vertical layout languages (e.g. Mongolian, Han), success criteria normally relating to horizontal rendering should be applied to vertical rendering instead.
@@ -753,8 +751,7 @@ and rendered content are perceivable</h2>
 <span class="techs-only">Implementing </span>
 Guideline 1.1 - Provide access to alternative content <span class="gl-only">[<a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#gl-access-alternative-content">Implementing 1.1</a>] </span>
 	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-access-alternative-content">Guideline 1.1</a>]</span></h3>
-<p class="summary" id="summary11"><strong>Summary</strong>: The user can  choose to render any type of alternative content available. (1.1.1). The user can also choose at least one alternative such as alt text to be always displayed (1.1.3), but it's recommended that users also be
-able to specify a cascade (1.1.5), such as alt text if it's there, otherwise longdesc, otherwise filename, etc. It's recommended that the user can configure the caption text and that text or sign language alternative cannot obscure the video or the controls (1.1.4). The user can configure the size and position of media alternatives (1.1.6). </p>
+<p class="summary" id="summary11"><strong>Summary</strong>: The user can choose to render any type of alternative content available (1.1.1). The user can also choose, at least one alternative such as alt text, to be always displayed (1.1.3). It's recommended that users also specify alternative content as a cascade (1.1.5). For example, firstly alt text, otherwise longdesc, otherwise a descriptive filename etc. It's recommended that the user can configure caption text and that a text, or sign language alternative cannot obscure the video or the controls (1.1.4). The user can configure the size and position of media alternatives (1.1.6).</p>
 
 <div class="sc-level"><!--A-->
 
@@ -842,7 +839,7 @@ title="definition: Conditional content">alternative content</a> is present. <spa
 <h4 class="sc-title"><a id="sc_113" name="sc_113"></a>1.1.3 Replace Non-Text Content: </h4>
 <p class="sc-text">
 The user can request a placeholder that incorporates <a class="dfn-instance"
-href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a> text alternative content instead of recognized non-text content, until an explicit user request to render the non-text content. <span class="level">(Level&nbsp;A)</span>
+href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a> text alternative content instead of recognized non-text content, until explicit user request to render the non-text content. <span class="level">(Level&nbsp;A)</span>
 </p>
 
 	   <div class="gl-only">
@@ -1098,7 +1095,7 @@ Guideline 1.3 - Provide highlighting for selection, keyboard focus, enabled elem
 <span class="gl-only">[<a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#gl-interaction-highlight">Implementing 1.3</a>] </span>
 <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-interaction-highlight">Guideline 1.2</a>]</span>
 </h3>
-<p class="summary" id="summary13"><strong>Summary</strong>: The user can visually distinguish selected, focused, and enabled items, and recently visited links (1.3.1), with a choice of highlighting options that at least include foreground and background colors, and border color and thickness (1.3.2).</p>
+<p class="summary" id="summary13"><strong>Summary</strong>: The user can visually distinguish selected, focused, enabled items, and recently visited links (1.3.1), with a choice of highlighting options that at least include foreground and background colors, and border color and thickness (1.3.2).</p>
 
 <div class="sc-level"><!--A-->
 
@@ -1268,7 +1265,7 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
 <div class="sc-level"><!--AA-->
 
 <h4 class="sc-title"><a id="sc_142" name="sc_142"></a>1.4.2 Text Size, Color and Font (by Element): </h4>
-<p class="sc-text">The user can set all of the following characteristics of visually rendered text content for text element types including at least headings, input fields, and links:  <span class="level">(Level&nbsp;AA) </span> </p>
+<p class="sc-text">The user can set all of the following characteristics of visually rendered text content for text element types including at least headings, input fields, and links: <span class="level">(Level&nbsp;AA) </span> </p>
 <ul class="sc-bullets">
   <li>Text size or scale</li>
   <li>Text color and background color, choosing from all platform color options</li>
@@ -2201,7 +2198,7 @@ href="#def-viewport-toplevel">top-level viewports</a> (e.g. windows or tabs) fol
               <li> <a href="#sc_274">2.7.3 Multiple Sets of Preference Settings</a></li></ul></div></div>
               
 <h4 class="sc-title"><a id="sc_1814" name="sc_1814"></a>1.8.14 Multi-Column Text Reflow: </h4>
-<p class="sc-text">The user can specify that recognized multi-column text blocks each be reflowed into a single column.   <span class="level">(Level&nbsp;AA)</span> </p>
+<p class="sc-text">The user can specify that recognized multi-column text blocks each be reflowed into a single column.  <span class="level">(Level&nbsp;AA)</span> </p>
 <p><em class="sc-notes">Note</em>: Some layouts may become unusable if author-specified layout is overridden. In this case, the user can turn linearization off and try another strategy. It is recommended that user agents provide a convenient way for the user to turn this behavior on and off.</p>
 
     	   <div class="gl-only">
@@ -2488,7 +2485,8 @@ Practices: 4. Relationships</a></li></ul></div></div>
 <h2 class="principle"><a name="principle-operable" id="principle-operable"></a>PRINCIPLE 2. Ensure that the user interface is operable</h2>
 <a name="intro-modality-independence" id="intro-modality-independence"></a>
 <ul class="sc-notes">
-   <li class="sc-notes"><em class="note-handle">Note</em>: Users interacting with a web browser may do so using one or more input methods including keyboard, mouse, speech, touch, and gesture. It's critical that each user be free to use whatever input method or combination of methods works best for a given situation. If every potential user task is made accessible via modality independent controls that any input technology can access, a user can use what works best. For instance, if a user can't use or doesn't have access to a mouse, but can use and access a keyboard, the keyboard can call a modality independent control to activate an OnMouseOver event. Another example is a user on a mobile device that lacks keyboard who uses uses taps, wirelessly connected devices, and voice commands to simulate discrete or keyboard input. See <a href="http://www.w3.org/TR/indie-ui-events/">Independent User Interface: Events</a> for additional information on APIs and techniques for modality independent controls.</li>
+   <li class="sc-notes"><em class="note-handle">Note</em>: Users interacting with a web browser may do so using one or more input methods including keyboard, mouse, speech, touch, and gesture. It's critical that each user be free to use whatever input method, or combination of methods, that works best for a given situation. If every potential user task  is made accessible, so multiple modalities are supported, that a user can  choose what works best.
+For instance, if a user can't use or doesn't have access to a mouse, but can use and access a keyboard, the keyboard can call a modality independent control to activate an OnMouseOver event. Another example is a user on a mobile device that lacks keyboard who uses uses taps, wirelessly connected devices, and voice commands to simulate discrete or keyboard input. See <a href="http://www.w3.org/TR/indie-ui-events/">Independent User Interface: Events</a> for additional information on APIs and techniques for modality independent controls.</li>
 </ul>
 <div class="guideline-box" id="g-2-1">
 <h3 class="guideline">
@@ -2894,8 +2892,8 @@ title="definition: sequential navigation">sequential navigation</a> wraps at the
 Guideline 2.3 - Provide direct navigation and activation <span class="gl-only">[<a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#gl-direct-navigation-and-activation">Implementing 2.3</a>]</span> 
 	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-direct-navigation-and-activation">Guideline 2.3</a>]</span></h3>
 <p class="summary" id="summary23"><strong>Summary</strong>: Users can navigate directly (e.g. using keyboard shortcuts) to 
- elements (2.3.1, Level AA) with the option of immediate 
-activation of the operable elements (2.3.2, Level AA). Display commands 
+ elements (2.3.1, Level AA) with the option to immediately 
+activate operable elements (2.3.2, Level AA). Display commands 
 with the elements to make it easier for users to discover the commands 
 (2.3.3 &amp; 2.3.4, Level AA). The user can remap and save direct commands 
 (2.3.5, Level AA).</p>
@@ -3401,7 +3399,7 @@ Guideline 2.7 - Configure and store preference settings
 <p class="summary" id="summary27"><strong>Summary</strong>: Users can restore preference settings to default (2.7.2, Level 
 A), and accessibility settings persist between sessions (2.7.1, Level 
 A). Users can manage multiple sets of preference settings (2.7.3, Level 
-AA), and adjust preference setting outside the user interface so the 
+AA), and adjust preference settings outside the user interface so the 
 current user interface does not prevent access (2.7.4, Level AA), and 
 transport settings to compatible systems (2.7.5, Level AA).</p>
 
@@ -4091,7 +4089,7 @@ href="#def-relative-time-units" rel="glossary" title="definition: relative time 
 id="gl-other-devices"><span class="techs-only">Implementing </span>Guideline 2.12 - </a> Support other input devices  <span class="gl-only">[<a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#gl-other-devices">Implementing 2.12</a>] </span>
 	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-other-devices">Guideline 2.12</a>]</span></h3>
       
-      <p class="summary" id="summary212"><strong>Summary</strong>: User agents support all of the platform's text input devices 
+      <p class="summary" id="summary212"><strong>Summary</strong>: User agents support all of the platform text input devices 
 (2.12.1, Level A), and for all input devices the user can input text 
 (2.12.3, Level AAA) and perform all other functions (2.12.2, Level AA).
 </p>
@@ -4919,8 +4917,7 @@ id="gl-obs-env-conventions"></a><span class="techs-only">Implementing </span>Gui
 standards, they need to meet W3C's Web Content Accessibility Guidelines 
 (5.1.1, Levels A, AA, AAA). The user agent supports the accessibility 
 features of content formats (5.1.2, Level A) and of the platform (5.1.3, 
-Level A), allows handling of unrendered technologies (5.1.4, Level A) 
-including by alternative viewers (5.1.5, Level AA), and allows users to 
+Level A), allows handling of unrendered technologies (5.1.4, Level A), allows alternative viewers (5.1.5, Level AA), and allows users to 
 report accessibility issues (5.1.6, Level AAA).
 </p>
 <div class="sc-level">
