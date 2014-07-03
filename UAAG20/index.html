@@ -561,6 +561,8 @@ For these cases, it is important for user agent developers to consider the appli
 
 <h3><a name="applicability-notes" id="applicability-notes"></a>UAAG 2.0 Conformance Applicability Notes:</h3>
 <ol>
+  <li><strong class="handle">Retrieved Content Only</strong>: UAAG 2.0 success criteria only apply to web content that has been retrieved by the user agent (e.g. if a user agent saves bandwidth by retrieving video element content only on demand, then captions associated with that video content do not need to be searchable as per 2.4.5 until the video is retrieved).</li>
+  <li><strong class="handle">Current  Content Only</strong>: At any point in time, UAAG 2.0 success criteria only apply to web content that have not been hidden or removed (e.g., a bookmark created as per 1.8.17 will no longer be operable if the content it refers to is hidden or removed).</li>
   <li><strong class="handle">Recognized Content Only: </strong>UAAG 2.0 success criteria only apply to web content and its behaviors that can be <a class="dfn-instance"
 href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a> by user agents.</li>
   <li> <strong class="handle">Optional Settings:</strong> Throughout UAAG 2.0, all  required behaviors  may be      provided as optional preference settings unless a success      criterion explicitly says otherwise. For example, if a success      criterion requires high contrast between foreground text and its      background, the user agent may also provide choices      with low contrast. While it is preferred to have a  required behavior as a default option, it does not need to be,  unless the success criterion explicitly says      otherwise.</li>
@@ -811,13 +813,13 @@ Guideline 1.4 - Provide text configuration
 <span class="gl-only">[<a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#gl-text-config">Implementing 1.4</a>] </span>
 
 </h3>
-<p class="summary" id="summary14"><strong>Summary:</strong> The user can set text scale, color, and font   family globally (1.4.1, Level A); set text size, color, and font family   for element types (1.4.2, Level AA); set line spacing, character spacing,   word spacing, text style, and  justification globally (1.4.3,   Level AA); set text style, margins, and borders for elements (1.4.5,   Level AAA); set line spacing,  capitalization,   hyphenation, margins, and borders globally (1.4.6, Level AAA); and print   configured and  reflowed text (1.4.4 Level AA). </p>
-<p><em class="note-handle">Note 1: </em>Success criteria 1.4.1, 1.4.3, and 1.4.6 address configuration at a <strong>global</strong> level, that is, it changes all of the text. Success criteria 1.4.2 and 1.4.5 are at an <strong>element type</strong> level, such as configuring just the heading text. </p>
+<p class="summary" id="summary14"><strong>Summary:</strong> The user can set text scale, color, style, line spacing, and font   family globally (1.4.1, Level A). It is recommended that users set text size, color, line spacing, text style and font family   for element types (1.4.2, Level AA); set character spacing,     justification and margin sizes globally (1.4.3,   Level AA);  set capitalization,   hyphenation,  and borders globally (1.4.5, Level AAA); and print   configured and  reflowed text (1.4.4 Level AA). </p>
+<p><em class="note-handle">Note 1: </em>Success criteria 1.4.1, 1.4.3, and 1.4.5 address configuration at a <strong>global</strong> level, that is, it changes all of the text. Success criteria 1.4.2 and 1.4.5 are at an <strong>element type</strong> level, such as configuring just the heading text. </p>
 <p><em class="note-handle">Note 2</em>: All of the success criteria under guideline 1.4 allow   users to override the text characteristics specified by authors, and   override user agent defaults. </p>
 <p><em class="note-handle">Note 3</em>: The success   criteria in guideline 1.4 can be met through user stylesheets. For   platforms without user stylesheets, text configuration needs to be   provide to users    through the user agent's main user interface.  </p>
 <div class="sc-level"><!--A-->
   
-  <h4 class="sc-title"><a id="sc_141" name="sc_141"></a>1.4.1 Text Scale, Color, Font (Globally): </h4>
+  <h4 class="sc-title"><a id="sc_141" name="sc_141"></a>1.4.1 Basic text formatting (Globally): </h4>
 <p class="sc-text"> The
 user can <a class="dfn-instance" href="#def-global-configuration" rel="glossary" title="definition: globally">globally</a> set  all of the following
 characteristics of visually <a class="dfn-instance" href="#def-rendered-text"
@@ -826,6 +828,7 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
   <li class="sc-bullet">Text scale with preserved size distinctions (e.g. keeping headings proportional to main font) </li>
   <li class="sc-bullet"> Text color and background color, choosing from all platform color options</li>
   <li class="sc-bullet">Font family,  choosing from all installed fonts</li>
+  <li class="sc-bullet">Line spacing, choosing from a range with at least three values</li>
 </ul>
   
   	   <div class="gl-only">
@@ -837,31 +840,29 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
 <!--sc-level--></div>
 <div class="sc-level"><!--AA-->
 
-<h4 class="sc-title"><a id="sc_142" name="sc_142"></a>1.4.2 Text Size, Color and Font (by Element): </h4>
+<h4 class="sc-title"><a id="sc_142" name="sc_142"></a>1.4.2 Basic text formatting (by Element): </h4>
 <p class="sc-text">The user can set all of the following characteristics of visually rendered text content for text element types including at least headings, input fields, and links: <span class="level">(Level&nbsp;AA) </span> </p>
 <ul class="sc-bullets">
   <li>Text size or scale</li>
   <li>Text color and background color, choosing from all platform color options</li>
-  <li>Font family, choosing from all platform fonts </li>
+  <li>Font family, choosing from at least all platform fonts </li>
+  <li>Line spacing, choosing from a range with at least three values</li>
   <li>Text style (underline, italic, bold)</li>
  
 </ul>
   <div class="gl-only">
         <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#sc_142">Implementing 1.4.2</a></div>
-      </div>
+</div>
 	   
        
       
-    <h4 class="sc-title"><a id="sc_143" name="sc_143"></a>1.4.3 Text Spacing and Style (Globally): </h4>
+    <h4 class="sc-title"><a id="sc_143" name="sc_143"></a>1.4.3 Blocks of text (Globally): </h4>
 <p class="sc-text">The user can <a class="dfn-instance" href="#def-global-configuration" rel="glossary" title="definition: globally">globally</a>
  set all of the following characteristics of visually rendered <a class="dfn-instance" href="#def-blocks-of-text" rel="glossary" title="definition: blocks of text">blocks of text</a>: <span class="level">(Level&nbsp;AA) </span>  </p>
 <ul class="sc-bullets">
-<li>Line spacing of at least 1.0, 1.3, 1.5, and 2.0 times the font height<br />
-</li>
-<li>Character spacing of at least 0.01, 0.03, 0.06, 0.09 times the base character width</li>
-       <li>Word spacing of at least 0.01, 0.03, 0.06, 0.09 times the base character width</li>
-       <li>Text style (underline, italic, bold)</li>
-       <li>Justification  (left, right, or full)</li>
+<li>Character spacing, choosing from a range with at least 5 values </li>
+<li>Justification  (left or right, including turning off full justification)</li>
+<li>Margins around blocks of text</li>
 </ul>
 <p><em class="note-handle">Note</em>: For the purposes of UAAG 2.0, the base character width is the font width of the character commonly accepted as the base character for calculating kerning in the typography for that language (e.g. zero character in English).</p>
 
@@ -876,27 +877,17 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
  
  </div><!--sc-level--></div>
 <div class="sc-level"><!--AAA-->
-    <h4 class="sc-title"><a id="sc_145" name="sc_145"></a>1.4.5 Text Style, Margins, Borders (by Element): </h4>
-<p class="sc-text">The user can set all of the following characteristics of visually rendered text content for main text and for text element types including at least headings and input fields: <span class="level">(Level&nbsp;AAA) </span>  </p>
-<ul class="sc-bullets">
-<li>Text style (underline, italic, bold)</li>
-  <li>Margins (for example, space above headings, indentation of lists)</li>
-  <li>Borders </li>
-</ul>
-
-    <h4 class="sc-title"><a id="sc_146" name="sc_146"></a>1.4.6 <strong>Spacing, Capitalization and Hyphenation (Globally)</strong>: </h4>
+<h4 class="sc-title"><a id="sc_145" name="sc_145"></a>1.4.5 <strong>Advanced text formatting (Globally)</strong>: </h4>
 <p class="sc-text">The user can <a class="dfn-instance" href="#def-global-configuration" rel="glossary" title="definition: globally">globally</a>
- set all of the following characteristics of visually rendered <a class="dfn-instance" href="#def-blocks-of-text" rel="glossary" title="definition: blocks of text">blocks of text</a>: <span class="level">(Level&nbsp;AAA) </span>  </p>
+ set all of the following characteristics of visually rendered <a class="dfn-instance" href="#def-blocks-of-text" rel="glossary" title="definition: blocks of text">blocks of text</a>: <span class="level">(Level&nbsp;AAA) </span></p>
 <ul class="sc-bullets">
-<li>Line spacing between 0.7 and 3.0 times the font height, at increments of 0.10</li>
   <li>Capitalization (overriding upper case and small caps style)</li>
-  <li>Word-breaking properties (auto-hyphenation)</li>
-  <li>Margins </li>
+  <li>Word-breaking properties (e.g. auto-hyphenation)</li>
   <li>Borders</li>
 </ul>
 <p><em class="note-handle">Note:</em> This success criteria does not apply  to text entered as all caps. Content authors are encouraged to use styles instead of typing text as all caps.</p>
 <div class="gl-only">
-	     <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#sc_146">Implementing 1.4.6</a></div>
+	     <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#sc_145">Implementing 1.4.5</a></div>
     </div>
 	    
 

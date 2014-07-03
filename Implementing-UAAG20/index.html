@@ -495,6 +495,8 @@ User agent developers should consult ATAG 2.0 to understand the ways in which we
 
 <h3><a name="applicability-notes" id="applicability-notes"></a>UAAG 2.0 Conformance Applicability Notes:</h3>
 <ol>
+  <li><strong class="handle">Retrieved Content Only</strong>: UAAG 2.0 success criteria only apply to web content that has been retrieved by the user agent (e.g. if a user agent saves bandwidth by retrieving video element content only on demand, then captions associated with that video content do not need to be searchable as per 2.4.5 until the video is retrieved).</li>
+  <li><strong class="handle">Current  Content Only</strong>: At any point in time, UAAG 2.0 success criteria only apply to web content that have not been hidden or removed (e.g., a bookmark created as per 1.8.17 will no longer be operable if the content it refers to is hidden or removed).</li>
   <li><strong class="handle">Recognized Content Only: </strong>UAAG 2.0 success criteria only apply to web content and its behaviors that can be <a class="dfn-instance"
 href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a> by user agents.</li>
   <li> <strong class="handle">Optional Settings:</strong> Throughout UAAG 2.0, all  required behaviors  may be      provided as optional preference settings unless a success      criterion explicitly says otherwise. For example, if a success      criterion requires high contrast between foreground text and its      background, the user agent may also provide choices      with low contrast. While it is preferred to have a  required behavior as a default option, it does not need to be,  unless the success criterion explicitly says      otherwise.</li>
@@ -956,13 +958,13 @@ Guideline 1.4 - Provide text configuration
 
 <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-text-config">Guideline 1.4</a>]</span>
 </h3>
-<p class="summary" id="summary14"><strong>Summary:</strong> The user can set text scale, color, and font   family globally (1.4.1, Level A); set text size, color, and font family   for element types (1.4.2, Level AA); set line spacing, character spacing,   word spacing, text style, and  justification globally (1.4.3,   Level AA); set text style, margins, and borders for elements (1.4.5,   Level AAA); set line spacing,  capitalization,   hyphenation, margins, and borders globally (1.4.6, Level AAA); and print   configured and  reflowed text (1.4.4 Level AA). </p>
-<p><em class="note-handle">Note 1: </em>Success criteria 1.4.1, 1.4.3, and 1.4.6 address configuration at a <strong>global</strong> level, that is, it changes all of the text. Success criteria 1.4.2 and 1.4.5 are at an <strong>element type</strong> level, such as configuring just the heading text. </p>
+<p class="summary" id="summary14"><strong>Summary:</strong> The user can set text scale, color, style, line spacing, and font   family globally (1.4.1, Level A). It is recommended that users set text size, color, line spacing, text style and font family   for element types (1.4.2, Level AA); set character spacing,     justification and margin sizes globally (1.4.3,   Level AA);  set capitalization,   hyphenation,  and borders globally (1.4.5, Level AAA); and print   configured and  reflowed text (1.4.4 Level AA). </p>
+<p><em class="note-handle">Note 1: </em>Success criteria 1.4.1, 1.4.3, and 1.4.5 address configuration at a <strong>global</strong> level, that is, it changes all of the text. Success criteria 1.4.2 and 1.4.5 are at an <strong>element type</strong> level, such as configuring just the heading text. </p>
 <p><em class="note-handle">Note 2</em>: All of the success criteria under guideline 1.4 allow   users to override the text characteristics specified by authors, and   override user agent defaults. </p>
 <p><em class="note-handle">Note 3</em>: The success   criteria in guideline 1.4 can be met through user stylesheets. For   platforms without user stylesheets, text configuration needs to be   provide to users    through the user agent's main user interface.  </p>
 <div class="sc-level"><!--A-->
   
-  <h4 class="sc-title"><a id="sc_141" name="sc_141"></a>1.4.1 Text Scale, Color, Font (Globally): </h4>
+  <h4 class="sc-title"><a id="sc_141" name="sc_141"></a>1.4.1 Basic text formatting (Globally): </h4>
 <p class="sc-text"> The
 user can <a class="dfn-instance" href="#def-global-configuration" rel="glossary" title="definition: globally">globally</a> set  all of the following
 characteristics of visually <a class="dfn-instance" href="#def-rendered-text"
@@ -971,6 +973,7 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
   <li class="sc-bullet">Text scale with preserved size distinctions (e.g. keeping headings proportional to main font) </li>
   <li class="sc-bullet"> Text color and background color, choosing from all platform color options</li>
   <li class="sc-bullet">Font family,  choosing from all installed fonts</li>
+  <li class="sc-bullet">Line spacing, choosing from a range with at least three values</li>
 </ul>
   
   	   
@@ -1014,12 +1017,13 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
 <!--sc-level--></div>
 <div class="sc-level"><!--AA-->
 
-<h4 class="sc-title"><a id="sc_142" name="sc_142"></a>1.4.2 Text Size, Color and Font (by Element): </h4>
+<h4 class="sc-title"><a id="sc_142" name="sc_142"></a>1.4.2 Basic text formatting (by Element): </h4>
 <p class="sc-text">The user can set all of the following characteristics of visually rendered text content for text element types including at least headings, input fields, and links: <span class="level">(Level&nbsp;AA) </span> </p>
 <ul class="sc-bullets">
   <li>Text size or scale</li>
   <li>Text color and background color, choosing from all platform color options</li>
-  <li>Font family, choosing from all platform fonts </li>
+  <li>Font family, choosing from at least all platform fonts </li>
+  <li>Line spacing, choosing from a range with at least three values</li>
   <li>Text style (underline, italic, bold)</li>
  
 </ul>
@@ -1037,6 +1041,8 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
             some users may increase font size to make text more legible, while 
           other users may reduce the font size to decrease the need to scroll the content. </p>
     <p>Users who need large amount of screen magnification need to control the appearance of types of elements. For instance, a magnification of 300% can make headlines too large for display. Users need to be able to set the characteristics of element types (e.g. heading 1, heading 2, table heading) to make the web content readable. Magnification users who find that text size distinction greatly increases scrolling and fatigue also need to  be able to display important elements such as headings (including table headings) and input fields independently from global settings.       </p>
+    <p>Many users with low vision have difficulty reading italic and underline and must be able to globally remove these styles. This can be accomplished with user stylesheets, but if the browser doesn't support user stylesheets,  the browser needs to provide this ability through settings. Bold characters can &quot;bleed&quot; when characters are too close together which reduces readibility for some.</p>
+    <p>User stylesheets can be used where available. Users can control characteristics by element type, so that, for example, headings at the same level will have a similar appearance. </p>
        </div>
 
        <div class="implementing-section">
@@ -1044,6 +1050,8 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
         <ul>
             <li>Tomas has  low vision and uses a screen magnifier. He chooses to have his browser display   all text the same size, and sets that size as large as he can without   making the letters too tall for his screen. Tomas chooses not to have   headings be proportionately larger than normal text because that would   make them taller than his screen and so unreadable. He uses a user stylesheet to make the different levels of headings a different color. He makes the table headings bold so they stand out from the table text without significantly increasing the size. </li>
             <li>Adele is 84 and  has macular degeneration and is experiencing fine motor problems. She loves using her mobile tablet to read her email and follow her grandchildren on social media. She has difficulty selecting text areas to enter forms. Her granddaughter helps her create a font size setting for input fields so that the text is larger and increases the area where she can tap, making it easier to enter text. </li>
+            
+            <li class="unclassified-ex">Wade has low vision and needs large text, extra line spacing, italics changed to regular font, and a muted background color in order to read. To make web pages readable, Wade uses a user stylesheet to change the way the headings are displayed. He makes the headings a little smaller than the main text, changes the font to Arial and red,  adds space before and after the headings, and adds border above the headings. This ensures that  headings aren't too big,  navigation links don't break across lines as much, and a reasonable amount of text is visible at a time, so Wade doesn't have to do extra scrolling.  By changing the heading elements to have a different appearance from the  main text, Wade can easily distinguish headings without them being  them too large. </li>
         </ul>
        </div>
        <div class="implementing-section">
@@ -1057,16 +1065,13 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
             </ul>
        </div>
     </div>
-    <h4 class="sc-title"><a id="sc_143" name="sc_143"></a>1.4.3 Text Spacing and Style (Globally): </h4>
+    <h4 class="sc-title"><a id="sc_143" name="sc_143"></a>1.4.3 Blocks of text (Globally): </h4>
 <p class="sc-text">The user can <a class="dfn-instance" href="#def-global-configuration" rel="glossary" title="definition: globally">globally</a>
  set all of the following characteristics of visually rendered <a class="dfn-instance" href="#def-blocks-of-text" rel="glossary" title="definition: blocks of text">blocks of text</a>: <span class="level">(Level&nbsp;AA) </span>  </p>
 <ul class="sc-bullets">
-<li>Line spacing of at least 1.0, 1.3, 1.5, and 2.0 times the font height<br />
-</li>
-<li>Character spacing of at least 0.01, 0.03, 0.06, 0.09 times the base character width</li>
-       <li>Word spacing of at least 0.01, 0.03, 0.06, 0.09 times the base character width</li>
-       <li>Text style (underline, italic, bold)</li>
-       <li>Justification  (left, right, or full)</li>
+<li>Character spacing, choosing from a range with at least 5 values </li>
+<li>Justification  (left or right, including turning off full justification)</li>
+<li>Margins around blocks of text</li>
 </ul>
 <p><em class="note-handle">Note</em>: For the purposes of UAAG 2.0, the base character width is the font width of the character commonly accepted as the base character for calculating kerning in the typography for that language (e.g. zero character in English).</p>
 <div class="techs-only">
@@ -1075,8 +1080,7 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
           <p>Some users  with low vision, dyslexia, and related conditions and   situations cannot read normally-formatted text. However, they can read   text that has a  format customized to their individual needs (e.g. larger letters,   different font,  more spacing).  In providing  preferences, it is important to avoid making assumptions. For example, 
             some users may increase font size to make text more legible, while 
           other users may increase font spacing to improve readability. </p>
-          <p>Calculating font height and base character width can be complicated. For accessibility purposes, the formula is not  important as long as the result gives  users multiple choices of    font height and character kerning. For UAAG 2.0 purposes, it does not matter what unit of measure is used, as long the multiples of that unit are provided. </p>
-          <p>Many users with low vision have difficulty reading italic and underline and must be able to globally remove these styles. This can be accomplished with user stylesheets, but if the browser doesn't support user stylesheets,  the browser needs to provide this ability through settings. </p>
+          <p>Calculating font height and base character width can be complicated. For accessibility purposes, the formula is not  important as long as the result gives  users multiple choices of    font height and character kerning. For UAAG 2.0 purposes, it does not matter what unit of measure is used, as long the multiples of that unit are provided.          </p>
           <p>Many users with autism or reading disabilities have difficulty reading justified text, because uneven spacing can create distracting &quot;rivers of white&quot;. These users need to be able to change fully justified text to left or right justified depending on the text language. </p>
        </div>
 
@@ -1132,77 +1136,45 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
 </div>
  </div><!--sc-level--></div>
 <div class="sc-level"><!--AAA-->
-    <h4 class="sc-title"><a id="sc_145" name="sc_145"></a>1.4.5 Text Style, Margins, Borders (by Element): </h4>
-<p class="sc-text">The user can set all of the following characteristics of visually rendered text content for main text and for text element types including at least headings and input fields: <span class="level">(Level&nbsp;AAA) </span>  </p>
-<ul class="sc-bullets">
-<li>Text style (underline, italic, bold)</li>
-  <li>Margins (for example, space above headings, indentation of lists)</li>
-  <li>Borders </li>
-</ul>
-<div class="techs-only">
-
-	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_145">Return to 1.4.5 in Guidelines</a></div>
-	   </div> 
-
-      <div class="techs-only">
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_145-i" name="sc_145-i"></a>Intent  of  Success Criterion 1.4.5:</h5>
-        <p>Some users  need to turn off underline, italic and bold because they can  be hard to read. Bold characters can &quot;bleed&quot; when characters are too close together which reduces readibility for some. Users who are changing font size need to be able to change margin size to ensure  efficient use of screen space.  Sometimes when font sizes are increased proportionally,   too much white space appears. When borders appear too close to text, it can become difficult for some users to  discriminate the text letter shape, so those users need a way to  turn borders off. At the same time, increasing the weight of the visible border  around  an input field makes it more visible, so users need control of the visible characteristics of the borders, for example border color, weight and spacing.  </p>
-        <p>User stylesheets can be used where available. Users can control characteristics by element type, so that, for example, headings at the same level will have a similar appearance. </p>
-       </div>
-
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_145-e" name="sc_145-e"></a>Examples for Success Criterion 1.4.5:</h5>
-            <ul>
-              <li class="unclassified-ex">Wade has low vision and needs large text, extra line spacing, italics changed to regular font, and a muted background color in order to read. To make web pages readable, Wade uses a user stylesheet to change the way the headings are displayed. He makes the headings a little smaller than the main text, changes the font to Arial and red,  adds space before and after the headings, and adds border above the headings. This ensures that  headings aren't too big,  navigation links don't break across lines as much, and a reasonable amount of text is visible at a time, so Wade doesn't have to do extra scrolling.  By changing the heading elements to have a different appearance from the  main text, Wade can easily distinguish headings without them being  them too large. </li>
-            </ul>        
-            </div>
-        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_145-r" name="sc_145-r"></a>Related Resources for Success Criterion 1.4.5:</h5>
-            <ul>
-              <li>Guideline <a href="#gl-style-sheets-config">1.7 Enable Configuration of User Stylesheets</a></li></ul></div></div>
-</div>
-    <h4 class="sc-title"><a id="sc_146" name="sc_146"></a>1.4.6 <strong>Spacing, Capitalization and Hyphenation (Globally)</strong>: </h4>
+<h4 class="sc-title"><a id="sc_145" name="sc_145"></a>1.4.5 <strong>Advanced text formatting (Globally)</strong>: </h4>
 <p class="sc-text">The user can <a class="dfn-instance" href="#def-global-configuration" rel="glossary" title="definition: globally">globally</a>
- set all of the following characteristics of visually rendered <a class="dfn-instance" href="#def-blocks-of-text" rel="glossary" title="definition: blocks of text">blocks of text</a>: <span class="level">(Level&nbsp;AAA) </span>  </p>
+ set all of the following characteristics of visually rendered <a class="dfn-instance" href="#def-blocks-of-text" rel="glossary" title="definition: blocks of text">blocks of text</a>: <span class="level">(Level&nbsp;AAA) </span></p>
 <ul class="sc-bullets">
-<li>Line spacing between 0.7 and 3.0 times the font height, at increments of 0.10</li>
   <li>Capitalization (overriding upper case and small caps style)</li>
-  <li>Word-breaking properties (auto-hyphenation)</li>
-  <li>Margins </li>
+  <li>Word-breaking properties (e.g. auto-hyphenation)</li>
   <li>Borders</li>
 </ul>
 <p><em class="note-handle">Note:</em> This success criteria does not apply  to text entered as all caps. Content authors are encouraged to use styles instead of typing text as all caps.</p>
 
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_146">Return to 1.4.6 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_145">Return to 1.4.5 in Guidelines</a></div>
 	   </div> 
 
     <div class="techs-only">
       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_146-i" name="sc_146-i"></a>Intent  of  Success Criterion 1.4.6:</h5>
-        <p>Advanced features that improve readibility include more granular control of line spacing, override of capitalization and auto-hyphenation, and control of margins and borders. Some users need to turn off capitalization because words that are in all caps can be hard to read. This should not be interpreted as a requirement to provide heuristics to interpret text that has been entered in all caps into appropriate mixed case. The intent is that if all caps has been controlled by a style, the user can override that style. </p>
-        <p>Wide margins around blocks of text help users focus on the  text and not get distracted by surrounding text and images. Some users with low vision prefer to use borders  (including border line color, width, style) to indicate headings, rather than making headings  larger than the main text. </p>
+        <h5 class="implementing-heading"><a id="sc_145-i" name="sc_145-i"></a>Intent  of  Success Criterion 1.4.5:</h5>
+        <p>Advanced features that improve readibility include override of capitalization and auto-hyphenation. Some users need to turn off capitalization because words that are in all caps can be hard to read. This should not be interpreted as a requirement to provide heuristics to interpret text that has been entered in all caps into appropriate mixed case. The intent is that if all caps has been controlled by a style, the user can override that style. </p>
+        <p>Some users with low vision prefer to remove borders that may be located too close to the text and appear to bleed into the text, making it difficult to read. </p>
       </div>
 
       <div class="implementing-section">
-       <h5 class="implementing-heading"><a id="sc_146-e" name="sc_146-e"></a>Examples for Success Criterion 1.4.6:</h5>
+       <h5 class="implementing-heading"><a id="sc_145-e" name="sc_145-e"></a>Examples for Success Criterion 1.4.5:</h5>
             <ul>
-              <li class="unclassified-ex">Lori  has low vision. She is using her mobile phone to find a restaurant. The text on the search page is too small. She clicks on the column to put one column width on the screen, then she clicks the Settings button and  the font size increase button to incrementally increase the font size to 230%. The headline spacing increases so much that there is not enough text displayed, so Lori selects a Settings button to decrease the space between lines. </li>
+              <li class="unclassified-ex">Lori  has low vision. She is using her mobile phone to find a restaurant. The restaurant search listing puts the restaurant names in all caps, which she finds difficult to read. Lori touches the Settings button and chooses Sentence case. Since the restaurant names were originally entered in mixed case, </li>
             </ul>        </div>
       <div class="implementing-section">
-      <h5 class="implementing-heading"><a id="sc_146-r" name="sc_146-r"></a>Related Resources for Success Criterion 1.4.6:</h5>
+      <h5 class="implementing-heading"><a id="sc_145-r" name="sc_145-r"></a>Related Resources for Success Criterion 1.4.5:</h5>
             <ul>
               <li><span class="sc-title"><a href="#sc_142">1.4.2 Text Size, Color and Font (by Element)</a></span></li>
               <li><span class="sc-title"><a href="#sc_143">1.4.3 Text Spacing and Style (Globally)</a></span></li>
+              <li><a href="#sc_131">1.3.1 Highlighted Items</a> and <a href="#sc_132">1.3.2 Highlighting Options</a> for borders on input fields. </li>
               <li>CSS 2.1 <a href="http://www.w3.org/TR/CSS2/text.html#caps-prop">16.5 Capitalization</a></li>
               <li>CSS 3 <a href="http://www.w3.org/TR/2013/WD-css-text-3-20131010/#word-break-property"> 5.3. Breaking Rules for Letters</a> (as of this publication, CSS 3 is not a completed W3C Recommendation and could change)</li>
               <li>CSS 2.1 <a href="http://www.w3.org/TR/CSS2/visudet.html#leading">10.8.1 Leading and half-leading</a> </li>
               <li>CSS 2.1 <a href="http://www.w3.org/TR/CSS2/text.html#caps-prop">16.5 Capitalization</a>
               </li>
             </ul>
-        </div></div>
+    </div></div>
     
 </div>
 <!--gl--></div>
@@ -2129,7 +2101,7 @@ information (e.g. title, internal vs. external) (1.10.2, Level AAA)</p>
         <h5 class="implementing-heading"><a id="sc_1101-e" name="sc_1101-e"></a>Examples for Success Criterion 1.10.1:</h5>
             <ul>
               <li class="unclassified-ex">John has low vision and uses a screen magnifier to access his browser. When interacting with tables and spreadsheets John has to move the viewport of the magnifier to understand the row and column titles of the cell with which he is interacting. This takes additional time and effort and is therefore frustrating. John switches to a  browser that presents the row and column titles when he hovers over a cell - this makes him much more productive at his accounting job.</li>
-              <li class="unclassified-ex">Courtney has a cognitive disability that makes it difficult for her to comprehend complex user interfaces. She is completing an online job application. It is not clear where she should enter her phone number. She mouses over a blank box and sees a tooltip that says &quot;home phone number&quot;. She is able to complete the form. </li>
+              <li class="unclassified-ex">Courtney has a cognitive disability that makes it difficult for her to comprehend complex user interfaces. She is completing an online job application. It is not clear where she should enter her phone number, because the input fields have text labels  above, below, and to the left of the current input field. She mouses over the blank box and sees a tooltip that says &quot;home phone number&quot;.  She is able to complete the form. </li>
             </ul>        </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1101-r" name="sc_1101-r"></a>Related Resources for Success Criterion 1.10.1:</h5>
