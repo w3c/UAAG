@@ -223,7 +223,7 @@ ul.sc-notes {
  
     <h1><a name="title" id="title"></a>Implementing UAAG 2.0</h1>
 	<h2><a id="subtitle" name="subtitle"></a>A guide to understanding and implementing User Agent Accessibility Guidelines 2.0</h2>
-    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 1 July
+    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 3 July
 2014</h2>
     <dl> 
   <dt>This version (Github):</dt> 
@@ -2661,7 +2661,7 @@ with the elements to make it easier for users to discover the commands
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_234-e" name="sc_234-e"></a>Examples for Success Criterion 2.3.4:</h5>
             <ul>
-              <li class="unclassified-ex">Vlad is a keyboard-only user who uses a browser on the Mac  operating system. When he needs to perform a new operation with the browser user interface, he searches for it in the menus, and notices that the menu item has a &quot;&#8984;&quot; label (e.g. &quot;Copy   &#8984;+C&quot;). This indicates the direct activation command he can use in the future to avoid having to traverse the menus.</li>
+              <li class="unclassified-ex">Vlad is a keyboard-only user who uses a browser on the Mac  operating system. When he needs to perform a new operation with the browser user interface, he searches for it in the menus, and notices that the menu item has a shortcut in the label (e.g. &quot;Copy &nbsp; <abbr title="command key"> &#8984;</abbr>+C&quot;). This indicates the direct activation command he can use in the future to avoid having to traverse the menus.</li>
               <li class="unclassified-ex">Amir uses ability switches to control an onscreen keyboard for the Windows operating system. When he presses the &quot;Alt&quot; key the available browser user interface accesskeys are shown as overlays on the appropriate user interface controls (e.g. &quot;File with 'F' in an overlay&quot;).</li>
               <li class="mobile-ex">[mobile] Neta has a repetitive strain injury. She relies on gestures and 
 shortcuts to complete tasks. Using a specialized command on her mobile 
@@ -2728,7 +2728,7 @@ Guideline 2.4 - Provide text search
 	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-search-text">Guideline 2.4</a>]</span></h3>
 <p class="summary" id="summary24"><strong>Summary</strong>: Users can search rendered content (2.4.1, Level A) forward or 
 backward (2.4.2, Level A) and can have the matched content highlighted 
-in the viewport (2.4.3, Level A). The user is notified if there is no 
+in the viewport (2.4.3, Level A). The user is notified in an accessible manner if there is no 
 match (2.4.4, Level A). Users can also search by case and for text 
 within alternative content (2.4.5, Level AA).
 </p>
@@ -2755,7 +2755,7 @@ title="definition: Document character set">document character set</a>. <span cla
               <li class="unclassified-ex">Marvin has a dexterity impairment. He needs to move efficiently to specific text in the document.  The   user agent provides a local search function that is available using   speech commands. Marvin says &quot;find box,&quot; a text box with a search button   appears. He speaks the word he is looking for, and says &quot;enter&quot;, which   executes the search function.</li>
               <li class="unclassified-ex">Betty, who has low vision, is attempting to create a user   stylesheet for a site. She needs to know the 'class' attribute value for   navigation headers. Betty gets the source view of the current page and   searches for the specific phrase used in a navigation list to find the   class associated with  the navigation element</li>
               <li class="unclassified-ex">Joe, a user with a distraction disorder, is taking an online exam.   He is working on the 6th question when he realizes he wrote something   wrong in the essay on question 2. He uses the  search function in the   browser to find the text in error inside the textarea of question 2.</li>
-              <li class="unclassified-ex">Sam is a screen reader user. He has images off and the alternative content for images  is   revealed. He wants to send the flow chart image on the page to a   colleague. Sam searches for the word &quot;flowchart&quot; that he heard spoken as   part of the 'alt' text for the image. He then uses the context menu to   select the address of the image and sends it to a colleague. </li>
+              <li class="unclassified-ex">Sam is a screen reader user. He wants to send the flow chart image on the page to a   colleague. Sam searches for the word &quot;flowchart&quot; that he heard spoken as   part of the 'alt' text for the image. He then uses the context menu to   select the address of the image and sends it to his colleague. </li>
               <li class="unclassified-ex">Agnes is deaf. She is watching a video with captions turned on.   Agnes uses the search function to search through the captions and jump to   the point in the video where the search term is located in the time   line.</li>
               <li class="unclassified-ex"> Greta has a reading impairment. She is trying to efficiently locate   some information in a large, detailed graphic. She is using a browser   with native support for SVG. When Greta searches for a term,   text within the SVG is   searched along with the HTML content.</li>
             </ul>        </div>
@@ -2937,8 +2937,8 @@ hierarchy.
               <li class="unclassified-ex">Jamie is blind. When he reads the New York Times he scans the headlines to find  interesting stories. To do this he needs a way to go from headline to headline.
               </li>
               <li class="unclassified-ex">Billie is a paraplegic who uses speech input to write long legal documents. When she is proofing a document she needs to scan each section header. It takes far fewer speech commands to navigate the section headers when she can jump directly to them. Billie also makes extensive use of tables. It takes far fewer speech commands to navigate tables when she can jump directly among elements. Direct navigation to headlines and table elements allows her to do her job without overusing her vocal cords and within required time constraints.</li>
-              <li class="unclassified-ex">Celia has short-term memory issues and   is easily distracted. When looking for any particular section of the document she finds it easier to scan through headings by jumping from heading to heading rather than having to scan through an entire page of potentially distracting text. Celia also finds it useful to be able to move from a subheading to a major heading and back to orient herself within the context without becoming confused. </li>
-              <li class="mobile-ex">[mobile] Armand is blind. When he uses the speech input to locate a web page on his smartphone, Armand  navigates from heading to heading using touch commands.</li>
+              <li class="unclassified-ex">Celia has short-term memory issues and   is easily distracted. When looking for any particular section of the document, she finds it easier to scan through headings by jumping from heading to heading rather than having to scan through an entire page of potentially distracting text. Celia also finds it useful to be able to move from a subheading to a major heading and back to orient herself within the context without becoming confused. </li>
+              <li class="mobile-ex">[mobile] Armand is blind. When he reads a long  web page on his iOS smartphone, Armand  navigates from heading to heading using the Rotor commands on his phone.</li>
           </ul></div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_252-r" name="sc_252-r"></a>Related Resources for Success Criterion 2.5.2:</h5>
