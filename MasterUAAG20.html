@@ -225,7 +225,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 3 July
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 15 July
 2014</h2>
 <dl>
   <dt>This version (Github):</dt>
@@ -263,7 +263,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
  
     <h1><a name="title" id="title"></a>Implementing UAAG 2.0</h1>
 	<h2><a id="subtitle" name="subtitle"></a>A guide to understanding and implementing User Agent Accessibility Guidelines 2.0</h2>
-    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 3 July
+    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 15 July
 2014</h2>
     <dl> 
   <dt>This version (Github):</dt> 
@@ -2403,8 +2403,12 @@ information (e.g. title, internal vs. external) (1.10.2, Level AAA)</p>
 
 <div class="sc-level">
   <h4 class="sc-title"><a id="sc_1101" name="sc_1101"></a>1.10.1 Show Related Elements: </h4>
-<p class="sc-text"> The user can access related elements based on the user's position in content (e.g. show the label of a form control, show the headers of a table cell). <span class="level">(Level&nbsp;AA)</span></p>
-
+<p class="sc-text"> The user can access the information from explicitly-defined relationships in the content, including at least the following:  <span class="level">(Level&nbsp;AA)</span></p>
+<ol type="a">
+<li>label for a control or image</li>
+<li>caption for a table</li>
+<li>row and column labels for a table cell</li>
+</ol>
     	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#sc_1101">Implementing 1.10.1</a></div>
       </div>
@@ -2415,7 +2419,7 @@ information (e.g. title, internal vs. external) (1.10.2, Level AAA)</p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1101-i" name="sc_1101-i"></a>Intent  of  Success Criterion 1.10.1:</h5>        
-        <p>Some users have difficulty perceiving, remembering, or understanding the relationships between elements and their descriptions. Certain elements relate to others in a recognizable manner, such as relationships with 'id' attributes and child elements (e.g.   Ajax widgets and with form elements). This allows users to better understand these relationships even if the elements are not adjacent on the screen or the DOM. </p>
+        <p>Some users have difficulty perceiving, remembering, or understanding the relationships between elements and their descriptions. Certain elements relate to others in a recognizable manner, such as relationships with 'id' attributes and child elements (e.g.   Ajax widgets  with form elements); or defined semantic relationships  (e.g. HTML label element, figcaption and      aria-labelledby attributes). This allows users to better understand these relationships even if the elements are not adjacent on the screen or the DOM. </p>
        </div>
 
        <div class="implementing-section">
@@ -4899,7 +4903,7 @@ report accessibility issues (5.1.6, Level AAA).
 <ul class="sc-notes">
     <li class="sc-note"><em class="note-handle">Note:</em> This success criterion does not apply to non-web-based user agent user interfaces,
 but does include any parts of non-web-based user agents that are
-web-based (e.g. help systems).</li></ul>
+web-based (e.g. help systems). However, it is      recommended that developers of non-web-based user agent user      interfaces follow the Guidance on Applying WCAG 2.0 to Non-Web      Information and Communications Technologies (WCAG2ICT) <a href="#ref-wcag2ict">[WCAG2ICT]</a>.</li></ul>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#sc_511">Implementing 5.1.1</a></div>
@@ -6066,6 +6070,9 @@ are also identified as references through markup.</p>
     <dt><a name="ref-WCAG-EM" id="ref-WCAG-EM"></a>[WCAG-EM]</dt>
   <dd><a href="http://www.w3.org/TR/2013/WD-WCAG-EM-20130226/">&quot;Website Accessibility Conformance Evaluation Methodology (WCAG-EM) 1.0"</a> E. Velleman, S. 
 Abou-Zahra, eds., 26 February 2013.  This is an informative draft of a Working Group Note. The <a href="http://www.w3.org/TR/WCAG-EM/">latest version</a> is available at http://www.w3.org/TR/WCAG-EM/</dd>
+  <dt><a name="ref-wcag2ict" id="ref-wcag2ict"></a>[WCAG2ICT]</dt>
+  <dd><a href="http://www.w3.org/TR/wcag2ict/">Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)</a> M. Cooper, P. Korn, A. Snow-Weaver, G. Vanderheiden, eds., 5 September 2013. 
+This document is available in an <a href="http://www.w3.org/WAI/GL/2013/WD-wcag2ict-20130905/accordion">expandable / collapsible alternate version</a> in which the &ldquo;Intent&rdquo; sections copied from Understanding WCAG 2.0 are hidden and individually expandable, for easier reading.
   <dt><a name="ref-WEBCHAR" id="ref-WEBCHAR">[WEBCHAR]</a></dt>
     <dd><cite><a href="http://www.w3.org/1999/05/WCA-terms/01">"Web
       Characterization Terminology and Definitions Sheet,"</a></cite> B.
