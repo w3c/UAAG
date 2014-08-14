@@ -11,7 +11,8 @@
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
-     
+
+               
 
 h2.principle {
 	background-color:#FFFFFF;
@@ -222,7 +223,7 @@ ul.sc-notes {
  
     <h1><a name="title" id="title"></a>Implementing UAAG 2.0</h1>
 	<h2><a id="subtitle" name="subtitle"></a>A guide to understanding and implementing User Agent Accessibility Guidelines 2.0</h2>
-    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 17 July
+    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 24 July
 2014</h2>
     <dl> 
   <dt>This version (Github):</dt> 
@@ -2097,13 +2098,13 @@ information (e.g. title, internal vs. external) (1.10.2, Level AAA)</p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1101-i" name="sc_1101-i"></a>Intent  of  Success Criterion 1.10.1:</h5>        
-        <p>Some users have difficulty perceiving, remembering, or understanding the relationships between elements and their descriptions. Certain elements relate to others in a recognizable manner, such as relationships with 'id' attributes and child elements (e.g.   Ajax widgets  with form elements); or defined semantic relationships  (e.g. HTML label element, figcaption and      aria-labelledby attributes). This allows users to better understand these relationships even if the elements are not adjacent on the screen or the DOM. </p>
+        <p>Some users have difficulty perceiving, remembering, or understanding the relationships between elements and their descriptions. Certain elements relate to others in a recognizable manner, such as relationships with 'id' attributes and child elements (e.g.   Ajax widgets  with form elements); or defined semantic relationships  (e.g. HTML label element, figcaption, table heading to table cell, and      aria-labelledby attributes). This allows users to better understand these relationships even if the elements are not adjacent on the screen or the DOM. </p>
        </div>
 
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1101-e" name="sc_1101-e"></a>Examples for Success Criterion 1.10.1:</h5>
             <ul>
-              <li class="unclassified-ex">John has low vision and uses a screen magnifier to access his browser. When interacting with tables and spreadsheets John has to move the viewport of the magnifier to understand the row and column titles of the cell with which he is interacting. This takes additional time and effort and is therefore frustrating. John switches to a  browser that presents the row and column titles when he hovers over a cell - this makes him much more productive at his accounting job.</li>
+              <li class="unclassified-ex">John has low vision and uses a screen magnifier to access his browser. When interacting with tables and spreadsheets John has to move the viewport of the magnifier to understand the row and column titles of the cell with which he is interacting. This takes additional time and effort and is therefore frustrating. John switches to a  browser that presents the row and column titles when he hovers over a cell. This makes him much more productive at his accounting job.</li>
               <li class="unclassified-ex">Courtney has a cognitive disability that makes it difficult for her to comprehend complex user interfaces. She is completing an online job application. It is not clear where she should enter her phone number, because the input fields have text labels  above, below, and to the left of the current input field. She mouses over the blank box and sees a tooltip that says &quot;home phone number&quot;.  She is able to complete the form. </li>
             </ul>        </div>
         <div class="implementing-section">
@@ -3757,52 +3758,8 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>, a
 <h2 class="principle"><a name="principle-understandable"
 id="principle-understandable"></a>PRINCIPLE 3: Ensure that the user interface is
 understandable</h2>
-<div class="guideline-box" id="g-3-1">
-<h3 class="guideline"><a name="gl-avoid-unnecessary-messages"
-id="gl-avoid-unnecessary-messages"></a><span class="techs-only">Implementing </span>Guideline 3.1 - Help users avoid
-unnecessary messages 
-	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/#gl-avoid-unnecessary-messages">Guideline 3.1</a>]</span></h3>
-
-<p class="summary" id="summary31"><strong>Summary</strong>: Users can turn off messages from the author or user-agent (3.1.1, Level AA).</p>
-
-<div class="sc-level">
-  <h4 class="sc-title"><a id="sc_311" name="sc_311"></a>3.1.1 Reduce Interruptions: </h4>
-<p class="sc-text"> The user can avoid or defer: <span class="level">(Level&nbsp;AA)</span></p>
-<ol type="a">
-   <li><a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">Recognized</a> messages that are  low priority</li> 
-   <li>Information in the user agent user interface that is being updated or changing</li>
-   <li> Rendered content that is being updated or changing</li>
-   </ol>
-
-   
-<div class="techs-only">
-  <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_311">Return to 3.1.1 in Guidelines</a></div>
-</div> 
-
-      <div class="techs-only">
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_311-i" name="sc_311-i"></a>Intent  of  Success Criterion 3.1.1:</h5>
-        <p>It's important that users be able to avoid unnecessary messages. Messages designed to inform the user can be a burden to users for whom pressing keys is time-consuming, tiring, or painful. Similarly, users with some cognitive impairments find it difficult to deal with constant distractions caused by updating visual or audio information, and would prefer to hide unnecessary updates. </p>
-       </div>
-
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_311-e" name="sc_311-e"></a>Examples for Success Criterion 3.1.1:</h5>
-            <ul>
-              <li class="unclassified-ex">Randall has repetitive strain injuries. He finds pop-up messages difficult. Randall has set the option to receive updates only on request. This way, he can request updates when he has a friend helping him, so that if the update changes the way his computer behaves, he can get help to adjust the computer settings or roll the update back. </li>
-              <li class="unclassified-ex">Shirley has a cognitive disability and is distracted by the page flicker. A web page has a stock market ticker that is coded as having a WAI-ARIA low priority level, so she changes the browser's preference setting to indicate that regions with low priority level should not be automatically updated.</li>
-            </ul></div>
-        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_311-r" name="sc_311-r"></a>Related Resources for Success Criterion 3.1.1:</h5>
-            <ul>
-              <li class="sc-txt"><a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-live">WAI-ARIA - aria-live</a></li>
-              <li class="sc-txt"><a href="http://www.w3.org/TR/wai-aria-practices/#liveprops">WAI-ARIA  Live Region Properties and How to Use Them</a></li>
-            </ul>
-        </div></div>
-</div>
-</div>
-
 <div class="guideline-box" id="g-3-2">
-<h3 class="guideline"><a name="gl-avoid-mistakes"
+  <h3 class="guideline"><a name="gl-avoid-mistakes"
 id="gl-avoid-mistakes"><span class="techs-only">Implementing </span>Guideline 3.2 - </a> Help users avoid and correct
 mistakes 
 	  <span class="techs-only">[<a href="http://jspellman.github.io/UAAG/UAAG20/Overview.html#gl-avoid-mistakes">Guideline 3.2</a>]</span></h3>
@@ -3989,6 +3946,35 @@ message that the purchase has timed out.</li>
         <h5 class="implementing-heading"><a id="sc_326-r" name="sc_326-r"></a>Related Resources for Success Criterion 3.2.6:</h5>
             <ul>
               <li><a href="#sc_416">4.1.6 Expose Accessible Properties</a></li></ul></div></div>
+
+<h4 class="sc-title"><a id="sc_32x" name="sc_32x"></a>3.2.x Form Auto-Fill: </h4>
+<p class="sc-text">The user can have textual (and numeric) form field values stored and auto-filled for at least the following: <span class="level">(Level&nbsp;AA)</span> </p>
+<ol type="a">
+<li>user's name</li>
+<li>user's email address</li>
+<li>user's phone number</li>
+</ol>
+    	   
+	   <div class="techs-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/UAAG20/#sc_32x">Return to 3.2.x in Guidelines</a></div>
+	   </div> 
+
+      <div class="techs-only">
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_32x-i" name="sc_32x-i"></a>Intent  of  Success Criterion 3.2.x:</h5>
+        <p>Users with various disabilities benefit from auto-fill functionality, including people who type slowly and people who have difficulty with letter/number order. </p>
+       </div>
+
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_32x-e" name="sc_32x-e"></a>Examples for Success Criterion 3.2.x:</h5>
+            <ul>
+              <li class="unclassified-ex">Michael is dyslexic and frequently spells words incorrectly, including his name and email address. Auto-fill reduces the number of fields he must fill out in on-line forms.
+</li>
+            </ul>        </div>
+        <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_32x-r" name="sc_32x-r"></a>Related Resources for Success Criterion 3.2.x:</h5>
+            <ul>
+              <li>None</li></ul></div></div>
 </div>
 </div>
 
@@ -4076,6 +4062,37 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
 
 
 <div class="sc-level">
+
+<h4 class="sc-title"><a id="sc_33x" name="sc_33x"></a>3.3.x Document All Features: </h4>
+<p class="sc-text">For each user agent feature, at least one of the following is true</a>: <span class="level">(Level&nbsp;AA)</span> </p>
+<ol type="a" class="sc-bullets">
+  <li class="sc-bullet"><strong class="handle">Described in the Documentation</strong>: Use of the feature is explained in  the user agent's documentation; or</li>
+  <li class="sc-bullet"><strong class="handle">Described in the Interface</strong>: Use of the feature is explained in the  user agent user interface; or</li>
+<li class="sc-bullet"><strong class="handle">Platform Service</strong>: The feature is a service provided by an  underlying platform; or</li>
+<li class="sc-bullet"><strong class="handle">Not Used by Users</strong>: The feature is not used directly by users (e.g.,  passing information to a platform accessibility service). </li>
+</ol>
+    	   
+	   <div class="techs-only">
+	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/UAAG20/#sc_33x">Return to 3.3.x in Guidelines</a></div>
+	   </div> 
+
+      <div class="techs-only">
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_33x-i" name="sc_33x-i"></a>Intent  of  Success Criterion 3.3.x:</h5>
+         It should always be easy to ask and receive help. The Help icon should be available to every screen, and that icon  takes the user directly to relevant &quot;how to use these features&quot; or instructions. A symbol for help should be used (such as a question mark) or the word &quot;help&quot;. Getting help should not be hidden &mdash; it should not be under a menu of options.   
+         <p>Help text for core user tasks and main or essential features should be easy to understand in simple and clear text.  Each step should be identified and labeled, and pictures that clarify what to do are recommended.  </p>
+        <p>A layered approach to help is beneficial to many audiences.  Tooltip help is a wonderful memory aid for clarifying what user features are and particularly useful for people with an impaired working memory. Include short tooltips on all icons, jargon and shortened forms such as abbreviations. Typically these tooltips should be one or two words long. </p>
+       </div>
+
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_33x-e" name="sc_33x-e"></a>Examples for Success Criterion 3.3.x:</h5>
+            <ul>
+              <li class="unclassified-ex">Perttu</li>
+            </ul>        </div>
+        <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_33x-r" name="sc_33x-r"></a>Related Resources for Success Criterion 3.3.x:</h5>
+            <ul>
+              <li>None</li></ul></div></div>
 
 <h4 class="sc-title"><a id="sc_333" name="sc_333"></a>3.3.3 Changes Between Versions: </h4>
 <p class="sc-text"> Changes to features that meet UAAG 2.0 success criteria  since the previous user agent release are documented. <span class="level">(Level&nbsp;AA)</span> </p>
@@ -5674,8 +5691,7 @@ href="http://www.w3.org/TR/WAI-USERAGENT/acks.html#Acknowledgments">those who
 contributed to UAAG 1.0</a>.</p>
 
 <p>This publication has been funded in part with Federal funds from the U.S.
-Department of Education, National Institute on Disability and Rehabilitation
-Research (NIDRR) under contract number ED-OSE-10-C-0067. The content of this
+Department of Education, National Institute on Disabiity, Independent   Living, and Rehabilitation Research (NIDILRR) under contract number ED-OSE-10-C-0067. The content of this
 publication does not necessarily reflect the views or policies of the U.S.
 Department of Education, nor does mention of trade names, commercial
 products, or organizations imply endorsement by the U.S. Government. </p>
