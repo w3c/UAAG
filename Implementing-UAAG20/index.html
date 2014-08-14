@@ -223,7 +223,7 @@ ul.sc-notes {
  
     <h1><a name="title" id="title"></a>Implementing UAAG 2.0</h1>
 	<h2><a id="subtitle" name="subtitle"></a>A guide to understanding and implementing User Agent Accessibility Guidelines 2.0</h2>
-    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 24 July
+    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 14 August
 2014</h2>
     <dl> 
   <dt>This version (Github):</dt> 
@@ -508,7 +508,8 @@ even if these terms appear from time to time they do not have any RFC
     When user agents render vertical layout languages (e.g. Mongolian, Han), success criteria normally relating to horizontal rendering should be applied to vertical rendering instead.
   </li>
   <li><strong class="handle">Add-ons (Extensions and Plug-ins):</strong> Success criteria can be met by a user agent alone or in conjunction with add-ons, as long as those are: 
-  <ol type="a"><li>discoverable by t he user</li>
+  <ol type="a">
+  <li>discoverable by the user</li>
   <li>no extra cost to the user</li>
   <li>easily installed (i.e. not requiring expert knowledge or editing of
 
@@ -1573,11 +1574,7 @@ subsequent, unrecognized words. With two unrecognized words in the
 posting, John ignores the first selected word, and presses the
 key to move to the next unrecognized word, which is  out of view. As the key is pressed, the viewport
 scrolls to show the selected word. </li>
-<li class="unclassified-ex">George uses a  screen reader. He is showing a sighted colleague how to
-complete a registration form that's contained within a viewport. The form
-exceeds the vertical bounds of the viewport, requiring George to 
-scroll vertically to view the complete form content. When George
-completes each form entry, if the next form is not already visible in the viewport, it scrolls  into view. </li>
+<li class="unclassified-ex">George uses a screen reader. He is showing a sighted colleague how to complete a registration form that's contained within a viewport. The form exceeds the vertical bounds of the viewport. As George completes each form field and navigates sequentially to the next (by pressing the TAB key), if the next form field is not already visible in the viewport, it scrolls into view.</li>
 <li class="mobile-ex">[mobile] Lee typically views web content on her mobile phone at a high level of zoom, frequently positioning elements outside the viewport.  When moving between focusable elements, the viewport automatically scrolls to the element currently in focus.</li>
           </ul></div>
         <div class="implementing-section">
@@ -1795,9 +1792,14 @@ the entire chart to be displayed.</li>
 <h4 class="sc-title"><a id="sc_1810" name="sc_1810"></a>1.8.10 Provide Viewport History: </h4>
 <p class="sc-text">   For <a class="dfn-instance"
 href="#def-user-agent" rel="glossary" title="definition: User agent">user agents
-</a> that implement a history mechanism for <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a> (e.g. &quot;back&quot; button), the user can return to any state in the viewport history that is allowed by the content, including a restored <a class="dfn-instance"
-href="#def-point-of-regard" rel="glossary" title="definition: point of regard">point of regard</a>, input focus and selection. <span class="level">(Level&nbsp;AA)</span> </p>
-
+</a> that implement a history mechanism for <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a> (e.g. &quot;back&quot; button), the user can return to any state in the viewport history that is allowed by the content, including: <span class="level">(Level&nbsp;AA)</span> </p>
+<ol type="a">
+<li>restored <a class="dfn-instance"
+href="#def-point-of-regard" rel="glossary" title="definition: point of regard">point of regard</a></li>
+<li>input focus</li>
+<li>selection, and</li>
+<li>user's form field entries</li>
+</ol>
     	   
 	   <div class="techs-only">
 	    <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/UAAG20/#sc_1810">Return to 1.8.10 in Guidelines</a></div>
@@ -3490,8 +3492,10 @@ execute. <span class="level">(Level&nbsp;A)</span></p>
         <h5 class="implementing-heading"><a id="sc_2113-e" name="sc_2113-e"></a>Examples for Success Criterion 2.11.3:</h5>
             <ul>
               <li class="unclassified-ex"> Jane has difficulty concentrating. In order to concentrate on the text of a document she wants to prevent  animations, media, or dynamic content from executing until she is ready. An icon on the status bar tells her that scripts have been blocked. She can click on it to select which scripts to run.</li>
-              <li class="unclassified-ex">Evan is blind. He sets an option in his browser so that when a web page loads it does not automatically start running scripts that might play sounds that would interfere with his ability to hear his screen reader. An icon on the status bar tells him that scripts have been blocked. He can activate it to select which scripts to run.</li>
-            </ul></div>
+              <li class="unclassified-ex">Evan is blind. He sets an option in his browser so that when a web page loads it does not automatically start running scripts that might play sounds that would interfere with his ability to hear his screen reader. An icon on the status bar tells him that scripts have been blocked. He can activate it to select which scripts to run. </li>
+              <li class="unclassified-ex">Pavel has low vision, and his browser is set to show extremely large text. He needs to click a control on a web page, but when he moves the pointer over it a script inserts explanatory text onto the page. The large font size causes the control to shift out from under the pointer, making the new text disappear. When the text disappears, the control moves back under the mouse, and the cycle repeats. As the page flickers, Pavel is unable to click on the control. To work around this problem he uses a browser command to temporarily disable scripts on the page so he can click the control and complete his task.</li>
+            </ul>
+       </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2113-r" name="sc_2113-r"></a>Related Resources for Success Criterion 2.11.3:</h5>
             <ul>
@@ -3947,8 +3951,7 @@ message that the purchase has timed out.</li>
             <ul>
               <li><a href="#sc_416">4.1.6 Expose Accessible Properties</a></li></ul></div></div>
 
-<h4 class="sc-title"><a id="sc_32x" name="sc_32x"></a>3.2.x Form Auto-Fill: </h4>
-<p class="sc-text">The user can have textual (and numeric) form field values stored and auto-filled for at least the following: <span class="level">(Level&nbsp;AA)</span> </p>
+<h4 class="sc-title"><a id="sc_32x" name="sc_32x"></a>3.2.x Form Auto-Fill: </h4> <p class="sc-text">The user can have the following information stored and used to auto-fill form fields by request: <span class="level">(Level&nbsp;AA)</span> </h4>
 <ol type="a">
 <li>user's name</li>
 <li>user's email address</li>
@@ -3973,6 +3976,84 @@ message that the purchase has timed out.</li>
             </ul>        </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_32x-r" name="sc_32x-r"></a>Related Resources for Success Criterion 3.2.x:</h5>
+            <ul>
+              <li>None</li></ul></div></div>
+
+<h4 class="sc-title"><a id="sc_18x" 
+
+name="sc_32y"></a>3.2.Y Save Form Entries: </h4>
+<p class="sc-text">If the user agent provides a feature to save local versions of web content, then any form fields the user has filled retain any entries in the saved version. </a><span 
+
+class="level">(Level&nbsp;AA)</span> </p>
+
+    	   
+	   <div class="techs-only">
+	    <div class="implementing-link"><a 
+
+href="http://www.w3.org/WAI/UA/UAAG20/#sc_32y
+
+">Return to 3.2.Y in Guidelines</a></div>
+	   </div> 
+
+      <div class="techs-only">
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a 
+
+id="sc_32y-i" name="sc_32y-i"></a>Intent  of  
+
+Success Criterion 3.2.Y:</h5>
+        <p>Users who need to fill out a form over several sessions or who 
+accidentally leave a page before a form is fully filled out need to have 
+a way to pick up where they left off rather than having to start over 
+again. Having the ability to retrieve a partially or fully filled out 
+form field helps these users more successfully fill out forms. Users who 
+have trouble remembering what they filled out need to be able to look it up. One way to provide that is through locally saved history that includes saving the form field entries. </p>
+       </div>
+
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a 
+
+id="sc_3.2.Y-e" name="sc_32y-e"></a>Examples 
+
+for Success Criterion 3.2.Y:</h5>
+            <ul>
+              <li class="unclassified-
+
+ex">Bruno tires easily. He begins to fill out a long form, but cannot 
+finish. He lies down to rest, and the form times out. When he comes back 
+the browser offers to restore the locally saved session. He opts to restore 
+the session, and goes on to fill out the rest of the form at the point 
+where he left off. This ability allows Bruno to fill out long forms even 
+though he can't maintain focus for the full amount of time it takes to 
+fill out the form, and even if the form times out.</li>
+              <li class="unclassified-
+
+ex">Marjorie uses speech recognition software. Occasionally the software 
+mishears what Marjorie says as a command she doesn't intend. She is half 
+way through filling out a complicated form that includes many comments 
+when the software interprets some of the words she is saying as a 
+command to go to a different page. When she recovers from the speech 
+input error by returning to the page a few seconds later the browser 
+displays the form from the browser history with the data Marjorie has previously entered, but not submitted. . She opts to restore the session, 
+and goes on to fill out the rest of the form at the point where she left 
+off rather than losing her work.
+</li>
+              <li class="unclassified-
+
+ex">Lara is very forgetful. She remembers that she filled out a form to 
+comment on software she uses, but cannot remember if she included a 
+certain comment. She retrieves the form field from her browser and 
+checks it to remind herself. She also opts to permanently save a copy of 
+the page that includes the form field data in case she wants to check it again.
+</li>
+            </ul>        
+            </div>
+        <div class="implementing-section">
+        <h5 class="implementing-heading"><a 
+
+id="sc_32y-r" name="sc_32y-r"></a>Related 
+
+Resources for Success Criterion 3.2.Y:</h5>
             <ul>
               <li>None</li></ul></div></div>
 </div>
@@ -5172,7 +5253,9 @@ recognize. </dd>
   </dd>
   <dt class="glossary"><a name="r" id="r"></a><a name="def-recognize"
   id="def-recognize"><dfn>recognize</dfn></a></dt>
-  <dd class="glossary"><a href="#def-author">Authors</a> encode information in many ways, including
+  <dd class="glossary">Information or events that can be identified unambiguously by user agents. <br />
+    <a name="def-recognized-content"
+  id="def-recognized-content"><dfn>recognized content</dfn></a>: Information that is encoded within content in a way that can be unambiguously recognized by user agents.<a href="#def-author">Authors</a> encode information in many ways, including
     in markup languages, style sheet languages, scripting languages, and
     protocols. When the information is encoded in a manner that allows the
     user agent to process it with certainty, the user agent can &quot;recognize&quot;
@@ -5190,7 +5273,11 @@ recognize. </dd>
     author has encoded in a markup language or style sheet language. Behaviors, style, meaning encoded in a <a
       class="dfn-instance" href="#def-script"
       title="definition: Script">script</a>, and markup in an unfamiliar XML
-    namespace may not be recognized by the user agent as easily or at all. </dd>
+    namespace may not be recognized by the user agent as easily or at all. <br />
+    <a name="def-recognized-actions"
+  id="def-recognized-actions"><dfn>recognized actions</dfn></a>: Actions or events that can be unambiguously identified by a user agent. This can include actions or events initiated by users, scripts, extensions, or other sources. For example, if the keyboard focus is on a web page when the user presses a key, the user agent can recognize the keystroke and can act upon it. If the keyboard focus is on an embedded media player when the user presses a key, the host user agent may or may not be able to detect the keystroke, depending on the embedding architecture. Similarly, when the user activates an INPUT element with type="submit", the user agent will recognize this as a form submission action and carry out the proper interchange with the server. However, if a page includes a custom control that looks like a button labeled "Submit**" but whose actions are entirely handled by an author-provided script, the user agent would not be able to recognize the user action as equivalent to a form submission. Actions such
+        as opening of new browser window would always be implemented by the user agent, so the action would be recognized regardless of whether it was initiated by the user clicking a button or by a script calling a browser function.
+  </dd>
   <dt><a name="def-reflow-content" id="def-reflow-content"><dfn>reflowable content<span class="glossary"></span></dfn></a></dt>
   <dd><a href="#def-content">Web content</a> that can be arbitrarily wrapped over multiple lines. The primary exceptions to reflowable content are graphics and <a href="#def-video">video</a>.</dd>
   <dt><a name="def-relative-time-units"

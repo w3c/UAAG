@@ -224,7 +224,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 24 July
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 14 August
 2014</h2>
 <dl>
   <dt>This version (Github):</dt>
@@ -574,7 +574,8 @@ even if these terms appear from time to time they do not have any RFC
     When user agents render vertical layout languages (e.g. Mongolian, Han), success criteria normally relating to horizontal rendering should be applied to vertical rendering instead.
   </li>
   <li><strong class="handle">Add-ons (Extensions and Plug-ins):</strong> Success criteria can be met by a user agent alone or in conjunction with add-ons, as long as those are: 
-  <ol type="a"><li>discoverable by t he user</li>
+  <ol type="a">
+  <li>discoverable by the user</li>
   <li>no extra cost to the user</li>
   <li>easily installed (i.e. not requiring expert knowledge or editing of
 
@@ -1218,12 +1219,17 @@ href="#def-override" title="definition: Override">overriding</a> any values spec
 <h4 class="sc-title"><a id="sc_1810" name="sc_1810"></a>1.8.10 Provide Viewport History: </h4>
 <p class="sc-text">   For <a class="dfn-instance"
 href="#def-user-agent" rel="glossary" title="definition: User agent">user agents
-</a> that implement a history mechanism for <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a> (e.g. &quot;back&quot; button), the user can return to any state in the viewport history that is allowed by the content, including a restored <a class="dfn-instance"
-href="#def-point-of-regard" rel="glossary" title="definition: point of regard">point of regard</a>, input focus and selection. <span class="level">(Level&nbsp;AA)</span> </p>
-
+</a> that implement a history mechanism for <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a> (e.g. &quot;back&quot; button), the user can return to any state in the viewport history that is allowed by the content, including: <span class="level">(Level&nbsp;AA)</span> </p>
+<ol type="a">
+<li>restored <a class="dfn-instance"
+href="#def-point-of-regard" rel="glossary" title="definition: point of regard">point of regard</a></li>
+<li>input focus</li>
+<li>selection, and</li>
+<li>user's form field entries</li>
+</ol>
     	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#sc_1810">Implementing 1.8.10</a></div>
-      </div>
+    </div>
 	    
 
 <h4 class="sc-title"><a id="sc_1811" name="sc_1811"></a>1.8.11 Allow Top-Level Viewport Open on Request: </h4>
@@ -2205,8 +2211,7 @@ indications of progress activity (3.2.6, Level A).</p>
 
       
 
-<h4 class="sc-title"><a id="sc_32x" name="sc_32x"></a>3.2.x Form Auto-Fill: </h4>
-<p class="sc-text">The user can have textual (and numeric) form field values stored and auto-filled for at least the following: <span class="level">(Level&nbsp;AA)</span> </p>
+<h4 class="sc-title"><a id="sc_32x" name="sc_32x"></a>3.2.x Form Auto-Fill: </h4> <p class="sc-text">The user can have the following information stored and used to auto-fill form fields by request: <span class="level">(Level&nbsp;AA)</span> </h4>
 <ol type="a">
 <li>user's name</li>
 <li>user's email address</li>
@@ -2214,6 +2219,26 @@ indications of progress activity (3.2.6, Level A).</p>
 </ol>
     	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_32x">Implementing 3.2.x</a></div>
+      </div>
+	    
+
+      
+
+<h4 class="sc-title"><a id="sc_18x" 
+
+name="sc_32y"></a>3.2.Y Save Form Entries: </h4>
+<p class="sc-text">If the user agent provides a feature to save local versions of web content, then any form fields the user has filled retain any entries in the saved version. </a><span 
+
+class="level">(Level&nbsp;AA)</span> </p>
+
+    	   <div class="gl-only">
+	     <div class="implementing-
+
+link"><a 
+
+href="http://www.w3.org/WAI/UA/IMPLEMENTING-
+
+UAAG20/#sc_32y">Implementing 3.2.Y</a></div>
       </div>
 	    
 
@@ -3046,7 +3071,9 @@ recognize. </dd>
   </dd>
   <dt class="glossary"><a name="r" id="r"></a><a name="def-recognize"
   id="def-recognize"><dfn>recognize</dfn></a></dt>
-  <dd class="glossary"><a href="#def-author">Authors</a> encode information in many ways, including
+  <dd class="glossary">Information or events that can be identified unambiguously by user agents. <br />
+    <a name="def-recognized-content"
+  id="def-recognized-content"><dfn>recognized content</dfn></a>: Information that is encoded within content in a way that can be unambiguously recognized by user agents.<a href="#def-author">Authors</a> encode information in many ways, including
     in markup languages, style sheet languages, scripting languages, and
     protocols. When the information is encoded in a manner that allows the
     user agent to process it with certainty, the user agent can &quot;recognize&quot;
@@ -3064,7 +3091,11 @@ recognize. </dd>
     author has encoded in a markup language or style sheet language. Behaviors, style, meaning encoded in a <a
       class="dfn-instance" href="#def-script"
       title="definition: Script">script</a>, and markup in an unfamiliar XML
-    namespace may not be recognized by the user agent as easily or at all. </dd>
+    namespace may not be recognized by the user agent as easily or at all. <br />
+    <a name="def-recognized-actions"
+  id="def-recognized-actions"><dfn>recognized actions</dfn></a>: Actions or events that can be unambiguously identified by a user agent. This can include actions or events initiated by users, scripts, extensions, or other sources. For example, if the keyboard focus is on a web page when the user presses a key, the user agent can recognize the keystroke and can act upon it. If the keyboard focus is on an embedded media player when the user presses a key, the host user agent may or may not be able to detect the keystroke, depending on the embedding architecture. Similarly, when the user activates an INPUT element with type="submit", the user agent will recognize this as a form submission action and carry out the proper interchange with the server. However, if a page includes a custom control that looks like a button labeled "Submit**" but whose actions are entirely handled by an author-provided script, the user agent would not be able to recognize the user action as equivalent to a form submission. Actions such
+        as opening of new browser window would always be implemented by the user agent, so the action would be recognized regardless of whether it was initiated by the user clicking a button or by a script calling a browser function.
+  </dd>
   <dt><a name="def-reflow-content" id="def-reflow-content"><dfn>reflowable content<span class="glossary"></span></dfn></a></dt>
   <dd><a href="#def-content">Web content</a> that can be arbitrarily wrapped over multiple lines. The primary exceptions to reflowable content are graphics and <a href="#def-video">video</a>.</dd>
   <dt><a name="def-relative-time-units"
