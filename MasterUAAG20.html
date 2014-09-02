@@ -225,7 +225,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 21 August
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 2 September
 2014</h2>
 <dl>
   <dt>This version (Github):</dt>
@@ -263,7 +263,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
  
     <h1><a name="title" id="title"></a>Implementing UAAG 2.0</h1>
 	<h2><a id="subtitle" name="subtitle"></a>A guide to understanding and implementing User Agent Accessibility Guidelines 2.0</h2>
-    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 21 August
+    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 2 September
 2014</h2>
     <dl> 
   <dt>This version (Github):</dt> 
@@ -2413,7 +2413,7 @@ information (e.g. title, internal vs. external) (1.10.2, Level AAA)</p>
   <h4 class="sc-title"><a id="sc_1101" name="sc_1101"></a>1.10.1 Show Related Elements: </h4>
 <p class="sc-text"> The user can access the information from explicitly-defined relationships in the content, including at least the following:  <span class="level">(Level&nbsp;AA)</span></p>
 <ol type="a">
-<li>label for a form control or image</li>
+<li>label for a  control or image (e.g. HTML label      element, figcaption or aria-labelledby attributes)</li>
 <li>caption for a table</li>
 <li>row and column labels for a table cell</li>
 </ol>
@@ -2723,7 +2723,8 @@ order (2.2.3, Level A). Users can optionally disable wrapping or request
 a signal when wrapping occurs (2.2.4, Level AA).</p>
 <div class="sc-level">
 <h4 class="sc-title"><a id="sc_221" name="sc_221"></a>2.2.1 Sequential Navigation Between  Elements: </h4>
-<p class="sc-text">The user can move the <a class="dfn-instance" href="#def-keyboard" rel="glossary" title="definition: keyboard">keyboard</a> focus backwards and forwards through all  <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a>  enabled elements in the current viewport. <span class="level">(Level&nbsp;A)</span></p>
+<p class="sc-text">The user can move the <a class="dfn-instance" href="#def-keyboard" rel="glossary" title="definition: keyboard">keyboard</a> focus backwards and forwards through all  <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a>  enabled elements in the <a class="dfn-instance" href="#def-rendered-content"
+title="definition: Rendered content">rendered content</a> of the current viewport. <span class="level">(Level&nbsp;A)</span></p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#sc_221">Implementing 2.2.1</a></div>
@@ -4242,7 +4243,7 @@ that the form won't be submitted until she selects the submit button.</li>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_322-i" name="sc_322-i"></a>Intent of  Success Criterion 3.2.2:</h5>
-        <p>Retracing a navigation step is important for users with cognitive issues that involve memory and attention. This is also important for users whose means of input is not 100% accurate, such as speech input users or users with fine motor challenges. It is also beneficial for users for whom navigation is time consuming, tiring, or painful, because it allows them to avoid having to re-enter long URLs. </p>
+        <p>Retracing a navigation step is important for users with cognitive issues that involve memory and attention. This is also important for users whose means of input is not 100% accurate, such as speech input users or users with fine motor challenges. It is also beneficial for users for whom navigation is time consuming, tiring, or painful, because it allows them to avoid having to re-enter long URLs. The Back feature is a part of the user agent user interface instead of the rendered content, however, authors should not &quot;break&quot; the Back button by disabling it, or creating sequences of web pages that would cause an error if the Back button were used. </p>
        </div>
 
        <div class="implementing-section">
@@ -4251,8 +4252,8 @@ that the form won't be submitted until she selects the submit button.</li>
               <li class="unclassified-ex">Joe is a 
 quadraplegic who is using speech input in a relatively noisy room. The program hears an especially loud word from across the room and interprets it as Joe saying "Enter" to click a selected link. Joe says "Go Back" to go back to the page he was on.
               </li>
-              <li class="unclassified-ex"> Mike's head injury leaves him easily distracted. He is in the middle of a search when the phone rings. When he comes back he says "Go Back" to go back to the original search page so he can reorient himself.</li>
-              <li class="unclassified-ex">Ellen had a head injury that affects her short-term memory. She clicks on a link, and is interrupted by a colleague. When she goes back to      her task she has forgotten what she was originally doing. It's important that she be able to retrace her steps to reorient herself.</li>
+              <li class="unclassified-ex"> Mike's head injury leaves him easily distracted. He is in the middle of a search when the phone rings. When he comes back he selects the Back button to go back to the original search page so he can reorient himself.</li>
+              <li class="unclassified-ex">Ellen had a head injury that affects her short-term memory. She clicks on a link, and is interrupted by a colleague. When she goes back to      her task she has forgotten what she was originally doing. It's important that she be able to retrace her steps to reorient herself using the history feature of the browser user interface. </li>
               <li class="unclassified-ex">Etta has moderately low vision and doesn't use assistive technology. She occasionally clicks on the wrong link. When she does so, she  clicks the Back button in order to get back to where she had been.</li>            
             </ul>        </div>
         <div class="implementing-section">
@@ -4261,7 +4262,7 @@ quadraplegic who is using speech input in a relatively noisy room. The program h
      <li><a href="#sc_1810">1.8.10 Provide Viewport History</a></li></ul></div></div>
 
 <h4 class="sc-title"><a id="sc_323" name="sc_323"></a>3.2.3 Spell Check: </h4>
-<p class="sc-text">User agents provide spell checking functionality for text created inside the user agent. <span class="level">(Level&nbsp;AA)</span></p>
+<p class="sc-text">User agent user interface provides spell checking functionality for text created inside the user agent. <span class="level">(Level&nbsp;AA)</span></p>
 
      <div class="gl-only">
   <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#sc_323">Implementing 3.2.3</a></div>
