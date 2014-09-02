@@ -11,6 +11,7 @@
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
+
                
 
 h2.principle {
@@ -215,7 +216,7 @@ ul.sc-notes {
 
 <body>
 <div class="gl-only">
-<p align="center">[<a href="#toc">contents</a>] [<a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/">implementing</a>]</p>
+<p align="center">[<a href="#toc">Table of Contents</a>] | [<a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/">Implementing UAAG 2.0</a>]</p>
 <div class="head">
 <a href="http://www.w3.org/"><img height="48"
 src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a> 
@@ -223,7 +224,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 19 August
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 21 August
 2014</h2>
 <dl>
   <dt>This version (Github):</dt>
@@ -867,9 +868,10 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
 <p><em class="note-handle">Note</em>: For the purposes of UAAG 2.0, the base character width is the font width of the character commonly accepted as the base character for calculating kerning in the typography for that language (e.g. zero character in English).</p>
 
  <h4 class="sc-title"><a id="sc_144" name="sc_144"></a>1.4.4 Configured and Reflowed Text Printing: </h4>
- <p class="sc-text">The user can print the rendered content, and the following are all true:  <span class="level">(Level&nbsp;AA)</span>  </p>
+ <p class="sc-text">The user can print the <a class="dfn-instance" href="#def-rendered-content"
+title="definition: Rendered content">rendered content</a>, and the following are all true:  <span class="level">(Level&nbsp;AA)</span>  </p>
  <ol type="a">
- <li>any rendered, visual, non-time-based content can be printed </li>
+ <li>any visual, non-time-based, rendered content can be printed </li>
  <li>the user can choose between <a class="dfn-instance" href="#def-printing-devices" rel="glossary" title="definition: available printing devices">available printing devices</a></li>
  <li>the user can have content printed as it is rendered on screen, reflecting any user scaling, highlighting, and other modifications</li>
  <li>the user can have printed content reflow as if the top-level viewport had been resized to match the horizontal dimension of the printing device's printable area</li>
@@ -1128,7 +1130,8 @@ title="definition: viewport">viewport</a>'s content moves as necessary to ensure
       
 
 <h4 class="sc-title"><a id="sc_183" name="sc_183"></a>1.8.3 Provide Viewport Scrollbars: </h4>
-When the rendered content extends beyond the viewport dimensions, users can have graphical viewports include scrollbars, <a class="dfn-instance" href="#def-override"
+When the <a class="dfn-instance" href="#def-rendered-content"
+title="definition: Rendered content">rendered content</a> extends beyond the viewport dimensions, users can have graphical viewports include scrollbars, <a class="dfn-instance" href="#def-override"
 title="definition: Override">overriding</a> any values specified by the author.
 <span class="level">(Level&nbsp;A)</span>
 
@@ -1369,7 +1372,7 @@ information (e.g. title, internal vs. external) (1.10.2, Level AAA)</p>
   <h4 class="sc-title"><a id="sc_1101" name="sc_1101"></a>1.10.1 Show Related Elements: </h4>
 <p class="sc-text"> The user can access the information from explicitly-defined relationships in the content, including at least the following:  <span class="level">(Level&nbsp;AA)</span></p>
 <ol type="a">
-<li>label for a control or image</li>
+<li>label for a form control or image</li>
 <li>caption for a table</li>
 <li>row and column labels for a table cell</li>
 </ol>
@@ -1565,7 +1568,8 @@ with the elements to make it easier for users to discover the commands
 
 <div class="sc-level">
 <h4 class="sc-title"><a id="sc_231" name="sc_231"></a>2.3.1 Allow Direct Navigation to Enabled Elements: </h4>
-<p class="sc-text"> The user can move keyboard focus <a class="dfn-instance" href="#def-directly" rel="glossary" title="definition: directly">directly</a> to any <a class="dfn-instance" href="#def-enabled-element" rel="glossary" title="definition: enabled element">enabled element</a> in the rendered content. <span class="level">(Level&nbsp;AA)</span></p>
+<p class="sc-text"> The user can move keyboard focus <a class="dfn-instance" href="#def-directly" rel="glossary" title="definition: directly">directly</a> to any <a class="dfn-instance" href="#def-enabled-element" rel="glossary" title="definition: enabled element">enabled element</a> in the <a class="dfn-instance" href="#def-rendered-content"
+title="definition: Rendered content">rendered content</a>. <span class="level">(Level&nbsp;AA)</span></p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#sc_231">Implementing 2.3.1</a></div>
@@ -1575,7 +1579,8 @@ with the elements to make it easier for users to discover the commands
       
 
 <h4 class="sc-title"><a id="sc_232" name="sc_232"></a>2.3.2 Allow Direct Activation of Enabled Elements: </h4>
-<p class="sc-text"> The user can, in a single action, move keyboard focus <a class="dfn-instance" href="#def-directly" rel="glossary" title="definition: directly">directly</a> to any <a class="dfn-instance" href="#def-enabled-element" rel="glossary" title="definition: enabled element">enabled element</a> in the rendered content and perform an activation action on that element. <span class="level">(Level&nbsp;AA)</span>  </p>
+<p class="sc-text"> The user can, in a single action, move keyboard focus <a class="dfn-instance" href="#def-directly" rel="glossary" title="definition: directly">directly</a> to any <a class="dfn-instance" href="#def-enabled-element" rel="glossary" title="definition: enabled element">enabled element</a> in the <a class="dfn-instance" href="#def-rendered-content"
+title="definition: Rendered content">rendered content</a> and perform an activation action on that element. <span class="level">(Level&nbsp;AA)</span>  </p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#sc_232">Implementing 2.3.2</a></div>
@@ -1586,7 +1591,8 @@ with the elements to make it easier for users to discover the commands
 
 
 <h4 class="sc-title"><a id="sc_233" name="sc_233"></a>2.3.3 Present Direct Commands from Rendered Content: </h4>
-<p class="sc-text"> The user can have any <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a>  <a class="dfn-instance" href="#def-direct-command" rel="glossary" title="definition: direct command">direct commands</a> in rendered content (e.g. accesskey, landmark)  be presented with their associated elements (e.g. Alt+R to reply to a web email). <span class="level">(Level&nbsp;AA)</span> </p>
+<p class="sc-text"> The user can have any <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a>  <a class="dfn-instance" href="#def-direct-command" rel="glossary" title="definition: direct command">direct commands</a> in <a class="dfn-instance" href="#def-rendered-content"
+title="definition: Rendered content">rendered content</a> (e.g. accesskey, landmark)  be presented with their associated elements (e.g. Alt+R to reply to a web email). <span class="level">(Level&nbsp;AA)</span> </p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#sc_233">Implementing 2.3.3</a></div>
@@ -1644,7 +1650,8 @@ title="definition: Document character set">document character set</a>. <span cla
       
             
             
-<h4 class="sc-title"><a id="sc_242" name="sc_242"></a>2.4.2  Search Direction: </h4><p class="sc-text"> The user can search forward or backward in rendered content. <span class="level">(Level&nbsp;A)</span> </p>
+<h4 class="sc-title"><a id="sc_242" name="sc_242"></a>2.4.2  Search Direction: </h4><p class="sc-text"> The user can search forward or backward in <a class="dfn-instance" href="#def-rendered-content"
+title="definition: Rendered content">rendered content</a>. <span class="level">(Level&nbsp;A)</span> </p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://jspellman.github.io/UAAG/Implementing-UAAG20/#sc_242">Implementing 2.4.2</a></div>
@@ -2429,7 +2436,8 @@ made <a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" t
 
 
 <h4 class="sc-title"><a id="sc_416" name="sc_416"></a>4.1.6 Expose Additional Properties: </h4>
-<p class="sc-text">For all user interface components, including the <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">user agent user interface</a>, rendered content, and generated content, the user agent makes <a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" title="definition: content"> available</a> the following, via a <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">platform accessibility service</a>, if the properties are supported by the service:
+<p class="sc-text">For all user interface components, including the <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">user agent user interface</a>, <a class="dfn-instance" href="#def-rendered-content"
+title="definition: Rendered content">rendered content</a>, and generated content, the user agent makes <a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" title="definition: content"> available</a> the following, via a <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">platform accessibility service</a>, if the properties are supported by the service:
 <span class="level">(Level&nbsp;AA)</span></p>
 <ul class="sc-bullets">
   <li class="sc-bullet">Bounding dimensions and coordinates</li>
@@ -2594,7 +2602,7 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
 <ol type="a">
     <li>Name and manufacturer</li>
     <li>Version number or version range</li>
-    <li>Required patches or updates, human language of the user interface and documentation</li>
+    <li>Required patches or updates,  language of the user interface and documentation (e.g. English, French, Chinese)</li>
     <li>Plugins or extensions (including version numbers)  needed to meet the success criteria (e.g. mouseless browsing)</li>
     <li>Configuration changes to the user agent, plug-ins and extensions that are needed to meet the success criteria   (e.g. ignore author foreground/background color, turn on Carat Browsing)</li>
     
@@ -3102,10 +3110,11 @@ recognize. </dd>
   <dd class="glossary">Time intervals for navigating media relative to the current point (e.g. move forward 30 seconds). When interacting with a time-based media presentation, a user may find it beneficial to move forward or backward via a time interval relative to their current position. For example, a user may find a concept unclear in a video lecture and elect to skip back 30 seconds from the current position to review what had been described. Relative time units may be preset by the user agent, configurable by the user, and/or automatically calculated based upon media duration (e.g. jump 5 seconds in a 30-second clip, or 5 minutes in a 60-minute clip). Relative time units are distinct from absolute time values such as the 2 minute mark, the half-way point, or the end.</dd>
   <dt class="glossary"><a name="def-rendered-content"
   id="def-rendered-content"><dfn>rendered content</dfn></a></dt>
-  <dd class="glossary">The presentation generated by the user agent based on the author supplied code. This includes text characters, images, stylesheets, scripts,
-    and any other content that, once processed, may be perceived.
-    <ul>
-      <li><dfn><a
+  <dd class="glossary">The presentation generated by the user agent based on the author supplied code. This includes: 
+  <ul><li>content specified by the author</li><li>dynamic content created or altered by scripts</li><li>content inserted by the user agent (e.g. repair text and security warnings on links)</li> <li>content inserted by style sheets or markup (e.g. number or letter preceding an ordered list item, the CSS content property)</li> 
+  
+  </ul>
+<dfn><a
   name="def-rendered-text" id="def-rendered-text"></a>rendered text</dfn>: <a
       class="dfn-instance" href="#def-text" title="definition: Text">Text</a> content that is rendered in a way that communicates information about
         the characters themselves, whether visually or as synthesized
@@ -3595,7 +3604,7 @@ href="http://www.w3.org/TR/WAI-USERAGENT/acks.html#Acknowledgments">those who
 contributed to UAAG 1.0</a>.</p>
 
 <p>This publication has been funded in part with Federal funds from the U.S.
-Department of Education, National Institute on Disabiity, Independent   Living, and Rehabilitation Research (NIDILRR) under contract number ED-OSE-10-C-0067. The content of this
+Department of Education, National Institute on Disability, Independent   Living, and Rehabilitation Research (NIDILRR) under contract number ED-OSE-10-C-0067. The content of this
 publication does not necessarily reflect the views or policies of the U.S.
 Department of Education, nor does mention of trade names, commercial
 products, or organizations imply endorsement by the U.S. Government. </p>
