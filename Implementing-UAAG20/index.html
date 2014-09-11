@@ -11,8 +11,7 @@
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
-
-               
+   
 
 h2.principle {
 	background-color:#FFFFFF;
@@ -217,13 +216,13 @@ ul.sc-notes {
 <body>
 
 <div class="techs-only"> 
- <p align="center">[<a href="#toc">Contents</a>] [<a href="http://jspellman.github.io/UAAG/UAAG20/">Guidelines</a>]</p> 
+ <p align="center">[<a href="#toc">Table of Contents</a>] [<a href="http://jspellman.github.io/UAAG/UAAG20/">UAAG 2.0 Guidelines</a>]</p> 
 <div class="head">
 	<p><a href="http://www.w3.org/"><img height="48" width="72" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p> 
  
     <h1><a name="title" id="title"></a>Implementing UAAG 2.0</h1>
 	<h2><a id="subtitle" name="subtitle"></a>A guide to understanding and implementing User Agent Accessibility Guidelines 2.0</h2>
-    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 5 September
+    <h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 11 September
 2014</h2>
     <dl> 
   <dt>This version (Github):</dt> 
@@ -250,28 +249,19 @@ ul.sc-notes {
 <div class="techs-only">
 <h2 class="nonb"><a name="abstract" id="abstract">Abstract</a></h2>
 
-<p>This document provides supporting information for the <a href="http://www.w3.org/TR/UAAG20/">User Agent Accessibility Guidelines (UAAG) 2.0</a> for designing <a class="dfn-instance"
+<p>UAAG 2.0 Reference provides supporting information for the <a href="http://www.w3.org/TR/UAAG20/">User Agent Accessibility Guidelines (UAAG) 2.0</a>. UAAG 2.0 guides developers in designing <a class="dfn-instance"
 href="#def-user-agent" rel="glossary" title="definition: User agent">user
-agents</a> that lower barriers to web accessibility for people with
-disabilities. User agents include  browsers, media players and  applications that
+agents</a> that make the web more accessible to people with
+disabilities. User agents include browsers, media players and  applications that
 retrieve and render <a class="dfn-instance" href="#def-content"
-rel="glossary" title="definition: Content">web content</a>. A user agent that
-<a href="#conformance">conforms</a> to these guidelines will promote
-accessibility through its own user interface and its ability to communicate with other technologies
-(especially <a class="dfn-instance" href="#def-assistive-technology"
-rel="glossary" title="definition: Assistive technology">assistive
-technologies</a>). All users, not just users with disabilities,
-should find conforming user agents to be more usable. In addition to helping developers of browsers and media players, this
-document will also benefit developers of assistive technologies because it
-explains what types of information and control an assistive technology may
-expect from a conforming user agent. </p>
-<p>This document provides explanation of the intent of  UAAG 2.0 success criteria, examples of implementation of the guidelines, best practice recommendations and additional resources for the guideline. </p>
+rel="glossary" title="definition: Content">web content</a>. </p>
+<p>UAAG 2.0 Reference  provides explanation of the intent of  UAAG 2.0 success criteria, examples of implementation of the guidelines, best practice recommendations and additional resources for the success criteria. </p>
 <p>The "User Agent Accessibility Guidelines 2.0" (<acronym
-title="Authoring Tool Accessibility Guidelines">UAAG</acronym> 2.0) is part
+title="Authoring Tool Accessibility Guidelines">UAAG</acronym> 2.0) and &quot;UAAG 2.0 Reference&quot; are part
 of a series of accessibility guidelines published by the <acronym
 title="World Wide Web Consortium">W3C</acronym> <a
 href="http://www.w3.org/WAI/" title="Link to W3C-WAI">Web Accessibility
-Initiative</a> (<acronym title="the Web Access Initiative">WAI</acronym>).</p>
+Initiative</a> (<acronym title="the Web Access Initiative">WAI</acronym>). UAAG is introduced in the <a rel="nofollow" href="http://www.w3.org/WAI/intro/uaag">User Agent Accessibility Guidelines (UAAG) Overview</a>.</p>
 
 <h2 class="nonb"><a name="status" id="status">Status of this document</a></h2>
 
@@ -5474,8 +5464,7 @@ recognize. </dd>
   <dd class="glossary">Any information that supports the use of a <a href="#def-user-agent">user agent</a>. This information may be provided electronically or      otherwise and includes help, manuals, installation      instructions, tutorials, etc. Documentation may be accessed in various ways (e.g. as      files included in the installation, available on the web). <br />
   Note: The level of technical detail in documentation for      users should match the technical level of the feature. For      example, user documentation for a browser's zoom function      should not refer users to the source code repository for that      browser.</dd>
   <dt class="glossary"><a name="e" id="e"></a><a name="def-element"
-  id="def-element"><dfn>element</dfn></a>, <a name="def-element-type"
-  id="def-element-type"><dfn>element type</dfn></a></dt>
+  id="def-element"><dfn>element</dfn></a></dt>
   <dd class="glossary">Primarily, a syntactic construct of a document type definition (DTD) for its application. This is  the sense employed by the XML 1.0 specification
     (<cite><a href="#ref-XML"
       title="Link to reference XML">[XML]</a></cite>, section 3). This sense is also relevant to structures defined by
@@ -5490,6 +5479,8 @@ recognize. </dd>
       title="definition: Interactive element">elements</a> defined by implemented markup languages. </li>
       <li><a name="def-disabled-element" id="def-disabled-element"></a><dfn>disabled
         element</dfn>: A potentially enabled element that is not currently available for activation (e.g. a &quot;grayed out&quot; menu item).</li>
+        <li><a name="def-element-type"
+  id="def-element-type"><dfn>element type</dfn></a>: A category of elements (such as images, videos, sounds, first level headings, lists, or list items).</li>
     </ul>
   </dd>
   <dt class="glossary"><a name="def-event" id="def-event"><dfn>events and
