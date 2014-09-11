@@ -293,7 +293,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 href="#def-user-agent" rel="glossary" title="definition: User agent">user
 agents</a> that make the web more accessible to people with
 disabilities. User agents include browsers, media players and  applications that
-retrieve and render <a class="dfn-instance" href="#def-content"
+ render <a class="dfn-instance" href="#def-content"
 rel="glossary" title="definition: Content">web content</a>. A user agent that follows UAAG 2.0 will improve
 accessibility through its own user interface and its ability to communicate with other technologies, including <a class="dfn-instance" href="#def-assistive-technology"
 rel="glossary" title="definition: Assistive technology">assistive
@@ -388,9 +388,9 @@ href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">secti
 href="#def-user-agent" rel="glossary" title="definition: User agent">user
 agents</a> that make the web more accessible to people with
 disabilities. User agents include browsers, media players and  applications that
-retrieve and render <a class="dfn-instance" href="#def-content"
+render <a class="dfn-instance" href="#def-content"
 rel="glossary" title="definition: Content">web content</a>. </p>
-<p>UAAG 2.0 Reference  provides explanation of the intent of  UAAG 2.0 success criteria, examples of implementation of the guidelines, best practice recommendations and additional resources for the success criteria. </p>
+<p>UAAG 2.0 Reference  provides explanation of the intent of  UAAG 2.0 success criteria, best practice recommendations, examples of implementation of the guidelines, and additional resources for the success criteria. </p>
 <p>The "User Agent Accessibility Guidelines 2.0" (<acronym
 title="Authoring Tool Accessibility Guidelines">UAAG</acronym> 2.0) and &quot;UAAG 2.0 Reference&quot; are part
 of a series of accessibility guidelines published by the <acronym
@@ -675,6 +675,24 @@ levels: levels A (minimum), AA (recommended), and AAA (advanced). The three leve
     <li>Help prioritize accessibility improvements to their projects, giving more weight to the level A and AA success criteria.</li>
     <li>Help decide how to provide accessibility functionality in the   user interface, for example, putting Level A functionality in a toolbar,   Level AA in the main preference area, and Level AAA in an &quot;Advanced   settings&quot; dialog box.</li>
   </ul>
+<h3><a id="intro-applies-to" name="intro-applies-to"></a>Using "Applies To"</h3>
+<p>The various UAAG 2.0 success criteria apply to different parts of user agents. While this applicability is always part of the normative wording of each success criteria, for ease of understanding, this (informative) document provides one or more of the following "Applies to" tags on each success criterion: </p>
+
+<h4 id="intro-applies-to-uaui">UA user interface</h4>
+<p>When the success criterion will be applicable to the <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a></p>
+
+<h4 id="intro-applies-to-content-ui">Content user interface</h4>
+<p>When the success criterion will be applicable to the <a class="dfn-instance" href="#def-content-ui" rel="glossary" title="definition: content user interface">content user interface</a>. Note that the content user interface defintion includes  the rendered content. </p>
+
+<h4 id="intro-applies-to-platform-a11y">Communication with platform accessibility services</h4>
+<p>When the success criterion will be applicable to programmatic communication with one or more <a class="dfn-instance" href="#def-access-platform-arch" rel="glossary" title="definition: platform accessibility services">platform accessibility services</a></p>
+
+<h4 id="intro-applies-to-config">Configuration settings</h4>
+<p>When the success criterion requires that a particular configuration setting exist (e.g. that the user be able to turn a functionality on or off) or the success criterion relates to configuration settings, in general. On some platforms, configuration settings are known as preference settings. </p>
+
+<h4 id="intro-applies-to-config-option">Configuration settings (optional)</h4>
+<p>When the success criterion requires functionality, but lets the developer decide whether the functionality will always be turned on or whether it could be controlled by a configuration setting.
+
 <h3><a id="intro-def-ua" name="intro-def-ua">Definition of <dfn>User Agent
 </dfn></a></h3>
 
@@ -777,7 +795,9 @@ agent</a></span> allow the user to choose whether the alternative content replac
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_111-a" name="sc_111-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings (<em>optional</em>)</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config-option" title="definition: configuration settings (optional)">Configuration settings (optional)</a></p>
         </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_111-i" name="sc_111-i"></a>Intent of Success Criterion 1.1.1:</h5>
@@ -823,7 +843,9 @@ title="definition: Conditional content">alternative content</a> is present. <spa
       <div class="techs-only">
 <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_112-a" name="sc_112-a"></a>Applies to:</h5>
-        <p>Content user interface,  Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>,  <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_112-i" name="sc_112-i"></a>Intent  of  Success Criterion 1.1.2:</h5>
@@ -861,7 +883,9 @@ href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_113-a" name="sc_113-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_113-i" name="sc_113-i"></a>Intent of Success Criterion 1.1.3:</h5>
@@ -912,7 +936,9 @@ title="definition: Conditional content">alternative content</a> to render by def
       <div class="techs-only">
 <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_114-a" name="sc_114-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
         <div class="implementing-section">
   <h5 class="implementing-heading"><a id="sc_114-i" name="sc_114-i"></a>Intent  of  Success Criterion 1.1.4:</h5>
@@ -956,7 +982,9 @@ title="definition: Conditional content">alternative content</a> to render by def
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_115-a" name="sc_115-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_115-i" name="sc_115-i"></a>Intent  of  Success Criterion 1.1.5:</h5>
@@ -1001,7 +1029,9 @@ title="definition: Conditional content">alternative content</a> to render by def
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_116-a" name="sc_116-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_116-i" name="sc_116-i"></a>Intent  of  Success Criterion 1.1.6:</h5>
@@ -1055,7 +1085,7 @@ title="definition: repair text">repair</a> the text alternatives by substituting
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_121-a" name="sc_121-a"></a>Applies to:</h5>
-        <p>Communication with <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">platform accessibility services</a></p>
+        <p><a href="#def-access-platform-arch" class="dfn-instance" title="definition: communication with platform accessibility services">Communication with platform accessibility services</a></p>
        </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_121-i" name="sc_121-i"></a>Intent  of  Success Criterion 1.2.1:</h5>
@@ -1095,7 +1125,9 @@ agent</a> should attempt to insert the following types of structural markup on t
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_122-a" name="sc_122-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_122-i" name="sc_122-i"></a>Intent  of  Success Criterion 1.2.2:</h5>
@@ -1151,7 +1183,9 @@ Guideline 1.3 - Provide highlighting for selection, keyboard focus, enabled elem
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_131-a" name="sc_131-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_131-i" name="sc_131-i"></a>Intent  of  Success Criterion 1.3.1:</h5>
@@ -1210,7 +1244,9 @@ Guideline 1.3 - Provide highlighting for selection, keyboard focus, enabled elem
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_132-a" name="sc_132-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_132-i" name="sc_132-i"></a>Intent  of  Success Criterion 1.3.2:</h5>
@@ -1273,7 +1309,9 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_141-a" name="sc_141-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_141-i" name="sc_141-i"></a>Intent  of  Success Criterion 1.4.1:</h5>
@@ -1330,7 +1368,9 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_142-a" name="sc_142-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_142-i" name="sc_142-i"></a>Intent  of  Success Criterion 1.4.2:</h5>
@@ -1376,7 +1416,9 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
 <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_143-a" name="sc_143-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_143-i" name="sc_143-i"></a>Intent  of  Success Criterion 1.4.3:</h5>
@@ -1418,7 +1460,10 @@ title="definition: Rendered content">rendered content</a>, and the following are
  <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_144-a" name="sc_144-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
    <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_144-i" name="sc_144-i"></a>Intent  of  Success Criterion 1.4.4:</h5>
@@ -1463,7 +1508,9 @@ title="definition: Rendered content">rendered content</a>, and the following are
     <div class="techs-only">
       <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_145-a" name="sc_145-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
       <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_145-i" name="sc_145-i"></a>Intent  of  Success Criterion 1.4.5:</h5>
@@ -1523,7 +1570,9 @@ title="definition: Operating environment">operating environment</a> mechanisms. 
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_151-a" name="sc_151-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_151-i" name="sc_151-i"></a>Intent  of  Success Criterion 1.5.1:</h5>
@@ -1617,7 +1666,9 @@ Guideline 1.6 - Provide synthesized speech configuration
 <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_161-a" name="sc_161-a"></a><a id="sc_162-a" name="sc_162-a"></a><a id="sc_163-a" name="sc_163-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
 <h5 class="implementing-heading"><a id="sc_161-i" name="sc_161-i"></a><a id="sc_162-i" name="sc_162-i"></a><a id="sc_163-i" name="sc_163-i"></a>Intent of Success Criteria 1.6.1, 1.6.2, and 1.6.3:</h5>
@@ -1663,7 +1714,9 @@ and three point five" for 1203.5).</li>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_164-a" name="sc_164-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_164-i" name="sc_164-i"></a>Intent  of  Success Criterion 1.6.4:</h5>
@@ -1695,7 +1748,9 @@ and three point five" for 1203.5).</li>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_165-a" name="sc_165-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_165-i" name="sc_165-i"></a>Intent  of  Success Criterion 1.6.5:</h5>
@@ -1783,7 +1838,9 @@ save stylesheets (1.7.4, Level AA).</p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_171-a" name="sc_171-a"></a><a id="sc_172-a" name="sc_172-a"></a><a id="sc_173-a" name="sc_173-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_171-i" name="sc_171-i"></a><a id="sc_172-i" name="sc_172-i"></a><a id="sc_173-i" name="sc_173-i"></a>Intent of Success Criteria 1.7.1, 1.7.2, and 1.7.3:</h5>
@@ -1819,7 +1876,8 @@ save stylesheets (1.7.4, Level AA).</p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_174-a" name="sc_174-a"></a>Applies to:</h5>
-        <p>UA user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_174-i" name="sc_174-i"></a>Intent  of  Success Criterion 1.7.4:</h5>
@@ -1884,7 +1942,10 @@ items in a web page and use shortcuts to navigate back to marked items.
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_181-a" name="sc_181-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface, Configuration settings (<em>optional</em>)</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config-option" title="definition: configuration settings (optional)">Configuration settings (optional)</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_181-i" name="sc_181-i"></a>Intent of Success Criterion 1.8.1:</h5>
@@ -1925,7 +1986,8 @@ title="definition: viewport">viewport</a>'s content moves as necessary to ensure
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_182-a" name="sc_182-a"></a>Applies to:</h5>
-        <p>Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_182-i" name="sc_182-i"></a>Intent  of  Success Criterion 1.8.2:</h5>
@@ -1971,7 +2033,9 @@ title="definition: Override">overriding</a> any values specified by the author.
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_183-a" name="sc_183-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings (<em>optional</em>)</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config-option" title="definition: configuration settings (optional)">Configuration settings (optional)</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_183-i" name="sc_183-i"></a>Intent  of  Success Criterion 1.8.3:</h5>
@@ -2009,7 +2073,8 @@ content</a>. <span class="level">(Level&nbsp;A)</span></p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_184-a" name="sc_184-a"></a>Applies to:</h5>
-        <p>Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_184-i" name="sc_184-i"></a>Intent  of  Success Criterion 1.8.4:</h5>
@@ -2045,7 +2110,9 @@ content</a>. <span class="level">(Level&nbsp;A)</span></p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_185-a" name="sc_185-a"></a>Applies to:</h5>
-        <p>Content user interface,  Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>,  <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_185-i" name="sc_185-i"></a>Intent  of  Success Criterion 1.8.5:</h5>
@@ -2086,7 +2153,8 @@ regard">point of regard</a>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_186-a" name="sc_186-a"></a>Applies to:</h5>
-        <p>Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_186-i" name="sc_186-i"></a>Intent  of  Success Criterion 1.8.6:</h5>
@@ -2135,7 +2203,10 @@ regard">point of regard</a>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_188-a" name="sc_188-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_188-i" name="sc_188-i"></a>Intent  of  Success Criterion 1.8.8:</h5>
@@ -2173,7 +2244,9 @@ href="#def-override" title="definition: Override">overriding</a> any values spec
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_189-a" name="sc_189-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_189-i" name="sc_189-i"></a>Intent  of  Success Criterion 1.8.9:</h5>
@@ -2243,7 +2316,10 @@ title="definition: keyboard focus">keyboard focus</a> when they open.  <span cla
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1810-a" name="sc_1810-a"></a><a id="sc_1811-a" name="sc_1811-a"></a><a id="sc_1812-a" name="sc_1812-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1810-i" name="sc_1810-i"></a><a id="sc_1811-i" name="sc_1811-i"></a><a id="sc_1812-i" name="sc_1812-i"></a>Intent  of  Success Criteria 1.8.10, 1.8.11 &amp; 1.8.12:</h5>
@@ -2279,7 +2355,10 @@ href="#def-viewport-toplevel">top-level viewports</a> (e.g. windows or tabs) fol
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1813-a" name="sc_1813-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1813-i" name="sc_1813-i"></a>Intent  of  Success Criterion 1.8.13:</h5>
@@ -2311,7 +2390,9 @@ href="#def-viewport-toplevel">top-level viewports</a> (e.g. windows or tabs) fol
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1814-a" name="sc_1814-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1814-i" name="sc_1814-i"></a>Intent  of  Success Criterion 1.8.14:</h5>
@@ -2344,7 +2425,9 @@ href="#def-viewport-toplevel">top-level viewports</a> (e.g. windows or tabs) fol
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1815-a" name="sc_1815-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1815-i" name="sc_1815-i"></a>Intent  of  Success Criterion 1.8.15:</h5>
@@ -2379,7 +2462,9 @@ href="#def-viewport-toplevel">top-level viewports</a> (e.g. windows or tabs) fol
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1816-a" name="sc_1816-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1816-i" name="sc_1816-i"></a>Intent  of  Success Criterion 1.8.16:</h5>
@@ -2418,7 +2503,10 @@ href="#def-viewport-toplevel">top-level viewports</a> (e.g. windows or tabs) fol
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1817-a" name="sc_1817-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface, Configuration settings (<em>optional</em>)</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config-option" title="definition: configuration settings (optional)">Configuration settings (optional)</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1817-i" name="sc_1817-i"></a>Intent  of  Success Criterion 1.8.17:</h5>
@@ -2471,7 +2559,8 @@ title="definition: Rendered content">rendered content</a> that allows focus to b
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_191-a" name="sc_191-a"></a>Applies to:</h5>
-        <p>UA user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_191-i" name="sc_191-i"></a>Intent  of  Success Criterion 1.9.1:</h5>
@@ -2513,7 +2602,8 @@ agent</a>.  <span class="level">(Level&nbsp;AAA)</span> </p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_192-a" name="sc_192-a"></a>Applies to:</h5>
-        <p>UA user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_192-i" name="sc_192-i"></a>Intent  of  Success Criterion 1.9.2:</h5>
@@ -2566,7 +2656,8 @@ information (e.g. title, internal vs. external) (1.10.2, Level AAA)</p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1101-a" name="sc_1101-a"></a>Applies to:</h5>
-        <p>Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1101-i" name="sc_1101-i"></a>Intent  of  Success Criterion 1.10.1:</h5>        
@@ -2597,7 +2688,8 @@ Practices: 4. Relationships</a></li></ul></div></div>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1102-a" name="sc_1102-a"></a>Applies to:</h5>
-        <p>UA user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1102-i" name="sc_1102-i"></a>Intent  of  Success Criterion 1.10.2:</h5>
@@ -2658,7 +2750,9 @@ hand drawing). This does not forbid and should not discourage providing other in
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_211-a" name="sc_211-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_211-i" name="sc_211-i"></a>Intent  of  Success Criterion 2.1.1:</h5>
@@ -2710,7 +2804,9 @@ has an active or inactive <a class="dfn-instance" href="#def-keyboard-focus" tit
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_212-a" name="sc_212-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_212-i" name="sc_212-i"></a>Intent  of  Success Criterion 2.1.2:</h5>
@@ -2745,7 +2841,9 @@ has an active or inactive <a class="dfn-instance" href="#def-keyboard-focus" tit
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_213-a" name="sc_213-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_213-i" name="sc_213-i"></a>Intent  of  Success Criterion 2.1.3:</h5>
@@ -2780,7 +2878,10 @@ Activation: </h4>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_214-a" name="sc_214-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_214-i" name="sc_214-i"></a>Intent  of  Success Criterion 2.1.4:</h5>
@@ -2818,7 +2919,9 @@ Activation: </h4>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_215-a" name="sc_215-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_215-i" name="sc_215-i"></a>Intent  of  Success Criterion 2.1.5:</h5>
@@ -2853,7 +2956,9 @@ agent</a> user interface includes mechanisms to make keyboard access more effici
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_216-a" name="sc_216-a"></a>Applies to:</h5>
-        <p>UA user interface,Content user interface<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>,<a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_216-i" name="sc_216-i"></a>Intent  of  Success Criterion 2.1.6:</h5>
@@ -2907,7 +3012,8 @@ title="definition: Rendered content">rendered content</a> of the current viewpor
         <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_221-a" name="sc_221-a"></a>Applies to:</h5>
-        <p>Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
 
        <div class="implementing-section">
@@ -2967,7 +3073,9 @@ a viewport. <span class="level">(Level&nbsp;A)</span></p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_222-a" name="sc_222-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
 
        <div class="implementing-section">
@@ -3013,7 +3121,8 @@ document order. <span class="level">(Level&nbsp;A)</span></p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_223-a" name="sc_223-a"></a>Applies to:</h5>
-        <p>Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
 
   <div class="implementing-section">
@@ -3045,7 +3154,9 @@ title="definition: sequential navigation">sequential navigation</a> wraps at the
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_224-a" name="sc_224-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
 
        <div class="implementing-section">
@@ -3094,7 +3205,8 @@ title="definition: Rendered content">rendered content</a>. <span class="level">(
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_231-a" name="sc_231-a"></a>Applies to:</h5>
-        <p>Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_231-i" name="sc_231-i"></a>Intent  of  Success Criterion 2.3.1:</h5>
@@ -3127,7 +3239,8 @@ title="definition: Rendered content">rendered content</a> and perform an activat
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_232-a" name="sc_232-a"></a>Applies to:</h5>
-        <p>Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_232-i" name="sc_232-i"></a>Intent  of  Success Criterion 2.3.2:</h5>
@@ -3160,7 +3273,9 @@ title="definition: Rendered content">rendered content</a> (e.g. accesskey, landm
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_233-a" name="sc_233-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings (<em>optional</em>)</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config-option" title="definition: configuration settings (optional)">Configuration settings (optional)</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_233-i" name="sc_233-i"></a>Intent  of  Success Criterion 2.3.3:</h5>
@@ -3197,7 +3312,9 @@ title="definition: Rendered content">rendered content</a> (e.g. accesskey, landm
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_234-a" name="sc_234-a"></a>Applies to:</h5>
-        <p>UA user interface, Configuration settings (<em>optional</em>)</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config-option" title="definition: configuration settings (optional)">Configuration settings (optional)</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_234-i" name="sc_234-i"></a>Intent  of  Success Criterion 2.3.4:</h5>
@@ -3235,7 +3352,10 @@ overtax her hands.</li>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_235-a" name="sc_235-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_235-i" name="sc_235-i"></a>Intent  of  Success Criterion 2.3.5</h5>
@@ -3300,7 +3420,9 @@ title="definition: Document character set">document character set</a>. <span cla
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_241-a" name="sc_241-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_241-i" name="sc_241-i"></a>Intent  of  Success Criterion 2.4.1:</h5>
@@ -3336,7 +3458,9 @@ title="definition: Rendered content">rendered content</a>. <span class="level">(
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_242-a" name="sc_242-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_242-i" name="sc_242-i"></a>Intent  of  Success Criterion 2.4.2:</h5>
@@ -3366,7 +3490,9 @@ title="definition: Rendered content">rendered content</a>. <span class="level">(
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_243-a" name="sc_243-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_243-i" name="sc_243-i"></a>Intent  of  Success Criterion 2.4.3:</h5>
@@ -3402,7 +3528,10 @@ title="definition: notify">notification</a> when there is no match to a search o
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_244-a" name="sc_244-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_244-i" name="sc_244-i"></a>Intent  of  Success Criterion 2.4.4:</h5>
@@ -3437,7 +3566,9 @@ title="definition: notify">notification</a> when there is no match to a search o
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_245-a" name="sc_245-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_245-i" name="sc_245-i"></a>Intent  of Success Criterion 2.4.5:</h5>
@@ -3484,7 +3615,9 @@ hierarchy.
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_251-a" name="sc_251-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_251-i" name="sc_251-i"></a>Intent  of  Success Criterion 2.5.1:</h5>
@@ -3519,7 +3652,8 @@ hierarchy.
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_252-a" name="sc_252-a"></a>Applies to:</h5>
-        <p>Content user interface<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_252-i" name="sc_252-i"></a>Intent  of  Success Criterion 2.5.2:</h5>
@@ -3555,7 +3689,8 @@ hierarchy.
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_253-a" name="sc_253-a"></a>Applies to:</h5>
-        <p>Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
        </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_253-i" name="sc_253-i"></a>Intent  of  Success Criterion  2.5.3:</h5>
@@ -3600,7 +3735,8 @@ Guideline 2.6 - Provide access to event handlers
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_261-a" name="sc_261-a"></a>Applies to:</h5>
-        <p>Content user interface<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>      
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_261-i" name="sc_261-i"></a>Intent  of  Success Criterion 2.6.1:</h5>
@@ -3654,7 +3790,8 @@ transport settings to compatible systems (2.7.5, Level AA).</p>
         <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_271-a" name="sc_271-a"></a>Applies to:</h5>
-        <p>Configuration settings<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_271-i" name="sc_271-i"></a>Intent  of  Success Criterion 2.7.1:</h5>
@@ -3686,7 +3823,8 @@ transport settings to compatible systems (2.7.5, Level AA).</p>
        <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_272-a" name="sc_272-a"></a>Applies to:</h5>
-        <p>Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_272-i" name="sc_272-i"></a>Intent  of  Success Criterion 2.7.2:</h5>
@@ -3716,7 +3854,8 @@ transport settings to compatible systems (2.7.5, Level AA).</p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_273-a" name="sc_273-a"></a>Applies to:</h5>
-        <p>Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
 
        <div class="implementing-section">
@@ -3749,7 +3888,8 @@ transport settings to compatible systems (2.7.5, Level AA).</p>
         <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_274-a" name="sc_274-a"></a>Applies to:</h5>
-        <p>Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_274-i" name="sc_274-i"></a>Intent  of  Success Criterion 2.7.4:</h5>
@@ -3784,7 +3924,8 @@ transport settings to compatible systems (2.7.5, Level AA).</p>
        <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_275-a" name="sc_275-a"></a>Applies to:</h5>
-        <p>Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_275-i" name="sc_275-i"></a>Intent  of  Success Criterion 2.7.5:</h5>
@@ -3869,7 +4010,9 @@ by hiding some controls). </li>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_281-a" name="sc_281-a"></a>Applies to:</h5>
-        <p>UA user interface, Configuration settings</p></div>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p></div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_281-i" name="sc_281-i"></a>Intent of  Success Criterion 2.8.1:</h5>
           <p>The user needs to control  which user interface elements are visible and usable, where elements are visually located on the screen, and where elements fall in the      navigation order. In some cases adjusting whether an element is visible and usable may involve installing or uninstalling a component &mdash; or merely showing or hiding it &mdash; depending on the user agent and the specific component.</p>
@@ -3957,7 +4100,9 @@ The user agent user interface does not include time limits or at least one of th
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_291-a" name="sc_291-a"></a>Applies to:</h5>
-        <p>UA user interface, Configuration settings (<em>optional</em>)</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config-option" title="definition: configuration settings (optional)">Configuration settings (optional)</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_291-i" name="sc_291-i"></a>Intent  of  Success Criterion 2.9.1:</h5>
@@ -4003,7 +4148,10 @@ more than three times a second above luminescence or color thresholds
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2101-a" name="sc_2101-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface, Configuration settings (<em>optional</em>)</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config-option" title="definition: configuration settings (optional)">Configuration settings (optional)</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2101-i" name="sc_2101-i"></a>Intent  of  Success Criterion 2.10.1:</h5>
@@ -4037,7 +4185,10 @@ more than three times a second above luminescence or color thresholds
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2102-a" name="sc_2102-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface, Configuration settings (<em>optional</em>)</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config-option" title="definition: configuration settings (optional)">Configuration settings (optional)</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2102-i" name="sc_2102-i"></a>Intent  of  Success Criterion 2.10.2:</h5>
@@ -4092,7 +4243,9 @@ title="definition: Explicit user request">explicit user request</a>. <span class
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2111-a" name="sc_2111-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2111-i" name="sc_2111-i"></a>Intent  of Success Criterion 2.11.1:</h5>
@@ -4145,7 +4298,9 @@ execute. <span class="level">(Level&nbsp;A)</span></p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2112-a" name="sc_2112-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2112-i" name="sc_2112-i"></a>Intent of  Success Criterion 2.11.2:</h5>
@@ -4181,7 +4336,9 @@ execute. <span class="level">(Level&nbsp;A)</span></p>
         <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2113-a" name="sc_2113-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2113-i" name="sc_2113-i"></a>Intent  of  Success Criterion 2.11.3:</h5>
@@ -4222,7 +4379,9 @@ execute. <span class="level">(Level&nbsp;A)</span></p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2114-a" name="sc_2114-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2114-i" name="sc_2114-i"></a>Intent  of  Success Criterion 2.11.4:</h5>
@@ -4263,7 +4422,8 @@ rate. <span class="level">(Level&nbsp;A)</span> </p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2115-a" name="sc_2115-a"></a>Applies to:</h5>
-        <p>Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2115-i" name="sc_2115-i"></a>Intent  of  Success Criterion 2.11.5:</h5>
@@ -4301,7 +4461,9 @@ href="#def-relative-time-units" rel="glossary" title="definition: relative time 
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2116-a" name="sc_2116-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2116-i" name="sc_2116-i"></a>Intent  of  Success Criterion 2.11.6:</h5>
@@ -4335,7 +4497,9 @@ href="#def-relative-time-units" rel="glossary" title="definition: relative time 
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2117-a" name="sc_2117-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2117-i" name="sc_2117-i"></a>Intent  of  Success Criterion 2.11.7:</h5>
@@ -4371,7 +4535,9 @@ href="#def-relative-time-units" rel="glossary" title="definition: relative time 
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2118-a" name="sc_2118-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings (<em>optional</em>)</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config-option" title="definition: configuration settings (optional)">Configuration settings (optional)</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2118-i" name="sc_2118-i"></a>Intent  of  Success Criterion 2.11.8:</h5>
@@ -4417,7 +4583,9 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2121-a" name="sc_2121-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2121-i" name="sc_2121-i"></a>Intent  of  Success Criterion 2.12.1:</h5>
@@ -4452,7 +4620,9 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>, a
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2122-a" name="sc_2122-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2122-i" name="sc_2122-i"></a>Intent  of  Success Criterion 2.12.2:</h5>
@@ -4487,7 +4657,9 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>, a
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2123-a" name="sc_2123-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2123-i" name="sc_2123-i"></a>Intent of  Success Criterion 2.12.3:</h5>
@@ -4538,7 +4710,9 @@ indications of progress activity (3.2.6, Level A).</p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_321-a" name="sc_321-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_321-i" name="sc_321-i"></a>Intent  of  Success Criterion 3.2.1:</h5>
@@ -4574,7 +4748,8 @@ that the form won't be submitted until she selects the submit button.</li>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_322-a" name="sc_322-a"></a>Applies to:</h5>
-        <p>Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_322-i" name="sc_322-i"></a>Intent of  Success Criterion 3.2.2:</h5>
@@ -4609,12 +4784,13 @@ quadraplegic who is using speech input in a relatively noisy room. The program h
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_323-a" name="sc_323-a"></a>Applies to:</h5>
-        <p>Content user interface<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_323-i" name="sc_323-i"></a>Intent  of  Success Criterion 3.2.3:</h5>
-        <p>Users with various disabilities benefit from spell checkers. The ability to check spelling is particularly important for users 
-          with disabilities such as dyslexia that significantly increase the likelihood of misspelled words. Spellcheckers also  alert blind and low vision users to errors in text entry. </p>
+        <pr>Users with various disabilities benefit from spell checkers. The ability to check spelling is particularly important for users with disabilities such as dyslexia that significantly increase the likelihood of misspelled words. Spellcheckers also alert blind and low vision users to errors in text entry.</p
+        ><p>Spell checking is only expected in editable text in content, most commonly text input controls and form fields. It is not required on text input fields that are part of the UA user interface, such as an address bar or File Open dialog box. Spell checking is also not required on static, read-only, or disabled text elements, controls, and fields in content, except when they display text the user can edit indirectly (e.g. static text that the user can alter using nearby buttons), or when the user agent is in an authoring mode that allows the user to edit text that would otherwise be static. </p>           <p>Spell checking should be available regardless of how the text was entered. For example, text may be entered by the user typing, pasted from the clipboard, initialized by the content (e.g. the HTML value attribute), set programmatically by scripts or assistive technology, or filled in by a feature of the user agent itself (e.g. auto-complete).            Spell checking which highlights unrecognized words as they are entered is preferred over requiring the user to use a separate tool or editing pass.            Spell checking should be optional, so that it can be avoided by users who find it too distracting, or for whom the highlighting makes the text less legible.   </p>         <p>Note: It is recommended that user agents also provide assistance with grammar, as well as spelling. Grammar can pose more difficulty than spelling for people with some cognitive disabilities or whose native language is signed.  </p>
        </div>
 
        <div class="implementing-section">
@@ -4644,7 +4820,8 @@ quadraplegic who is using speech input in a relatively noisy room. The program h
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_324-a" name="sc_324-a"></a>Applies to:</h5>
-        <p>Content user interface<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_324-i" name="sc_324-i"></a>Intent  of  Success Criterion 3.2.4:</h5>
@@ -4677,7 +4854,8 @@ quadraplegic who is using speech input in a relatively noisy room. The program h
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_325-a" name="sc_325-a"></a>Applies to:</h5>
-        <p>Configuration settings<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_325-i" name="sc_325-i"></a>Intent  of  Success Criterion 3.2.5:</h5>
@@ -4708,7 +4886,8 @@ quadraplegic who is using speech input in a relatively noisy room. The program h
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_326-a" name="sc_326-a"></a>Applies to:</h5>
-        <p>UA user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_326-i" name="sc_326-i"></a>Intent  of  Success Criterion 3.2.6:</h5>
@@ -4752,7 +4931,9 @@ message that the purchase has timed out.</li>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_326-a" name="sc_326-a"></a>Applies to:</h5>
-        <p>Content user interface, Configuration settings (<em>optional</em>)</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config-option" title="definition: configuration settings (optional)">Configuration settings (optional)</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_32x-i" name="sc_32x-i"></a>Intent  of  Success Criterion 3.2.x:</h5>
@@ -4797,7 +4978,8 @@ href="http://www.w3.org/WAI/UA/UAAG20/#sc_32y
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_32y-a" name="sc_32y-a"></a>Applies to:</h5>
-        <p>UA user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_32y-i" name="sc_32y-i"></a>Intent  of  Success Criterion 3.2.Y:</h5>
@@ -4883,7 +5065,8 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_331-a" name="sc_331-a"></a>Applies to:</h5>
-        <p>UA user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_331-i" name="sc_331-i"></a>Intent  of  Success Criterion 3.3.1:</h5>
@@ -4922,7 +5105,8 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_332-a" name="sc_332-a"></a>Applies to:</h5>
-        <p>UA user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_332-i" name="sc_332-i"></a>Intent  of  Success Criterion 3.3.2:</h5>
@@ -4973,7 +5157,8 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_33x-a" name="sc_33x-a"></a>Applies to:</h5>
-        <p>UA user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_33x-i" name="sc_33x-i"></a>Intent  of  Success Criterion 3.3.x:</h5>
@@ -5005,7 +5190,8 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_333-a" name="sc_333-a"></a>Applies to:</h5>
-        <p>UA user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_333-i" name="sc_333-i"></a>Intent  of Success Criterion 3.3.3:</h5>
@@ -5076,7 +5262,9 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_341-a" name="sc_341-a"></a>Applies to:</h5>
-        <p>Content user interface<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a>, Configuration settings (<em>optional</em>)</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a>, <a class="dfn-instance"
+href="#intro-applies-to-config-option" title="definition: configuration settings (optional)">Configuration settings (optional)</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_341-i" name="sc_341-i"></a>Intent  of  Success Criterion 3.4.1:</h5>
@@ -5133,7 +5321,8 @@ standard window in place of a customized window (4.1.3, Level A).</p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_411-a" name="sc_411-a"></a>Applies to:</h5>
-        <p>Communication with platform accessibility services<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-platform-a11y" title="definition: communication with platform accessibility services">Communication with platform accessibility services</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_411-i" name="sc_411-i"></a>Intent  of  Success Criterion 4.1.1:</h5>
@@ -5184,7 +5373,8 @@ standard window in place of a customized window (4.1.3, Level A).</p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_412-a" name="sc_412-a"></a>Applies to:</h5>
-        <p>Communication with platform accessibility services<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-platform-a11y" title="definition: communication with platform accessibility services">Communication with platform accessibility services</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_412-i" name="sc_412-i"></a>Intent  of  Success Criterion 4.1.2:</h5>
@@ -5232,7 +5422,8 @@ standard window in place of a customized window (4.1.3, Level A).</p>
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_413-a" name="sc_413-a"></a>Applies to:</h5>
-        <p>UA user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_413-i" name="sc_413-i"></a>Intent  of  Success Criterion 4.1.3:</h5>
@@ -5265,7 +5456,8 @@ made <a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" t
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_414-a" name="sc_414-a"></a>Applies to:</h5>
-        <p>Communication with platform accessibility services<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-platform-a11y" title="definition: communication with platform accessibility services">Communication with platform accessibility services</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_414-i" name="sc_414-i"></a>Intent  of  Success Criterion 4.1.4:</h5>
@@ -5310,7 +5502,8 @@ made <a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" t
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_415-a" name="sc_415-a"></a>Applies to:</h5>
-        <p>Communication with platform accessibility services<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-platform-a11y" title="definition: communication with platform accessibility services">Communication with platform accessibility services</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_415-i" name="sc_415-i"></a>Intent  of  Success Criterion 4.1.5:</h5>
@@ -5352,7 +5545,8 @@ title="definition: Rendered content">rendered content</a>, and generated content
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_416-a" name="sc_416-a"></a>Applies to:</h5>
-        <p>Communication with platform accessibility services<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-platform-a11y" title="definition: communication with platform accessibility services">Communication with platform accessibility services</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_416-i" name="sc_416-i"></a>Intent  of  Success Criterion 4.1.6:</h5>
@@ -5409,7 +5603,9 @@ web-based (e.g. help systems). However, it is      recommended that developers o
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_511-a" name="sc_511-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface<a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_511-i" name="sc_511-i"></a>Intent  of  Success Criterion 5.1.1:</h5>
@@ -5450,7 +5646,8 @@ requirement of the other specification and still satisfy this guideline.</li></u
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_512-a" name="sc_512-a"></a>Applies to:</h5>
-        <p>Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_512-i" name="sc_512-i"></a>Intent  of  Success Criterion 5.1.2:</h5>
@@ -5489,7 +5686,9 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>. <
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_513-a" name="sc_513-a"></a>Applies to:</h5>
-        <p>UA user interface, Content user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_513-i" name="sc_513-i"></a>Intent  of  Success Criterion 5.1.3:</h5>
@@ -5575,7 +5774,8 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>. <
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_515-a" name="sc_515-a"></a>Applies to:</h5>
-        <p>UA user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_515-i" name="sc_515-i"></a>Intent  of  Success Criterion 5.1.5:</h5>
@@ -5609,7 +5809,8 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>. <
       <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_516-a" name="sc_516-a"></a>Applies to:</h5>
-        <p>UA user interface</p>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_516-i" name="sc_516-i"></a>Intent  of  Success Criterion 5.1.6:</h5>
@@ -5935,10 +6136,7 @@ recognize. </dd>
   id="def-element"><dfn>element</dfn></a></dt>
   <dd class="glossary">Primarily, a syntactic construct of a document type definition (DTD) for its application. This is  the sense employed by the XML 1.0 specification
     (<cite><a href="#ref-XML"
-      title="Link to reference XML">[XML]</a></cite>, section 3). This sense is also relevant to structures defined by
-    XML schemas. UAAG 2.0 also uses the term &quot;element&quot; more generally
-    to mean a type of content (such as video or sound) or a logical
-    construct (such as a header or list).
+      title="Link to reference XML">[XML]</a></cite>, section 3). UAAG 2.0 also uses the term "element" more generally to refer to any discrete unit within the content (e.g. a specific image, video, sound, heading, list, or list item).
     <ul>
       <li><a name="def-enabled-element" id="def-enabled-element"></a><dfn>enabled element</dfn>: An <a href="#def-element">element</a> with associated behaviors that can be activated through the user interface or through an <a
       class="dfn-instance" href="#def-api"
