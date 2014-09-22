@@ -579,7 +579,7 @@ even if these terms appear from time to time they do not have any RFC
   <li>easily installed (i.e. not requiring expert knowledge or editing of
 
 configuration files, databases, or registry entries)</li></ol> See <a href="#conformance-req-components">Components of UAAG 2.0 Conformance Claims</a>.</li>
-  <li><strong class="handle">Relationship with operating system or platform</strong>: The user agent does      not need to implement every behavior itself. A required      behavior may be provided by the platform, user agent, user      agent extensions, or potentially other layers. All are      acceptable, as long as they are enumerated in the conformance      claim.</li>
+  <li><strong class="handle">Relationship with operating system or platform</strong>: The user agent does      not need to implement every behavior itself. A required      behavior may be provided by the platform, user agent, user      agent extensions, or potentially other layers. All are      acceptable, as long as they are enumerated in the conformance      claim. </li>
 </ol>
 
 <div class="principle" id="p-1">
@@ -2143,98 +2143,102 @@ id="principle-understandable"></a>PRINCIPLE 3: Ensure that the user interface is
 understandable</h2>
 <div class="guideline-box" id="g-3-2">
   <h3 class="guideline"><a name="gl-avoid-mistakes"
-id="gl-avoid-mistakes">Guideline 3.2 - </a> Help users avoid and correct
-mistakes <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-avoid-mistakes">Reference for 3.2</a>] </span>
+id="gl-avoid-mistakes">Guideline 3.1 - </a> Help users avoid and correct
+mistakes <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-avoid-mistakes">Reference for 3.1</a>] </span>
 	  </h3>
 
-  <p class="summary" id="summary32"><strong>Summary</strong>: Users can have form submissions require confirmation (3.2.1, 
-Level AA), go back after navigating (3.2.2, Level AA), have their text 
-checked for spelling errors (3.2.3, Level AA), undo text entry (3.2.4, 
-Level A), avoid or undo settings changes (3.2.5, Level A), and receive 
-indications of progress activity (3.2.6, Level A).</p>
+  <p class="summary" id="summary31"><strong>Summary</strong>: Users can undo text entry (3.1.1, 
+Level A), avoid or undo settings changes (3.1.2, Level A), and receive 
+indications of progress activity (3.1.3, Level A). It is recommended that users can have their text 
+checked for spelling errors (3.1.4, Level AA), go back after navigating (3.1.5, Level AA), have form submissions require confirmation (3.1.6, 
+Level AA), have auto-form fill of basic information (3.1.7, Level AA), and save form entry data with a local save (3.1.8, Level AA). </p>
 
-
-<div class="sc-level">
-  <h4 class="sc-title"><a id="sc_321" name="sc_321"></a>3.2.1 Form Submission Confirm: </h4>
-  <p class="sc-text">The user can specify whether or not <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a> form submissions must be confirmed. <span class="level">(Level&nbsp;AA)</span> </p>
-  
-     <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_321">Reference for 3.2.1</a></div>
-  </div>
- 
-
-      
-<h4 class="sc-title"><a id="sc_322" name="sc_322"></a>3.2.2 Back Button: </h4>
-<p class="sc-text">The user can reverse <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a> navigation between web addresses (e.g. standard "back button" functionality). <span class="level">(Level&nbsp;AA)</span> </p>
-
-     <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_322">Reference for 3.2.2</a></div>
-  </div>
- 
-
-      
-
-<h4 class="sc-title"><a id="sc_323" name="sc_323"></a>3.2.3 Spell Check: </h4>
-<p class="sc-text">The user can have spelling assistance for editable text in rendered content.. <span class="level">(Level&nbsp;AA)</span></p>
-
-     <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_323">Reference for 3.2.3</a></div>
-  </div>
- 
-
-      
-              
-              
-<h4 class="sc-title"><a id="sc_324" name="sc_324"></a>3.2.4 Text Entry Undo: </h4>
+<div class="sc-level">              
+<h4 class="sc-title"><a id="sc_311" name="sc_311"></a>3.1.1 Text Entry Undo: </h4>
 <p class="sc-text"> The user can reverse <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a> text entry actions prior to submission. <span class="level">(Level&nbsp;A)</span> </p>
 <ul class="sc-notes">
     <li class="sc-note"><em class="note-handle">Note:</em> Submission can be triggered in many different ways, such as clicking a submit button, typing a key in a control with an onkeypress event, or by a script responding to a timer. </li></ul>
 
      <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_324">Reference for 3.2.4</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_311">Reference for 3.1.1</a></div>
   </div>
  
 
        
               
               
-<h4 class="sc-title"><a id="sc_325" name="sc_325"></a>3.2.5 Settings Changes can be Reversed or Confirmed: </h4>
+<h4 class="sc-title"><a id="sc_312" name="sc_312"></a>3.1.2 Settings Changes can be Reversed or Confirmed: </h4>
 <p class="sc-text"> If the user agent provides mechanisms for changing its user interface settings, it either allows the user to reverse the setting changes, or the user can require user confirmation to proceed. <span class="level">(Level&nbsp;A)</span></p>
 
      <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_325">Reference for 3.2.5</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_312">Reference for 3.1.2</a></div>
   </div>
  
 
       
               
               
-  <h4 class="sc-title"><a id="sc_326" name="sc_326"></a>3.2.6 Retrieval Progress: </h4>
+  <h4 class="sc-title"><a id="sc_313" name="sc_313"></a>3.1.3 Retrieval Progress: </h4>
 <p class="sc-text">By default, the user agent shows the  state of content retrieval activity. <span class="level">(Level&nbsp;A)</span></p> 
 
      <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_326">Reference for 3.2.6</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_313">Reference for 3.1.3</a></div>
+  </div>
+ 
+
+      </div>
+
+<div class="sc-level">
+<h4 class="sc-title"><a id="sc_314" name="sc_314"></a>3.1.4 Spell Check: </h4>
+<p class="sc-text">The user can have spelling assistance for editable text in rendered content.. <span class="level">(Level&nbsp;AA)</span></p>
+
+     <div class="gl-only">
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_314">Reference for 3.1.4</a></div>
   </div>
  
 
       
 
-<h4 class="sc-title"><a id="sc_32x" name="sc_32x"></a>3.2.x Form Auto-Fill: </h4> <p class="sc-text">The user can have the following information stored and used to auto-fill form fields by request: <span class="level">(Level&nbsp;AA)</span> </h4>
+<h4 class="sc-title"><a id="sc_315" name="sc_315"></a>3.1.5 Back Button: </h4>
+<p class="sc-text">The user can reverse <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a> navigation between web addresses (e.g. standard "back button" functionality). <span class="level">(Level&nbsp;AA)</span> </p>
+
+     <div class="gl-only">
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_315">Reference for 3.1.5</a></div>
+  </div>
+ 
+
+                    
+
+  <h4 class="sc-title"><a id="sc_316" name="sc_316"></a>3.1.6 Form Submission Confirm: </h4>
+  <p class="sc-text">The user can specify whether or not <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a> form submissions must be confirmed. <span class="level">(Level&nbsp;AA)</span> </p>
+  
+     <div class="gl-only">
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_316">Reference for 3.1.6</a></div>
+  </div>
+ 
+
+      
+              
+
+</div>
+              
+
+
+<div class="sc-level">
+<h4 class="sc-title"><a id="sc_317" name="sc_317"></a>3.1.7 Form Auto-Fill: </h4> <p class="sc-text">The user can have the following information stored and used to auto-fill form fields by request: <span class="level">(Level&nbsp;AA)</span> </p>
 <ol type="a">
 <li>user's name</li>
 <li>user's email address</li>
 <li>user's phone number</li>
 </ol>
     	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_32x">Reference for 3.2.x</a></div>
+	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_317">Reference for 3.1.7</a></div>
       </div>
 	    
 
       
 
-<h4 class="sc-title"><a id="sc_18x" 
-
-name="sc_32y"></a>3.2.Y Save Form Entries: </h4>
+<h4 class="sc-title"><a id="sc_31y" name="sc_318"></a>3.1.8 Save Form Entries: </h4>
 <p class="sc-text">If the user agent provides a feature to save local versions of web content, then any form fields the user has filled retain any entries in the saved version. </a><span 
 
 class="level">(Level&nbsp;AA)</span> </p>
@@ -2246,7 +2250,7 @@ link"><a
 
 href="http://www.w3.org/WAI/UA/IMPLEMENTING-
 
-UAAG20/#sc_32y">Reference for 3.2.Y</a></div>
+UAAG20/#sc_318">Reference for 3.1.8</a></div>
       </div>
 	    
 
@@ -2256,28 +2260,28 @@ UAAG20/#sc_32y">Reference for 3.2.Y</a></div>
 
 <div class="guideline-box" id="g-3-3">
 <h3 class="guideline"><a name="gl-doc-access-features"
-id="gl-doc-access-features">Guideline 3.3 - </a> Document the user agent user
-interface including  accessibility features <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-doc-access-features">Reference for 3.3</a>] </span>
+id="gl-doc-access-features">Guideline 3.2 - </a> Document the user agent user
+interface including  accessibility features <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-doc-access-features">Reference for 3.2</a>] </span>
 	  </h3>
-<p class="summary" id="summary33"><strong>Summary</strong>:  User documentation is available in an accessible format (3.3.1, 
-Level A), it includes accessibility features (3.3.2, Level A), 
-delineates differences between versions (3.3.3, Level AA), provides a 
-centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
+<p class="summary" id="summary32"><strong>Summary</strong>:  User documentation is available in an accessible format (3.2.1, 
+Level A), it includes accessibility features (3.2.2, Level A), 
+it documents all the user features (3.2.3, Level AA), it delineates differences between versions (3.2.4, Level AA), and provides a 
+centralized view of conformance UAAG2.0 (3.2.5, Level AAA).
 </p>
 
 <div class="sc-level">
-<h4 class="sc-title"><a id="sc_331" name="sc_331"></a>3.3.1 Accessible Documentation: </h4>
+<h4 class="sc-title"><a id="sc_321" name="sc_321"></a>3.2.1 Accessible Documentation: </h4>
 <p class="sc-text"> Product <a class="dfn-instance" href="#def-documentation" title="definition: documentation">documentation</a> is available in a format that meets success criteria of WCAG 2.0 level "A" or greater. <span class="level">(Level&nbsp;A)</span> </p>
 
      <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_331">Reference for 3.3.1</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_321">Reference for 3.2.1</a></div>
   </div>
  
 
       
 
 
-<h4 class="sc-title"><a id="sc_332" name="sc_332"></a>3.3.2 Describe Accessibility Features: </h4>
+<h4 class="sc-title"><a id="sc_322" name="sc_322"></a>3.2.2 Describe Accessibility Features: </h4>
 <p class="sc-text"> For each user agent feature that is used to meet UAAG 2.0, at least one of  the following is true: <span class="level">(Level&nbsp;A)</span></p>
 <ol type="a" class="sc-bullets">
   <li class="sc-bullet"><strong class="handle">Described in the Documentation</strong>: Use of the feature is explained in  the user agent's documentation; or</li>
@@ -2286,7 +2290,7 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
 <li class="sc-bullet"><strong class="handle">Not Used by Users</strong>: The feature is not used directly by users (e.g.,  passing information to a platform accessibility service). </li>
 </ol>
      <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_332">Reference for 3.3.2</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_322">Reference for 3.2.2</a></div>
   </div>
  
 
@@ -2296,7 +2300,7 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
 
 <div class="sc-level">
 
-<h4 class="sc-title"><a id="sc_33x" name="sc_33x"></a>3.3.x Document All Features: </h4>
+<h4 class="sc-title"><a id="sc_323" name="sc_323"></a>3.2.3 Document All Features: </h4>
 <p class="sc-text">For each user agent feature, at least one of the following is true</a>: <span class="level">(Level&nbsp;AA)</span> </p>
 <ol type="a" class="sc-bullets">
   <li class="sc-bullet"><strong class="handle">Described in the Documentation</strong>: Use of the feature is explained in  the user agent's documentation; or</li>
@@ -2305,28 +2309,28 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
 <li class="sc-bullet"><strong class="handle">Not Used by Users</strong>: The feature is not used directly by users (e.g.,  passing information to a platform accessibility service). </li>
 </ol>
     	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_33x">Reference for 3.3.x</a></div>
+	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_323">Reference for 3.2.3</a></div>
       </div>
 	    
 
       
 
-<h4 class="sc-title"><a id="sc_333" name="sc_333"></a>3.3.3 Changes Between Versions: </h4>
+<h4 class="sc-title"><a id="sc_324" name="sc_324"></a>3.2.4 Changes Between Versions: </h4>
 <p class="sc-text"> Changes to features that meet UAAG 2.0 success criteria  since the previous user agent release are documented. <span class="level">(Level&nbsp;AA)</span> </p>
 
      <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_333">Reference for 3.3.3</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_324">Reference for 3.2.4</a></div>
   </div>
  
 
-      
-              
-              
-<h4 class="sc-title"><a id="sc_334" name="sc_334"></a>3.3.4 Centralized View: </h4> 
+      </div>
+            
+<div class="sc-level">                            
+<h4 class="sc-title"><a id="sc_325" name="sc_325"></a>3.2.5 Centralized View: </h4> 
 <p class="sc-text">There is a dedicated section of the documentation that presents a view of all features of the user agent necessary to meet the requirements of User Agent Accessibility Guidelines 2.0. <span class="level">(Level&nbsp;AAA)</span></p>
 
      <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_334">Reference for 3.3.4</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_325">Reference for 3.2.5</a></div>
   </div>
  
 
@@ -2336,16 +2340,16 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
 
 
 <div class="guideline-box" id="g-3-4">
-<h3 class="guideline"><a name="gl-predictable-operation" id="gl-predictable-operation"></a>Guideline 3.4 - Make the user agent behave in  predictable ways <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-predictable-operation">Reference for 3.4</a>] </span>
+<h3 class="guideline"><a name="gl-predictable-operation" id="gl-predictable-operation"></a>Guideline 3.3 - Make the user agent behave in  predictable ways <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-predictable-operation">Reference for 3.3</a>] </span>
 	  </h3>
-<p class="summary" id="summary34"><strong>Summary</strong>: Users can prevent non-requested focus changes (3.4.1, Level A).
+<p class="summary" id="summary33"><strong>Summary</strong>: Users can prevent non-requested focus changes (3.3.1, Level A).
 </p>
 <div class="sc-level">
-<h4 class="sc-title"><a id="sc_341" name="sc_341"></a>3.4.1 Avoid Unpredictable Focus: </h4>
+<h4 class="sc-title"><a id="sc_331" name="sc_331"></a>3.3.1 Avoid Unpredictable Focus: </h4>
 <p class="sc-text"> The user can prevent focus changes that are not a result of explicit user request. <span class="level">(Level&nbsp;A)</span> </p> 
 
 <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_341">Reference for 3.4.1</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_331">Reference for 3.3.1</a></div>
   </div>
  
 

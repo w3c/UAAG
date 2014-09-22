@@ -756,7 +756,7 @@ even if these terms appear from time to time they do not have any RFC
   <li>easily installed (i.e. not requiring expert knowledge or editing of
 
 configuration files, databases, or registry entries)</li></ol> See <a href="#conformance-req-components">Components of UAAG 2.0 Conformance Claims</a>.</li>
-  <li><strong class="handle">Relationship with operating system or platform</strong>: The user agent does      not need to implement every behavior itself. A required      behavior may be provided by the platform, user agent, user      agent extensions, or potentially other layers. All are      acceptable, as long as they are enumerated in the conformance      claim.</li>
+  <li><strong class="handle">Relationship with operating system or platform</strong>: The user agent does      not need to implement every behavior itself. A required      behavior may be provided by the platform, user agent, user      agent extensions, or potentially other layers. All are      acceptable, as long as they are enumerated in the conformance      claim. </li>
 </ol>
 
 <div class="principle" id="p-1">
@@ -2330,8 +2330,8 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1810-r" name="sc_1810-r"></a><a id="sc_1811-r" name="sc_1811-r"></a><a id="sc_1812-r" name="sc_1812-r"></a>Related Resources for Success Criteria 1.8.10, 1.8.11 &amp; 1.8.12:</h5>
             <ul>
-              <li class="sc-title"><a href="#sc_341">3.4.1 Avoid unpredictable focus</a></li>
-              <li class="sc-title"><a href="#sc_322">3.2.2 Back button</a></li></ul></div></div>
+              <li class="sc-title"><a href="#sc_331">3.3.1 Avoid unpredictable focus</a></li>
+              <li class="sc-title"><a href="#sc_315">3.1.5 Back button</a></li></ul></div></div>
 
 
 <h4 class="sc-title"><a id="sc_1813" name="sc_1813"></a>1.8.13 Allow Same User Interface: </h4>
@@ -3834,7 +3834,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_272-r" name="sc_272-r"></a>Related Resources for Success Criterion 2.7.2:</h5>
             <ul>
-              <li><a href="#sc_325">3.2.5 Settings Change Confirmation</a></li></ul></div></div>
+              <li><a href="#sc_312">3.1.2 Settings Changes can be Reversed or Confirmed</a></li></ul></div></div>
 
 <h4 class="sc-title"><a id="sc_273" name="sc_273"></a>2.7.3 Allow Multiple Sets of Preference Settings: </h4>
 <p class="sc-text">The user can save and retrieve multiple sets of user agent preference settings. <span class="level">(Level&nbsp;AA)</span> </p>
@@ -4680,212 +4680,103 @@ id="principle-understandable"></a>PRINCIPLE 3: Ensure that the user interface is
 understandable</h2>
 <div class="guideline-box" id="g-3-2">
   <h3 class="guideline"><a name="gl-avoid-mistakes"
-id="gl-avoid-mistakes"><span class="techs-only">Reference for </span>Guideline 3.2 - </a> Help users avoid and correct
-mistakes <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-avoid-mistakes">Reference for 3.2</a>] </span>
-	  <span class="techs-only">[<a href="http://w3c.github.io/UAAG/UAAG20/Overview.html#gl-avoid-mistakes">Guideline 3.2</a>]</span></h3>
+id="gl-avoid-mistakes"><span class="techs-only">Reference for </span>Guideline 3.1 - </a> Help users avoid and correct
+mistakes <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-avoid-mistakes">Reference for 3.1</a>] </span>
+	  <span class="techs-only">[<a href="http://w3c.github.io/UAAG/UAAG20/Overview.html#gl-avoid-mistakes">Guideline 3.1</a>]</span></h3>
 
-  <p class="summary" id="summary32"><strong>Summary</strong>: Users can have form submissions require confirmation (3.2.1, 
-Level AA), go back after navigating (3.2.2, Level AA), have their text 
-checked for spelling errors (3.2.3, Level AA), undo text entry (3.2.4, 
-Level A), avoid or undo settings changes (3.2.5, Level A), and receive 
-indications of progress activity (3.2.6, Level A).</p>
+  <p class="summary" id="summary31"><strong>Summary</strong>: Users can undo text entry (3.1.1, 
+Level A), avoid or undo settings changes (3.1.2, Level A), and receive 
+indications of progress activity (3.1.3, Level A). It is recommended that users can have their text 
+checked for spelling errors (3.1.4, Level AA), go back after navigating (3.1.5, Level AA), have form submissions require confirmation (3.1.6, 
+Level AA), have auto-form fill of basic information (3.1.7, Level AA), and save form entry data with a local save (3.1.8, Level AA). </p>
 
-
-<div class="sc-level">
-  <h4 class="sc-title"><a id="sc_321" name="sc_321"></a>3.2.1 Form Submission Confirm: </h4>
-  <p class="sc-text">The user can specify whether or not <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a> form submissions must be confirmed. <span class="level">(Level&nbsp;AA)</span> </p>
-  
-     <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_321">Reference for 3.2.1</a></div>
-  </div>
-<div class="techs-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_321">Return to 3.2.1 in Guidelines</a></div>
-</div> 
-
-      <div class="techs-only">
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_321-a" name="sc_321-a"></a>Applies to:</h5>
-        <p><a class="dfn-instance"
-href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
-href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
-        </div>
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_321-i" name="sc_321-i"></a>Intent  of  Success Criterion 3.2.1:</h5>
-          <p>Users need to be protected against accidentally submitting a form. Some 
-            assistive technologies use the Enter key to advance to the next field. 
-            If the form is designed to submit on Enter, the user can unknowingly 
-  &quot;submit on Enter&quot; function.</p>
-       </div>
-
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_321-e" name="sc_321-e"></a>Examples for Success Criterion 3.2.1:</h5>
-            <ul>
-              <li class="unclassified-ex">Marka is blind and uses a screenreader. When she installs a web browser she selects an 
-option to disable form submission on Enter.  This allows her to complete forms from the banking website knowing 
-that the form won't be submitted until she selects the submit button.</li>
-              <li class="unclassified-ex"> Ryan uses a mouse but his hand tremor makes him more likely to accidentally miss his intended target. Cancel and Submit (or OK) buttons are often next to each other, and Ryan has found that submitting a form inappropriately can cause serious complications, so he sets a browser option to always request confirmation of form submissions. As a result, when he clicks on a submit button the browser presents a message box asking &quot;Are you sure you want to submit this form?&quot; with larger, well-spaced buttons for Submit and Cancel.</li>
-          </ul>        </div>
-        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_321-r" name="sc_321-r"></a>Related Resources for Success Criterion 3.2.1:</h5>
-            <ul>
-              <li><a href="#sc_211">2.1.1 Keyboard Operation</a></li>
-              <li><a href="#sc_324">3.2.4 Text Entry Undo</a></li></ul></div></div>
-<h4 class="sc-title"><a id="sc_322" name="sc_322"></a>3.2.2 Back Button: </h4>
-<p class="sc-text">The user can reverse <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a> navigation between web addresses (e.g. standard "back button" functionality). <span class="level">(Level&nbsp;AA)</span> </p>
-
-     <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_322">Reference for 3.2.2</a></div>
-  </div>
-<div class="techs-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_322">Return to 3.2.2 in Guidelines</a></div>
-</div> 
-
-      <div class="techs-only">
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_322-a" name="sc_322-a"></a>Applies to:</h5>
-        <p><a class="dfn-instance"
-href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
-        </div>
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_322-i" name="sc_322-i"></a>Intent of  Success Criterion 3.2.2:</h5>
-        <p>Retracing a navigation step is important for users with cognitive issues that involve memory and attention. This is also important for users whose means of input is not 100% accurate, such as speech input users or users with fine motor challenges. It is also beneficial for users for whom navigation is time consuming, tiring, or painful, because it allows them to avoid having to re-enter long URLs. The Back feature is a part of the UA user interface instead of the rendered content, however, authors should not &quot;break&quot; the Back button by disabling it, or creating sequences of web pages that would cause an error if the Back button were used. </p>
-       </div>
-
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_322-e" name="sc_322-e"></a>Examples for Success Criterion 3.2.2:</h5>
-            <ul>
-              <li class="unclassified-ex">Joe is a 
-quadraplegic who is using speech input in a relatively noisy room. The program hears an especially loud word from across the room and interprets it as Joe saying "Enter" to click a selected link. Joe says "Go Back" to go back to the page he was on.
-              </li>
-              <li class="unclassified-ex"> Mike's head injury leaves him easily distracted. He is in the middle of a search when the phone rings. When he comes back he selects the Back button to go back to the original search page so he can reorient himself.</li>
-              <li class="unclassified-ex">Ellen had a head injury that affects her short-term memory. She clicks on a link, and is interrupted by a colleague. When she goes back to      her task she has forgotten what she was originally doing. It's important that she be able to retrace her steps to reorient herself using the history feature of the browser user interface. </li>
-              <li class="unclassified-ex">Etta has moderately low vision and doesn't use assistive technology. She occasionally clicks on the wrong link. When she does so, she  clicks the Back button in order to get back to where she had been.</li>            
-            </ul>        </div>
-        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_322-r" name="sc_322-r"></a>Related Resources for Success Criterion 3.2.2:</h5>
-   <ul>
-     <li><a href="#sc_1810">1.8.10 Provide Viewport History</a></li></ul></div></div>
-
-<h4 class="sc-title"><a id="sc_323" name="sc_323"></a>3.2.3 Spell Check: </h4>
-<p class="sc-text">The user can have spelling assistance for editable text in rendered content.. <span class="level">(Level&nbsp;AA)</span></p>
-
-     <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_323">Reference for 3.2.3</a></div>
-  </div>
-<div class="techs-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_323">Return to 3.2.3 in Guidelines</a></div>
-</div> 
-
-      <div class="techs-only">
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_323-a" name="sc_323-a"></a>Applies to:</h5>
-        <p><a class="dfn-instance"
-href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
-        </div>
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_323-i" name="sc_323-i"></a>Intent  of  Success Criterion 3.2.3:</h5>
-        <pr>Users with various disabilities benefit from spell checkers. The ability to check spelling is particularly important for users with disabilities such as dyslexia that significantly increase the likelihood of misspelled words. Spellcheckers also alert blind and low vision users to errors in text entry.</p
-        ><p>Spell checking is only expected in editable text in content, most commonly text input controls and form fields. It is not required on text input fields that are part of the UA user interface, such as an address bar or File Open dialog box. Spell checking is also not required on static, read-only, or disabled text elements, controls, and fields in content, except when they display text the user can edit indirectly (e.g. static text that the user can alter using nearby buttons), or when the user agent is in an authoring mode that allows the user to edit text that would otherwise be static. </p>           <p>Spell checking should be available regardless of how the text was entered. For example, text may be entered by the user typing, pasted from the clipboard, initialized by the content (e.g. the HTML value attribute), set programmatically by scripts or assistive technology, or filled in by a feature of the user agent itself (e.g. auto-complete).            Spell checking which highlights unrecognized words as they are entered is preferred over requiring the user to use a separate tool or editing pass.            Spell checking should be optional, so that it can be avoided by users who find it too distracting, or for whom the highlighting makes the text less legible.   </p>         <p>Note: It is recommended that user agents also provide assistance with grammar, as well as spelling. Grammar can pose more difficulty than spelling for people with some cognitive disabilities or whose native language is signed.  </p>
-       </div>
-
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_323-e" name="sc_323-e"></a>Examples for Success Criterion 3.2.3:</h5>
-            <ul>
-              <li class="unclassified-ex">Amanda is dyslexic and frequently spells words incorrectly. She is able to correct words when alerted to the errors. She navigates to her web-based email application and composes a new message. The user agent alerts her to spelling errors as she is typing and she quickly corrects the mistakes and sends an error-free message.
-              </li>
-          </ul>        </div>
-        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_323-r" name="sc_323-r"></a>Related Resources for Success Criterion 3.2.3:</h5>
-            <ul>
-              <li>None</li></ul></div></div>
-              
-              
-<h4 class="sc-title"><a id="sc_324" name="sc_324"></a>3.2.4 Text Entry Undo: </h4>
+<div class="sc-level">              
+<h4 class="sc-title"><a id="sc_311" name="sc_311"></a>3.1.1 Text Entry Undo: </h4>
 <p class="sc-text"> The user can reverse <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a> text entry actions prior to submission. <span class="level">(Level&nbsp;A)</span> </p>
 <ul class="sc-notes">
     <li class="sc-note"><em class="note-handle">Note:</em> Submission can be triggered in many different ways, such as clicking a submit button, typing a key in a control with an onkeypress event, or by a script responding to a timer. </li></ul>
 
      <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_324">Reference for 3.2.4</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_311">Reference for 3.1.1</a></div>
   </div>
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_324">Return to 3.2.4 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_311">Return to 3.1.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_324-a" name="sc_324-a"></a>Applies to:</h5>
+        <h5 class="implementing-heading"><a id="sc_311-a" name="sc_311-a"></a>Applies to:</h5>
         <p><a class="dfn-instance"
 href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_324-i" name="sc_324-i"></a>Intent  of  Success Criterion 3.2.4:</h5>
+        <h5 class="implementing-heading"><a id="sc_311-i" name="sc_311-i"></a>Intent  of  Success Criterion 3.1.1:</h5>
         <p>Users who are blind, have  visual impairments, or have cognitive   disabilities may have difficulty determining the location of the keyboard   focus. This puts them at risk of entering text in an undesired window   or location. Users with mobility problems may have difficulty selecting a form field and may not notice an incorrect selection until they have entered   text information.  These users need to be able to reverse a text entry   (&quot;Undo&quot;) prior to submission. <br />
         </p>
        </div>
 
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_324-e" name="sc_324-e"></a>Examples for Success Criterion 3.2.4:</h5>
+        <h5 class="implementing-heading"><a id="sc_311-e" name="sc_311-e"></a>Examples for Success Criterion 3.1.1:</h5>
             <ul>
               <li class="unclassified-ex">Billie is a paraplegic who uses speech input. When she is working from   the main office, she is in a noisy location that can interfere with her   speech input.  She is writing a blog entry and is almost finished when   her speech input software incorrectly interprets some background noise   as a &quot;select all&quot; command. This causes her to overwrite her entire blog entry   with the next  phrase she utters. She then uses the &quot;undo&quot; command to reverse the text   entry and restore her blog entry. </li>
               <li>George is blind and uses a screenreader.  He is entering financial   information into his banking billpaying account.  He types the first few   letters of the payee from a long list. When George reviews the   selection prior to pressing &quot;submit&quot;, he hears that he had selected the   wrong payee. George uses the &quot;undo&quot; command and selects the correct payee. </li>
           </ul>        </div>
         <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_324-r" name="sc_324-r"></a>Related Resources for Success Criterion 3.2.4:</h5>
+        <h5 class="implementing-heading"><a id="sc_311-r" name="sc_311-r"></a>Related Resources for Success Criterion 3.1.1:</h5>
             <ul>
               <li>None</li></ul></div></div> 
               
               
-<h4 class="sc-title"><a id="sc_325" name="sc_325"></a>3.2.5 Settings Changes can be Reversed or Confirmed: </h4>
+<h4 class="sc-title"><a id="sc_312" name="sc_312"></a>3.1.2 Settings Changes can be Reversed or Confirmed: </h4>
 <p class="sc-text"> If the user agent provides mechanisms for changing its user interface settings, it either allows the user to reverse the setting changes, or the user can require user confirmation to proceed. <span class="level">(Level&nbsp;A)</span></p>
 
      <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_325">Reference for 3.2.5</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_312">Reference for 3.1.2</a></div>
   </div>
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_325">Return to 3.2.5 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_312">Return to 3.1.2 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_325-a" name="sc_325-a"></a>Applies to:</h5>
+        <h5 class="implementing-heading"><a id="sc_312-a" name="sc_312-a"></a>Applies to:</h5>
         <p><a class="dfn-instance"
 href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
         </div>
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_325-i" name="sc_325-i"></a>Intent  of  Success Criterion 3.2.5:</h5>
+        <h5 class="implementing-heading"><a id="sc_312-i" name="sc_312-i"></a>Intent  of  Success Criterion 3.1.2:</h5>
         <p>The description of some user interface settings can be confusing to   less technical users. Settings changes can also have unintended consequences. In addition, some disabilities make it more likely that a user can make an   unintended selection on a preference screen.  Users need to be able to   reverse changes to the user interface. </p>
        </div>
 
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_325-e" name="sc_325-e"></a>Examples for Success Criterion 3.2.5:</h5>
+        <h5 class="implementing-heading"><a id="sc_312-e" name="sc_312-e"></a>Examples for Success Criterion 3.1.2:</h5>
             <ul>
               <li class="mobile-ex">[mobile] Davy has moderately low vision. He is adjusting the contrast of the   background on his mobile phone when he accidentally selects a white   background with the previously selected white text. This causes  all the icon labels to disappear.  He can see a highlighted rectangle on the screen   that usually contains the word &quot;undo&quot; when he makes a change on his phone.   He selects that box and the dark background returns, so he can now read   the text.  He then changes the background to a color with   sufficient contrast for comfortable reading. </li>
           </ul>        </div>
         <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_325-r" name="sc_325-r"></a>Related Resources for Success Criterion 3.2.5:</h5>
+        <h5 class="implementing-heading"><a id="sc_312-r" name="sc_312-r"></a>Related Resources for Success Criterion 3.1.2:</h5>
             <ul>
               <li><a href="#gl-store-prefs">Guideline 2.7 - Configure and store preference settings</a></li></ul></div></div>
               
               
-  <h4 class="sc-title"><a id="sc_326" name="sc_326"></a>3.2.6 Retrieval Progress: </h4>
+  <h4 class="sc-title"><a id="sc_313" name="sc_313"></a>3.1.3 Retrieval Progress: </h4>
 <p class="sc-text">By default, the user agent shows the  state of content retrieval activity. <span class="level">(Level&nbsp;A)</span></p> 
 
      <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_326">Reference for 3.2.6</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_313">Reference for 3.1.3</a></div>
   </div>
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_326">Return to 3.2.6 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_313">Return to 3.1.3 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_326-a" name="sc_326-a"></a>Applies to:</h5>
+        <h5 class="implementing-heading"><a id="sc_313-a" name="sc_313-a"></a>Applies to:</h5>
         <p><a class="dfn-instance"
 href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_326-i" name="sc_326-i"></a>Intent  of  Success Criterion 3.2.6:</h5>
+        <h5 class="implementing-heading"><a id="sc_313-i" name="sc_313-i"></a>Intent  of  Success Criterion 3.1.3:</h5>
         <p>Users need to know that their actions are producing results even if 
           there is a time delay.  Users with limited ability to interact with a device need a passive indicator of progress. Users who cannot see visual indications need to 
           have feedback indicating a time delay and have an idea of where they are 
@@ -4894,7 +4785,7 @@ href="#intro-applies-to-uaui" title="definition:user agent user interface">UA us
        </div>
 
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_326-e" name="sc_326-e"></a>Examples for Success Criterion 3.2.6:</h5>
+        <h5 class="implementing-heading"><a id="sc_313-e" name="sc_313-e"></a>Examples for Success Criterion 3.1.3:</h5>
             <ul>
               <li class="unclassified-ex"> Larry has severe repetitive strain injuries and is limited to typing for only a short period of time every day. He downloads a long document, in which he wants to search. He periodically checks the progress bar to make sure it is fully downloaded before running his search. </li>
               <li class="unclassified-ex">Jennifer is blind and uses a screen reader. She clicks on a link that is downloading a large file.  The 
@@ -4906,49 +4797,162 @@ for a response from the server. If the process times out, the user agent display
 message that the purchase has timed out.</li>
           </ul></div>
         <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_326-r" name="sc_326-r"></a>Related Resources for Success Criterion 3.2.6:</h5>
+        <h5 class="implementing-heading"><a id="sc_313-r" name="sc_313-r"></a>Related Resources for Success Criterion 3.1.3:</h5>
             <ul>
-              <li><a href="#sc_416">4.1.6 Expose Accessible Properties</a></li></ul></div></div>
+    <li><a href="#sc_416">4.1.6 Expose Accessible Properties</a></li></ul></div></div></div>
 
-<h4 class="sc-title"><a id="sc_32x" name="sc_32x"></a>3.2.x Form Auto-Fill: </h4> <p class="sc-text">The user can have the following information stored and used to auto-fill form fields by request: <span class="level">(Level&nbsp;AA)</span> </h4>
+<div class="sc-level">
+<h4 class="sc-title"><a id="sc_314" name="sc_314"></a>3.1.4 Spell Check: </h4>
+<p class="sc-text">The user can have spelling assistance for editable text in rendered content.. <span class="level">(Level&nbsp;AA)</span></p>
+
+     <div class="gl-only">
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_314">Reference for 3.1.4</a></div>
+  </div>
+<div class="techs-only">
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_314">Return to 3.1.4 in Guidelines</a></div>
+</div> 
+
+      <div class="techs-only">
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_314-a" name="sc_314-a"></a>Applies to:</h5>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+        </div>
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_314-i" name="sc_314-i"></a>Intent  of  Success Criterion 3.1.4:</h5>
+        <pr>Users with various disabilities benefit from spell checkers. The ability to check spelling is particularly important for users with disabilities such as dyslexia that significantly increase the likelihood of misspelled words. Spellcheckers also alert blind and low vision users to errors in text entry.</p
+        ><p>Spell checking is only expected in editable text in content, most commonly text input controls and form fields. It is not required on text input fields that are part of the UA user interface, such as an address bar or File Open dialog box. Spell checking is also not required on static, read-only, or disabled text elements, controls, and fields in content, except when they display text the user can edit indirectly (e.g. static text that the user can alter using nearby buttons), or when the user agent is in an authoring mode that allows the user to edit text that would otherwise be static. </p>           <p>Spell checking should be available regardless of how the text was entered. For example, text may be entered by the user typing, pasted from the clipboard, initialized by the content (e.g. the HTML value attribute), set programmatically by scripts or assistive technology, or filled in by a feature of the user agent itself (e.g. auto-complete).            Spell checking which highlights unrecognized words as they are entered is preferred over requiring the user to use a separate tool or editing pass.            Spell checking should be optional, so that it can be avoided by users who find it too distracting, or for whom the highlighting makes the text less legible.   </p>         <p>Note: It is recommended that user agents also provide assistance with grammar, as well as spelling. Grammar can pose more difficulty than spelling for people with some cognitive disabilities or whose native language is signed.  </p>
+       </div>
+
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_314-e" name="sc_314-e"></a>Examples for Success Criterion 3.1.4:</h5>
+            <ul>
+              <li class="unclassified-ex">Amanda is dyslexic and frequently spells words incorrectly. She is able to correct words when alerted to the errors. She navigates to her web-based email application and composes a new message. The user agent alerts her to spelling errors as she is typing and she quickly corrects the mistakes and sends an error-free message.
+              </li>
+          </ul>        </div>
+        <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_314-r" name="sc_314-r"></a>Related Resources for Success Criterion 3.1.4:</h5>
+            <ul>
+              <li>None</li></ul></div></div>
+
+<h4 class="sc-title"><a id="sc_315" name="sc_315"></a>3.1.5 Back Button: </h4>
+<p class="sc-text">The user can reverse <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a> navigation between web addresses (e.g. standard "back button" functionality). <span class="level">(Level&nbsp;AA)</span> </p>
+
+     <div class="gl-only">
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_315">Reference for 3.1.5</a></div>
+  </div>
+<div class="techs-only">
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_315">Return to 3.1.5 in Guidelines</a></div>
+</div> 
+
+      <div class="techs-only">
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_315-a" name="sc_315-a"></a>Applies to:</h5>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
+        </div>
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_315-i" name="sc_315-i"></a>Intent of  Success Criterion 3.1.5:</h5>
+        <p>Retracing a navigation step is important for users with cognitive issues that involve memory and attention. This is also important for users whose means of input is not 100% accurate, such as speech input users or users with fine motor challenges. It is also beneficial for users for whom navigation is time consuming, tiring, or painful, because it allows them to avoid having to re-enter long URLs. The Back feature is a part of the UA user interface instead of the rendered content, however, authors should not &quot;break&quot; the Back button by disabling it, or creating sequences of web pages that would cause an error if the Back button were used. </p>
+       </div>
+
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_315-e" name="sc_315-e"></a>Examples for Success Criterion 3.1.5:</h5>
+            <ul>
+              <li class="unclassified-ex">Joe is a 
+quadraplegic who is using speech input in a relatively noisy room. The program hears an especially loud word from across the room and interprets it as Joe saying "Enter" to click a selected link. Joe says "Go Back" to go back to the page he was on.
+              </li>
+              <li class="unclassified-ex"> Mike's head injury leaves him easily distracted. He is in the middle of a search when the phone rings. When he comes back he selects the Back button to go back to the original search page so he can reorient himself.</li>
+              <li class="unclassified-ex">Ellen had a head injury that affects her short-term memory. She clicks on a link, and is interrupted by a colleague. When she goes back to      her task she has forgotten what she was originally doing. It's important that she be able to retrace her steps to reorient herself using the history feature of the browser user interface. </li>
+              <li class="unclassified-ex">Etta has moderately low vision and doesn't use assistive technology. She occasionally clicks on the wrong link. When she does so, she  clicks the Back button in order to get back to where she had been.</li>            
+            </ul>        </div>
+        <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_315-r" name="sc_315-r"></a>Related Resources for Success Criterion 3.1.5:</h5>
+   <ul>
+     <li><a href="#sc_1810">1.8.10 Provide Viewport History</a></li></ul></div></div>              
+
+  <h4 class="sc-title"><a id="sc_316" name="sc_316"></a>3.1.6 Form Submission Confirm: </h4>
+  <p class="sc-text">The user can specify whether or not <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a> form submissions must be confirmed. <span class="level">(Level&nbsp;AA)</span> </p>
+  
+     <div class="gl-only">
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_316">Reference for 3.1.6</a></div>
+  </div>
+<div class="techs-only">
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_316">Return to 3.1.6 in Guidelines</a></div>
+</div> 
+
+      <div class="techs-only">
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_316-a" name="sc_316-a"></a>Applies to:</h5>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
+        </div>
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_316-i" name="sc_316-i"></a>Intent  of  Success Criterion 3.1.6:</h5>
+          <p>Users need to be protected against accidentally submitting a form. Some 
+            assistive technologies use the Enter key to advance to the next field. 
+            If the form is designed to submit on Enter, the user can unknowingly 
+  &quot;submit on Enter&quot; function.</p>
+       </div>
+
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_316-e" name="sc_316-e"></a>Examples for Success Criterion 3.1.6:</h5>
+            <ul>
+              <li class="unclassified-ex">Marka is blind and uses a screenreader. When she installs a web browser she selects an 
+option to disable form submission on Enter.  This allows her to complete forms from the banking website knowing 
+that the form won't be submitted until she selects the submit button.</li>
+              <li class="unclassified-ex"> Ryan uses a mouse but his hand tremor makes him more likely to accidentally miss his intended target. Cancel and Submit (or OK) buttons are often next to each other, and Ryan has found that submitting a form inappropriately can cause serious complications, so he sets a browser option to always request confirmation of form submissions. As a result, when he clicks on a submit button the browser presents a message box asking &quot;Are you sure you want to submit this form?&quot; with larger, well-spaced buttons for Submit and Cancel.</li>
+          </ul>        </div>
+        <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_316-r" name="sc_316-r"></a>Related Resources for Success Criterion 3.1.6:</h5>
+            <ul>
+              <li><a href="#sc_211">2.1.1 Keyboard Operation</a></li>
+              <li><a href="#sc_311">3.1.1 Text Entry Undo</a></li></ul></div></div>
+              
+
+</div>
+              
+
+
+<div class="sc-level">
+<h4 class="sc-title"><a id="sc_317" name="sc_317"></a>3.1.7 Form Auto-Fill: </h4> <p class="sc-text">The user can have the following information stored and used to auto-fill form fields by request: <span class="level">(Level&nbsp;AA)</span> </p>
 <ol type="a">
 <li>user's name</li>
 <li>user's email address</li>
 <li>user's phone number</li>
 </ol>
     	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_32x">Reference for 3.2.x</a></div>
+	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_317">Reference for 3.1.7</a></div>
       </div>
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/UAAG20/#sc_32x">Return to 3.2.x in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/UAAG20/#sc_317">Return to 3.1.7 in Guidelines</a></div>
 	   </div> 
 
       <div class="techs-only">
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_326-a" name="sc_326-a"></a>Applies to:</h5>
+        <h5 class="implementing-heading"><a id="sc_317-a" name="sc_317-a"></a>Applies to:</h5>
         <p><a class="dfn-instance"
 href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
 href="#intro-applies-to-config-option" title="definition: configuration settings (optional)">Configuration settings (optional)</a></p>
         </div>
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_32x-i" name="sc_32x-i"></a>Intent  of  Success Criterion 3.2.x:</h5>
+        <h5 class="implementing-heading"><a id="sc_317-i" name="sc_317-i"></a>Intent  of  Success Criterion 3.1.7:</h5>
         <p>Users with various disabilities benefit from auto-fill functionality, including people who type slowly and people who have difficulty with letter/number order. </p>
        </div>
 
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_32x-e" name="sc_32x-e"></a>Examples for Success Criterion 3.2.x:</h5>
+        <h5 class="implementing-heading"><a id="sc_317-e" name="sc_317-e"></a>Examples for Success Criterion 3.1.7:</h5>
             <ul>
               <li class="unclassified-ex">Michael is dyslexic and frequently spells words incorrectly, including his name and email address. Auto-fill reduces the number of fields he must fill out in on-line forms.
 </li>
             </ul>        </div>
         <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_32x-r" name="sc_32x-r"></a>Related Resources for Success Criterion 3.2.x:</h5>
+        <h5 class="implementing-heading"><a id="sc_317-r" name="sc_317-r"></a>Related Resources for Success Criterion 3.1.7:</h5>
             <ul>
               <li>None</li></ul></div></div>
 
-<h4 class="sc-title"><a id="sc_18x" 
-
-name="sc_32y"></a>3.2.Y Save Form Entries: </h4>
+<h4 class="sc-title"><a id="sc_31y" name="sc_318"></a>3.1.8 Save Form Entries: </h4>
 <p class="sc-text">If the user agent provides a feature to save local versions of web content, then any form fields the user has filled retain any entries in the saved version. </a><span 
 
 class="level">(Level&nbsp;AA)</span> </p>
@@ -4960,24 +4964,24 @@ link"><a
 
 href="http://www.w3.org/WAI/UA/IMPLEMENTING-
 
-UAAG20/#sc_32y">Reference for 3.2.Y</a></div>
+UAAG20/#sc_318">Reference for 3.1.8</a></div>
       </div>
 	   <div class="techs-only">
 	    <div class="implementing-link"><a 
 
-href="http://www.w3.org/WAI/UA/UAAG20/#sc_32y
+href="http://www.w3.org/WAI/UA/UAAG20/#sc_318
 
-">Return to 3.2.Y in Guidelines</a></div>
+">Return to 3.1.8 in Guidelines</a></div>
 	   </div> 
 
       <div class="techs-only">
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_32y-a" name="sc_32y-a"></a>Applies to:</h5>
+        <h5 class="implementing-heading"><a id="sc_318-a" name="sc_318-a"></a>Applies to:</h5>
         <p><a class="dfn-instance"
 href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_32y-i" name="sc_32y-i"></a>Intent  of  Success Criterion 3.2.Y:</h5>
+        <h5 class="implementing-heading"><a id="sc_318-i" name="sc_318-i"></a>Intent  of  Success Criterion 3.1.8:</h5>
         <p>Users who need to fill out a form over several sessions or who 
 accidentally leave a page before a form is fully filled out need to have 
 a way to pick up where they left off rather than having to start over 
@@ -4989,9 +4993,9 @@ have trouble remembering what they filled out need to be able to look it up. One
        <div class="implementing-section">
         <h5 class="implementing-heading"><a 
 
-id="sc_3.2.Y-e" name="sc_32y-e"></a>Examples 
+id="sc_3.2.Y-e" name="sc_318-e"></a>Examples 
 
-for Success Criterion 3.2.Y:</h5>
+for Success Criterion 3.1.8:</h5>
             <ul>
               <li class="unclassified-
 
@@ -5023,13 +5027,13 @@ checks it to remind herself. She also opts to permanently save a copy of
 the page that includes the form field data in case she wants to check it again.
 </li>
             </ul>        
-            </div>
+        </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a 
 
-id="sc_32y-r" name="sc_32y-r"></a>Related 
+id="sc_318-r" name="sc_318-r"></a>Related 
 
-Resources for Success Criterion 3.2.Y:</h5>
+Resources for Success Criterion 3.1.8:</h5>
             <ul>
               <li>None</li></ul></div></div>
 </div>
@@ -5037,52 +5041,52 @@ Resources for Success Criterion 3.2.Y:</h5>
 
 <div class="guideline-box" id="g-3-3">
 <h3 class="guideline"><a name="gl-doc-access-features"
-id="gl-doc-access-features"><span class="techs-only">Reference for </span>Guideline 3.3 - </a> Document the user agent user
-interface including  accessibility features <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-doc-access-features">Reference for 3.3</a>] </span>
-	  <span class="techs-only">[<a href="http://w3c.github.io/UAAG/UAAG20/Overview.html#gl-doc-access-features">Guideline 3.3</a>]</span></h3>
-<p class="summary" id="summary33"><strong>Summary</strong>:  User documentation is available in an accessible format (3.3.1, 
-Level A), it includes accessibility features (3.3.2, Level A), 
-delineates differences between versions (3.3.3, Level AA), provides a 
-centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
+id="gl-doc-access-features"><span class="techs-only">Reference for </span>Guideline 3.2 - </a> Document the user agent user
+interface including  accessibility features <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-doc-access-features">Reference for 3.2</a>] </span>
+	  <span class="techs-only">[<a href="http://w3c.github.io/UAAG/UAAG20/Overview.html#gl-doc-access-features">Guideline 3.2</a>]</span></h3>
+<p class="summary" id="summary32"><strong>Summary</strong>:  User documentation is available in an accessible format (3.2.1, 
+Level A), it includes accessibility features (3.2.2, Level A), 
+it documents all the user features (3.2.3, Level AA), it delineates differences between versions (3.2.4, Level AA), and provides a 
+centralized view of conformance UAAG2.0 (3.2.5, Level AAA).
 </p>
 
 <div class="sc-level">
-<h4 class="sc-title"><a id="sc_331" name="sc_331"></a>3.3.1 Accessible Documentation: </h4>
+<h4 class="sc-title"><a id="sc_321" name="sc_321"></a>3.2.1 Accessible Documentation: </h4>
 <p class="sc-text"> Product <a class="dfn-instance" href="#def-documentation" title="definition: documentation">documentation</a> is available in a format that meets success criteria of WCAG 2.0 level "A" or greater. <span class="level">(Level&nbsp;A)</span> </p>
 
      <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_331">Reference for 3.3.1</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_321">Reference for 3.2.1</a></div>
   </div>
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_331">Return to 3.3.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_321">Return to 3.2.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_331-a" name="sc_331-a"></a>Applies to:</h5>
+        <h5 class="implementing-heading"><a id="sc_321-a" name="sc_321-a"></a>Applies to:</h5>
         <p><a class="dfn-instance"
 href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_331-i" name="sc_331-i"></a>Intent  of  Success Criterion 3.3.1:</h5>
+        <h5 class="implementing-heading"><a id="sc_321-i" name="sc_321-i"></a>Intent  of  Success Criterion 3.2.1:</h5>
         <p>People with disabilities need documentation in a format that is accessible.
           If provided as web content, it must at least conform to WCAG 2.0 level "A." If the document is not provided as web content, it must be in conformance to a
           published accessibility benchmark.</p>
        </div>
 
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_331-e" name="sc_331-e"></a>Examples for Success Criterion 3.3.1:</h5>
+        <h5 class="implementing-heading"><a id="sc_321-e" name="sc_321-e"></a>Examples for Success Criterion 3.2.1:</h5>
             <ul>
               <li class="unclassified-ex">Randall has repetitive strain injuries. His injuries make it painful to sit at the computer for long periods of time. When exploring a new program, he will often print out the documentation to read while away from his desk.This allows him to be more efficient, and learn new programs without having to spend as much computer time. </li>
               <li class="unclassified-ex">Lee has low vision. When she upgrades her user agent, she wants to see if any  features she relies on have changed. She opens the HTML help documentation and pleased to see that the documentation is using her preferred settings. </li>
           </ul>        </div>
         <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_331-r" name="sc_331-r"></a>Related Resources for Success Criterion 3.3.1:</h5>
+        <h5 class="implementing-heading"><a id="sc_321-r" name="sc_321-r"></a>Related Resources for Success Criterion 3.2.1:</h5>
             <ul>
               <li>None</li></ul></div></div>
 
 
-<h4 class="sc-title"><a id="sc_332" name="sc_332"></a>3.3.2 Describe Accessibility Features: </h4>
+<h4 class="sc-title"><a id="sc_322" name="sc_322"></a>3.2.2 Describe Accessibility Features: </h4>
 <p class="sc-text"> For each user agent feature that is used to meet UAAG 2.0, at least one of  the following is true: <span class="level">(Level&nbsp;A)</span></p>
 <ol type="a" class="sc-bullets">
   <li class="sc-bullet"><strong class="handle">Described in the Documentation</strong>: Use of the feature is explained in  the user agent's documentation; or</li>
@@ -5091,20 +5095,20 @@ href="#intro-applies-to-uaui" title="definition:user agent user interface">UA us
 <li class="sc-bullet"><strong class="handle">Not Used by Users</strong>: The feature is not used directly by users (e.g.,  passing information to a platform accessibility service). </li>
 </ol>
      <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_332">Reference for 3.3.2</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_322">Reference for 3.2.2</a></div>
   </div>
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_332">Return to 3.3.2 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_322">Return to 3.2.2 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_332-a" name="sc_332-a"></a>Applies to:</h5>
+        <h5 class="implementing-heading"><a id="sc_322-a" name="sc_322-a"></a>Applies to:</h5>
         <p><a class="dfn-instance"
 href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_332-i" name="sc_332-i"></a>Intent  of  Success Criterion 3.3.2:</h5>
+        <h5 class="implementing-heading"><a id="sc_322-i" name="sc_322-i"></a>Intent  of  Success Criterion 3.2.2:</h5>
           <p>Some users with disabilities will need help in determining how to use   the accessibility features that user agents provide. There are four   possibilities:</p>
 <ol type="a">
   <li>This information is  provided in the documentation of the user agent (e.g. help system, context sensitive help, etc.);</li>
@@ -5116,7 +5120,7 @@ href="#intro-applies-to-uaui" title="definition:user agent user interface">UA us
        </div>
 
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_332-e" name="sc_332-e"></a>Examples for Success Criterion 3.3.2:</h5>
+        <h5 class="implementing-heading"><a id="sc_322-e" name="sc_322-e"></a>Examples for Success Criterion 3.2.2:</h5>
             <ul>
               <li class="unclassified-ex">Lee has low vision. When she installs a new  user agent, she checks the accessibility documentation to see if the features she needs are available. She finds section entitled "Browser Features Supporting Accessibility", which provides a detailed description of user agent features that
                 provide accessibility, describes how they function, and lists any
@@ -5126,15 +5130,15 @@ href="#intro-applies-to-uaui" title="definition:user agent user interface">UA us
               <li class="mobile-ex">[mobile] Neta has a  repetitive strain injury.  She relies on gestures and shortcuts to complete tasks.  Using a specialized command, she  pulls up a list of all the gesture commands available including descriptions.</li>
           </ul></div>
         <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_332-r" name="sc_332-r"></a>Related Resources for Success Criterion 3.3.2:</h5>
+        <h5 class="implementing-heading"><a id="sc_322-r" name="sc_322-r"></a>Related Resources for Success Criterion 3.2.2:</h5>
             <ul>
-              <li><a href="#sc_334">3.3.4 Centralized View</a></li></ul></div></div>
+              <li><a href="#sc_325">3.2.5 Centralized View</a></li></ul></div></div>
 </div>
 
 
 <div class="sc-level">
 
-<h4 class="sc-title"><a id="sc_33x" name="sc_33x"></a>3.3.x Document All Features: </h4>
+<h4 class="sc-title"><a id="sc_323" name="sc_323"></a>3.2.3 Document All Features: </h4>
 <p class="sc-text">For each user agent feature, at least one of the following is true</a>: <span class="level">(Level&nbsp;AA)</span> </p>
 <ol type="a" class="sc-bullets">
   <li class="sc-bullet"><strong class="handle">Described in the Documentation</strong>: Use of the feature is explained in  the user agent's documentation; or</li>
@@ -5143,95 +5147,96 @@ href="#intro-applies-to-uaui" title="definition:user agent user interface">UA us
 <li class="sc-bullet"><strong class="handle">Not Used by Users</strong>: The feature is not used directly by users (e.g.,  passing information to a platform accessibility service). </li>
 </ol>
     	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_33x">Reference for 3.3.x</a></div>
+	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_323">Reference for 3.2.3</a></div>
       </div>
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/UAAG20/#sc_33x">Return to 3.3.x in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/UAAG20/#sc_323">Return to 3.2.3 in Guidelines</a></div>
 	   </div> 
 
       <div class="techs-only">
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_33x-a" name="sc_33x-a"></a>Applies to:</h5>
+        <h5 class="implementing-heading"><a id="sc_323-a" name="sc_323-a"></a>Applies to:</h5>
         <p><a class="dfn-instance"
 href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_33x-i" name="sc_33x-i"></a>Intent  of  Success Criterion 3.3.x:</h5>
+        <h5 class="implementing-heading"><a id="sc_323-i" name="sc_323-i"></a>Intent  of  Success Criterion 3.2.3:</h5>
          It should always be easy to ask and receive help. The Help icon should be available to every screen, and that icon  takes the user directly to relevant &quot;how to use these features&quot; or instructions. A symbol for help should be used (such as a question mark) or the word &quot;help&quot;. Getting help should not be hidden &mdash; it should not be under a menu of options.   
          <p>Help text for core user tasks and main or essential features should be easy to understand in simple and clear text.  Each step should be identified and labeled, and pictures that clarify what to do are recommended.  </p>
         <p>A layered approach to help is beneficial to many audiences.  Tooltip help is a wonderful memory aid for clarifying what user features are and particularly useful for people with an impaired working memory. Include short tooltips on all icons, jargon and shortened forms such as abbreviations. Typically these tooltips should be one or two words long. </p>
        </div>
 
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_33x-e" name="sc_33x-e"></a>Examples for Success Criterion 3.3.x:</h5>
+        <h5 class="implementing-heading"><a id="sc_323-e" name="sc_323-e"></a>Examples for Success Criterion 3.2.3:</h5>
             <ul>
               <li class="unclassified-ex">Perttu</li>
             </ul>        </div>
         <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_33x-r" name="sc_33x-r"></a>Related Resources for Success Criterion 3.3.x:</h5>
+        <h5 class="implementing-heading"><a id="sc_323-r" name="sc_323-r"></a>Related Resources for Success Criterion 3.2.3:</h5>
             <ul>
               <li>None</li></ul></div></div>
 
-<h4 class="sc-title"><a id="sc_333" name="sc_333"></a>3.3.3 Changes Between Versions: </h4>
+<h4 class="sc-title"><a id="sc_324" name="sc_324"></a>3.2.4 Changes Between Versions: </h4>
 <p class="sc-text"> Changes to features that meet UAAG 2.0 success criteria  since the previous user agent release are documented. <span class="level">(Level&nbsp;AA)</span> </p>
 
      <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_333">Reference for 3.3.3</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_324">Reference for 3.2.4</a></div>
   </div>
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_333">Return to 3.3.3 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_324">Return to 3.2.4 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_333-a" name="sc_333-a"></a>Applies to:</h5>
+        <h5 class="implementing-heading"><a id="sc_324-a" name="sc_324-a"></a>Applies to:</h5>
         <p><a class="dfn-instance"
 href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a></p>
         </div>
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_333-i" name="sc_333-i"></a>Intent  of Success Criterion 3.3.3:</h5>
+        <h5 class="implementing-heading"><a id="sc_324-i" name="sc_324-i"></a>Intent  of Success Criterion 3.2.4:</h5>
         <p>Users need to be informed about accessibility features implemented in new versions of the user agent. </p>
        </div>
 
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_333-e" name="sc_333-e"></a>Examples for Success Criterion 3.3.3:</h5>
+        <h5 class="implementing-heading"><a id="sc_324-e" name="sc_324-e"></a>Examples for Success Criterion 3.2.4:</h5>
             <ul>
               <li class="unclassified-ex">Martha has memory problems. She finds it difficult to remember what the   icons on her computer do and relies heavily on tool tips. She goes to an app store on her computer and installs  an update for her web browser. After it installs, she sees a welcome page describing the new features in this release. One of the welcome page links is titled "What's New For Accessibility". Following this link, Martha reads about the accessibility improvements  and discovers  a feature that allows her to have tooltips displayed for elements when she is using caret browsing. The text also informs Martha that this feature is off by default and that she should go to accessibility settings to turn it on. </li>
           </ul></div>
         <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_333-r" name="sc_333-r"></a>Related Resources for Success Criterion 3.3.3:</h5>
+        <h5 class="implementing-heading"><a id="sc_324-r" name="sc_324-r"></a>Related Resources for Success Criterion 3.2.4:</h5>
             <ul>
-              <li>None</li></ul></div></div>
-              
-              
-<h4 class="sc-title"><a id="sc_334" name="sc_334"></a>3.3.4 Centralized View: </h4> 
+              <li>None</li>
+            </ul></div></div></div>
+            
+<div class="sc-level">                            
+<h4 class="sc-title"><a id="sc_325" name="sc_325"></a>3.2.5 Centralized View: </h4> 
 <p class="sc-text">There is a dedicated section of the documentation that presents a view of all features of the user agent necessary to meet the requirements of User Agent Accessibility Guidelines 2.0. <span class="level">(Level&nbsp;AAA)</span></p>
 
      <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_334">Reference for 3.3.4</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_325">Reference for 3.2.5</a></div>
   </div>
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_334">Return to 3.3.4 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_325">Return to 3.2.5 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_334-a" name="sc_334-a"></a>Applies to:</h5>
+        <h5 class="implementing-heading"><a id="sc_325-a" name="sc_325-a"></a>Applies to:</h5>
         <p>UA user interface</p>
         </div>
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_334-i" name="sc_334-i"></a>Intent  of  Success Criterion 3.3.4:</h5>
+        <h5 class="implementing-heading"><a id="sc_325-i" name="sc_325-i"></a>Intent  of  Success Criterion 3.2.5:</h5>
         <p>Users need to know about accessibility features and how to operate them.  A centralized view of accessibility features makes it easier for people with disabilities and people who are evaluating software to quickly become familiar with the features  such as keyboard shortcuts, how to zoom the viewport, and where to find accessibility configuration settings. Nested user agents or add-ons may provide separate centralized documentation. It is also useful to document accessibility features in context (such as displaying keyboard shortcuts next to their menu command). </p>
        </div>
 
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_334-e" name="sc_334-e"></a>Examples for Success Criterion 3.3.4:</h5>
+        <h5 class="implementing-heading"><a id="sc_325-e" name="sc_325-e"></a>Examples for Success Criterion 3.2.5:</h5>
             <ul>
               <li class="mobile-ex">[mobile] Bob is blind and uses a screen reader that is part of his phone's operating system. He downloads a new web browser on his mobile phone. The browser's online help includes a section on accessibility that point him to pages on non-visual access, such as interaction with screen readers,  helpful hints such as an explanation of the screen layout, and a list of supported touch gestures. </li>
               <li class="unclassified-ex">Marissa is assessing new user agents for clients who are blind. The first thing she does in looking at  each user agent is to turn to the  section in the documentation (local or online) that details accessibility features. This gives her a quick overview of the accessibility features across different products. </li>
           </ul></div>
         <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_334-r" name="sc_334-r"></a>Related Resources for Success Criterion 3.3.4:</h5>
+        <h5 class="implementing-heading"><a id="sc_325-r" name="sc_325-r"></a>Related Resources for Success Criterion 3.2.5:</h5>
             <ul>
               <li>None</li></ul></div></div>
 </div>
@@ -5239,35 +5244,35 @@ href="#intro-applies-to-uaui" title="definition:user agent user interface">UA us
 
 
 <div class="guideline-box" id="g-3-4">
-<h3 class="guideline"><a name="gl-predictable-operation" id="gl-predictable-operation"></a><span class="techs-only">Reference for </span>Guideline 3.4 - Make the user agent behave in  predictable ways <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-predictable-operation">Reference for 3.4</a>] </span>
-	  <span class="techs-only">[<a href="http://w3c.github.io/UAAG/UAAG20/Overview.html#gl-predictable-operation">Guideline 3.4</a>]</span></h3>
-<p class="summary" id="summary34"><strong>Summary</strong>: Users can prevent non-requested focus changes (3.4.1, Level A).
+<h3 class="guideline"><a name="gl-predictable-operation" id="gl-predictable-operation"></a><span class="techs-only">Reference for </span>Guideline 3.3 - Make the user agent behave in  predictable ways <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-predictable-operation">Reference for 3.3</a>] </span>
+	  <span class="techs-only">[<a href="http://w3c.github.io/UAAG/UAAG20/Overview.html#gl-predictable-operation">Guideline 3.3</a>]</span></h3>
+<p class="summary" id="summary33"><strong>Summary</strong>: Users can prevent non-requested focus changes (3.3.1, Level A).
 </p>
 <div class="sc-level">
-<h4 class="sc-title"><a id="sc_341" name="sc_341"></a>3.4.1 Avoid Unpredictable Focus: </h4>
+<h4 class="sc-title"><a id="sc_331" name="sc_331"></a>3.3.1 Avoid Unpredictable Focus: </h4>
 <p class="sc-text"> The user can prevent focus changes that are not a result of explicit user request. <span class="level">(Level&nbsp;A)</span> </p> 
 
 <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_341">Reference for 3.4.1</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_331">Reference for 3.3.1</a></div>
   </div>
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_341">Return to 3.4.1 in Guidelines</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_331">Return to 3.3.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_341-a" name="sc_341-a"></a>Applies to:</h5>
+        <h5 class="implementing-heading"><a id="sc_331-a" name="sc_331-a"></a>Applies to:</h5>
         <p><a class="dfn-instance"
 href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a>, <a class="dfn-instance"
 href="#intro-applies-to-config-option" title="definition: configuration settings (optional)">Configuration settings (optional)</a></p>
         </div>
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_341-i" name="sc_341-i"></a>Intent  of  Success Criterion 3.4.1:</h5>
+        <h5 class="implementing-heading"><a id="sc_331-i" name="sc_331-i"></a>Intent  of  Success Criterion 3.3.1:</h5>
         <p>Users need to know that navigation in a web page is going to start in a predictable location and move in a predictable fashion. If a page moves the initial focus to somewhere other than the beginning of the page, the user may skip over  content without realizing it. If the focus moves and remains unnoticed, users can make  unintentional changes, such as entering data in an incorrect field. Focus changes can cause a window to scroll unexpectedly, confusing users. This is particularly problematic for users who can only see a small portion of the document, because they must use more effort to determine where the cursor has moved. Such users also are more likely to continue typing, not immediately realizing that the context has changed. Users who find navigation time consuming, tiring, or painful (including those using screen readers or with impaired dexterity) may also need more steps to return to the area where they want to work. It may improve accessibility for some users on some pages to have the page  set focus to specific links or fields when the page loads, but this can  be detrimental for other users, and therefore users need to  control this behavior. </p>
        </div>
 
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_341-e" name="sc_341-e"></a>Examples for Success Criterion 3.4.1:</h5>
+        <h5 class="implementing-heading"><a id="sc_331-e" name="sc_331-e"></a>Examples for Success Criterion 3.3.1:</h5>
             <ul>
               <li class="unclassified-ex">Jerome has repetitive strain injuries. He tries to limit the number of keyboard and mouse entries he makes each day, because it is painful. He  loads a page that has its default focus in a search box.  Jerome wants to read the content of the page, rather than search. This requires him to make additional clicks to get to the content of the page. He intends to use this page frequently, so he adjusts his browser's settings to disable the automatic focus change to prevent the extra clicking in the future. </li>
               <li class="unclassified-ex">Jessica uses a screen enlarger. She loads a page that contains   instructions followed by a form. If the page automatically moves the   keyboard focus to the form, she may not realize there were instructions.   To avoid this problem, she sets an option to prevent default focus   changes. </li>
@@ -5276,7 +5281,7 @@ href="#intro-applies-to-config-option" title="definition: configuration settings
               <li class="unclassified-ex">Justine has trouble using a mouse. She uses a keyboard macro in her web email program to execute a  command to start a new message and put a block of text in the new message. The focus moves without her control, causing the macro to execute in the Inbox instead of the Compose window. With the Inbox in focus several single-key shortcuts execute, changing the column sorting and deleting several messages. </li>
             </ul></div>
         <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_341-r" name="sc_341-r"></a>Related Resources for Success Criterion 3.4.1:</h5>
+        <h5 class="implementing-heading"><a id="sc_331-r" name="sc_331-r"></a>Related Resources for Success Criterion 3.3.1:</h5>
             <ul>
               <li><a href="#sc_131">1.3.1 Highlighted Items</a></li>
               <li><a href="#sc_1811">1.8.11 Allow Top-Level Viewport Open on Request</a></li>
