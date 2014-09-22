@@ -11,7 +11,8 @@
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
-       
+
+               
 
 h2.principle {
 	background-color:#FFFFFF;
@@ -470,7 +471,7 @@ levels: levels A (minimum), AA (recommended), and AAA (advanced). The three leve
 <p>When the success criterion requires that a particular configuration setting exist (e.g. that the user be able to turn a functionality on or off) or the success criterion relates to configuration settings, in general. On some platforms, configuration settings are known as preference settings. </p>
 
 <h4 id="intro-applies-to-config-option">Configuration settings (optional)</h4>
-<p>When the success criterion requires functionality, but lets the developer decide whether the functionality will always be turned on or whether it could be controlled by a configuration setting.
+<p>When the success criterion requires functionality, but lets the developer decide whether the functionality will always be turned on or whether it could be controlled by a configuration setting. </p>
 
 <h3><a id="intro-def-ua" name="intro-def-ua">Definition of <dfn>User Agent
 </dfn></a></h3>
@@ -4396,7 +4397,7 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_314-i" name="sc_314-i"></a>Intent  of  Success Criterion 3.1.4:</h5>
-        <pr>Users with various disabilities benefit from spell checkers. The ability to check spelling is particularly important for users with disabilities such as dyslexia that significantly increase the likelihood of misspelled words. Spellcheckers also alert blind and low vision users to errors in text entry.</p
+        <p>Users with various disabilities benefit from spell checkers. The ability to check spelling is particularly important for users with disabilities such as dyslexia that significantly increase the likelihood of misspelled words. Spellcheckers also alert blind and low vision users to errors in text entry.</p
         ><p>Spell checking is only expected in editable text in content, most commonly text input controls and form fields. It is not required on text input fields that are part of the UA user interface, such as an address bar or File Open dialog box. Spell checking is also not required on static, read-only, or disabled text elements, controls, and fields in content, except when they display text the user can edit indirectly (e.g. static text that the user can alter using nearby buttons), or when the user agent is in an authoring mode that allows the user to edit text that would otherwise be static. </p>           <p>Spell checking should be available regardless of how the text was entered. For example, text may be entered by the user typing, pasted from the clipboard, initialized by the content (e.g. the HTML value attribute), set programmatically by scripts or assistive technology, or filled in by a feature of the user agent itself (e.g. auto-complete).            Spell checking which highlights unrecognized words as they are entered is preferred over requiring the user to use a separate tool or editing pass.            Spell checking should be optional, so that it can be avoided by users who find it too distracting, or for whom the highlighting makes the text less legible.   </p>         <p>Note: It is recommended that user agents also provide assistance with grammar, as well as spelling. Grammar can pose more difficulty than spelling for people with some cognitive disabilities or whose native language is signed.  </p>
        </div>
 
@@ -4522,10 +4523,8 @@ href="#intro-applies-to-config-option" title="definition: configuration settings
             <ul>
               <li>None</li></ul></div></div>
 
-<h4 class="sc-title"><a id="sc_31y" name="sc_318"></a>3.1.8 Save Form Entries: </h4>
-<p class="sc-text">If the user agent provides a feature to save local versions of web content, then any form fields the user has filled retain any entries in the saved version. </a><span 
-
-class="level">(Level&nbsp;AA)</span> </p>
+<h4 class="sc-title"><a id="sc_318" name="sc_318"></a>3.1.8 Save Form Entries: </h4>
+<p class="sc-text">If the user agent provides a feature to save local versions of web content, then any form fields the user has filled retain any entries in the saved version. <span class="level">(Level&nbsp;AA)</span> </p>
 
     	   
 	   <div class="techs-only">
@@ -4697,7 +4696,7 @@ href="#intro-applies-to-uaui" title="definition:user agent user interface">UA us
 <div class="sc-level">
 
 <h4 class="sc-title"><a id="sc_323" name="sc_323"></a>3.2.3 Document All Features: </h4>
-<p class="sc-text">For each user agent feature, at least one of the following is true</a>: <span class="level">(Level&nbsp;AA)</span> </p>
+<p class="sc-text">For each user agent feature, at least one of the following is true: <span class="level">(Level&nbsp;AA)</span> </p>
 <ol type="a" class="sc-bullets">
   <li class="sc-bullet"><strong class="handle">Described in the Documentation</strong>: Use of the feature is explained in  the user agent's documentation; or</li>
   <li class="sc-bullet"><strong class="handle">Described in the Interface</strong>: Use of the feature is explained in the  <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a>; or</li>
@@ -4725,7 +4724,7 @@ href="#intro-applies-to-uaui" title="definition:user agent user interface">UA us
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_323-e" name="sc_323-e"></a>Examples for Success Criterion 3.2.3:</h5>
             <ul>
-              <li class="unclassified-ex">Lotte has low vision and uses a screen magnifier. She wants to mail a link to the blog article she is reading to a colleague, but cannot find the feature. She taps an icon on her phone with a large red question mark, and types &quot;email link&quot; in the search box that appears. She reads the directions for emailing a link, returns to the article, and successfully emails the link. </li>
+              <li class="unclassified-ex">Lotte has low vision and uses a screen magnifier on her smartphone. She wants to email a colleague the link to the blog article she is reading, but cannot find the feature. She taps an icon on her phone with a large red question mark, and types &quot;email link&quot; in the search box that appears. She reads the directions for emailing a link, returns to the article, and successfully emails the link. </li>
               <li class="unclassified-ex">Benecio has a learning disability, and cannot remember what toolbar icons stand for. He uses his mouse to display the tooltip with the name of each icon until he discovers the Print icon. </li>
             </ul>        
             </div>
@@ -5434,12 +5433,12 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
     <li>whether or not the success criterion has been 
       satisfied; or </li>
     <li>declaration that the success criterion is not applicable and a 
-      rationale for why not, from the following choices: </li>
+      rationale for why not, from the following choices:
       <ol>
        <li> <strong>Platform</strong>: not applicable due constraints of the platform, per Paragraph 7 above (e.g. color handling on a monochrome device, video handling in a purely audio browser, or interprocess communication on an operating system that does not support multitasking). Describe the specific platform limitation. </li>
        <li><strong>Input</strong>: not applicable due to a constrained input set (e.g. a help system that only displays the HTML files included with the product)</li>
        <li><strong>Output</strong>: not applicable due to intentionally limited output modalities (e.g. video handling in a browser that only does audio output, even though the platform may support video)</li>
-      </ol>
+      </ol></li>
     </ol>
 </li>
 </ol>
@@ -5923,8 +5922,7 @@ recognize. </dd>
   name="def-rendered-text" id="def-rendered-text"></a>rendered text</dfn>: <a
       class="dfn-instance" href="#def-text" title="definition: Text">Text</a> content that is rendered in a way that communicates information about
         the characters themselves, whether visually or as synthesized
-        speech.</li>
-    </ul>
+        speech.
   </dd>
   <dt class="glossary"><a name="def-repair-content"
   id="def-repair-content"></a><dfn>repair content</dfn>, <a
@@ -6321,7 +6319,7 @@ are also identified as references through markup.</p>
 Abou-Zahra, eds., 26 February 2013.  This is an informative draft of a Working Group Note. The <a href="http://www.w3.org/TR/WCAG-EM/">latest version</a> is available at http://www.w3.org/TR/WCAG-EM/</dd>
   <dt><a name="ref-wcag2ict" id="ref-wcag2ict"></a>[WCAG2ICT]</dt>
   <dd><a href="http://www.w3.org/TR/wcag2ict/">Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)</a> M. Cooper, P. Korn, A. Snow-Weaver, G. Vanderheiden, eds., 5 September 2013. 
-This document is available in an <a href="http://www.w3.org/WAI/GL/2013/WD-wcag2ict-20130905/accordion">expandable / collapsible alternate version</a> in which the &ldquo;Intent&rdquo; sections copied from Understanding WCAG 2.0 are hidden and individually expandable, for easier reading.
+This document is available in an <a href="http://www.w3.org/WAI/GL/2013/WD-wcag2ict-20130905/accordion">expandable / collapsible alternate version</a> in which the &ldquo;Intent&rdquo; sections copied from Understanding WCAG 2.0 are hidden and individually expandable, for easier reading. </dd>
   <dt><a name="ref-WEBCHAR" id="ref-WEBCHAR">[WEBCHAR]</a></dt>
     <dd><cite><a href="http://www.w3.org/1999/05/WCA-terms/01">"Web
       Characterization Terminology and Definitions Sheet,"</a></cite> B.
