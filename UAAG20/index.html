@@ -10,7 +10,9 @@
 
 .mobile-ex { background-color:#FCF; }
 
-.editor-notes {BORDER: red 1px solid;}    
+.editor-notes {BORDER: red 1px solid;}
+
+               
 
 h2.principle {
 	background-color:#FFFFFF;
@@ -222,7 +224,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 18 September
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 19 September
 2014</h2>
 <dl>
   <dt>This version (Github):</dt>
@@ -363,6 +365,7 @@ href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">secti
       <li class="gl-only"><a href="#supporting_docs">UAAG 2.0 Supporting Documents</a></li>
       <li class="gl-only"><a href="#intro-components">Components of Web Accessibility</a></li>
       <li><a href="#intro-conf-levels">Levels of Conformance</a></li>
+      
       
       <li class="gl-only"><a href="#intro-wcag">Relationship with Web  Content Accessibility Guidelines(WCAG) 2.0 </a></li>
       <li class="gl-only"><a href="#intro-atag">Relationship with Authoring Tool Accessibility Guidelines (ATAG) 2.0 </a></li>
@@ -1599,7 +1602,7 @@ title="definition: Rendered content">rendered content</a> (e.g. accesskey, landm
       
               
 <h4 class="sc-title"><a id="sc_234" name="sc_234"></a>2.3.4 Present Direct Commands in User Interface: </h4>
-<p class="sc-text"> The user can have any direct commands in the user agent user interface  (e.g. keyboard shortcuts) be presented with their associated user interface controls (e.g. &quot;Ctrl+S&quot; displayed on the &quot;Save&quot; menu item and toolbar button). <span class="level">(Level&nbsp;AA)</span></p>
+<p class="sc-text"> The user can have any direct commands in the <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a>  (e.g. keyboard shortcuts) be presented with their associated user interface controls (e.g. &quot;Ctrl+S&quot; displayed on the &quot;Save&quot; menu item and toolbar button). <span class="level">(Level&nbsp;AA)</span></p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_234">Reference for 2.3.4</a></div>
@@ -1609,7 +1612,7 @@ title="definition: Rendered content">rendered content</a> (e.g. accesskey, landm
       
 
 <h4 class="sc-title"><a id="sc_235" name="sc_235"></a>2.3.5 Allow Customized Keyboard Commands: </h4>
-<p class="sc-text">The user can remap any <a class="dfn-instance" href="#def-keyboard-shortcut" rel="glossary" title="definition: keyboard shortcut">keyboard shortcut</a> including recognized author supplied shortcuts (e.g. accesskeys) and user agent user interface controls, except for conventional bindings for the <a class="dfn-instance" href="#def-operating-environment" rel="glossary" title="definition: operating environment">operating environment</a> (e.g. arrow keys for navigating within menus). <span class="level">(Level&nbsp;AA)</span>
+<p class="sc-text">The user can remap any <a class="dfn-instance" href="#def-keyboard-shortcut" rel="glossary" title="definition: keyboard shortcut">keyboard shortcut</a> including recognized author supplied shortcuts (e.g. accesskeys) and <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a> controls, except for conventional bindings for the <a class="dfn-instance" href="#def-operating-environment" rel="glossary" title="definition: operating environment">operating environment</a> (e.g. arrow keys for navigating within menus). <span class="level">(Level&nbsp;AA)</span>
 </p>
 
 <div class="gl-only">
@@ -1784,6 +1787,8 @@ transport settings to compatible systems (2.7.5, Level AA).</p>
 <div class="sc-level">
 <h4 class="sc-title"><a id="sc_271" name="sc_271"></a>2.7.1 Allow Persistent Accessibility Settings: </h4>
 <p class="sc-text">User agent accessibility preference settings persist between sessions. <span class="level">(Level&nbsp;A)</span> </p>
+<ul class="sc-notes">
+    <li class="sc-note"><em class="note-handle">Note:</em> User agents may have a public access setting that turns this off. </li></ul>
 
    <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_271">Reference for 2.7.1</a></div>
@@ -1814,7 +1819,7 @@ transport settings to compatible systems (2.7.5, Level AA).</p>
       
 
   <h4 class="sc-title"><a id="sc_274" name="sc_274"></a>2.7.4 Allow Preference Changes from outside the User Interface: </h4>
-  <p class="sc-text">The user can adjust any preference settings required to meet the User Agent Accessibility Guidelines (UAAG) 2.0 from outside the user agent user interface. <span class="level">(Level&nbsp;AAA)</span></p>
+  <p class="sc-text">The user can adjust any preference settings required to meet the User Agent Accessibility Guidelines (UAAG) 2.0 from outside the <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a>. <span class="level">(Level&nbsp;AAA)</span></p>
   
 <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_274">Reference for 2.7.4</a></div>
@@ -1890,7 +1895,7 @@ Guideline 2.9 - Allow time-independent interaction <span class="gl-only">[<a hre
 <div class="sc-level">
   <h4 class="sc-title"><a id="sc_291" name="sc_291"></a>2.9.1 Adjustable Time Limits: </h4>
 <p class="sc-text">
-The user agent user interface does not include time limits or at least one of the following is true:  <span class="level">(Level&nbsp;A)</span> </p>
+The <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a> does not include time limits or at least one of the following is true:  <span class="level">(Level&nbsp;A)</span> </p>
 <ol type="a">
 <li><strong class="sc-bullet">Turn Off: </strong>Users are allowed to turn off the time limit before encountering it; or </li>
 
@@ -2170,7 +2175,7 @@ indications of progress activity (3.2.6, Level A).</p>
       
 
 <h4 class="sc-title"><a id="sc_323" name="sc_323"></a>3.2.3 Spell Check: </h4>
-<p class="sc-text">User agent user interface provides spell checking functionality for text created inside the user agent. <span class="level">(Level&nbsp;AA)</span></p>
+<p class="sc-text">The user can have spelling assistance for editable text in rendered content.. <span class="level">(Level&nbsp;AA)</span></p>
 
      <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_323">Reference for 3.2.3</a></div>
@@ -2276,7 +2281,7 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
 <p class="sc-text"> For each user agent feature that is used to meet UAAG 2.0, at least one of  the following is true: <span class="level">(Level&nbsp;A)</span></p>
 <ol type="a" class="sc-bullets">
   <li class="sc-bullet"><strong class="handle">Described in the Documentation</strong>: Use of the feature is explained in  the user agent's documentation; or</li>
-  <li class="sc-bullet"><strong class="handle">Described in the Interface</strong>: Use of the feature is explained in the  user agent user interface; or</li>
+  <li class="sc-bullet"><strong class="handle">Described in the Interface</strong>: Use of the feature is explained in the  <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a>; or</li>
 <li class="sc-bullet"><strong class="handle">Platform Service</strong>: The feature is a service provided by an  underlying platform; or</li>
 <li class="sc-bullet"><strong class="handle">Not Used by Users</strong>: The feature is not used directly by users (e.g.,  passing information to a platform accessibility service). </li>
 </ol>
@@ -2295,7 +2300,7 @@ centralized view of conformance UAAG2.0 (3.3.4, Level AAA).
 <p class="sc-text">For each user agent feature, at least one of the following is true</a>: <span class="level">(Level&nbsp;AA)</span> </p>
 <ol type="a" class="sc-bullets">
   <li class="sc-bullet"><strong class="handle">Described in the Documentation</strong>: Use of the feature is explained in  the user agent's documentation; or</li>
-  <li class="sc-bullet"><strong class="handle">Described in the Interface</strong>: Use of the feature is explained in the  user agent user interface; or</li>
+  <li class="sc-bullet"><strong class="handle">Described in the Interface</strong>: Use of the feature is explained in the  <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a>; or</li>
 <li class="sc-bullet"><strong class="handle">Platform Service</strong>: The feature is a service provided by an  underlying platform; or</li>
 <li class="sc-bullet"><strong class="handle">Not Used by Users</strong>: The feature is not used directly by users (e.g.,  passing information to a platform accessibility service). </li>
 </ol>
@@ -2379,7 +2384,7 @@ standard window in place of a customized window (4.1.3, Level A).</p>
 
 
 <h4 class="sc-title"><a id="sc_412" name="sc_412"></a>4.1.2 Expose Basic Properties: </h4>
-<p class="sc-text">For all user interface components, including <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">user agent user interface</a>, <a class="dfn-instance" href="#def-rendered-content" rel="glossary" title="definition: rendered content">rendered content</a>, and generated content, the user agent makes available the following via a <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">platform accessibility service</a>: <span class="level">(Level&nbsp;A)</span> </p>
+<p class="sc-text">For all user interface components, including <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a>, <a class="dfn-instance" href="#def-rendered-content" rel="glossary" title="definition: rendered content">rendered content</a>, and generated content, the user agent makes available the following via a <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">platform accessibility service</a>: <span class="level">(Level&nbsp;A)</span> </p>
 <ul class="sc-bullets">
 <li> Name</li>
 <li>Role</li>
@@ -2398,7 +2403,7 @@ standard window in place of a customized window (4.1.3, Level A).</p>
 
 
 <h4 class="sc-title"><a id="sc_413" name="sc_413"></a>4.1.3 Provide Equivalent Accessible Alternatives: </h4>
-<p class="sc-text"> If a component of the user agent user interface cannot be exposed through  <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">platform accessibility services</a>, then the user agent provides an equivalent alternative that is exposed through the platform accessibility service. <span class="level">(Level&nbsp;A)</span> </p>
+<p class="sc-text"> If a component of the <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a> cannot be exposed through  <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">platform accessibility services</a>, then the user agent provides an equivalent alternative that is exposed through the platform accessibility service. <span class="level">(Level&nbsp;A)</span> </p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_413">Reference for 4.1.3</a></div>
@@ -2433,7 +2438,7 @@ made <a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" t
 
 
 <h4 class="sc-title"><a id="sc_416" name="sc_416"></a>4.1.6 Expose Additional Properties: </h4>
-<p class="sc-text">For all user interface components, including the <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">user agent user interface</a>, <a class="dfn-instance" href="#def-rendered-content"
+<p class="sc-text">For all user interface components, including the <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a>, <a class="dfn-instance" href="#def-rendered-content"
 title="definition: Rendered content">rendered content</a>, and generated content, the user agent makes <a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" title="definition: content"> available</a> the following, via a <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">platform accessibility service</a>, if the properties are supported by the service:
 <span class="level">(Level&nbsp;AA)</span></p>
 <ul class="sc-bullets">
@@ -2474,9 +2479,9 @@ report accessibility issues (5.1.6, Level AAA).
 </p>
 <div class="sc-level">
   <h4 class="sc-title"><a id="sc_511" name="sc_511"></a>5.1.1 Comply with WCAG: </h4>
-  <p class="sc-text">Web-based user agent user interfaces meet the WCAG 2.0 success criteria. <span class="level">(Level&nbsp;A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; and Level AAA to meet  WCAG 2.0 Level A,  AA, and AAA success criteria)</span></p>
+  <p class="sc-text">Web-based <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interfaces</a> meet the WCAG 2.0 success criteria. <span class="level">(Level&nbsp;A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; and Level AAA to meet  WCAG 2.0 Level A,  AA, and AAA success criteria)</span></p>
 <ul class="sc-notes">
-    <li class="sc-note"><em class="note-handle">Note:</em> This success criterion does not apply to non-web-based user agent user interfaces,
+    <li class="sc-note"><em class="note-handle">Note:</em> This success criterion does not apply to non-web-based UA user interfaces,
 but does include any parts of non-web-based user agents that are
 web-based (e.g. help systems). However, it is      recommended that developers of non-web-based user agent user      interfaces follow the Guidance on Applying WCAG 2.0 to Non-Web      Information and Communications Technologies (WCAG2ICT) <a href="#ref-wcag2ict">[WCAG2ICT]</a>.</li></ul>
 
@@ -2680,7 +2685,7 @@ title="definition: Normative">normative</a>.</p>
     with an <a class="dfn-instance" href="#def-enabled-element"
       title="definition: Enabled element">enabled element</a> in the <a href="#def-rendered-content">rendered
       content</a> or a component of the <a class="dfn-instance" href="#def-ua-ui"
-      title="definition: user agent user interface">user agent user
+      title="definition: user agent user interface">UA user
         interface</a>.</dd>
   <dt><span class="glossary"><a name="def-conditional-content" id="def-conditional-content"></a></span><span class="glossary"><a name="def-equivalent"
   id="def-equivalent"></a></span><a id="def-Alternative-Content" name="def-Alternative-Content"></a><dfn>alternative content</dfn></dt>
@@ -2885,8 +2890,7 @@ recognize. </dd>
   <dt><a name="def-user-request"
   id="def-user-request"><dfn>explicit user request</dfn></a><span class="glossary"></span></dt>
   <dd class="glossary">An interaction by the user through the <a class="dfn-instance"
-      href="#def-ua-ui" title="definition: user agent user interface">user
-    agent user interface</a>, the <a
+      href="#def-ua-ui" title="definition: user agent user interface">UA user interface</a>, the <a
       class="dfn-instance" href="#def-focus"
       title="definition: Focus">focus</a>, or the <a class="dfn-instance"
       href="#def-selection" title="definition: Selection">selection</a>. User requests are made, for example, through <a class="dfn-instance"
@@ -2954,7 +2958,7 @@ recognize. </dd>
     conformance.</dd>
   <dt class="glossary"><a name="def-alert"
   id="def-alert"><dfn>notify</dfn></a></dt>
-  <dd class="glossary">To make the user aware of events or status changes. Notifications can occur within the user agent user interface (e.g. a status bar) or within the content display. Notifications may be passive and not require user acknowledgment, or they may be presented in the form of a <a href="#def-prompt">prompt</a> requesting a user response (e.g. a confirmation dialog).</dd>
+  <dd class="glossary">To make the user aware of events or status changes. Notifications can occur within the <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a> (e.g. a status bar) or within the content display. Notifications may be passive and not require user acknowledgment, or they may be presented in the form of a <a href="#def-prompt">prompt</a> requesting a user response (e.g. a confirmation dialog).</dd>
   <dt class="glossary"><a name="o" id="o"></a><a
   name="def-obscure"
   id="def-obscure"><dfn>obscure</dfn></a></dt>
@@ -3257,14 +3261,14 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
   <dd class="glossary">For the purposes of UAAG 2.0, the user interface
     includes both:
     <ul>
-      <li><a name="def-ua-ui" id="def-ua-ui"></a><dfn>user agent user interface</dfn>: The <a href="#def-ui-control">controls</a> (e.g. menus, buttons, <a href="#def-prompt">prompts</a>, native audio/video player controls, and other components for input and output) and mechanisms (e.g. selection and focus) provided by the <a href="#def-user-agent">user agent</a> that are not created on the basis of the author-supplied <a class="dfn-instance"
-          href="#def-content" title="definition: Content">content</a>. The user agent user interface may  include <a href="#def-extension">extensions</a> that become part of the user agent user interface (e.g. toolbars, additional menus).</li>
+      <li><a name="def-ua-ui" id="def-ua-ui"></a><dfn>user agent user interface (UA user interface)</dfn>: The <a href="#def-ui-control">controls</a> (e.g. menus, buttons, <a href="#def-prompt">prompts</a>, native audio/video player controls, and other components for input and output) and mechanisms (e.g. selection and focus) provided by the <a href="#def-user-agent">user agent</a> that are not created on the basis of the author-supplied <a class="dfn-instance"
+          href="#def-content" title="definition: Content">content</a>. The UA user interface may  include <a href="#def-extension">extensions</a> that become part of the UA user interface (e.g. toolbars, additional menus).</li>
       <li><a name="def-content-ui" id="def-content-ui"></a><dfn>content user interface</dfn>: The user interface that emerges from the user agent rendering of the author-supplied content. It includes all <a href="#def-rendered-content">rendered content</a> (e.g. <a href="#def-text">text</a>, headings, <a class="dfn-instance"
           href="#def-enabled-element"
           title="definition: Enabled element">enabled elements</a>, disabled elements, author-supplied audio/video controls). <br />
         <em> Note:</em> There may be a mix of <a href="#def-recognize">recognized</a> and unrecognized user interface controls depending on the author-supplied content.</li>
     </ul>
-    This document distinguishes user agent user interface and content user interface only where required for clarity.</dd>
+    This document distinguishes UA user interface and content user interface only where required for clarity.</dd>
   <dt><a
   name="def-ui-control" id="def-ui-control"></a><dfn>user interface control</dfn></dt>
   <dd>A component of the <a href="#def-ua-ui">user agent user interface</a> or the <a href="#def-content-ui">content user interface</a>, distinguished where necessary. </dd>
@@ -3290,7 +3294,7 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
   <dd>A mechanism for presenting only part of a visual or tactile <a href="#def-view">view</a> to the user via a screen or tactile display. There may be multiple viewports on to the same underlying view (e.g. when a split-screen is used to present the top and bottom of a document simultaneously) and viewports may be nested (e.g. a scrolling frame located within a larger document). When the viewport is smaller than the view it is presenting, some of the view will not be presented. Mechanisms are typically provided to move the view or the viewport such that all of the view can be brought into the viewport  (e.g. scrollbars). </dd>
 <dd><span class="glossary-note">Note</span>: In UAAG 1.0 viewports were defined as having a temporal dimension. In UAAG 2.0, this is not the case. Since audio content is inherently time-based, audio viewports are excluded.</dd><dd>
   <ul>
-      <li><a name="def-viewport-toplevel" id="def-viewport-toplevel"></a><dfn>top-level viewport</dfn>: A viewport that is not contained within another viewport of a platform-based user agent. Web-based user agents are always displayed inside another viewport, and therefore are never top-level viewports. A popular browser implementation is to provide a window that includes some user agent user interface elements (e.g., menus) and a series of tabbed panels, each of which contains additional user agent user interface elements (e.g., address bar, bookmarks, back/forward buttons) and a top-level viewport for rendering a view of the addressed web resource.</li>
+      <li><a name="def-viewport-toplevel" id="def-viewport-toplevel"></a><dfn>top-level viewport</dfn>: A viewport that is not contained within another viewport of a platform-based user agent. Web-based user agents are always displayed inside another viewport, and therefore are never top-level viewports. A popular browser implementation is to provide a window that includes some <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a> elements (e.g., menus) and a series of tabbed panels, each of which contains additional UA user interface elements (e.g., address bar, bookmarks, back/forward buttons) and a top-level viewport for rendering a view of the addressed web resource.</li>
     </ul>
   </dd>
   <dt class="glossary"><a name="viewport-dimension" id="viewport-dimension"></a><dfn>viewport dimensions</dfn></dt>
