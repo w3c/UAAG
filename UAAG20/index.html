@@ -11,7 +11,6 @@
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
-
                
 
 h2.principle {
@@ -561,14 +560,14 @@ For these cases, it is important for user agent developers to consider the appli
 <h3><a name="applicability-notes" id="applicability-notes"></a>UAAG 2.0 Conformance Applicability Notes:</h3>
 <ol>
   <li><strong class="handle">Retrieved Content Only</strong>: UAAG 2.0 success criteria only apply to web content that has been retrieved by the user agent (e.g. if a user agent saves bandwidth by retrieving video element content only on demand, then captions associated with that video content do not need to be searchable as per 2.4.5 until the video is retrieved).</li>
-  <li><strong class="handle">Current  Content Only</strong>: At any point in time, UAAG 2.0 success criteria only apply to web content that have not been hidden or removed (e.g., a bookmark created as per 1.8.17 will no longer be operable if the content it refers to is hidden or removed).</li>
+  <li><strong class="handle">Current  Content Only</strong>: At any point in time, UAAG 2.0 success criteria only apply to web content that have not been hidden or removed (e.g., a bookmark created as per <a href="sc_1816">1.8.16</a> will no longer be operable if the content it refers to is hidden or removed).</li>
   <li><strong class="handle">Recognized Content Only: </strong>UAAG 2.0 success criteria only apply to web content and its behaviors that can be <a class="dfn-instance"
 href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a> by user agents.</li>
   <li> <strong class="handle">Optional Settings:</strong> Throughout UAAG 2.0, all  required behaviors  may be      provided as optional preference settings unless a success      criterion explicitly says otherwise. For example, if a success      criterion requires high contrast between foreground text and its      background, the user agent may also provide choices      with low contrast. While it is preferred to have a  required behavior as a default option, it does not need to be,  unless the success criterion explicitly says      otherwise.</li>
   <li><strong class="handle">RFC 2119 language not used: </strong>UAAG 2.0 does not use <a class="dfn-instance" href="#def-rfc2119" rel="glossary" title="definition: RFC 2119">RFC 2119</a> language (must, may, should) as it is not  an interoperable specifications.Note, 
 even if these terms appear from time to time they do not have any RFC 
 2119 implication.</li>
-  <li><strong class="handle">Simultaneous satisfaction of success criteria: </strong>Users can access  all behaviors required by UAAG 2.0 at the same time (e.g. when the user resizes the viewport per 1.8.9, content is reflowed per 1.8.6), except where those behaviors are mutually exclusive.</li>
+  <li><strong class="handle">Simultaneous satisfaction of success criteria: </strong>Users can access  all behaviors required by UAAG 2.0 at the same time (e.g. when the user resizes the viewport per 1.8.8, content is reflowed per 1.8.6), except where those behaviors are mutually exclusive.</li>
   <li><strong class="handle">Vertical layout languages</strong>: 
     When user agents render vertical layout languages (e.g. Mongolian, Han), success criteria normally relating to horizontal rendering should be applied to vertical rendering instead.
   </li>
@@ -1087,18 +1086,18 @@ Guideline 1.8 - Help users to orient  within, and control, windows and viewports
 </h3>
 <p class="summary" id="summary18"><strong>Summary</strong>:  The user agent provides programmatic and visual cues to keep 
 the user oriented. These include highlighting the viewport (1.8.1, Level 
-A) and customizing the highlighting attributes (1.8.8, Level AA), keeping the focus within the viewport (1.8.2 &amp; 1.8.6, Level A), 
-resizing the viewport (1.8.9, Level A), providing scrollbars that 
+A) and customizing the highlighting attributes (1.8.7, Level AA), keeping the focus within the viewport (1.8.2 &amp; 1.8.6, Level A), 
+resizing the viewport (1.8.8, Level A), providing scrollbars that 
 identify when content is outside the visible region (1.8.3, Level A) and 
 which portion is visible (1.8.4, Level A), changing the size of 
 graphical content with zoom (1.8.5, Level A &amp; 1.8.7, Level A), and 
 restoring the focus and point of regard when the user returns to a 
-previously viewed page (1.8.10, Level AA). The user can specify that all 
-viewports have the same user interface elements (1.8.13, Level AA), if 
-and how new viewports open (1.8.11, Level AA), and whether the new 
-viewport automatically gets focus (1.8.12, Level AA). The user can mark 
+previously viewed page (1.8.9, Level AA). The user can specify that all 
+viewports have the same user interface elements (1.8.12, Level AA), if 
+and how new viewports open (1.8.10, Level AA), and whether the new 
+viewport automatically gets focus (1.8.11, Level AA). The user can specifiy that multi-column text blocks be reflowed into a single column (1.8.14, Level AA), that the user can override absolute layout dimensions (1.8.15, Level AA), and linearize the content (1.8.16, Level AA). The user can mark 
 items in a web page and use shortcuts to navigate back to marked items. 
-(1.8.14, Level AAA).
+(1.8.17, Level AAA).
 </p>
 
 <div class="sc-level"><!--A-->
@@ -1182,42 +1181,35 @@ regard">point of regard</a>
 	    
        
       
- 
- <h4 class="sc-title"><a id="sc_187" name="sc_187"></a><span class="diff-old">1.8.7 Reflow Text: </span></h4> 
- <p class="diff-old">The user can specify that text content in a graphical top-level viewport reflows so the text forms a single column that fits within the width of the viewport. (Level&nbsp;A) </p>
- <div class="gl-only">
-      <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_187">Reference for 1.8.7</a></div>
-      </div>
-	   
 
   <!--sc-level--></div>
 
 <div class="sc-level"><!--AA-->
-<h4 class="sc-title"><a id="sc_188" name="sc_188"></a>1.8.8 Customize Viewport Highlighting: </h4>
+<h4 class="sc-title"><a id="sc_187" name="sc_187"></a>1.8.7 Customize Viewport Highlighting: </h4>
 <p class="sc-text">When highlighting viewports as specified by <a href="#sc_181">1.8.1 Highlight Viewport</a>, the user can customize attributes of the viewport highlighting mechanism (e.g. blink rate for blinking, color and width of borders). <span class="level">(Level&nbsp;AA)</span></p>
 
 
     	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_188">Reference for 1.8.8</a></div>
+	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_187">Reference for 1.8.7</a></div>
 </div>
 	    
 
       
 
-<h4 class="sc-title"><a id="sc_189" name="sc_189"></a>1.8.9 Allow Viewport Resize: </h4>
+<h4 class="sc-title"><a id="sc_188" name="sc_188"></a>1.8.8 Allow Viewport Resize: </h4>
 <p class="sc-text">The user can resize <a class="dfn-instance"
 href="#def-viewport" rel="glossary" title="definition: viewport">
 viewports</a> within restrictions imposed by the platform, <a class="dfn-instance"
 href="#def-override" title="definition: Override">overriding</a> any values specified by the <a class="def-instance" title="definition: author" href="#def-author">author</a>. <span class="level">(Level&nbsp;AA)</span> </p>
 
     	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_189">Reference for 1.8.9</a></div>
+	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_188">Reference for 1.8.8</a></div>
       </div>
 	    
 
       
               
-<h4 class="sc-title"><a id="sc_1810" name="sc_1810"></a>1.8.10 Provide Viewport History: </h4>
+<h4 class="sc-title"><a id="sc_189" name="sc_189"></a>1.8.9 Provide Viewport History: </h4>
 <p class="sc-text">   For <a class="dfn-instance"
 href="#def-user-agent" rel="glossary" title="definition: User agent">user agents
 </a> that implement a history mechanism for <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a> (e.g. &quot;back&quot; button), the user can return to any state in the viewport history that is allowed by the content, including: <span class="level">(Level&nbsp;AA)</span> </p>
@@ -1229,67 +1221,67 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
 <li>user's form field entries</li>
 </ol>
     	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_1810">Reference for 1.8.10</a></div>
+	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_189">Reference for 1.8.9</a></div>
     </div>
 	    
 
-<h4 class="sc-title"><a id="sc_1811" name="sc_1811"></a>1.8.11 Allow Top-Level Viewport Open on Request: </h4>
+<h4 class="sc-title"><a id="sc_1810" name="sc_1810"></a>1.8.10 Allow Top-Level Viewport Open on Request: </h4>
 <p class="sc-text">The user can specify whether author content can open new <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a> (e.g. windows or tabs). <span class="level">(Level&nbsp;AA)</span></p>
+
+<div class="gl-only">
+	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_1810">Reference for 1.8.10</a></div>
+</div>
+	    
+
+<h4 class="sc-title"><a id="sc_1811" name="sc_1811"></a>1.8.11 Allow Top-Level Viewport Focus Control: </h4>
+<p class="sc-text"> If new <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a> (e.g. windows or tabs) are configured to open without explicit user request, the user can specify whether or not top-level viewports take the active <a class="dfn-instance" href="#def-keyboard-focus"
+title="definition: keyboard focus">keyboard focus</a> when they open.  <span class="level">(Level&nbsp;AA)</span></p>
 
     	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_1811">Reference for 1.8.11</a></div>
       </div>
 	    
 
-<h4 class="sc-title"><a id="sc_1812" name="sc_1812"></a>1.8.12 Allow Top-Level Viewport Focus Control: </h4>
-<p class="sc-text"> If new <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a> (e.g. windows or tabs) are configured to open without explicit user request, the user can specify whether or not top-level viewports take the active <a class="dfn-instance" href="#def-keyboard-focus"
-title="definition: keyboard focus">keyboard focus</a> when they open.  <span class="level">(Level&nbsp;AA)</span></p>
+      
+
+
+<h4 class="sc-title"><a id="sc_1812" name="sc_1812"></a>1.8.12 Allow Same User Interface: </h4>
+<p class="sc-text">  The user can specify that all <a
+href="#def-viewport-toplevel">top-level viewports</a> (e.g. windows or tabs) follow the defined user interface configuration.  <span class="level">(Level&nbsp;AA)</span></p>
 
     	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_1812">Reference for 1.8.12</a></div>
       </div>
 	    
-
-      
-
-
-<h4 class="sc-title"><a id="sc_1813" name="sc_1813"></a>1.8.13 Allow Same User Interface: </h4>
-<p class="sc-text">  The user can specify that all <a
-href="#def-viewport-toplevel">top-level viewports</a> (e.g. windows or tabs) follow the defined user interface configuration.  <span class="level">(Level&nbsp;AA)</span></p>
-
-    	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_1813">Reference for 1.8.13</a></div>
-      </div>
-	    
        
       
               
-<h4 class="sc-title"><a id="sc_1814" name="sc_1814"></a>1.8.14 Multi-Column Text Reflow: </h4>
+<h4 class="sc-title"><a id="sc_1813" name="sc_1813"></a>1.8.13 Multi-Column Text Reflow: </h4>
 <p class="sc-text">The user can specify that recognized multi-column text blocks each be reflowed into a single column.  <span class="level">(Level&nbsp;AA)</span> </p>
 <p><em class="sc-notes">Note</em>: Some layouts may become unusable if author-specified layout is overridden. In this case, the user can turn linearization off and try another strategy. It is recommended that user agents provide a convenient way for the user to turn this behavior on and off.</p>
 
     	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_1814">Reference for 1.8.14</a></div>
+	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_1813">Reference for 1.8.13</a></div>
     </div>
 	    
 
       
-<h4 class="sc-title"><a id="sc_1815" name="sc_1815"></a>1.8.15 Ignore Absolute Layout Dimensions: </h4>
+<h4 class="sc-title"><a id="sc_1814" name="sc_1814"></a>1.8.14 Ignore Absolute Layout Dimensions: </h4>
 <p class="sc-text">The user can have the user agent override author-specified absolute layout dimensions. <span class="level">(Level&nbsp;AA)</span> </p>
 
     	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_1815">Reference for 1.8.15</a></div>
+	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_1814">Reference for 1.8.14</a></div>
       </div>
 	    
 
       
 
-<h4 class="sc-title"><a id="sc_1816" name="sc_1816"></a>1.8.16 Linearize Content: </h4>
+<h4 class="sc-title"><a id="sc_1815" name="sc_1815"></a>1.8.15 Linearize Content: </h4>
 <p class="sc-text">The user can have recognized content rendered as a single column, overriding author-specified formatting of columns, tables, and positioning. <span class="level">(Level&nbsp;AA)</span> </p>
 <p>Note: Some layouts may become unusable if author-specified layout is overridden. In this case, the user can turn linearization off and try another strategy. It is recommended that user agents provide a convenient way for the user to turn this behavior on and off.</p>
 
     	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_1816">Reference for 1.8.16</a></div>
+	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_1815">Reference for 1.8.15</a></div>
       </div>
 	    
 
@@ -1299,12 +1291,12 @@ href="#def-viewport-toplevel">top-level viewports</a> (e.g. windows or tabs) fol
 
 <div class="sc-level"><!--AAA-->
 
-<h4 class="sc-title"><a id="sc_1817" name="sc_1817"></a>1.8.17 Provide Web Page Bookmarks: </h4>
+<h4 class="sc-title"><a id="sc_1816" name="sc_1816"></a>1.8.16 Provide Web Page Bookmarks: </h4>
 <p class="sc-text">The user can mark items in a web page,  then use shortcuts to navigate back to marked items. The user can specify whether a navigation mark disappears after a session, or is persistent across sessions. <span class="level">(Level&nbsp;AAA)</span> 
 </p>
 
     	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_1817">Reference for 1.8.17</a></div>
+	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_1816">Reference for 1.8.16</a></div>
       </div>
 	    
        
