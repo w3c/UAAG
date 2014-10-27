@@ -11,6 +11,8 @@
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
+.gl-only {background-color:#FFFFCC}
+.techs-only {background-color:#CCFFCC}
                
 
 h2.principle {
@@ -223,8 +225,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 23 September
-2014</h2>
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 27 October 2014</h2>
 <dl>
   <dt>This version (Github):</dt>
     <dd><a href="http://w3c.github.io/UAAG/UAAG20/">http://w3c.github.io/UAAG/UAAG20/</a></dd>
@@ -712,19 +713,9 @@ Guideline 1.2 - Repair missing content <span class="gl-only">[<a href="http://w3
 <div class="sc-level"><!--AA-->
 
 <h4 class="sc-title"><a id="sc_121" name="sc_121"></a>1.2.1 Support Repair by Assistive Technologies: </h4>
-<p class="sc-text">If <a class="dfn-instance"
-href="#def-conditional-content"
-title="definition: Conditional content">text alternatives for non-text content</a> are missing or empty then both of the following are true: <span class="level">(Level&nbsp;AA)</span></p>
-<ul class="sc-bullets"> 
-  <li class="sc-bullet"><strong class="handle"></strong> The<a class="dfn-instance"
-href="#def-user-agent" rel="glossary" title="definition: User agent"> user
-agent</a> doesn't attempt to <a class="dfn-instance" href="#def-repair-text"
-title="definition: repair text">repair</a> the text alternatives by substituting text values that are also  available to assistive technologies.</li>
-   <li class="sc-bullet"><strong class="handle"></strong> The user agent makes  available metadata related to the non-text content available programmatically, but not via fields      reserved for text alternatives.</li>
-  </ul>
-  
-	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_121">Reference for 1.2.1</a></div>
+<p class="sc-text">If text alternatives for non-text content are missing or empty, the user agent doesn't attempt to repair the text alternatives by substituting text values that are also available to assistive technologies (e.g. image file name). <span class="level">(Level&nbsp;AA)</span></p>
+<div class="gl-only">
+        <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_121">Reference for 1.2.1</a></div>
       </div>
       
       
@@ -732,10 +723,10 @@ title="definition: repair text">repair</a> the text alternatives by substituting
 
 <div class="sc-level"><!--AAA-->
 
-<h4 class="sc-title"><a id="sc_122" name="sc_122"></a>1.2.2 Repair Missing Structure: </h4>
-The user can specify whether or not the <a class="dfn-instance"
+<h4 class="sc-title"><a id="sc_122" name="sc_122"></a>1.2.2 @@ AT RISK OF REMOVAL- WAITING FOR FEEDBACK FROM SIMON BEFORE DELETING@@ <span class="diff-old">Repair Missing Structure: </span></h4>
+<span class="diff-old"> The user can specify whether or not the <a class="dfn-instance"
 href="#def-user-agent" rel="glossary" title="definition: User agent">user
-agent</a> should attempt to insert the following types of structural markup on the basis of author-specified presentation attributes (e.g. position and appearance):  <span class="level">(Level&nbsp;AAA)</span> 
+agent</a> should attempt to insert the following types of structural markup on the basis of author-specified presentation attributes (e.g. position and appearance)</span>: <span class="level">(Level&nbsp;AAA)</span> 
 <ul class="sc-bullets"> 
 <li class="sc-bullet">Labels</li>
 <li class="sc-bullet">Headers (e.g. heading markup, table headers) </li>
@@ -872,7 +863,7 @@ title="definition: Rendered content">rendered content</a>, and the following are
  <li>any visual, non-time-based, rendered content can be printed </li>
  <li>the user can choose between <a class="dfn-instance" href="#def-printing-devices" rel="glossary" title="definition: available printing devices">available printing devices</a></li>
  <li>the user can have content printed as it is rendered on screen, reflecting any user scaling, highlighting, and other modifications</li>
- <li>the user can have printed content reflow as if the top-level viewport had been resized to match the horizontal dimension of the printing device's printable area</li>
+ <li>the user can have printed content reflow as if the <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a> had been resized to match the horizontal dimension of the printing device's printable area</li>
  </ol>
  
  </div><!--sc-level--></div>
@@ -1103,7 +1094,7 @@ items in a web page and use shortcuts to navigate back to marked items.
 <div class="sc-level"><!--A-->
 
 <h4 class="sc-title"><a id="sc_181" name="sc_181"></a>1.8.1 Highlight Viewport: </h4>
-<p class="sc-text">The user can have the viewport with the      input focus be highlighted. <span class="level">(Level&nbsp;A) </span></p>
+<p class="sc-text">The user can have the <a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">viewport</a> with the      input focus be highlighted. <span class="level">(Level&nbsp;A) </span></p>
 
     	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_181">Reference for 1.8.1</a></div>
@@ -1129,7 +1120,7 @@ title="definition: viewport">viewport</a>'s content moves as necessary to ensure
 
 <h4 class="sc-title"><a id="sc_183" name="sc_183"></a>1.8.3 Provide Viewport Scrollbars: </h4>
 When the <a class="dfn-instance" href="#def-rendered-content"
-title="definition: Rendered content">rendered content</a> extends beyond the viewport dimensions, users can have graphical viewports include scrollbars, <a class="dfn-instance" href="#def-override"
+title="definition: Rendered content">rendered content</a> extends beyond the <a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">viewport</a> dimensions, users can have graphical viewports include scrollbars, <a class="dfn-instance" href="#def-override"
 title="definition: Override">overriding</a> any values specified by the author.
 <span class="level">(Level&nbsp;A)</span>
 
@@ -1140,7 +1131,7 @@ title="definition: Override">overriding</a> any values specified by the author.
 
       
 <h4 class="sc-title"><a id="sc_184" name="sc_184"></a>1.8.4 Indicate Viewport Position: </h4>
-<p class="sc-text"> The user can determine the viewport's position relative to the full extent of the <a class="dfn-instance"
+<p class="sc-text"> The user can determine the <a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">viewport</a>'s position relative to the full extent of the <a class="dfn-instance"
 href="#def-rendered-content" title="definition: Rendered content">rendered
 content</a>. <span class="level">(Level&nbsp;A)</span></p>
 
@@ -1153,7 +1144,7 @@ content</a>. <span class="level">(Level&nbsp;A)</span></p>
       
 
 <h4 class="sc-title"><a id="sc_185" name="sc_185"></a>1.8.5 Allow Zoom: </h4>
-<p class="sc-text"> The user can rescale content within top-level graphical viewports as follows: <span class="level">(Level&nbsp;A)</span></p>
+<p class="sc-text"> The user can rescale content within top-level graphical <a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">viewports</a> as follows: <span class="level">(Level&nbsp;A)</span></p>
 <ul class="sc-bullets">
 <li class="sc-bullet"><strong class="handle">Zoom in:</strong> to 500% or more of the default size</li>
 <li class="sc-bullet"><strong class="handle">Zoom out:</strong> to 10% or less of the default size, so the content fits within  the height or  width of the viewport</li>
@@ -1171,9 +1162,10 @@ content</a>. <span class="level">(Level&nbsp;A)</span></p>
 href="#def-point-of-regard" rel="glossary" title="definition: point of 
 
 regard">point of regard</a>
- remains visible and at the same location within the viewport when the viewport is resized, when content is zoomed or scaled, or when content formatting is changed. 
+ remains visible within the <a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">viewport</a> when the viewport is resized, when content is zoomed or scaled, or when content formatting is changed. 
  <span class="level">(Level&nbsp;A)</span> 
 </p>
+<ul class="sc-notes"><li><em class="note-handle">Note</em>: When the point of regard is larger than the viewport, the user agent keeps visible the beginning of the point of regard according to the current language's reading order (e.g. top-left in English)</li></ul>
 
     	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_186">Reference for 1.8.6</a></div>
@@ -1186,7 +1178,7 @@ regard">point of regard</a>
 
 <div class="sc-level"><!--AA-->
 <h4 class="sc-title"><a id="sc_187" name="sc_187"></a>1.8.7 Customize Viewport Highlighting: </h4>
-<p class="sc-text">When highlighting viewports as specified by <a href="#sc_181">1.8.1 Highlight Viewport</a>, the user can customize attributes of the viewport highlighting mechanism (e.g. blink rate for blinking, color and width of borders). <span class="level">(Level&nbsp;AA)</span></p>
+<p class="sc-text">When highlighting <a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">viewports</a> as specified by <a href="#sc_181">1.8.1 Highlight Viewport</a>, the user can customize attributes of the viewport highlighting mechanism (e.g. blink rate for blinking, color and width of borders). <span class="level">(Level&nbsp;AA)</span></p>
 
 
     	   <div class="gl-only">
@@ -1247,7 +1239,7 @@ title="definition: keyboard focus">keyboard focus</a> when they open.  <span cla
 
 <h4 class="sc-title"><a id="sc_1812" name="sc_1812"></a>1.8.12 Allow Same User Interface: </h4>
 <p class="sc-text">  The user can specify that all <a
-href="#def-viewport-toplevel">top-level viewports</a> (e.g. windows or tabs) follow the defined user interface configuration.  <span class="level">(Level&nbsp;AA)</span></p>
+href="#def-viewport-toplevel" class="dfn-instance" title="definition: viewport">top-level viewports</a> (e.g. windows or tabs) follow the defined user interface configuration.  <span class="level">(Level&nbsp;AA)</span></p>
 
     	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_1812">Reference for 1.8.12</a></div>
@@ -1318,11 +1310,11 @@ Guideline 1.9 - Provide alternative views
 <div class="sc-level">
 
 <h4 class="sc-title"><a id="sc_191" name="sc_191"></a>1.9.1 Outline View: </h4>
-<p class="sc-text"> Users can view a navigable outline of the <a class="dfn-instance" href="#def-rendered-content"
-title="definition: Rendered content">rendered content</a> that allows focus to be moved to the corresponding element in the main viewport. <span class="diff-old"> </span><span class="level">(Level&nbsp;AA)</span> 
+<p class="sc-text"> Users can view a navigable outline of the headings in <a class="dfn-instance" href="#def-rendered-content"
+title="definition: Rendered content">rendered content</a> that allows focus to be moved to the corresponding element in the main <a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">viewport</a>. <span class="diff-old"> </span><span class="level">(Level&nbsp;AA)</span> 
 </p>
 <ul class="sc-notes">
-    <li class="sc-note"><em class="note-handle">Note:</em> The elements reflected in the outline view  depend on the <a class="dfn-instance" href="#def-Web-Content-Technology" rel="glossary" title="definition: web content technology">web content technology</a>, and may include headings, table captions, and content sections.</li></ul>
+    <li class="sc-note"><em class="note-handle">Note:</em>  Note: An outline view might also include other named elements such as document landmarks.</li></ul>
 
     	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_191">Reference for 1.9.1</a></div>
@@ -1495,7 +1487,7 @@ a signal when wrapping occurs (2.2.4, Level AA).</p>
 <div class="sc-level">
 <h4 class="sc-title"><a id="sc_221" name="sc_221"></a>2.2.1 Sequential Navigation Between  Elements: </h4>
 <p class="sc-text">The user can move the <a class="dfn-instance" href="#def-keyboard" rel="glossary" title="definition: keyboard">keyboard</a> focus backwards and forwards through all  <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a>  enabled elements in the <a class="dfn-instance" href="#def-rendered-content"
-title="definition: Rendered content">rendered content</a> of the current viewport. <span class="level">(Level&nbsp;A)</span></p>
+title="definition: Rendered content">rendered content</a> of the current <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a>. <span class="level">(Level&nbsp;A)</span></p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_221">Reference for 2.2.1</a></div>
@@ -1507,7 +1499,7 @@ title="definition: Rendered content">rendered content</a> of the current viewpor
 
 <h4 class="sc-title"><a id="sc_222" name="sc_222"></a>2.2.2 Sequential Navigation Between Viewports: </h4>
 <p class="sc-text">The user can move the keyboard focus backwards and forwards between
-viewports, without having to <a class="dfn-instance" href="#def-sequential-navigation"
+<a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">viewports</a>, without having to <a class="dfn-instance" href="#def-sequential-navigation"
 title="definition: sequential navigation">sequentially navigate</a> all the elements in
 a viewport. <span class="level">(Level&nbsp;A)</span></p>
 
@@ -1653,7 +1645,7 @@ title="definition: Rendered content">rendered content</a>. <span class="level">(
       
 
 <h4 class="sc-title"><a id="sc_243" name="sc_243"></a>2.4.3  Match Found: </h4>
-<p class="sc-text"> When a search operation produces a match, the matched content is  <a class="dfn-instance" href="#def-highlight" rel="glossary" title="definition:highlight">highlighted</a>, the viewport is scrolled if necessary so that the matched content is within its visible area, and the user can search from the location of the match. <span class="level">(Level&nbsp;A)</span>  </p>
+<p class="sc-text"> When a search operation produces a match, the matched content is  <a class="dfn-instance" href="#def-highlight" rel="glossary" title="definition:highlight">highlighted</a>, the <a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">viewport</a> is scrolled if necessary so that the matched content is within its visible area, and the user can search from the location of the match. <span class="level">(Level&nbsp;A)</span>  </p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_243">Reference for 2.4.3</a></div>
@@ -3328,7 +3320,7 @@ UAAG 2.0 from other documents</h2>
     <li>References to a specific version of &quot;User Agent Accessibility
       Guidelines 2.0.&quot; For example, use the &quot;this version&quot; <acronym>URI</acronym> to
       refer to the current document:<br /> 
-      <a href="http://www.w3.org/TR/2010/WD-UAAG20-20100617/">http://www.w3.org/TR/2010/WD-UAAG20-20100617/</a></li> 
+      <a href="http://www.w3.org/TR/2014/WD-UAAG20-20140925/">http://www.w3.org/TR/2014/WD-UAAG20-20140925/</a></li> 
     <li>References to the latest version of &quot;User Agent Accessibility
       Guidelines 2.0.&quot; Use the &quot;latest version&quot; URI to refer to
       the most recently published document in the series: <br /> 
