@@ -225,7 +225,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 27 October 2014</h2>
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 28 October 2014</h2>
 <dl>
   <dt>This version (Github):</dt>
     <dd><a href="http://w3c.github.io/UAAG/UAAG20/">http://w3c.github.io/UAAG/UAAG20/</a></dd>
@@ -261,7 +261,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 	<p><a href="http://www.w3.org/"><img height="48" width="72" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p> 
  
     <h1><a name="title" id="title"></a>UAAG 2.0 Reference: Explanations, Examples, and      Resources for User Agent Accessibility Guidelines 2.0</h1>
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 27 October 
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 28 October 
   2014</h2>
     <dl> 
   <dt>This version (Github):</dt> 
@@ -1150,14 +1150,14 @@ Guideline 1.3 - Provide highlighting for selection, keyboard focus, enabled elem
 
 <div class="sc-level"><!--A-->
 
-<h4 class="sc-title"><a id="sc_131" name="sc_131"></a>1.3.1 Highlighted Items: </h4>
-<p class="sc-text">The user can  specify that the following classes be  <a class="dfn-instance" href="#def-highlight" rel="glossary" title="definition:highlight">highlighted</a>  so that each is uniquely distinguished: <span class="level">(Level&nbsp;A)</span></p>
+<h4 class="sc-title"><a id="sc_131" name="sc_131"></a>1.3.1 Distinguishable Highlighting: <span class="diff-old"></span></h4>
+<p class="sc-text">The user can have the following types of content uniquely highlighted, overriding any values specified by the author: <span class="diff-old">The user can  specify that the following classes be  <a class="dfn-instance" href="#def-highlight" rel="glossary" title="definition:highlight">highlighted</a>  so that each is uniquely distinguished:</span> <span class="level">(Level&nbsp;A)</span></p>
 <ul class="sc-bullets"> 
 <li class="sc-bullet"><strong class="handle"></strong> Selection</li>
+<li class="sc-bullet">In-page search results</li>
 <li class="sc-bullet"><strong class="handle"></strong> <a href="#def-active-input-focus" class="dfn-instance" rel="glossary" title="definition:active input focus">Active keyboard focus</a> (indicated by focus cursors and/or text cursors)</li>
-<li class="sc-bullet"><strong class="handle"></strong> Recognized enabled input elements (distinguished from disabled elements)</li>
-<li class="sc-bullet"><strong class="handle"></strong> Recently visited links </li>
-<li class="sc-bullet">Found search results</li>
+<li class="sc-bullet"><strong class="handle"></strong> Unvisited links</li>
+<li class="sc-bullet"><strong class="handle"></strong>Visited links </li>
 </ul>
 
 	   <div class="gl-only">
@@ -1209,15 +1209,10 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
   
 <h4 class="sc-title"><a id="sc_132" name="sc_132"></a>1.3.2 Highlighting Options: </h4>
 <p class="sc-text">
- When highlighting classes specified by <a href="#sc_131">1.3.1 Highlighted Items</a>, the user can specify highlighting options that include at least: <span class="level">(Level&nbsp;AA)</span> </p>
+ The user can set all of the following characteristics of selection highlighting, overriding any values specified by the author: <span class="level">(Level&nbsp;AA)</span> </p>
 <ul class="sc-bullets">
-  <li class="sc-bullet">Foreground colors</li>
-  <li class="sc-bullet">Background colors</li>
-  <li class="sc-bullet">Borders (color, style, and thickness)</li>
-  <li class="sc-bullet">Size when the indicator is an image
-    
-  </li>
-  <li class="sc-bullet">Blink rate (where implemented)</li>
+  <li class="sc-bullet">Foreground color</li>
+  <li class="sc-bullet">Background color</li>
 </ul>
 
 	   <div class="gl-only">
@@ -1236,7 +1231,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_132-i" name="sc_132-i"></a>Intent  of  Success Criterion 1.3.2:</h5>
-        <p>Low vision users and users with some cognitive disabilities need control over  visual properties    to meet their individual needs.  These include foreground colors, background colors, and 
+        <p><strong>@@ NEEDS REWRITE @@</strong> Low vision users and users with some cognitive disabilities need control over  visual properties    to meet their individual needs.  These include foreground colors, background colors, and 
           visual borders (with the same configurable range as the operating environment's conventional selection utilities) </p>
        </div>
 
@@ -1254,6 +1249,146 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         <h5 class="implementing-heading"><a id="sc_132-r" name="sc_132-r"></a>Related Resources for Success Criterion 1.3.2:</h5>
             <ul>
               <li><a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-style">CSS 2 specification</a> &ndash; box border styles</li></ul>
+</div>
+</div>
+  
+<h4 class="sc-title"><a id="sc_133" name="sc_133"></a>1.3.3 Highlighting Active Keyboard Focus: </h4>
+<p class="sc-text">
+ The user can set all of the following characteristics of active keyboard focus highlighting, overriding any values specified by the author: <span class="level">(Level&nbsp;AA)</span> </p>
+<ul class="sc-bullets">
+  <li class="sc-bullet">Foreground color</li>
+  <li class="sc-bullet">Background color</li>
+  <li class="sc-bullet">Border (color, style, and thickness)</li>
+  <li class="sc-bullet">Text cursor blink rate</li>
+</ul>
+
+	   <div class="gl-only">
+	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_133">Reference for 1.3.3</a></div>
+      </div>
+	   <div class="techs-only">
+	    <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_133">Return to 1.3.3 in Guidelines</a></div>
+	   </div>
+       
+      <div class="techs-only">
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_133-a" name="sc_133-a"></a>Applies to:</h5>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
+        </div>
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_133-i" name="sc_133-i"></a>Intent  of  Success Criterion 1.3.3:</h5>
+        <p><strong>@@ NEEDS REWRITE @@</strong> Low vision users and users with some cognitive disabilities need control over  visual properties    to meet their individual needs.  These include foreground colors, background colors, and 
+          visual borders (with the same configurable range as the operating environment's conventional selection utilities) </p>
+       </div>
+
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_133-e" name="sc_133-e"></a>Examples for Success Criterion 1.3.3:</h5>
+          <ul>
+            <li class="unclassified-ex">Alex has low vision. He sometimes has difficulty distinguishing fields on web forms. The user 
+                agent provides a dialog box allowing the user to override any author 
+            settings. He chooses to have all form fields displayed with a yellow background and outlined with a thick black border. </li>
+            <li class="unclassified-ex">Marcy has a cognitive disorder that makes it difficult to stay focused on the task she wants to accomplish. The user 
+                agent provides a dialog box allowing the user to override any author 
+            settings. She chooses to have all form fields displayed with a yellow background and outlined with a thick black border. </li>
+          </ul>        </div>
+        <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_133-r" name="sc_133-r"></a>Related Resources for Success Criterion 1.3.3:</h5>
+            <ul>
+              <li><a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-style">CSS 2 specification</a> &ndash; box border styles</li></ul>
+</div>
+</div>
+
+<h4 class="sc-title"><a id="sc_134" name="sc_134"></a>1.3.4  Distinguishing Enabled Elements: </h4>
+<p class="sc-text">
+  The user can set all of the following characteristics of enabled element highlighting, overriding any values specified by the author: <span class="level">(Level&nbsp;AA)</span> </p>
+<ul class="sc-bullets">
+  <li class="sc-bullet">Foreground color</li>
+  <li class="sc-bullet">Background color</li>
+  <li class="sc-bullet">Border (color, style, and thickness)</li>
+</ul>
+
+	   <div class="gl-only">
+	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_134">Reference for 1.3.4</a></div>
+      </div>
+	   <div class="techs-only">
+	    <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_134">Return to 1.3.4 in Guidelines</a></div>
+	   </div>
+       
+      <div class="techs-only">
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_134-a" name="sc_134-a"></a>Applies to:</h5>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
+        </div>
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_134-i" name="sc_134-i"></a>Intent  of  Success Criterion 1.3.4:</h5>
+        <p><strong>@@ NEEDS REWRITE @@</strong> Low vision users and users with some cognitive disabilities need control over  visual properties    to meet their individual needs.  These include foreground colors, background colors, and 
+          visual borders (with the same configurable range as the operating environment's conventional selection utilities) </p>
+       </div>
+
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_134-e" name="sc_134-e"></a>Examples for Success Criterion 1.3.4:</h5>
+          <ul>
+            <li class="unclassified-ex">Alex has low vision. He sometimes has difficulty distinguishing fields on web forms. The user 
+                agent provides a dialog box allowing the user to override any author 
+            settings. He chooses to have all form fields displayed with a yellow background and outlined with a thick black border. </li>
+            <li class="unclassified-ex">Marcy has a cognitive disorder that makes it difficult to stay focused on the task she wants to accomplish. The user 
+                agent provides a dialog box allowing the user to override any author 
+            settings. She chooses to have all form fields displayed with a yellow background and outlined with a thick black border. </li>
+          </ul>        </div>
+        <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_134-r" name="sc_134-r"></a>Related Resources for Success Criterion 1.3.4:</h5>
+            <ul>
+              <li><a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-style">CSS 2 specification</a> &ndash; box border styles</li>
+            </ul>
+</div>
+</div>
+
+<h4 class="sc-title"><a id="sc_135" name="sc_135"></a>1.3.5  Distinguishing Enabled Elements: </h4>
+<p class="sc-text">
+  The user can set all of the following characteristics for visited links and separately for unvisited links, overriding any values specified by the author: <span class="level">(Level&nbsp;AA)</span> </p>
+<ul class="sc-bullets">
+  <li class="sc-bullet">Foreground color</li>
+  <li class="sc-bullet">Underline</li>
+</ul>
+
+	   <div class="gl-only">
+	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_135">Reference for 1.3.5</a></div>
+      </div>
+	   <div class="techs-only">
+	    <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_135">Return to 1.3.5 in Guidelines</a></div>
+	   </div>
+       
+      <div class="techs-only">
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_135-a" name="sc_135-a"></a>Applies to:</h5>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
+        </div>
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_135-i" name="sc_135-i"></a>Intent  of  Success Criterion 1.3.5:</h5>
+        <p><strong>@@ NEEDS REWRITE @@</strong> Low vision users and users with some cognitive disabilities need control over  visual properties    to meet their individual needs.  These include foreground colors, background colors, and 
+          visual borders (with the same configurable range as the operating environment's conventional selection utilities) </p>
+       </div>
+
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_135-e" name="sc_135-e"></a>Examples for Success Criterion 1.3.5:</h5>
+          <ul>
+            <li class="unclassified-ex">Alex has low vision. He sometimes has difficulty distinguishing fields on web forms. The user 
+                agent provides a dialog box allowing the user to override any author 
+            settings. He chooses to have all form fields displayed with a yellow background and outlined with a thick black border. </li>
+            <li class="unclassified-ex">Marcy has a cognitive disorder that makes it difficult to stay focused on the task she wants to accomplish. The user 
+                agent provides a dialog box allowing the user to override any author 
+            settings. She chooses to have all form fields displayed with a yellow background and outlined with a thick black border. </li>
+          </ul>        </div>
+        <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_135-r" name="sc_135-r"></a>Related Resources for Success Criterion 1.3.5:</h5>
+        <ul>
+            <li><strong>@@NEW@@</strong> <a href="#sc_141">1.4.1 <span class="sc-title">Basic text formatting (Globally)</span></a></li>
+            </ul>
 </div>
 </div>
 <!--sc-level--></div>

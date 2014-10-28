@@ -225,7 +225,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 27 October 2014</h2>
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 28 October 2014</h2>
 <dl>
   <dt>This version (Github):</dt>
     <dd><a href="http://w3c.github.io/UAAG/UAAG20/">http://w3c.github.io/UAAG/UAAG20/</a></dd>
@@ -683,7 +683,7 @@ title="definition: Conditional content">alternative content</a> to render by def
 <h4 class="sc-title"><a id="sc_116" name="sc_116"></a>1.1.6 Allow Resize and Reposition of Time-based Media Alternatives: </h4>
 <p class="sc-text">The user can configure  <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a>  alternative content for time-based media (e.g. captions,  sign language video) as follows: <span class="level">(Level&nbsp;AAA)</span></p>
 <ul class="sc-bullets"> 
-    <li class="sc-bullet"><strong class="handle">Resize:</strong> The user can resize alternative content for time-based media up to the size of the user agent's <a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">viewport</a>.</li>
+    <li class="sc-bullet"><strong class="handle">Resize:</strong> The user can resize alternative content for time-based media to at least 50% of the size of the <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a>.</li>
     <li class="sc-bullet"><strong class="handle">Reposition:</strong> The user can reposition alternative content for time-based media to two or more of the following: above, below, to the right, to the left, and overlapping the primary time-based media.</li>
 </ul>
 
@@ -754,14 +754,14 @@ Guideline 1.3 - Provide highlighting for selection, keyboard focus, enabled elem
 
 <div class="sc-level"><!--A-->
 
-<h4 class="sc-title"><a id="sc_131" name="sc_131"></a>1.3.1 Highlighted Items: </h4>
-<p class="sc-text">The user can  specify that the following classes be  <a class="dfn-instance" href="#def-highlight" rel="glossary" title="definition:highlight">highlighted</a>  so that each is uniquely distinguished: <span class="level">(Level&nbsp;A)</span></p>
+<h4 class="sc-title"><a id="sc_131" name="sc_131"></a>1.3.1 Distinguishable Highlighting: <span class="diff-old"></span></h4>
+<p class="sc-text">The user can have the following types of content uniquely highlighted, overriding any values specified by the author: <span class="diff-old">The user can  specify that the following classes be  <a class="dfn-instance" href="#def-highlight" rel="glossary" title="definition:highlight">highlighted</a>  so that each is uniquely distinguished:</span> <span class="level">(Level&nbsp;A)</span></p>
 <ul class="sc-bullets"> 
 <li class="sc-bullet"><strong class="handle"></strong> Selection</li>
+<li class="sc-bullet">In-page search results</li>
 <li class="sc-bullet"><strong class="handle"></strong> <a href="#def-active-input-focus" class="dfn-instance" rel="glossary" title="definition:active input focus">Active keyboard focus</a> (indicated by focus cursors and/or text cursors)</li>
-<li class="sc-bullet"><strong class="handle"></strong> Recognized enabled input elements (distinguished from disabled elements)</li>
-<li class="sc-bullet"><strong class="handle"></strong> Recently visited links </li>
-<li class="sc-bullet">Found search results</li>
+<li class="sc-bullet"><strong class="handle"></strong> Unvisited links</li>
+<li class="sc-bullet"><strong class="handle"></strong>Visited links </li>
 </ul>
 
 	   <div class="gl-only">
@@ -775,19 +775,62 @@ Guideline 1.3 - Provide highlighting for selection, keyboard focus, enabled elem
   
 <h4 class="sc-title"><a id="sc_132" name="sc_132"></a>1.3.2 Highlighting Options: </h4>
 <p class="sc-text">
- When highlighting classes specified by <a href="#sc_131">1.3.1 Highlighted Items</a>, the user can specify highlighting options that include at least: <span class="level">(Level&nbsp;AA)</span> </p>
+ The user can set all of the following characteristics of selection highlighting, overriding any values specified by the author: <span class="level">(Level&nbsp;AA)</span> </p>
 <ul class="sc-bullets">
-  <li class="sc-bullet">Foreground colors</li>
-  <li class="sc-bullet">Background colors</li>
-  <li class="sc-bullet">Borders (color, style, and thickness)</li>
-  <li class="sc-bullet">Size when the indicator is an image
-    
-  </li>
-  <li class="sc-bullet">Blink rate (where implemented)</li>
+  <li class="sc-bullet">Foreground color</li>
+  <li class="sc-bullet">Background color</li>
 </ul>
 
 	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_132">Reference for 1.3.2</a></div>
+      </div>
+	   
+       
+      
+  
+<h4 class="sc-title"><a id="sc_133" name="sc_133"></a>1.3.3 Highlighting Active Keyboard Focus: </h4>
+<p class="sc-text">
+ The user can set all of the following characteristics of active keyboard focus highlighting, overriding any values specified by the author: <span class="level">(Level&nbsp;AA)</span> </p>
+<ul class="sc-bullets">
+  <li class="sc-bullet">Foreground color</li>
+  <li class="sc-bullet">Background color</li>
+  <li class="sc-bullet">Border (color, style, and thickness)</li>
+  <li class="sc-bullet">Text cursor blink rate</li>
+</ul>
+
+	   <div class="gl-only">
+	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_133">Reference for 1.3.3</a></div>
+      </div>
+	   
+       
+      
+
+<h4 class="sc-title"><a id="sc_134" name="sc_134"></a>1.3.4  Distinguishing Enabled Elements: </h4>
+<p class="sc-text">
+  The user can set all of the following characteristics of enabled element highlighting, overriding any values specified by the author: <span class="level">(Level&nbsp;AA)</span> </p>
+<ul class="sc-bullets">
+  <li class="sc-bullet">Foreground color</li>
+  <li class="sc-bullet">Background color</li>
+  <li class="sc-bullet">Border (color, style, and thickness)</li>
+</ul>
+
+	   <div class="gl-only">
+	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_134">Reference for 1.3.4</a></div>
+      </div>
+	   
+       
+      
+
+<h4 class="sc-title"><a id="sc_135" name="sc_135"></a>1.3.5  Distinguishing Enabled Elements: </h4>
+<p class="sc-text">
+  The user can set all of the following characteristics for visited links and separately for unvisited links, overriding any values specified by the author: <span class="level">(Level&nbsp;AA)</span> </p>
+<ul class="sc-bullets">
+  <li class="sc-bullet">Foreground color</li>
+  <li class="sc-bullet">Underline</li>
+</ul>
+
+	   <div class="gl-only">
+	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_135">Reference for 1.3.5</a></div>
       </div>
 	   
        
@@ -1355,7 +1398,8 @@ information (e.g. title, internal vs. external) (1.10.2, Level AAA)</p>
   <h4 class="sc-title"><a id="sc_1101" name="sc_1101"></a>1.10.1 Show Related Elements: </h4>
 <p class="sc-text"> The user can access the information from explicitly-defined relationships in the content, including at least the following:  <span class="level">(Level&nbsp;AA)</span></p>
 <ol type="a">
-<li>label for a  control or image (e.g. HTML label      element, figcaption or aria-labelledby attributes)</li>
+<li>calculated accessible name for images</li>
+<li>calculated accessible name for controls (e.g. form fields, buttons)</li>
 <li>caption for a table</li>
 <li>row and column labels for a table cell</li>
 </ol>
@@ -1497,11 +1541,14 @@ title="definition: Rendered content">rendered content</a> of the current <a href
         
   
 
-<h4 class="sc-title"><a id="sc_222" name="sc_222"></a>2.2.2 Sequential Navigation Between Viewports: </h4>
-<p class="sc-text">The user can move the keyboard focus backwards and forwards between
-<a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">viewports</a>, without having to <a class="dfn-instance" href="#def-sequential-navigation"
+<h4 class="sc-title"><a id="sc_222" name="sc_222"></a>2.2.2 Sequential Navigation Between Landmarks: </h4>The user can move the keyboard focus backwards and forwards between regions identified by document landmarks. 
+<ul class="sc-notes">
+<li><em class="note-handle">Note</em>: The user agent might also include other regions, such as viewports, in the sequential navigation.</li>
+</ul>
+<p class="sc-text"><span class="diff-old">The user can move the keyboard focus backwards and forwards between
+    <a class="dfn-instance" href="#def-viewport" rel="glossary" title="definition: viewport">viewports</a>, without having to <a class="dfn-instance" href="#def-sequential-navigation"
 title="definition: sequential navigation">sequentially navigate</a> all the elements in
-a viewport. <span class="level">(Level&nbsp;A)</span></p>
+a viewport. </span><span class="level">(Level&nbsp;A)</span></p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_222">Reference for 2.2.2</a></div>
