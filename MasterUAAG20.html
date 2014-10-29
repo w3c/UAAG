@@ -1159,6 +1159,9 @@ Guideline 1.3 - Provide highlighting for selection, keyboard focus, enabled elem
 <li class="sc-bullet"><strong class="handle"></strong> Unvisited links</li>
 <li class="sc-bullet"><strong class="handle"></strong>Visited links </li>
 </ul>
+<ul class="sc-notes">
+<li><em class="note-handle">Note</em>: Any user  settings from the platform for these characteristics are implemented.</li>
+</ul>
 
 	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_131">Reference for 1.3.1</a></div>
@@ -1419,8 +1422,10 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
   <li class="sc-bullet">Font family,  choosing from all installed fonts</li>
   <li class="sc-bullet">Line spacing, choosing from a range with at least three values</li>
 </ul>
-  
-  	   <div class="gl-only">
+ <ul class="sc-notes">
+<li><em class="note-handle">Note</em>: Any user  settings from the platform for these characteristics are implemented.</li>
+</ul> 
+      <div class="gl-only">
 	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_141">Reference for 1.4.1</a></div>
       </div>
 	   <div class="techs-only">
@@ -1610,7 +1615,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
 </div>
  </div><!--sc-level--></div>
 <div class="sc-level"><!--AAA-->
-<h4 class="sc-title"><a id="sc_145" name="sc_145"></a>1.4.5 <strong>Advanced text formatting (Globally)</strong>: </h4>
+<h4 class="sc-title"><a id="sc_145" name="sc_145"></a>1.4.5 <strong>Advanced text formatting</strong>: </h4>
 <p class="sc-text">The user can <a class="dfn-instance" href="#def-global-configuration" rel="glossary" title="definition: globally">globally</a>
  set all of the following characteristics of visually rendered <a class="dfn-instance" href="#def-blocks-of-text" rel="glossary" title="definition: blocks of text">blocks of text</a>: <span class="level">(Level&nbsp;AAA) </span></p>
 <ul class="sc-bullets">
@@ -2389,12 +2394,13 @@ href="#def-user-agent" rel="glossary" title="definition: User agent">user agents
 <ol type="a">
 <li>restored <a class="dfn-instance"
 href="#def-point-of-regard" rel="glossary" title="definition: point of regard">point of regard</a></li>
-<li>input focus</li>
-<li>selection, and</li>
+<li>input focus, and</li>
 <li>user's form field entries</li>
 </ol>
-    	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_189">Reference for 1.8.9</a></div>
+<ul class="sc-notes">
+<li><em class="note-handle">Note</em>: It is recommended that selection also be restored.</li>
+</ul>    	   <div class="gl-only">
+      <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_189">Reference for 1.8.9</a></div>
     </div>
 	   <div class="techs-only">
 	    <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_189">Return to 1.8.9 in Guidelines</a></div>
@@ -2520,8 +2526,8 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
   <li><a href="#sc_1814">1.8.15 Linearize Content</a></li>
             </ul>
         </div></div>
-<h4 class="sc-title"><a id="sc_1814" name="sc_1814"></a>1.8.14 Ignore Absolute Layout Dimensions: </h4>
-<p class="sc-text">The user can have the user agent override author-specified absolute layout dimensions. <span class="level">(Level&nbsp;AA)</span> </p>
+<h4 class="sc-title"><a id="sc_1814" name="sc_1814"></a>1.8.14 Ignore Fixed Unit Dimensions: </h4>
+<p class="sc-text">The user can have the user agent override author-specified  unit dimensions. <span class="level">(Level&nbsp;AA)</span> </p>
 
     	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/UAAG20-Reference/#sc_1814">Reference for 1.8.14</a></div>
@@ -2539,6 +2545,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1814-i" name="sc_1814-i"></a>Intent  of  Success Criterion 1.8.14:</h5>
+        <p>@@ Add and example and explanation and &quot;smart zoom&quot;. @@ </p>
         <p>Content is not as easily usable if the user has to scroll back and forth horizontally. This is an especially acute issue for users who find it difficult or impossible to use the mouse to scroll and for users who find it difficult to reorient when the content changes. Most user agents default to wrapping content within the horizontal dimensions of the top-level viewport unless authors specify absolute layout dimensions that necessitate extending the content beyond the width of the viewport. This success criteria gives users the option to check how the content would appear without those author-specified absolute layout dimensions.</p>
        </div>
 
@@ -2779,7 +2786,7 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1101-e" name="sc_1101-e"></a>Examples for Success Criterion 1.10.1:</h5>
             <ul>
-              <li class="unclassified-ex">John has low vision and uses a screen magnifier to access his browser. When interacting with tables and spreadsheets John has to move the viewport of the magnifier to understand the row and column titles of the cell with which he is interacting. This takes additional time and effort and is therefore frustrating. John switches to a  browser that presents the row and column titles when he hovers over a cell. This makes him much more productive at his accounting job.</li>
+              <li class="unclassified-ex">John has low vision. When interacting with tables and spreadsheets John has to move the viewport of the magnifier to understand the row and column titles of the cell with which he is interacting. This takes additional time and effort and is therefore frustrating. John switches to a  browser that presents the row and column titles when he hovers over a cell. This makes him much more productive at his accounting job.</li>
               <li class="unclassified-ex">Courtney has a cognitive disability that makes it difficult for her to comprehend complex user interfaces. She is completing an online job application. It is not clear where she should enter her phone number, because the input fields have text labels  above, below, and to the left of the current input field. She mouses over the blank box and sees a tooltip that says &quot;home phone number&quot;.  She is able to complete the form. </li>
             </ul>        </div>
         <div class="implementing-section">
@@ -3221,10 +3228,7 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
               <li><a href="#sc_221">2.2.1 Sequential Navigation Between Elements</a> for background information on the importance of sequential navigation. </li></ul></div></div>
 
 <h4 class="sc-title"><a id="sc_223" name="sc_223"></a>2.2.3 Default Navigation Order: </h4>
-<p class="sc-text">If the author has not specified a navigation order, the default
-<a class="dfn-instance" href="#def-sequential-navigation"
-title="definition: sequential navigation">sequential navigation</a>  order is the
-document order. <span class="level">(Level&nbsp;A)</span></p>
+<p class="sc-text">If the author has not specified a navigation order, the user can have the default sequential navigation order be the source order.  <span class="level">(Level&nbsp;AA)</span></p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_223">Reference for 2.2.3</a></div>
@@ -3716,36 +3720,36 @@ hierarchy.
 </p>
 
 <div class="sc-level">  
-<h4 class="sc-title"><a id="sc_251" name="sc_251"></a>2.5.1 Show Location in Hierarchy: </h4>
-<p class="sc-text"> When the user agent is presenting hierarchical information, but the hierarchy is not reflected in a standardized fashion in the <a class="dfn-instance"
-      href="#def-dom" title="definition: Document Object Model">DOM</a> or <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">platform accessibility services</a>, the user can view the path of nodes leading from the root of the hierarchy to a specified element. <span class="level">(Level&nbsp;AA)</span></p>
+<h4 class="sc-title"><a id="sc_251" name="sc_251"></a><span class="diff-old">2.5.1 Show Location in Hierarchy: </span></h4>
+<p class="diff-old"> When the user agent is presenting hierarchical information, but the hierarchy is not reflected in a standardized fashion in the <a class="dfn-instance"
+      href="#def-dom" title="definition: Document Object Model">DOM</a> or <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">platform accessibility services</a>, the user can view the path of nodes leading from the root of the hierarchy to a specified element. (Level&nbsp;AA)</p>
 
   <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_251">Reference for 2.5.1</a></div>
+  <div class="diff-old"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_251">Reference for 2.5.1</a></div>
   </div>
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_251">Return to 2.5.1 in Guidelines</a></div>
+  <div class="diff-old"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_251">Return to 2.5.1 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_251-a" name="sc_251-a"></a>Applies to:</h5>
-        <p><a class="dfn-instance"
+        <h5 class="diff-old"><a id="sc_251-a" name="sc_251-a"></a>Applies to:</h5>
+        <p class="diff-old"><a class="dfn-instance"
 href="#intro-applies-to-uaui" title="definition:user agent user interface">UA user interface</a>, <a class="dfn-instance"
-href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a><a class="dfn-instance" href="#def-rendered-content" title="definition: Rendered content"></a></p>
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a></p>
         </div>
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_251-i" name="sc_251-i"></a>Intent  of  Success Criterion 2.5.1:</h5>
-        <p>Many users rely on assistive technology to interpret information and convey it in different ways. Sometimes when a user agent displays different pieces of information, it understands relationships between them that can't easily be conveyed through either the DOM or platform accessibility services. This makes it difficult or impossible for  assistive technology to infer and interpret those relationships. In these cases the user agent should  present those relationships in a simplified way that can be understood by the assistive technology, and by users who have difficulty interpreting complex visual presentations. This is also required when the hierarchy is included in the DOM in a non-standardized fashion (proprietary attributes or distributed extensibility microdata) because such proprietary information would not be useful to assistive technology. </p>
+        <h5 class="diff-old"><a id="sc_251-i" name="sc_251-i"></a>Intent  of  Success Criterion 2.5.1:</h5>
+        <p class="diff-old">Many users rely on assistive technology to interpret information and convey it in different ways. Sometimes when a user agent displays different pieces of information, it understands relationships between them that can't easily be conveyed through either the DOM or platform accessibility services. This makes it difficult or impossible for  assistive technology to infer and interpret those relationships. In these cases the user agent should  present those relationships in a simplified way that can be understood by the assistive technology, and by users who have difficulty interpreting complex visual presentations. This is also required when the hierarchy is included in the DOM in a non-standardized fashion (proprietary attributes or distributed extensibility microdata) because such proprietary information would not be useful to assistive technology. </p>
        </div>
 
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_251-e" name="sc_251-e"></a>Examples for Success Criterion 2.5.1:</h5>
+        <h5 class="diff-old"><a id="sc_251-e" name="sc_251-e"></a>Examples for Success Criterion 2.5.1:</h5>
             <ul>
-              <li class="unclassified-ex">Armand is blind. His media player uses an XML data structure that describes the genre, artist, album, and track of each audio piece. It displays a column for each category. He can select one entry to filter the contents displayed in the subsequent columns (e.g. an entry in the Artist column causes the Albums and Tracks columns to only show items associated with the selected artist). The user agent understands the hierarchical nature of the columns, but since this hierarchical data cannot be conveyed in the HTML used for presentation, it  is not in the DOM for access by his screen reader. When Armand moves the focus to an item in the Tracks column, the user agent updates a static text field that shows the path of genre, artist, and album associated with the track, and Armand can have this field read to him on request or automatically when it updates.</li>
+              <li class="diff-old">Armand is blind. His media player uses an XML data structure that describes the genre, artist, album, and track of each audio piece. It displays a column for each category. He can select one entry to filter the contents displayed in the subsequent columns (e.g. an entry in the Artist column causes the Albums and Tracks columns to only show items associated with the selected artist). The user agent understands the hierarchical nature of the columns, but since this hierarchical data cannot be conveyed in the HTML used for presentation, it  is not in the DOM for access by his screen reader. When Armand moves the focus to an item in the Tracks column, the user agent updates a static text field that shows the path of genre, artist, and album associated with the track, and Armand can have this field read to him on request or automatically when it updates.</li>
           </ul>        </div>
         <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_251-r" name="sc_251-r"></a>Related Resources for Success Criterion 2.5.1:</h5>
+        <h5 class="diff-old"><a id="sc_251-r" name="sc_251-r"></a>Related Resources for Success Criterion 2.5.1:</h5>
             <ul>
               <li>None</li></ul></div></div>
 
@@ -3791,38 +3795,38 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
 </div>
 
 <div class="sc-level">
-<h4 class="sc-title"><a id="sc_253" name="sc_253"></a>2.5.3 Configure Structural Navigation and Views: </h4>
-<p class="sc-text">The user can configure which elements are used for structural navigation and outline views.   <span class="level">(Level&nbsp;AAA)</span></p>
+<h4 class="sc-title"><a id="sc_253" name="sc_253"></a><span class="diff-old">2.5.3 Configure Structural Navigation and Views: </span></h4>
+<p class="diff-old">The user can configure which elements are used for structural navigation and outline views.   (<span class="diff-old">Level&nbsp;AAA)</span></p>
 
   <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_253">Reference for 2.5.3</a></div>
+  <div class="diff-old"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_253">Reference for 2.5.3</a></div>
   </div>
 <div class="techs-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_253">Return to 2.5.3 in Guidelines</a></div>
+  <div class="diff-old"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_253">Return to 2.5.3 in Guidelines</a></div>
 </div> 
 
       <div class="techs-only">
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_253-a" name="sc_253-a"></a>Applies to:</h5>
-        <p><a class="dfn-instance"
+        <h5 class="diff-old"><a id="sc_253-a" name="sc_253-a"></a>Applies to:</h5>
+        <p class="diff-old"><a class="dfn-instance"
 href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
        </div>
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_253-i" name="sc_253-i"></a>Intent  of  Success Criterion  2.5.3:</h5>
-        <p>Authors can visually convey relationships between elements by  grouping them spatially, or giving them the same coloration or background. Users may not be able to perceive those attributes when using  a screen reader, or when strong magnification makes it difficult to make a mental model of the screen layout. In cases like these, the user agent can assist by providing a view of the data that groups elements that that user agent perceives as implying relationships.</p>
-        <p>Often the user agent will choose by default the elements it considers important for structured navigation. These may not be relevant in all circumstances. For example, the user may wish to navigate via informal mechanisms such as microformats or or by a particular element. </p>
+        <h5 class="diff-old"><a id="sc_253-i" name="sc_253-i"></a>Intent  of  Success Criterion  2.5.3:</h5>
+        <p class="diff-old">Authors can visually convey relationships between elements by  grouping them spatially, or giving them the same coloration or background. Users may not be able to perceive those attributes when using  a screen reader, or when strong magnification makes it difficult to make a mental model of the screen layout. In cases like these, the user agent can assist by providing a view of the data that groups elements that that user agent perceives as implying relationships.</p>
+        <p class="diff-old">Often the user agent will choose by default the elements it considers important for structured navigation. These may not be relevant in all circumstances. For example, the user may wish to navigate via informal mechanisms such as microformats or or by a particular element. </p>
        </div>
 
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_253-e" name="sc_253-e"></a>Examples for Success Criterion 2.5.3:</h5>
+        <h5 class="diff-old"><a id="sc_253-e" name="sc_253-e"></a>Examples for Success Criterion 2.5.3:</h5>
             <ul>
-              <li class="unclassified-ex">Fred is blind and uses a screen reader. He wishes to navigate through the menu structure using	the Tab key, but the menu is a set of nested list elements with an HTML class attribute denoting the menu-submenu relationship. Because Fred's user agent allows him to configure important elements, he can explicitly include the class name as an important element for navigation. He then assigns a keyboard shortcut to navigate to the next element with the same class name as the element that has the focus.</li>
-              <li class="mobile-ex">[mobile] Fred is blind and uses a screen reader. When Fred is using his smartphone, he selects a control that allows him to change from navigation by heading to navigation by links. </li>
+              <li class="diff-old">Fred is blind and uses a screen reader. He wishes to navigate through the menu structure using	the Tab key, but the menu is a set of nested list elements with an HTML class attribute denoting the menu-submenu relationship. Because Fred's user agent allows him to configure important elements, he can explicitly include the class name as an important element for navigation. He then assigns a keyboard shortcut to navigate to the next element with the same class name as the element that has the focus.</li>
+              <li class="diff-old">[mobile] Fred is blind and uses a screen reader. When Fred is using his smartphone, he selects a control that allows him to change from navigation by heading to navigation by links. </li>
             </ul></div>
         <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_253-r" name="sc_253-r"></a>Related Resources for Success Criterion 2.5.3:</h5>
+        <h5 class="diff-old"><a id="sc_253-r" name="sc_253-r"></a>Related Resources for Success Criterion 2.5.3:</h5>
             <ul>
-              <li>None</li></ul></div></div>
+      <li class="diff-old">None</li></ul></div></div>
 </div>     
 </div>
 
@@ -6577,7 +6581,7 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
     <ul
   >
       <li><dfn><a name="def-user-stylesheet"
-  id="def-user-stylesheet"></a>user style sheet</dfn>: Stylesheets specified by the user, resulting in <a href="#def-user-styles">user      styles</a>.</li>
+  id="def-user-stylesheet"></a>user style sheet</dfn>:  Style sheets that are not provided by the web content author. The user interface for configuring user style sheets can be targeted at advanced users.</li>
       <li><dfn><a name="def-author-stylesheet"
   id="def-author-stylesheet"></a>author style sheet</dfn>: Style sheets specified by the author, resulting in <a href="#def-author-styles">author styles</a>. </li>
     </ul>
