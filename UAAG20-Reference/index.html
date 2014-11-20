@@ -4,13 +4,14 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <title>UAAG 2.0 Reference: Explanations, Examples, and Resources for User Agent Accessibility Guidelines 2.0</title>
+  <title>User Agent Accessibility Guidelines (UAAG) 2.0</title>
   <style type="text/css">
 
 
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
+
                
 
 h2.principle {
@@ -221,7 +222,7 @@ ul.sc-notes {
 	<p><a href="http://www.w3.org/"><img height="48" width="72" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p> 
  
     <h1><a name="title" id="title"></a>UAAG 2.0 Reference: Explanations, Examples, and      Resources for User Agent Accessibility Guidelines 2.0</h1>
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 29 October 
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 13 November
   2014</h2>
     <dl> 
   <dt>This version (Github):</dt> 
@@ -1726,7 +1727,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_171-i" name="sc_171-i"></a><a id="sc_172-i" name="sc_172-i"></a><a id="sc_173-i" name="sc_173-i"></a>Intent of Success Criteria 1.7.1, 1.7.2, and 1.7.3:</h5>
-<p>CSS stylesheets allow users and authors to  customize the rendering of web content.  Such customization is frequently used to make web content accessible to a wide range of user needs.  These success criteria ensure that users can  take full advantage of this ability to customize stylesheets. Since different websites may require different style changes to be readable, it is recommended that user agents provide a feature that lets the user specify which stylesheet should be automatically applied to different web pages as they are loaded (e.g. based on a list of domain names or URL templates). </p></div>
+<p>CSS stylesheets allow users and authors to  customize the rendering of web content.  Such customization is frequently used to make web content accessible to a wide range of user needs.  These success criteria ensure that users can  take full advantage of this ability to customize stylesheets. Since different websites may require different style changes to be readable, it is recommended that user agents provide a feature that lets the user specify which stylesheet should be automatically applied to different web pages as they are loaded (e.g. based on a list of domain names or URL templates).</p></div>
 
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_171-e" name="sc_172-e"></a><a id="sc_172-e" name="sc_171-e"></a><a id="sc_173-e" name="sc_173-e"></a>Examples for Success Criteria 1.7.1, 1.7.2, and 1.7.3:</h5>
@@ -1767,7 +1768,8 @@ href="#intro-applies-to-uaui" title="definition:user agent user interface">UA us
 compress stylesheets and scripts to save load time, it would be highly
 beneficial if the user agent saved the stylesheets in a format that
 facilitates reading and editing by users (e.g. without stripping out line
-breaks).</p>
+breaks). </p>
+        <p>Stylesheets can be difficult to make sense of. UAAG realizes that most users will want to use a tool to read and edit the CSS. It is recommended that tools or extensions are supported for making stylesheets easier to use for less technical users. Many low vision users require custom stylesheets for accessibility and better support for user stylesheets will improve the browsing experience for these users. </p>
        </div>
 
        <div class="implementing-section">
@@ -3595,8 +3597,8 @@ Guideline 2.6 - Provide access to event handlers
 <p class="summary" id="summary26"><strong>Summary</strong>: Users can interact with web content by mouse, keyboard, voice input, gesture, or a combination of input methods. Users can discover what event handlers (e.g. onmouseover) are available at each element and  activate an element's events individually (2.6.1). </p>
 
 <div class="sc-level">
-<h4 class="sc-title"><a id="sc_261" name="sc_261"></a>2.6.1 Allow Access and Activation of Input Methods: </h4>
-<p class="sc-text">The user agent provides a means for the user to determine <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a> input methods explicitly associated with an element, and a means for the user to activate those methods in a modality independent manner. <span class="level">(Level&nbsp;AA)</span></p>
+<h4 class="sc-title"><a id="sc_261" name="sc_261"></a><span class="diff-old">2.6.1 Allow Access and Activation of Input Methods: </span></h4>
+<p class="diff-old">The user agent provides a means for the user to determine <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a> input methods explicitly associated with an element, and a means for the user to activate those methods in a modality independent manner. (Level&nbsp;AA)</p>
  
    
 <div class="techs-only">
@@ -3682,7 +3684,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_271-r" name="sc_271-r"></a>Related Resources for Success Criterion 2.7.1:</h5>
             <ul>
-              <li>None</li></ul></div></div>
+              <li><a href="#sc_513">5.1.3 Implement Accessibility Features of the Platform</a></li></ul></div></div>
 
  
  <h4 class="sc-title"><a id="sc_272" name="sc_272"></a>2.7.2 Allow Restore All to Default: </h4>
@@ -3714,7 +3716,10 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_272-r" name="sc_272-r"></a>Related Resources for Success Criterion 2.7.2:</h5>
             <ul>
-              <li><a href="#sc_312">3.1.2 Settings Changes can be Reversed or Confirmed</a></li></ul></div></div>
+              <li><a href="#sc_312">3.1.2 Settings Changes can be Reversed or Confirmed</a></li>
+              <li><a href="#sc_513">5.1.3 Implement Accessibility Features of the Platform</a></li>
+            </ul>
+        </div></div>
 
 <h4 class="sc-title"><a id="sc_273" name="sc_273"></a>2.7.3 Allow Multiple Sets of Preference Settings: </h4>
 <p class="sc-text">The user can save and retrieve multiple sets of user agent preference settings. <span class="level">(Level&nbsp;AA)</span> </p>
@@ -3748,7 +3753,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_273-r" name="sc_273-r"></a>Related Resources for Success Criterion 2.7.3:</h5>
             <ul>
-              <li>None</li></ul></div></div>
+              <li><a href="#sc_513">5.1.3 Implement Accessibility Features of the Platform</a></li></ul></div></div>
 
   <h4 class="sc-title"><a id="sc_274" name="sc_274"></a>2.7.4 Allow Preference Changes from outside the User Interface: </h4>
   <p class="sc-text">The user can adjust any preference settings required to meet the User Agent Accessibility Guidelines (UAAG) 2.0 from outside the <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a>. <span class="level">(Level&nbsp;AAA)</span></p>
@@ -3784,7 +3789,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_274-r" name="sc_274-r"></a>Related Resources for Success Criterion 2.7.4:</h5>
             <ul>
-              <li>None</li></ul></div></div>
+              <li><a href="#sc_513">5.1.3 Implement Accessibility Features of the Platform</a></li></ul></div></div>
 
  <h4 class="sc-title"><a id="sc_275" name="sc_275"></a>2.7.5 Make Preference Settings Transferable: </h4>
  <p class="sc-text">The user can transfer all compatible user agent preference settings between devices. <span class="level">(Level&nbsp;AAA)</span> </p>
@@ -3838,7 +3843,7 @@ customizing her computer.
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_275-r" name="sc_275-r"></a>Related Resources for Success Criterion 2.7.5:</h5>
             <ul>
-              <li>None</li></ul></div></div>
+              <li><a href="#sc_513">5.1.3 Implement Accessibility Features of the Platform</a></li></ul></div></div>
 </div>
 </div>
 
@@ -5545,12 +5550,7 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
 
 
 <h4 class="sc-title"><a id="sc_513" name="sc_513"></a>5.1.3 Implement Accessibility Features of the Platform: </h4>  
-<p class="sc-text">If the user agent contains non-web-based user interfaces, then those user interfaces follow user interface accessibility guidelines for the <a class="dfn-instance"
-href="#def-platform" rel="glossary" title="definition: platform">platform</a>. <span class="level">(Level&nbsp;A)</span></p>
-
-<ul class="sc-notes">
-    <li class="sc-note"><em class="note-handle">Note:</em> When a  requirement of another specification contradicts a requirement of UAAG 2.0, the user agent may disregard the rendering requirement of the other specification and still satisfy this guideline.</li></ul>
-
+<p class="sc-text">If the user agent contains non-web-based user interfaces, then those user interfaces respect platform accessibility settings and follow user interface accessibility guidelines for the platform. <span class="level">(Level&nbsp;A)</span></p>
 
 <div class="techs-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_513">Return to 5.1.3 in Guidelines</a></div>
@@ -5576,9 +5576,11 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
         <h5 class="implementing-heading"><a id="sc_513-e" name="sc_513-e"></a>Examples for Success Criterion 5.1.3:</h5>
             <ul>
               <li class="unclassified-ex">Lee has low vision and uses a screen magnifier on a Linux system. She loads a new  Gnome application that works with her screen magnifier because the developer followed the <a href="http://developer.gnome.org/accessibility-devel-guide/">Gnome Accessibility Developers Guide</a>. For example, the Keyboard Focus  section states: &quot;Show current input focus clearly at all times. Remember that in controls that include a scrolling element, it is not always sufficient to highlight just the selected element inside that scrolling area, as it may not be visible. &quot;  Lee can use this app because it conforms to this accessibility guideline for focus. </li>
-              <li class="mobile-ex">[mobile] Martin uses a mouth stick to control his mobile browser. Even though he cannot use a pinch gesture, he   controls the zoom in his mobile browser with a custom gesture. He can do this because the app developer followed the guidance provided in the "Accessibility Programming Guide for iOS".<br />
+              <li class="mobile-ex">[mobile] Martin uses a mouth stick to control his mobile browser. Even though he cannot use a pinch gesture, he   controls the zoom in his mobile browser with a custom gesture. He can do this because the app developer followed the guidance provided in the "Accessibility Programming Guide for iOS".</li>
+              <li>Sasha requires high contrast to be able to discriminate the shape of letters. She has set the accessibility preferences on her computer to use high contrast mode. When she launches her browser, it detects that she is using high contrast and adjusts the font and color settings for its user interface to reflect those settings.
               </li>
-      </ul>        </div>
+          </ul>        
+        </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_513-r" name="sc_513-r"></a>Related Resources for Success Criterion 5.1.3:</h5>
                 <dl>
