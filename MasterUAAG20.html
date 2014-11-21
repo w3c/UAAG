@@ -225,7 +225,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 13 November 2014</h2>
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 20 November 2014</h2>
 <dl>
   <dt>This version (Github):</dt>
     <dd><a href="http://w3c.github.io/UAAG/UAAG20/">http://w3c.github.io/UAAG/UAAG20/</a></dd>
@@ -261,7 +261,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 	<p><a href="http://www.w3.org/"><img height="48" width="72" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p> 
  
     <h1><a name="title" id="title"></a>UAAG 2.0 Reference: Explanations, Examples, and      Resources for User Agent Accessibility Guidelines 2.0</h1>
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 13 November
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 20 November
   2014</h2>
     <dl> 
   <dt>This version (Github):</dt> 
@@ -1106,7 +1106,7 @@ Guideline 1.2 - Repair missing content <span class="gl-only">[<a href="http://w3
 
 <div class="sc-level"><!--AAA-->
 
-<h4 class="sc-title"><a id="sc_122" name="sc_122"></a>1.2.2 @@ AT RISK OF REMOVAL- WAITING FOR FEEDBACK FROM SIMON BEFORE DELETING@@ <span class="diff-old">Repair Missing Structure: </span></h4>
+<h4 class="sc-title"><a id="sc_122" name="sc_122"></a><span class="diff-old">1.2.2  Repair Missing Structure: </span></h4>
 <span class="diff-old"> The user can specify whether or not the <a class="dfn-instance"
 href="#def-user-agent" rel="glossary" title="definition: User agent">user
 agent</a> should attempt to insert the following types of structural markup on the basis of author-specified presentation attributes (e.g. position and appearance)</span>: <span class="level">(Level&nbsp;AAA)</span> 
@@ -4404,7 +4404,7 @@ more than three times a second above luminescence or color thresholds
 
 <div class="sc-level">
 <h4 class="sc-title"><a id="sc_2101" name="sc_2101"></a>2.10.1 Three Flashes or Below Threshold: </h4>
-<p class="sc-text">In its default configuration, the user agent does not display any user interface components that flashes more than three times in any one-second period, unless the flash is below  general flash and red flash thresholds. <span class="level">(Level&nbsp;A)</span> </p>
+<p class="sc-text">In its default configuration, the user agent does not display any UA user interface components that flashes more than three times in any one-second period, unless the flash is below  general flash and red flash thresholds. <span class="level">(Level&nbsp;A)</span> </p>
 
  <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2101">Reference for 2.10.1</a></div>
@@ -4443,7 +4443,7 @@ href="#intro-applies-to-config-option" title="definition: configuration settings
 
 <div class="sc-level">
 <h4 class="sc-title"><a id="sc_2102" name="sc_2102"></a>2.10.2 Three Flashes: </h4>
-<p class="sc-text">In its default configuration, the user agent does not display any user interface components that flashes more than three times in any one-second period (regardless of whether not the flash is below the general flash and red flash thresholds). <span class="level">(Level&nbsp;AAA)</span> </p>
+<p class="sc-text">In its default configuration, the user agent does not display any UA user interface components that flashes more than three times in any one-second period (regardless of whether not the flash is below the general flash and red flash thresholds). <span class="level">(Level&nbsp;AAA)</span> </p>
 
  <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2102">Reference for 2.10.2</a></div>
@@ -4856,10 +4856,10 @@ id="gl-other-devices"><span class="techs-only">Reference for </span>Guideline 2.
 </p>
 
 <div class="sc-level">
-<h4 class="sc-title"><a id="sc_2121" name="sc_2121"></a>2.12.1 Platform Text Input Devices: </h4>
-<p class="sc-text">If the <a class="dfn-instance"
+<h4 class="sc-title"><a id="sc_2121" name="sc_2121"></a><span class="diff-old">2.12.1 Platform Text Input Devices: </span></h4>
+<p class="diff-old">If the <a class="dfn-instance"
 href="#def-platform" rel="glossary" title="definition: platform">platform</a>
- supports text input using an input device, the user agent is compatible with this functionality.  <span class="level">(Level&nbsp;A)</span> </p>
+ supports text input using an input device, the user agent is compatible with this functionality.  (Level&nbsp;A) </p>
 
    <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2121">Reference for 2.12.1</a></div>
@@ -4887,7 +4887,7 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
             <ul>
               <li class="unclassified-ex">Ruth has extremely limited motor control and slurred speech. She operates her computer using a head pointer. Her desktop operating system includes a virtual keyboard utility. When active, the on-screen keyboard reserves the bottom portion of the screen for its own use, so the user agent respects this and does not cover that area even in modes that would normally take up the full screen. The user agent  avoids communicating with the hardware keyboard through a low-level system API that would miss virtual keyboard input.</li>
               <li class="unclassified-ex">Randall has repetitive stress injuries that make keyboard and mouse input painful. He carries out most computer operations using speech input, including completing  web forms across multiple web sites. His user agent supports the APIs used by 3rd party speech input applications. This allows him to use his chosen input method whereever needed. </li>
-              <li class="unclassified-ex">Rick is paralysed from the neck down. He uses eyeblinks to control an onscreen keyboard. His user agent supports the APIs used by 3rd party eye blink applications. </li>
+              <li class="unclassified-ex"></li>
             </ul>        </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2121-r" name="sc_2121-r"></a>Related Resources for Success Criterion 2.12.1:</h5>
@@ -4896,9 +4896,9 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
 </div>
 
 <div class="sc-level">  
-  <h4 class="sc-title"><a id="sc_2122" name="sc_2122"></a>2.12.2  Operation With Any Device: </h4>
-<p class="sc-text"> If an input device is supported by the <a class="dfn-instance"
-href="#def-platform" rel="glossary" title="definition: platform">platform</a>, all user agent functionality other than text input can be operated using that device. <span class="level">(Level&nbsp;AA)</span> </p>
+  <h4 class="sc-title"><a id="sc_2122" name="sc_2122"></a><span class="diff-old">2.12.2  Operation With Any Device: </span></h4>
+<p class="diff-old"> If an input device is supported by the <a class="dfn-instance"
+href="#def-platform" rel="glossary" title="definition: platform">platform</a>, all user agent functionality other than text input can be operated using that device. (Level&nbsp;AA) </p>
 
    <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2122">Reference for 2.12.2</a></div>
@@ -4937,7 +4937,7 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
 <div class="sc-level">  
 <h4 class="sc-title"><a id="sc_2123" name="sc_2123"></a>2.12.3 Text Input With Any Device: </h4>
 <p class="sc-text"> If an input device is supported by the <a class="dfn-instance"
-href="#def-platform" rel="glossary" title="definition: platform">platform</a>, all user agent functionality including text input can be operated using that device. <span class="level">(Level&nbsp;AAA)</span> </p>
+href="#def-platform" rel="glossary" title="definition: platform">platform</a>, all user agent functionality including text input can be operated using that device. <span class="level">(Level&nbsp;AA)</span> </p>
 
    <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2123">Reference for 2.12.3</a></div>
@@ -4965,7 +4965,9 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
             <ul>
               <li class="unclassified-ex">Ruth has extremely limited motor control and slurred speech, so operates her computer using a head pointer. The mouse pointer moves in response to the orientation of her head, and she clicks, double clicks, or drags using a sip-and-puff switch. The operating system does not provide an on-screen keyboard, but in order to be maximally accessible, a small on-screen keyboard is available as an add-on for her browser.</li>
               <li class="mobile-ex">[mobile] Randall has a web browser on his smart phone that allows him to perform most operations using speech commands. By offloading the speech recognition to an Internet server, it is able to perform large vocabulary speech recognition, so Randall can use his voice to compose email and fill in forms, as well as controlling the browser itself.</li>
-            </ul></div>
+              <li><span class="unclassified-ex">Rick is paralysed from the neck down. He uses eyeblinks to control an onscreen keyboard. His user agent supports the APIs used by 3rd party eye blink applications. </span></li>
+            </ul>
+       </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2123-r" name="sc_2123-r"></a>Related Resources for Success Criterion 2.12.3:</h5>
             <ul>
@@ -5029,7 +5031,7 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
               
               
 <h4 class="sc-title"><a id="sc_312" name="sc_312"></a>3.1.2 Settings Changes can be Reversed or Confirmed: </h4>
-<p class="sc-text"> If the user agent provides mechanisms for changing its user interface settings, it either allows the user to reverse the setting changes, or the user can require user confirmation to proceed. <span class="level">(Level&nbsp;A)</span></p>
+<p class="sc-text"> If the user agent provides mechanisms for changing its user interface settings, it either allows the user to reverse the setting changes, or the user agent can require user confirmation to proceed. <span class="level">(Level&nbsp;A)</span></p>
 
      <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_312">Reference for 3.1.2</a></div>
@@ -5108,7 +5110,7 @@ message that the purchase has timed out.</li>
 
 <div class="sc-level">
 <h4 class="sc-title"><a id="sc_314" name="sc_314"></a>3.1.4 Spell Check: </h4>
-<p class="sc-text">The user can have spelling assistance for editable text in rendered content.. <span class="level">(Level&nbsp;AA)</span></p>
+<p class="sc-text">The user can have spelling assistance for editable text in rendered content. <span class="level">(Level&nbsp;AA)</span></p>
 
      <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_314">Reference for 3.1.4</a></div>
