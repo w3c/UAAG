@@ -11,6 +11,7 @@
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
+
                
 
 h2.principle {
@@ -221,7 +222,7 @@ ul.sc-notes {
 	<p><a href="http://www.w3.org/"><img height="48" width="72" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p> 
  
     <h1><a name="title" id="title"></a>UAAG 2.0 Reference: Explanations, Examples, and      Resources for User Agent Accessibility Guidelines 2.0</h1>
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 20 November
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 16 December
   2014</h2>
     <dl> 
   <dt>This version (Github):</dt> 
@@ -412,7 +413,7 @@ title="definition: Normative">normative</a>, meaning user agent developers are r
 <h3><a name="intro-conf-levels" id="intro-conf-levels"></a>Levels of
   Conformance</h3>
 
-<p>User agents  may  conform to UAAG 2.0 at one of three conformance
+<p>User agents  can  conform to UAAG 2.0 at one of three conformance
 levels: levels A (minimum), AA (recommended), and AAA (advanced). The three levels of UAAG 2.0 conformance are   based on the corresponding level designations (A, AA, or AAA) of the   individual success criteria (i.e., specific requirements). The user   agent can conform to a level by meeting the success criteria of that   level and the levels below it. </p>
 <ul>
   <li>Level A conformance: The user agent complies with all applicable level A success criteria. </li>
@@ -434,13 +435,13 @@ levels: levels A (minimum), AA (recommended), and AAA (advanced). The three leve
     <li><strong>Level AA</strong> success criteria                address aspects of user agents that:
       <ul>
         <li>can cause difficulty for some people with disabilities in   getting information or accomplishing a task (including tasks causing   excessive fatigue), and/or</li>
-        <li>may be more difficult for developers to implement. </li>
+        <li>can be more difficult for developers to implement. </li>
       </ul>
     </li>
     <li><strong>Level AAA</strong> success criteria                address aspects of user agents that:
       <ul>
         <li>improve accessibility or reduces fatigue for some people with disabilities, and/or,</li>
-        <li>may be very difficult for developers to implement.</li>
+        <li>can be very difficult for developers to implement.</li>
       </ul>
     </li>
   </ul>
@@ -489,7 +490,7 @@ levels: levels A (minimum), AA (recommended), and AAA (advanced). The three leve
 
 <li><strong>Edit modes</strong>: Some user agents include a mode where the user can edit and save changes to the web content, modifying the experience of other users. In this mode, the user agent is acting as an authoring tool and all of ATAG 2.0  applies. </li>
 
-<li><strong>Automatic content changes</strong>: Some user agents or plug-ins may automatically change  retrieved web content before it's rendered. This functionality is not considered an authoring tool because  changes are made to the user's own experience, not the experience of other users. </li>
+<li><strong>Automatic content changes</strong>: Some user agents or plug-ins can automatically change  retrieved web content before it's rendered. This functionality is not considered an authoring tool because  changes are made to the user's own experience, not the experience of other users. </li>
 
 <li><strong>Providing a platform for web-based authoring tools</strong>: Many web applications serve as authoring tools and make use of user agent features to deliver  functionality (e.g. undo text entry, adjust font size of the authoring tool user interface etc.)
 User agent developers should consult ATAG 2.0 to understand the ways in which web-based authoring tools can depend on user agent features. </li>
@@ -505,7 +506,7 @@ User agent developers should consult ATAG 2.0 to understand the ways in which we
   <li><strong class="handle">Current  Content Only</strong>: At any point in time, UAAG 2.0 success criteria only apply to web content that have not been hidden or removed (e.g., a bookmark created as per <a href="#sc_1816">1.8.16</a> will no longer be operable if the content it refers to is hidden or removed).</li>
   <li><strong class="handle">Recognized Content Only: </strong>UAAG 2.0 success criteria only apply to web content and its behaviors that can be <a class="dfn-instance"
 href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a> by user agents.</li>
-  <li> <strong class="handle">Optional Settings:</strong> Throughout UAAG 2.0, all  required behaviors  may be      provided as optional preference settings unless a success      criterion explicitly says otherwise. For example, if a success      criterion requires high contrast between foreground text and its      background, the user agent may also provide choices      with low contrast. While it is preferred to have a  required behavior as a default option, it does not need to be,  unless the success criterion explicitly says      otherwise.</li>
+  <li> <strong class="handle">Optional Settings:</strong> Throughout UAAG 2.0, all  required behaviors  can be      provided as optional preference settings unless a success      criterion explicitly says otherwise. For example, if a success      criterion requires high contrast between foreground text and its      background, the user agent can also provide choices      with low contrast. While it is preferred to have a  required behavior as a default option, it does not need to be,  unless the success criterion explicitly says      otherwise.</li>
   <li><strong class="handle">RFC 2119 language not used: </strong>UAAG 2.0 does not use <a class="dfn-instance" href="#def-rfc2119" rel="glossary" title="definition: RFC 2119">RFC 2119</a> language (must, may, should) as it is not  an interoperable specifications. Note, 
 even if these terms appear from time to time they do not have any RFC 
 2119 implication.</li>
@@ -520,7 +521,7 @@ even if these terms appear from time to time they do not have any RFC
   <li>easily installed (i.e. not requiring expert knowledge or editing of
 
 configuration files, databases, or registry entries)</li></ol> See <a href="#conformance-req-components">Components of UAAG 2.0 Conformance Claims</a>.</li>
-  <li><strong class="handle">Relationship with operating system or platform</strong>: The user agent does      not need to implement every behavior itself. A required      behavior may be provided by the platform, user agent, user      agent extensions, or potentially other layers. All are      acceptable, as long as they are enumerated in the conformance      claim. </li>
+  <li><strong class="handle">Relationship with operating system or platform</strong>: The user agent does      not need to implement every behavior itself. A required      behavior can be provided by the platform, user agent, user      agent extensions, or potentially other layers. All are      acceptable, as long as they are enumerated in the conformance      claim. </li>
 </ol>
 
 <div class="principle" id="p-1">
@@ -564,7 +565,7 @@ href="#intro-applies-to-config-option" title="definition: configuration settings
        </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_111-i" name="sc_111-i"></a>Intent of Success Criterion 1.1.1:</h5>
-        <p>Users with some disabilities may find a specific content element causes them physical pain (e.g. an image with high contrast) or distress (e.g. an image that triggers post traumatic stress disorder), or that the element's size may make the page difficult to use (because of difficulty scrolling, or shifting gaze, or moving the pointer more than a certain distance). In these cases the user needs to be able to hide that element or replace it with alternative content or a placeholder. Other users may find specific elements are simply unusable (e.g. an image   that is too low contrast for the user's vision). In these cases the user needs to be able to access author-provided alternative content (e.g. Alt text or Longdesc) or the very minimum a placeholder (e.g. filename). </p>
+        <p>Users with some disabilities can find a specific content element causes them physical pain (e.g. an image with high contrast) or distress (e.g. an image that triggers post traumatic stress disorder), or that the element's size can make the page difficult to use (because of difficulty scrolling, or shifting gaze, or moving the pointer more than a certain distance). In these cases the user needs to be able to hide that element or replace it with alternative content or a placeholder. Other users can find specific elements are simply unusable (e.g. an image   that is too low contrast for the user's vision). In these cases the user needs to be able to access author-provided alternative content (e.g. Alt text or Longdesc) or the very minimum a placeholder (e.g. filename). </p>
         <p>Some users with disabilities need  alternate languages or audio tracks   (e.g. descriptive video). Users need the ability to choose  tracks that   best meet their accessibility needs (e.g. the caption track in their   own language) when authors have provided many alternatives.</p>
     <p><em>Note:</em> If the user cannot directly select or choose the element in order to perform commands upon it (e.g. if the browser does not support clicking on HTML background images or moving focus to them with the keyboard), the user agent must provide an alternative user interface for this feature.</p>
        </div>
@@ -573,7 +574,7 @@ href="#intro-applies-to-config-option" title="definition: configuration settings
         <h5 class="implementing-heading"><a id="sc_111-e" name="sc_111-e"></a>Examples for Success Criterion 1.1.1:</h5>
             <ul>
               <li class="unclassified-ex">Rodney has low vision and finds some images on a web page are painful to look at. He can hide foreground images by right-clicking on them or pressing the Tab key to move focus to them, and then choosing a command from the element's context menu. However, the browser does not let him right-click or navigate to the background image. Therefore it provides a user preference setting to hide all background images or to hide the background image on the current site.</li>
-              <li class="unclassified-ex">Carly has repetitive strain injuries and uses speech recognition to communicate with her computer. She's a paralegal and often has to search long documents for terms that are rendered as acronyms. It's often easier for her to speak full terms into the search box rather than acronyms because full terms are easier to say and better recognized, and this allows her to keep her vocabulary less cluttered by acronyms that may increase misrecognitions. She chooses a setting on her browser that automatically expands all acronyms and abbreviations before she does a search.</li>
+              <li class="unclassified-ex">Carly has repetitive strain injuries and uses speech recognition to communicate with her computer. She's a paralegal and often has to search long documents for terms that are rendered as acronyms. It's often easier for her to speak full terms into the search box rather than acronyms because full terms are easier to say and better recognized, and this allows her to keep her vocabulary less cluttered by acronyms that can increase misrecognitions. She chooses a setting on her browser that automatically expands all acronyms and abbreviations before she does a search.</li>
               <li class="unclassified-ex">Laura has impaired vision and uses the shapes of words to help her recognize them easily. It is more difficult for her to read strings of seemingly random upper case letters than strings of familiar words written with only their initial letters capitalized, so she changes her preference settings to have all abbreviations replaced by their expanded strings.</li>
               <li class="video">Betty has an auditory processing problem. She is watching a movie that has several caption and audio tracks. She pulls up a menu to determine which tracks are available and switches between audio tracks until she find one she can understand. She also reinforces the audio by selecting a caption track.
 </li>
@@ -667,6 +668,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
                 gets only the text from the web page without any images
                 interfering with what he is reading.</li>
               <li class="unclassified-ex">Sasha requires high contrast to be able to discriminate the shape of   letters.  She always sets a preference in her browser to turn off   background images, so that she can see the text clearly without the   variations in the background. </li>
+              <li class="unclassified-ex">Matilda finds high contrast colors painful, and wants lower contrast font and background  colors. She sets the default font and background colors in her operating system, which her browser picks up and uses for the default settings for web pages font and background colors. </li>
               <li class="mobile-ex">[mobile] Betty is a low vision user and has difficulty reading text on her mobile device when it is displayed over a background image.  Using her user-defined style sheet, she can disable all background images from being rendered in her browser.</li>
           </ul>        </div>
         <div class="implementing-section">
@@ -675,7 +677,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
               <li><a href="#sc_141">1.4.1 Configure Rendered Text</a> for more information
               related to background colors.</li>
               <li><a href="#sc_113">1.1.4 Configure Alternative Defaults</a> allows the user to hide foreground images by replacing them with alternative content, but 2.11.1 extends this to background images in languages such as HTML that do not support alternative content for background images. </li>
-              <li><a href="http://www.w3.org/TR/2011/REC-CSS2-20110607/colors.html#background">CSS 2.1: section 14.2.1 The Background</a> In CSS, background images may be turned on/off with the background
+              <li><a href="http://www.w3.org/TR/2011/REC-CSS2-20110607/colors.html#background">CSS 2.1: section 14.2.1 The Background</a> In CSS, background images can be turned on/off with the background
                 and background-image properties.</li>
               <li><a href="http://www.w3.org/TR/2011/REC-CSS2-20110607/visuren.html#z-index">CSS 2.1: section 9.9.1 Specifying the stack level: the 'z-index' property </a></li>
             </ul>
@@ -711,7 +713,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_114-e" name="sc_114-e"></a>Examples for Success Criterion 1.1.4:</h5>
             <ul>
-              <li class="unclassified-ex">Sally has low vision. In the browser's preferences dialog box, Sally specifies that she wants alt text displayed in place of images, and that the document should reflow to allow the entire alt text to be displayed rather than truncated. </li>
+              <li class="unclassified-ex">Sally has low vision. In the browser's preferences dialog box, Sally specifies that she wants alt text displayed in place of images, and that the document  reflow to allow the entire alt text to be displayed rather than truncated. </li>
               <li class="unclassified-ex">Ben has low vision. In the browser's preferences dialog box, he chooses to always display the alternative ("fallback") content for embedded objects, such as a transcript in place of a video.</li>
               <li  class="mobile-ex">[mobile] Ben has low vision and keeps his mobile phone browser &quot;zoomed&quot; so he can read the text. Because images can become pixelated when enlarged, he prefers the alternative text. In the mobile settings dialog box, he chooses to always display the alternative (&quot;fallback&quot;) content for images and to reflow the page without a  placeholder for the image. This saves screen space and reduces the amount of scrolling he has to do.</li>
               <li class="unclassified-ex">Brin is deaf. She  toggles a menu item which turns on the display of all captions for video and audio content. </li>
@@ -733,7 +735,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
 </ul>
 
 <ul class="sc-notes">
-    <li class="sc-note"><em class="note-handle">Note</em>: Depending on the screen area available, the display of the primary time-based media may need to be reduced in size to meet this requirement. </li></ul>
+    <li class="sc-note"><em class="note-handle">Note</em>: Depending on the screen area available, the display of the primary time-based media can need to be reduced in size to meet this requirement. </li></ul>
 
 	   
 	   <div class="techs-only">
@@ -779,8 +781,8 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
 </ul>
 
 <ul class="sc-notes">
-    <li class="sc-note"><em class="note-handle">Note 1:</em> Depending on the screen area available, the display of the primary time-based media may need to be reduced in size or hidden to meet this requirement. </li>
-    <li class="sc-note"><em class="note-handle">Note 2:</em> Implementation may involve displaying alternative content for time-based media in a separate viewport, but this is not required. </li></ul>
+    <li class="sc-note"><em class="note-handle">Note 1:</em> Depending on the screen area available, the display of the primary time-based media can need to be reduced in size or hidden to meet this requirement. </li>
+    <li class="sc-note"><em class="note-handle">Note 2:</em> Implementation can involve displaying alternative content for time-based media in a separate viewport, but this is not required. </li></ul>
 
 	   
 	   <div class="techs-only">
@@ -798,7 +800,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_116-i" name="sc_116-i"></a>Intent  of  Success Criterion 1.1.6:</h5>
-        <p>Users may want to reposition the alternative  in close proximity to the most important portion of the main media to reduce the visual scanning distance between them. For example, if the video frequently includes on-screen text near the top of the video then the captions will be easier to read if they are located above the video. </p>
+        <p>Users can want to reposition the alternative  in close proximity to the most important portion of the main media to reduce the visual scanning distance between them. For example, if the video frequently includes on-screen text near the top of the video then the captions will be easier to read if they are located above the video. </p>
        </div>
 
        <div class="implementing-section">
@@ -842,13 +844,14 @@ Guideline 1.2 - Repair missing content
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_121-i" name="sc_121-i"></a>Intent  of  Success Criterion 1.2.1:</h5>
         
-        <p>When alternative content is missing, it can be helpful for users to  access  metadata such as the filename, which can be substituted as repair text. However, these are  not as helpful as alternative content that's properly authored for the original document. In these cases assistive technology can provide users with information that may be more helpful than any one piece of repair text the user agent could provide. Therefore it's important that assistive technology have access to as much information as possible about the non-text content that needs repair, and also to be able to inform the user that no author-provided text alternative is available. User agents should provide assistive technology with  available metadata for the non-text content that needs repair, but not substitute repair text in ways assistive technology will mistake  for author-provided text alternatives.       </p>
+        <p>When alternative content is missing, it can be helpful for users to  access  metadata such as the filename, but not to have it be substituted as repair text for the missing alternative text. Because the metadata is not as useful as alternative content that's properly authored for the original document, the user agent should not interfere with the assisitve technology attempts to repair. The assistive technology can provide users with information that can be more helpful than any one piece of repair text the user agent could provide. Therefore it's important that assistive technology have access to as much information as possible about the non-text content that needs repair, and also to be able to inform the user that no author-provided text alternative is available. User agents should provide assistive technology with  available metadata for the non-text content that needs repair, but not substitute repair text in ways assistive technology will mistake  for author-provided text alternatives.       </p>
+        <p>This is to avoid      problems when (for example) the metadata in an image does not      match the way it's being used on the current page. It allows a      screen reader to distinguish between metadata provided by the      page author, who knows the image's use here, vs. metadata      tagging along from some long-ago source. For example, John is      creating a web page that uses an image of a check mark for      &quot;Selected&quot;. He grabs a PNG file from another site, not      realizing that it's embedded IPTC TITLE attribute says &quot;You are      a winner!&quot;. John is supposed to set alternative text for the image, but if he forgets to, it's      better for a screen reader to say &quot;image, unknown&quot; than for the user agent to use inappropriate metadata substitution saying &quot;image, You're a winner!&quot;</p>
         </div>
 
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_121-e" name="sc_121-e"></a>Examples for Success Criterion 1.2.1:</h5>
             <ul>
-              <li class="unclassified-ex">Ray is blind and counts on alternative text for images. When his screen reader is reading a web page and encounters an image, it asks the user agent for alternative text. If the user agent reports that no alternative text is available, the screen reader accesses the DOM to retrieve the title attribute associated with the image, its original file name, and path to the downloaded image file. It extracts embedded metadata from the image file, such as its original title and caption fields. It can then tell Ray that there is an image with no alternative text,  provide him with the value it considers most likely or that Ray has selected through his preferences, then  provide a command that lets him hear the other values so he can make his own judgement about the nature and purpose of the image.</li>
+              <li class="unclassified-ex">Ray is blind and counts on alternative text for images. When his screen reader is reading a web page and encounters an image, it asks the user agent for alternative text. If the user agent reports that no alternative text is available, the screen reader accesses the DOM to retrieve the title attribute associated with the image, its original file name, and path to the downloaded image file. The assistive technology screenreader software can then tell Ray that there is an image with no alternative text,  provide him with the value it considers most likely or that Ray has selected through his preferences, then  provide a command that lets him hear the other values so he can make his own judgement about the nature and purpose of the image.</li>
             </ul></div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_121-r" name="sc_121-r"></a>Related Resources for Success Criterion 1.2.1:</h5>
@@ -856,51 +859,7 @@ Guideline 1.2 - Repair missing content
               <li>None</li></ul></div></div>
 </div><!--end level-->
 
-<div class="sc-level"><!--AAA-->
 
-<h4 class="sc-title"><a id="sc_122" name="sc_122"></a><span class="diff-old">1.2.2  Repair Missing Structure: </span></h4>
-<span class="diff-old"> The user can specify whether or not the <a class="dfn-instance"
-href="#def-user-agent" rel="glossary" title="definition: User agent">user
-agent</a> should attempt to insert the following types of structural markup on the basis of author-specified presentation attributes (e.g. position and appearance)</span>: <span class="level">(Level&nbsp;AAA)</span> 
-<ul class="sc-bullets"> 
-<li class="sc-bullet">Labels</li>
-<li class="sc-bullet">Headers (e.g. heading markup, table headers) </li>
-</ul>
-
-	   
-	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_122">Return to 1.2.2 in Guidelines</a></div>
-	   </div>
-       
-      <div class="techs-only">
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_122-a" name="sc_122-a"></a>Applies to:</h5>
-        <p><a class="dfn-instance"
-href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
-href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
-        <h5 class="implementing-heading"><a id="sc_111-t7" name="sc_111-t"></a>Typically Implemented in:</h5>
-        <p>browser</p>
-        </div>
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_122-i" name="sc_122-i"></a>Intent  of  Success Criterion 1.2.2:</h5>
-        <p>When an author neglects to provide labels and/or headers as necessary for accessibility, the user agent can sometimes use heuristics to determine potential labels and/or headers from presentation attributes. Once potential headings and/or labels have been identified, the user agent can proceed (e.g. with communication via platform accessibility services) as if the relationship was defined in the markup. The user can  specify whether  heuristics should be applied because some users  want to experience the content as the author provided it (e.g. to perform evaluations or when heuristics  fail). </p>
-       </div>
-
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_122-e" name="sc_122-e"></a>Examples for Success Criterion 1.2.2:</h5>
-            <ul>
-              <li class="unclassified-ex">Frank has severe arthritis and uses speech input. When content markup includes a checkbox without a specified label, the user agent detects that a static text component is positioned immediately to the right of the checkbox and no other static text components are nearby. The nearby text is treated as the label. This enables Frank to toggle the checkbox by speaking its name.</li>
-              <li class="unclassified-ex">Maria uses a screen reader. When a table lacks marked up header rows, the user agent provides an option or command that changes the rendering of the td (table data) elements in the first table row to be th (table headings). </li>
-              <li class="unclassified-ex">Li uses a scanning keyboard and makes use of the user agent's outline view to more efficiently navigate web pages. The content markup  includes instances of static text that differ from surrounding text because they are  sentence fragments and styled with a larger font and bold weight. The instances are treated as headings as therefore appear in the outline view, enabling Li to more efficiently navigate to them.</li>
-            </ul>        </div>
-        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_122-r" name="sc_122-r"></a>Related Resources for Success Criterion 1.2.2:</h5>
-            <ul>
-              <li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-descriptive.html">Understanding WCAG 2.0: Heading and Labels</a></li>
-            </ul>
-</div>
-</div>
-<!--sc-level--></div>
 <!--gl--></div>
 
 <div class="guideline-box" id="g-1-3">
@@ -917,7 +876,7 @@ Guideline 1.3 - Provide highlighting for selection, keyboard focus, enabled elem
 <div class="sc-level"><!--A-->
 
 <h4 class="sc-title"><a id="sc_131" name="sc_131"></a>1.3.1 Distinguishable Highlighting: <span class="diff-old"></span></h4>
-<p class="sc-text">The user can have the following types of content uniquely highlighted, overriding any values specified by the author: <span class="diff-old">The user can  specify that the following classes be  <a class="dfn-instance" href="#def-highlight" rel="glossary" title="definition:highlight">highlighted</a>  so that each is uniquely distinguished:</span> <span class="level">(Level&nbsp;A)</span></p>
+<p class="sc-text">The user can have the following types of content uniquely highlighted, overriding any values specified by the author: <span class="level">(Level&nbsp;A)</span></p>
 <ul class="sc-bullets"> 
 <li class="sc-bullet"><strong class="handle"></strong> Selection</li>
 <li class="sc-bullet">In-page search results</li>
@@ -944,12 +903,12 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_131-i" name="sc_131-i"></a>Intent  of  Success Criterion 1.3.1:</h5>
-         <p>Users need to be able to easily discover web content they can interact with. One effective way to do this is to highlight enabled elements and links (including recently visited links). Highlighted selection and content focus lets people who use keyboard, gesture and speech input  know where they are working. On some pages controls may be difficult to discern amid a large amount of other content, or may be styled so the controls are difficult to distinguish from other content. This can be particularly difficult for people with visual impairments, who may not be able to  distinguish subtle visual differences. People with some cognitive impairments may have difficulty distinguishing between items with similar or non-standard appearance. Visually distinguishing these items reduces the amount of time or number of commands these groups require to examine a page. </p>
+         <p>Users need to be able to easily discover web content they can interact with. One effective way to do this is to highlight enabled elements and links (including recently visited links). Highlighted selection and content focus lets people who use keyboard, gesture and speech input  know where they are working. On some pages controls can be difficult to discern amid a large amount of other content, or can be styled so the controls are difficult to distinguish from other content. This can be particularly difficult for people with visual impairments, who may not be able to  distinguish subtle visual differences. People with some cognitive impairments can have difficulty distinguishing between items with similar or non-standard appearance. Visually distinguishing these items reduces the amount of time or number of commands these groups require to examine a page. </p>
           <ul>
             <li><em>Note 1: </em>In addition to these required categories, it is recommended that user agents also allow the user to highlight the active viewport, even when it is a frame or similar within the active window. This makes it much easier for the user to visually locate the active focus.</li>
             <li><em>Note 2: </em>Platform
             conventions will dictate whether or not keyboard focus in an inactive viewport is visually indicated by an inactive cursor.</li>
-            <li><em>Note 3: </em>the definition of visited and unvisited links is up to the user agent. Visited links may be links visited during the current session or in the browser's history. </li>
+            <li><em>Note 3: </em>the definition of visited and unvisited links is up to the user agent. Visited links can be links visited during the current session or in the browser's history. </li>
          </ul>
        </div>
 
@@ -1210,9 +1169,9 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
           <p>Users with some types of disabilities have difficulty reading  text as the author has formatted it. For example, some users  with low vision, dyslexia, and related conditions and   situations cannot read author-formatted text. However, they can read   text that has a  format customized to their individual needs (e.g. larger letters,   different font,  more spacing). Users with some cognitive disabilities and those who need to reduce the number of commands they enter to scroll through a document, may need to fit more information on the screen (e.g. smaller letters or spacing). Users need  to access a wide range of 
             font sizes, styles, colors, and other attributes in order to find the 
             combination that works best for their  needs. In providing  preferences, it is important to avoid making assumptions. For example, 
-            some users may increase font size to make text more legible, while 
-            other users may reduce the font size to decrease the need to scroll the content. </p>
-          <p>The relative size of text provides visual cues that help in understanding and navigating web content. Some content may be authored in a way that  makes it difficult or impossible to understand when  font distinctions are hidden, such as headlines that are in not in a larger font than body text.  It's important that users who need to enlarge or reduce text size be able to preserve these visual cues.</p>
+            some users can increase font size to make text more legible, while 
+            other users can reduce the font size to decrease the need to scroll the content. </p>
+          <p>The relative size of text provides visual cues that help in understanding and navigating web content. Some content can be authored in a way that  makes it difficult or impossible to understand when  font distinctions are hidden, such as headlines that are in not in a larger font than body text.  It's important that users who need to enlarge or reduce text size be able to preserve these visual cues.</p>
        </div>
 
        <div class="implementing-section">
@@ -1269,8 +1228,8 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
     <p>Some users  with low vision, dyslexia, and related conditions and   situations cannot read normally-formatted text. However, they can read   text that has a  format customized to their individual needs (e.g. larger letters,   different font,  more spacing). Users need  to access a wide range of 
             font sizes, styles, colors, and other attributes in order to find the 
             combination that works best for their  needs. In providing  preferences, it is important to avoid making assumptions. For example, 
-            some users may increase font size to make text more legible, while 
-          other users may reduce the font size to decrease the need to scroll the content. </p>
+            some users can increase font size to make text more legible, while 
+          other users can reduce the font size to decrease the need to scroll the content. </p>
     <p>Users who need large amount of screen magnification need to control the appearance of types of elements. For instance, a magnification of 300% can make headlines too large for display. Users need to be able to set the characteristics of element types (e.g. heading 1, heading 2, table heading) to make the web content readable. Magnification users who find that text size distinction greatly increases scrolling and fatigue also need to  be able to display important elements such as headings (including table headings) and input fields independently from global settings.       </p>
     <p>Many users with low vision have difficulty reading italic and underline and must be able to globally remove these styles. This can be accomplished with user stylesheets, but if the browser doesn't support user stylesheets,  the browser needs to provide this ability through settings. Bold characters can &quot;bleed&quot; when characters are too close together which reduces readability for some.</p>
     <p>User stylesheets can be used where available. Users can control characteristics by element type, so that, for example, headings at the same level will have a similar appearance. </p>
@@ -1304,9 +1263,8 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
 <li>Justification  (left or right, including turning off full justification)</li>
 <li>Margins around blocks of text</li>
 </ul>
-<p><em class="note-handle">Note</em>: For the purposes of UAAG 2.0, the base character width is the font width of the character commonly accepted as the base character for calculating kerning in the typography for that language (e.g. zero character in English).</p>
 <div class="techs-only">
-       <div class="implementing-section">
+  <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_143-a" name="sc_143-a"></a>Applies to:</h5>
         <p><a class="dfn-instance"
 href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
@@ -1317,8 +1275,8 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_143-i" name="sc_143-i"></a>Intent  of  Success Criterion 1.4.3:</h5>
           <p>Some users  with low vision, dyslexia, and related conditions and   situations cannot read normally-formatted text. However, they can read   text that has a  format customized to their individual needs (e.g. larger letters,   different font,  more spacing).  In providing  preferences, it is important to avoid making assumptions. For example, 
-            some users may increase font size to make text more legible, while 
-          other users may increase font spacing to improve readability. </p>
+            some users can increase font size to make text more legible, while 
+          other users can increase font spacing to improve readability. </p>
           <p>Calculating font height and base character width can be complicated. For accessibility purposes, the formula is not  important as long as the result gives  users multiple choices of    font height and character kerning. For UAAG 2.0 purposes, it does not matter what unit of measure is used, as long the multiples of that unit are provided.          </p>
           <p>Many users with autism or reading disabilities have difficulty reading justified text, because uneven spacing can create distracting &quot;rivers of white&quot;. These users need to be able to change fully justified text to left or right justified depending on the text language. </p>
        </div>
@@ -1363,7 +1321,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         </div>
    <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_144-i" name="sc_144-i"></a>Intent  of  Success Criterion 1.4.4:</h5>
-          <p>The ability to print content is important for users who have difficulty reading or interacting with web content directly in the user agent due to software, hardware, or ergonomic issues. Printing to virtual printer devices can also be a necessary step in converting the content to another electronic format that the user finds more accessible. It is also important that the user be able to print content with modifications they have applied, such as scaling or highlighting, or else they may find the printed version unusable. At the same time, they need to be able to have content reflowed to fit the width of the page, or else content may be cut off.</p>
+          <p>The ability to print content is important for users who have difficulty reading or interacting with web content directly in the user agent due to software, hardware, or ergonomic issues. Printing to virtual printer devices can also be a necessary step in converting the content to another electronic format that the user finds more accessible. It is also important that the user be able to print content with modifications they have applied, such as scaling or highlighting, or else they can find the printed version unusable. At the same time, they need to be able to have content reflowed to fit the width of the page, or else content may be cut off.</p>
           <p>User agents are strongly encouraged to let the user print a portion of the document, such as a selection or specified range of pages, because otherwise printing won't be a practical option for long documents. </p>
        </div>
 
@@ -1473,7 +1431,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_151-i" name="sc_151-i"></a>Intent  of  Success Criterion 1.5.1:</h5>
         <p>User agents can render audio tracks from a variety of sources, and in
-          some cases, multiple audio tracks may be present on a single page.
+          some cases, multiple audio tracks can be present on a single page.
           Users should be able to globally set the volume of audio tracks, rather
         than having to adjust the volume of each audio track being played.</p>
        </div>
@@ -1500,6 +1458,8 @@ Guideline 1.6 - Provide synthesized speech configuration
 <span class="techs-only">[<a href="http://w3c.github.io/UAAG/UAAG20/#gl-speech-config">Guideline 1.6</a>]</span>
 </h3>
 <p class="summary" id="summary16"><strong>Summary</strong>: If synthesized speech is produced, the user can specify speech   rate, volume, and voice (1.6.1, Level A), pitch and pitch range (1.6.2,   Level AA), advanced synthesizer speech characteristics such as emphasis   (1.6.3, Level AAA) and features such as spelling (1.6.4, Level AAA).</p>
+
+<p class="sc-notes"><em class="note-handle">Note</em>: Providing guidelines for software that does synthesized speech does not equate with targeting AT, which as you've noted is already explicitly exempted. For example, early versions of the Kindle provided text to speech that was not targeting people with disabilities; if browsers provide speech output for mainstream users, they should be making the speech configurable enough to be usable by a wide range of individuals. When an extension adds speech output to the UA, it becomes part of the UA, and, should meet the requirements of 1.6. </p>
 
 <div class="sc-level"><!--A-->
 
@@ -3808,7 +3768,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_275-i" name="sc_275-i"></a>Intent  of  Success Criterion 2.7.5:</h5>
-        <p>Configuring a user agent may be a complex and 
+        <p>Configuring a user agent can be a complex and 
           time-consuming task.  Some users hire assistive 
           technology professional trainers to do their system setup.  Users who have spent time customizing accessibility 
           preferences to meet their requirements need to  migrate preference 
@@ -3895,8 +3855,8 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
        </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_281-i" name="sc_281-i"></a>Intent of  Success Criterion 2.8.1:</h5>
-          <p>The user needs to control  which user interface elements are visible and usable, where elements are visually located on the screen, and where elements fall in the      navigation order. In some cases adjusting whether an element is visible and usable may involve installing or uninstalling a component &mdash; or merely showing or hiding it &mdash; depending on the user agent and the specific component.</p>
-            <p>This can reduce keystrokes, bring buttons into view that are hidden by default or otherwise allow the user to interact with the user agent in a more efficient fashion. Users with dexterity impairments or mobility impairments may have problems making the large movements required to select between non-adjacent controls which they need to use frequently. Similarly, users with low vision may have to  move their magnified view-port excessively to see frequently used controls. Enabling these controls to be situated together removes some of the strain faced by these users, and increases productivity as task completion times are decreased.        </p>
+          <p>The user needs to control  which user interface elements are visible and usable, where elements are visually located on the screen, and where elements fall in the      navigation order. In some cases adjusting whether an element is visible and usable can involve installing or uninstalling a component &mdash; or merely showing or hiding it &mdash; depending on the user agent and the specific component.</p>
+            <p>This can reduce keystrokes, bring buttons into view that are hidden by default or otherwise allow the user to interact with the user agent in a more efficient fashion. Users with dexterity impairments or mobility impairments can have problems making the large movements required to select between non-adjacent controls which they need to use frequently. Similarly, users with low vision can have to  move their magnified view-port excessively to see frequently used controls. Enabling these controls to be situated together removes some of the strain faced by these users, and increases productivity as task completion times are decreased.        </p>
        </div>
 
        <div class="implementing-section">
@@ -4130,7 +4090,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2111-i" name="sc_2111-i"></a>Intent  of Success Criterion 2.11.1:</h5>
         <p>Users who
-          need to avoid signals that may trigger seizures, users who are easily
+          need to avoid signals that can trigger seizures, users who are easily
           distracted, and users who have difficulty interacting with the
           controls provided for playing media need to be able to load media in a paused state. The user agent provides a global control that
           sets a state equivalent to "paused waiting for user interaction" for
@@ -4185,7 +4145,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2112-i" name="sc_2112-i"></a>Intent of  Success Criterion 2.11.2:</h5>
         <p>Documents that do things automatically when loaded can delay, distract, or interfere with user's ability to continue with a task. Replacing  executable content  like embedded objects, applets and media with a placeholder tells the user what has been blocked and provides a mechanism (e.g. a play button) for unblocking when the user is ready.</p>
-        <p><em>Note: </em>A placeholder should take up the same space as the object it is replacing, so that the presentation doesn't need to be reflowed when the execution is started. However, people using  mobile devices or  screen enlargers, or those who have difficulty with scroll commands may benefit from having the option of a smaller placeholder. </p>
+        <p><em>Note: </em>A placeholder should take up the same space as the object it is replacing, so that the presentation doesn't need to be reflowed when the execution is started. However, people using  mobile devices or  screen enlargers, or those who have difficulty with scroll commands can benefit from having the option of a smaller placeholder. </p>
        </div>
 
        <div class="implementing-section">
@@ -4223,7 +4183,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2113-i" name="sc_2113-i"></a>Intent  of  Success Criterion 2.11.3:</h5>
         <p>Documents that do things automatically when loaded can delay, distract, or interfere with user's ability to continue with a task. The user needs to be able to specify that executable content (e.g. scripts) be blocked when a document loads, be told which content has been blocked, and be able to selectively execute the content at a later time.</p>
-        <p><em>Note: </em>Although some web applications and document may be  empty until scripts are run, it is important for users to have this level of control. </p>
+        <p><em>Note: </em>Although some web applications and document can be  empty until scripts are run, it is important for users to have this level of control. </p>
        </div>
 
        <div class="implementing-section">
@@ -4265,7 +4225,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2114-i" name="sc_2114-i"></a>Intent  of  Success Criterion 2.11.4:</h5>
-        <p>Users with sensory and cognitive impairments may have difficulty   following or understanding spoken audio at the normal   playback rate. If users can slow down the audio presentation of speech while   maintaining the pitch or frequency characteristics, they are better   able to follow the spoken content. Users with learning   disabilities may be distracted or otherwise unable to follow complex   animations or instructional video. With the presentation slowed, users can  better observe the visual events   of the animation. User may also want to slow down the media   if they are taking notes, and do so slowly because of language   or dexterity impairments. </p>
+        <p>Users with sensory and cognitive impairments can have difficulty   following or understanding spoken audio at the normal   playback rate. If users can slow down the audio presentation of speech while   maintaining the pitch or frequency characteristics, they are better   able to follow the spoken content. Users with learning   disabilities can be distracted or otherwise unable to follow complex   animations or instructional video. With the presentation slowed, users can  better observe the visual events   of the animation. User can also want to slow down the media   if they are taking notes, and do so slowly because of language   or dexterity impairments. </p>
         <p>Some users with visual impairments prefer faster  speech rate on their screen   readers or digital audio book players. The ability to speed up the   audio while maintaining pitch allows those users to skim spoken audio   without loss of understandability. </p>
        </div>
 
@@ -4307,7 +4267,7 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2115-i" name="sc_2115-i"></a>Intent  of  Success Criterion 2.11.5:</h5>
-        <p>Users with sensory, attention, or cognitive impairments may have difficulty  understanding multimedia content.  When users are able to control the presentation rate of time-based media by stopping, pausing, and resuming, they have enough time to understand or act upon presented content, or to stop potentially distracting or harmful content. </p>
+        <p>Users with sensory, attention, or cognitive impairments can have difficulty  understanding multimedia content.  When users are able to control the presentation rate of time-based media by stopping, pausing, and resuming, they have enough time to understand or act upon presented content, or to stop potentially distracting or harmful content. </p>
        </div>
 
        <div class="implementing-section">
@@ -4347,7 +4307,7 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2116-i" name="sc_2116-i"></a>Intent  of  Success Criterion 2.11.6:</h5>
-          <p>Users with sensory, cognitive or attention impairments may find it difficult to understand or follow time-based media. This success criteria allows users to position within the timebase to review content or to skip content that may be distracting. </p>
+          <p>Users with sensory, cognitive or attention impairments can find it difficult to understand or follow time-based media. This success criteria allows users to position within the timebase to review content or to skip content that can be distracting. </p>
        </div>
 
        <div class="implementing-section">
@@ -4428,7 +4388,7 @@ href="#intro-applies-to-config-option" title="definition: configuration settings
         <h5 class="implementing-heading"><a id="sc_2118-e" name="sc_2118-e"></a>Examples for Success Criterion 2.11.8:</h5>
             <ul>
               <li class="unclassified-ex">Frank has albinism. He requires a higher contrast to discern a video   image.  When Frank is watching an instructional video, he selects a menu   item that allows him to increase the contrast of the video. This makes it easier for him to see the important content. </li>
-              <li class="unclassified-ex">Kelly has photo-epilepsy and is watching an amateur video taken on a   sunny day near the water.  Concerned that the video may contain flashing   that could trigger a seizure, Kelly selects a menu item of video controls that allow her to reduce the brightness and contrast of the video. While some of the detail is lost, Kelly can safely watch the video. </li>
+              <li class="unclassified-ex">Kelly has photo-epilepsy and is watching an amateur video taken on a   sunny day near the water.  Concerned that the video can contain flashing   that could trigger a seizure, Kelly selects a menu item of video controls that allow her to reduce the brightness and contrast of the video. While some of the detail is lost, Kelly can safely watch the video. </li>
             </ul>        </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_2118-r" name="sc_2118-r"></a>Related Resources for Success Criterion 2.11.8:</h5>
@@ -4598,7 +4558,7 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_311-i" name="sc_311-i"></a>Intent  of  Success Criterion 3.1.1:</h5>
-        <p>Users who are blind, have  visual impairments, or have cognitive   disabilities may have difficulty determining the location of the keyboard   focus. This puts them at risk of entering text in an undesired window   or location. Users with mobility problems may have difficulty selecting a form field and may not notice an incorrect selection until they have entered   text information.  These users need to be able to reverse a text entry   (&quot;Undo&quot;) prior to submission. <br />
+        <p>Users who are blind, have  visual impairments, or have cognitive   disabilities can have difficulty determining the location of the keyboard   focus. This puts them at risk of entering text in an undesired window   or location. Users with mobility problems can have difficulty selecting a form field and can not notice an incorrect selection until they have entered   text information.  These users need to be able to reverse a text entry   (&quot;Undo&quot;) prior to submission. <br />
         </p>
        </div>
 
@@ -4708,7 +4668,7 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_314-i" name="sc_314-i"></a>Intent  of  Success Criterion 3.1.4:</h5>
         <p>Users with various disabilities benefit from spell checkers. The ability to check spelling is particularly important for users with disabilities such as dyslexia that significantly increase the likelihood of misspelled words. Spellcheckers also alert blind and low vision users to errors in text entry.</p
-        ><p>Spell checking is only expected in editable text in content, most commonly text input controls and form fields. It is not required on text input fields that are part of the UA user interface, such as an address bar or File Open dialog box. Spell checking is also not required on static, read-only, or disabled text elements, controls, and fields in content, except when they display text the user can edit indirectly (e.g. static text that the user can alter using nearby buttons), or when the user agent is in an authoring mode that allows the user to edit text that would otherwise be static. </p>           <p>Spell checking should be available regardless of how the text was entered. For example, text may be entered by the user typing, pasted from the clipboard, initialized by the content (e.g. the HTML value attribute), set programmatically by scripts or assistive technology, or filled in by a feature of the user agent itself (e.g. auto-complete).            Spell checking which highlights unrecognized words as they are entered is preferred over requiring the user to use a separate tool or editing pass.            Spell checking should be optional, so that it can be avoided by users who find it too distracting, or for whom the highlighting makes the text less legible.   </p>         <p>Note: It is recommended that user agents also provide assistance with grammar, as well as spelling. Grammar can pose more difficulty than spelling for people with some cognitive disabilities or whose native language is signed.  </p>
+        ><p>Spell checking is only expected in editable text in content, most commonly text input controls and form fields. It is not required on text input fields that are part of the UA user interface, such as an address bar or File Open dialog box. Spell checking is also not required on static, read-only, or disabled text elements, controls, and fields in content, except when they display text the user can edit indirectly (e.g. static text that the user can alter using nearby buttons), or when the user agent is in an authoring mode that allows the user to edit text that would otherwise be static. </p>           <p>Spell checking should be available regardless of how the text was entered. For example, text can be entered by the user typing, pasted from the clipboard, initialized by the content (e.g. the HTML value attribute), set programmatically by scripts or assistive technology, or filled in by a feature of the user agent itself (e.g. auto-complete).            Spell checking which highlights unrecognized words as they are entered is preferred over requiring the user to use a separate tool or editing pass.            Spell checking should be optional, so that it can be avoided by users who find it too distracting, or for whom the highlighting makes the text less legible.   </p>         <p>Note: It is recommended that user agents also provide assistance with grammar, as well as spelling. Grammar can pose more difficulty than spelling for people with some cognitive disabilities or whose native language is signed.  </p>
        </div>
 
        <div class="implementing-section">
@@ -5003,7 +4963,7 @@ href="#intro-applies-to-uaui" title="definition:user agent user interface">UA us
             <ul>
               <li class="unclassified-ex">Lee has low vision. When she installs a new  user agent, she checks the accessibility documentation to see if the features she needs are available. She finds section entitled "Browser Features Supporting Accessibility", which provides a detailed description of user agent features that
                 provide accessibility, describes how they function, and lists any
-                supported third party assistive technologies that may be supported or
+                supported third party assistive technologies that can be supported or
               required.</li>
               <li class="unclassified-ex">Lee has low vision. She  is exploring the menus of her user agent and finds a feature named &quot;Use My Style Sheet&quot;.  She clicks &quot;help&quot; to learn that  this feature allows custom CSS stylesheets to be created to help make web content more accessible.</li>
               <li class="mobile-ex">[mobile] Neta has a  repetitive strain injury.  She relies on gestures and shortcuts to complete tasks.  Using a specialized command, she  pulls up a list of all the gesture commands available including descriptions.</li>
@@ -5107,7 +5067,7 @@ href="#intro-applies-to-uaui" title="definition:user agent user interface">UA us
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_325-i" name="sc_325-i"></a>Intent  of  Success Criterion 3.2.5:</h5>
-        <p>Users need to know about accessibility features and how to operate them.  A centralized view of accessibility features makes it easier for people with disabilities and people who are evaluating software to quickly become familiar with the features  such as keyboard shortcuts, how to zoom the viewport, and where to find accessibility configuration settings. Nested user agents or add-ons may provide separate centralized documentation. It is also useful to document accessibility features in context (such as displaying keyboard shortcuts next to their menu command). </p>
+        <p>Users need to know about accessibility features and how to operate them.  A centralized view of accessibility features makes it easier for people with disabilities and people who are evaluating software to quickly become familiar with the features  such as keyboard shortcuts, how to zoom the viewport, and where to find accessibility configuration settings. Nested user agents or add-ons can provide separate centralized documentation. It is also useful to document accessibility features in context (such as displaying keyboard shortcuts next to their menu command). </p>
        </div>
 
        <div class="implementing-section">
@@ -5149,7 +5109,7 @@ href="#intro-applies-to-config-option" title="definition: configuration settings
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_331-i" name="sc_331-i"></a>Intent  of  Success Criterion 3.3.1:</h5>
-        <p>Users need to know that navigation in a web page is going to start in a predictable location and move in a predictable fashion. If a page moves the initial focus to somewhere other than the beginning of the page, the user may skip over  content without realizing it. If the focus moves and remains unnoticed, users can make  unintentional changes, such as entering data in an incorrect field. Focus changes can cause a window to scroll unexpectedly, confusing users. This is particularly problematic for users who can only see a small portion of the document, because they must use more effort to determine where the cursor has moved. Such users also are more likely to continue typing, not immediately realizing that the context has changed. Users who find navigation time consuming, tiring, or painful (including those using screen readers or with impaired dexterity) may also need more steps to return to the area where they want to work. It may improve accessibility for some users on some pages to have the page  set focus to specific links or fields when the page loads, but this can  be detrimental for other users, and therefore users need to  control this behavior. </p>
+        <p>Users need to know that navigation in a web page is going to start in a predictable location and move in a predictable fashion. If a page moves the initial focus to somewhere other than the beginning of the page, the user can skip over  content without realizing it. If the focus moves and remains unnoticed, users can make  unintentional changes, such as entering data in an incorrect field. Focus changes can cause a window to scroll unexpectedly, confusing users. This is particularly problematic for users who can only see a small portion of the document, because they must use more effort to determine where the cursor has moved. Such users also are more likely to continue typing, not immediately realizing that the context has changed. Users who find navigation time consuming, tiring, or painful (including those using screen readers or with impaired dexterity) can also need more steps to return to the area where they want to work. It can improve accessibility for some users on some pages to have the page  set focus to specific links or fields when the page loads, but this can  be detrimental for other users, and therefore users need to  control this behavior. </p>
        </div>
 
        <div class="implementing-section">
@@ -5514,7 +5474,7 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
 <ul class="sc-notes">
     <li class="sc-note"><em class="note-handle">Note 1</em>: If a conformance claim is filed, cite the implemented specifications in the conformance claim.</li>
     <li class="sc-note"><em class="note-handle">Note 2</em>: When a rendering requirement of another specification contradicts a
-requirement of UAAG 2.0, the user agent may disregard the rendering
+requirement of UAAG 2.0, the user agent can disregard the rendering
 requirement of the other specification and still satisfy this guideline.</li></ul>
 
 
@@ -5532,7 +5492,7 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_512-i" name="sc_512-i"></a>Intent  of  Success Criterion 5.1.2:</h5>
-        <p>Most content specifications include features important to users with disabilities. Users may find it difficult or impossible to use a product that fails to support those features. Most content specifications include features important to users with disabilities. Users may find it difficult or impossible to use a product that fails to support those features. Conformance claim documents list the technologies that the user agent fully supports, such as WAI-ARIA, so that users can make informed decisions about whether or not they will be able to use, and therefore should install, a new product or version of that product. <br />
+        <p>Most content specifications include features important to users with disabilities. Users can find it difficult or impossible to use a product that fails to support those features. Most content specifications include features important to users with disabilities. Users can find it difficult or impossible to use a product that fails to support those features. Conformance claim documents list the technologies that the user agent fully supports, such as WAI-ARIA, so that users can make informed decisions about whether or not they will be able to use, and therefore should install, a new product or version of that product. <br />
         </p>
        </div>
 
@@ -5657,7 +5617,7 @@ href="#intro-applies-to-uaui" title="definition:user agent user interface">UA us
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_515-i" name="sc_515-i"></a>Intent  of  Success Criterion 5.1.5:</h5>
-        <p>When accessing media or specialized content (e.g. MathML) on the web, users with  disabilities may have a richer or more accessible experience  using a third-party application, plug-in, or extension, rather than using the browser's  built-in facilities. Users need to be able to enable or activate a browser plug-in or extension to  interact with the content. Alternately, they may elect to save that content to   disk and launch it in a third-party application. If streaming video  cannot be saved to disk, the browser launches the external viewer, passing it the URI to the online video. </p>
+        <p>When accessing media or specialized content (e.g. MathML) on the web, users with  disabilities can have a richer or more accessible experience  using a third-party application, plug-in, or extension, rather than using the browser's  built-in facilities. Users need to be able to enable or activate a browser plug-in or extension to  interact with the content. Alternately, they can elect to save that content to   disk and launch it in a third-party application. If streaming video  cannot be saved to disk, the browser launches the external viewer, passing it the URI to the online video. </p>
        </div>
 
        <div class="implementing-section">
@@ -5692,13 +5652,13 @@ href="#intro-applies-to-uaui" title="definition:user agent user interface">UA us
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_516-i" name="sc_516-i"></a>Intent  of  Success Criterion 5.1.6:</h5>
-        <p>People who use assistive technologies such as screen readers may find that a technology isn't fully compatible with a web browser, or that the content authored to meet WCAG still is not accessible when rendered in the browser.  This causes information loss and inconvenience. When this happens, users benefit from being able to easily file a report with the user agent vendor to report the incompatibility, similar to the way users can file bug reports or provide feedback. </p>
+        <p>People who use assistive technologies such as screen readers can find that a technology isn't fully compatible with a web browser, or that the content authored to meet WCAG still is not accessible when rendered in the browser.  This causes information loss and inconvenience. When this happens, users benefit from being able to easily file a report with the user agent vendor to report the incompatibility, similar to the way users can file bug reports or provide feedback. </p>
        </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_516-e" name="sc_516-e"></a>Examples for Success Criterion 5.1.6:</h5>
             <ul>
               <li class="unclassified-ex">Alice is a visually impaired college student who frequently uses a   refreshable braille display with her web browser. She experiences difficulty with a   drop-down list boxes because the text is only partially rendered on her braille display. When Alice notices this incompatibility, she navigates to the feedback section of her browser. After providing some basic information (such as AT software and computer hardware used), Alice describes the problem  and submits the report to the browser vendor.</li>
-              <li class="unclassified-ex">Fred has low vision and uses screen magnification software to enlarge   displayed information and alter color contrast.  While reading content   on a website in compliance with WCAG, Fred discovers that the scroll bars are not visible and he cannot scroll further down the page.  Unable to read the information he needs, Fred selects the Feedback option from his browser's Tools menu, and is presented with a dialog where he can   select which information to transmit to the browser vendor. He includes the current URI of the page he is trying to view, system information including OS  and screen magnifier version, and enters a description of the problem he is having.  Though not required, Fred   chooses to provide his email address so that the vendor may contact him   for further details or to provide a workaround. </li>
+              <li class="unclassified-ex">Fred has low vision and uses screen magnification software to enlarge   displayed information and alter color contrast.  While reading content   on a website in compliance with WCAG, Fred discovers that the scroll bars are not visible and he cannot scroll further down the page.  Unable to read the information he needs, Fred selects the Feedback option from his browser's Tools menu, and is presented with a dialog where he can   select which information to transmit to the browser vendor. He includes the current URI of the page he is trying to view, system information including OS  and screen magnifier version, and enters a description of the problem he is having.  Though not required, Fred   chooses to provide his email address so that the vendor can contact him   for further details or to provide a workaround. </li>
           </ul> </div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_516-r" name="sc_516-r"></a>Related Resources for Success Criterion 5.1.6:</h5>
@@ -5764,7 +5724,7 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
     
   </ol>
 </li>
-<li><strong>Platform:</strong> Provide relevant information about the software and/or hardware platform(s) that the user agent relies on for conformance. This information may include:
+<li><strong>Platform:</strong> Provide relevant information about the software and/or hardware platform(s) that the user agent relies on for conformance. This information can include:
 <ol type="a">
     <li>Name and manufacturer</li>
     <li>Version of key software components (e.g. operating system, other software environment)</li>
@@ -5786,19 +5746,19 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
       <ol>
        <li> <strong>Platform</strong>: not applicable due constraints of the platform, per Paragraph 7 above (e.g. color handling on a monochrome device, video handling in a purely audio browser, or interprocess communication on an operating system that does not support multitasking). Describe the specific platform limitation. </li>
        <li><strong>Input</strong>: not applicable due to a constrained input set (e.g. a help system that only displays the HTML files included with the product)</li>
-       <li><strong>Output</strong>: not applicable due to intentionally limited output modalities (e.g. video handling in a browser that only does audio output, even though the platform may support video)</li>
+       <li><strong>Output</strong>: not applicable due to intentionally limited output modalities (e.g. video handling in a browser that only does audio output, even though the platform can support video)</li>
       </ol></li>
     </ol>
 </li>
 </ol>
 <h4><a name="conformance-limited" id="conformance-limited"></a>Limited Conformance for Add-ons</h4>
-<p> This option may be used for a user agent extension or plug-in with 
+<p> This option can be used for a user agent extension or plug-in with 
 limited functionality that wishes to claim UAAG 2.0 conformance. An 
 extension or plug-in can claim conformance for a specific success 
 criterion or a narrow range of success criteria as stated in the claim. 
-All other success criteria may be denoted as Not Applicable. </p>
+All other success criteria can be denoted as Not Applicable. </p>
 <p>UAAG 
-  recognizes that some extensions may be so specialized to the needs of a 
+  recognizes that some extensions can be so specialized to the needs of a 
   particular disability that the extension is be mutually exclusive with 
   other success criteria of UAAG, but the goal would be for extensions to 
   work with the user agent so that any features of the user agent needed 
@@ -5809,7 +5769,7 @@ All other success criteria may be denoted as Not Applicable. </p>
   of [this] class of user." An example would be a (hypothetical) extension that breaks 1.8.2 and 1.8.3 (viewport navigation) to provide a simplified page for people with  high distraction levels. </p>
 <h4><a name="conformance-opt-components" id="conformance-opt-conponents"></a>Optional Components of an UAAG 2.0 Conformance Claim</h4>
 <p>A description of how the UAAG 2.0 success criteria were met where this 
-may not be obvious. </p>
+is not obvious. </p>
 <h3><a name="conformance-disclaimer" id="conformance-disclaimer"></a>Disclaimer</h3>
 <p>Neither W3C, WAI, nor UAWG take any responsibility for any aspect or 
 result of any UAAG 2.0 conformance claim that has not been published 
@@ -5862,10 +5822,10 @@ auditory information that also is capable of achieving the outcomes of any
 interactivity in the time-based presentation.</li>
       <li><dfn><a id="def-text-alternatives-for-text" name="def-text-alternatives-for-text"></a>text alternatives for text content</dfn>: Text that is programmatically associated
 with certain types of text content to provide expanded information. For
-example, an abbreviation (or acronym) may provide an expansion of the
+example, an abbreviation (or acronym) can provide an expansion of the
 shortened word or initialized words 
          (&lt;abbr title=&quot;User Agent Accessibility  Guidelines&quot;&gt;UAAG&lt;/abbr&gt;). </li>
-      <li><dfn><a id="def-Media-Alternatives" name="def-Media-Alternatives"></a>media alternative for text</dfn>: Media that presents no more information than is already presented in text (directly or via text alternatives). A media alternative for text is provided for people who benefit from alternate representations of text. Media alternatives for text may be audio-only, video-only (including sign-language video), or audio-video.<br />
+      <li><dfn><a id="def-Media-Alternatives" name="def-Media-Alternatives"></a>media alternative for text</dfn>: Media that presents no more information than is already presented in text (directly or via text alternatives). A media alternative for text is provided for people who benefit from alternate representations of text. Media alternatives for text can be audio-only, video-only (including sign-language video), or audio-video.<br />
       </li>
     </ul>
     <span class="glossary-note">Note</span>: According to WCAG 2.0, alternative content may or may not be
@@ -5881,7 +5841,7 @@ recognize. </dd>
   <dt class="glossary"><a name="def-api" id="def-api"><dfn>application
     programming interface (API)</dfn></a></dt>
   <dd class="glossary">A mechanism that defines how
-    communication may take place between applications.</dd>
+    communication can take place between applications.</dd>
   <dt class="glossary"><a name="def-assistive-technology"
   id="def-assistive-technology"><dfn>assistive technology</dfn></a></dt>
   <dd class="glossary">For the purpose of UAAG 2.0 conformance, assistive
@@ -5922,7 +5882,7 @@ recognize. </dd>
   </dd>
   <dt class="glossary"><a name="def-audio"
   id="def-audio"><dfn>audio</dfn></a></dt>
-  <dd class="glossary">The technology of  sound transmission. Audio can be created synthetically (including speech synthesis), streamed from a live source (e.g. a radio broadcast), or recorded from real world sounds. There may be multiple <a href="#def-audio-track">audio tracks</a> in a presentation.</dd>
+  <dd class="glossary">The technology of  sound transmission. Audio can be created synthetically (including speech synthesis), streamed from a live source (e.g. a radio broadcast), or recorded from real world sounds. There can be multiple <a href="#def-audio-track">audio tracks</a> in a presentation.</dd>
   <dt class="glossary"><a name="def-audio-description"
   id="def-audio-description"></a><dfn>audio description</dfn></dt>
   <dd>A type of <a href="#def-conditional-content">alternative content</a> that takes the form of narration added to
@@ -5940,8 +5900,8 @@ recognize. </dd>
   <dt class="glossary"><a name="def-audio-track"
   id="def-audio-track"><dfn>audio track</dfn></a></dt>
   <dd class="glossary">All
-    or part of the <a href="#def-audio">audio</a> portion of a presentation (e.g. each instrument may
-    have a track, or each stereo channel may have a track).</dd>
+    or part of the <a href="#def-audio">audio</a> portion of a presentation (e.g. each instrument can
+    have a track, or each stereo channel can have a track).</dd>
   <dt><dfn><a id="def-author" name="def-author"></a>author</dfn></dt>
   <dd>A person who works  alone or collaboratively to create <a href="#def-content"
       title="definition: Content">content</a> (e.g. content author, designer, programmer,
@@ -5959,12 +5919,12 @@ recognize. </dd>
     <ul>
       <li><dfn><a name="def-open-captions" id="def-open-captions"></a>open captions</dfn>: Captions that are
         always rendered with a visual track; they cannot be turned off.</li>
-      <li><dfn><a name="def-closed-captions" id="def-closed-captions"></a>closed captions</dfn>: Captions that may be turned on and off.
+      <li><dfn><a name="def-closed-captions" id="def-closed-captions"></a>closed captions</dfn>: Captions that can be turned on and off.
         The captions requirements of UAAG 2.0 assume that the user agent
         can <a class="dfn-instance" href="#def-recognize"
       title="definition: Recognize">recognize</a> the captions as such.</li>
     </ul>
-    <em>Note:</em> Other terms that include the word &quot;caption&quot; may
+    <em>Note:</em> Other terms that include the word &quot;caption&quot; can
     have different meanings. For instance, a &quot;table
     caption&quot; is a title for a table, often positioned graphically above
     or below the table.</dd>
@@ -5974,12 +5934,12 @@ recognize. </dd>
       <li><dfn><span class="glossary"><a name="def-direct-command" id="def-direct-command"></a></span>direct commands</dfn>: Commands that apply to a specified item (e.g. button) or action (e.g. save function), regardless of the current focus location. Also see <a href="#def-keyboard-command"><dfn>keyboard command</dfn></a>
 <ul>
           <li><dfn class="glossary"><a name="def-direct-navigation" id="def-direct-navigation"></a>direct navigation commands</dfn>: Commands that move focus to a specified item.</li>
-          <li><dfn class="glossary"><a name="def-direct-activation" id="def-direct-activation"></a>direct activation commands</dfn>: Commands that activate the specified item (and may also move focus to it) or action.</li>
+          <li><dfn class="glossary"><a name="def-direct-activation" id="def-direct-activation"></a>direct activation commands</dfn>: Commands that activate the specified item (and can also move focus to it) or action.</li>
         </ul>
       </li>
       <li><dfn><span class="glossary"><a name="def-linear-navigation" id="def-linear-navigation"></a></span><span class="glossary"><a
   name="def-sequential-navigation"
-  id="def-sequential-navigation"></a></span>sequential  navigation commands</dfn> (sometimes called &quot;logical navigation commands&quot; or &quot;linear navigation commands&quot;): Commands that  move focus forwards and backwards through a list of items. The element list being navigated may be the list of all elements or just a subset (e.g. the list of headers, the list of links).</li>
+  id="def-sequential-navigation"></a></span>sequential  navigation commands</dfn> (sometimes called &quot;logical navigation commands&quot; or &quot;linear navigation commands&quot;): Commands that  move focus forwards and backwards through a list of items. The element list being navigated can be the list of all elements or just a subset (e.g. the list of headers, the list of links).</li>
       <li><dfn><span class="glossary"><a name="def-spacial-command" id="def-spacial-command"></a></span>spatial commands</dfn> (sometimes called &quot;directional commands&quot;): Commands that  require the user to be aware of the spatial arrangement of items on the screen:
         <ul>
           <li><a name="def-spatial-navigation" id="def-spatial-navigation"></a><dfn>spatial navigation commands</dfn>: Commands that  move from one item to another based on direction on the screen.</li>
@@ -6008,7 +5968,7 @@ recognize. </dd>
   <dd class="glossary">A platform- and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure and style of documents. The document can be further processed and the results of that processing can be incorporated back into the presented page. Overview of DOM-related materials: <a href="http://www.w3.org/DOM/#what">http://www.w3.org/DOM/#what</a>.</dd>
   <dt class="glossary"><a name="def-documentation"
   id="def-documentation"><dfn>documentation</dfn></a></dt>
-  <dd class="glossary">Any information that supports the use of a <a href="#def-user-agent">user agent</a>. This information may be provided electronically or      otherwise and includes help, manuals, installation      instructions, tutorials, etc. Documentation may be accessed in various ways (e.g. as      files included in the installation, available on the web). <br />
+  <dd class="glossary">Any information that supports the use of a <a href="#def-user-agent">user agent</a>. This information can be provided electronically or      otherwise and includes help, manuals, installation      instructions, tutorials, etc. Documentation can be accessed in various ways (e.g. as      files included in the installation, available on the web). <br />
   Note: The level of technical detail in documentation for      users should match the technical level of the feature. For      example, user documentation for a browser's zoom function      should not refer users to the source code repository for that      browser.</dd>
   <dt class="glossary"><a name="e" id="e"></a><a name="def-element"
   id="def-element"><dfn>element</dfn></a></dt>
@@ -6049,7 +6009,7 @@ recognize. </dd>
       title="definition: Focus">focus</a>, or the <a class="dfn-instance"
       href="#def-selection" title="definition: Selection">selection</a>. User requests are made, for example, through <a class="dfn-instance"
       href="#def-ui-control" title="definition: user interface control">user
-      agent user interface controls</a> and <a href="#def-keyboard-command" title="definition: keyboard command">keyboard commands</a>. Some examples of explicit user requests include when the user selects &quot;New viewport,&quot; responds &quot;yes&quot; to a <a href="#def-prompt">prompt</a> in the user agent's user interface, configures the user agent to behave in a certain way, or changes the selection or focus with the keyboard or pointing device. <em>Note: </em>Users can make errors when interacting with the user agent. For example, a user may inadvertently respond &quot;yes&quot; to a prompt instead of &quot;no.&quot; This type of error is  still considered an explicit user request. </dd>
+      agent user interface controls</a> and <a href="#def-keyboard-command" title="definition: keyboard command">keyboard commands</a>. Some examples of explicit user requests include when the user selects &quot;New viewport,&quot; responds &quot;yes&quot; to a <a href="#def-prompt">prompt</a> in the user agent's user interface, configures the user agent to behave in a certain way, or changes the selection or focus with the keyboard or pointing device. <em>Note: </em>Users can make errors when interacting with the user agent. For example, a user can inadvertently respond &quot;yes&quot; to a prompt instead of &quot;no.&quot; This type of error is  still considered an explicit user request. </dd>
   <dt class="glossary"><dfn>extended audio description</dfn></dt>
   <dd>see <a href="#def-audio-description"><strong>audio description</strong></a></dd>
   <dt><a name="f" id="f"></a><a name="def-current-focus" id="def-current-focus"></a><a name="def-input-focus" id="def-input-focus"></a><a name="def-focus"
@@ -6065,7 +6025,7 @@ recognize. </dd>
     <ul>
       <li><a name="def-focus-cursor" id="def-focus-cursor"></a><dfn>keyboard focus cursor</dfn>:  Indicator showing the enabled element with current input focus where focus has been moved by the keyboard (e.g. the dotted line around a button). </li>
       <li><dfn><a name="def-text-cursor" id="def-text-cursor"></a>text cursor</dfn>: Indicator showing where keyboard input will occur in text (e.g. the flashing vertical bar in a text field, also called a caret).</li>
-      <li><a name="def-pointer" id="def-pointer"></a><dfn>pointer</dfn>: Indicator showing where pointing device input will occur. The indicator can be moved with a pointing device or emulator such as a mouse, pen tablet, keyboard-based mouse emulator, speech-based mouse commands, or 3-D wand. A pointing device click typically moves the <a href="#def-input-focus">input focus</a> to the pointer location. The indicator may change to reflect different states. When touchscreens are used, the &quot;pointing device&quot; is a combination of the touchscreen and the user's finger or stylus. On most touchscreen systems there is no pointer (on-screen visual indication).</li>
+      <li><a name="def-pointer" id="def-pointer"></a><dfn>pointer</dfn>: Indicator showing where pointing device input will occur. The indicator can be moved with a pointing device or emulator such as a mouse, pen tablet, keyboard-based mouse emulator, speech-based mouse commands, or 3-D wand. A pointing device click typically moves the <a href="#def-input-focus">input focus</a> to the pointer location. The indicator can change to reflect different states. When touchscreens are used, the &quot;pointing device&quot; is a combination of the touchscreen and the user's finger or stylus. On most touchscreen systems there is no pointer (on-screen visual indication).</li>
     </ul>
     Cursors are active when in the active viewport, and inactive when in an inactive viewport. </dd>
   <dt class="glossary"><a name="def-focusable-element" id="def-focusable-element"></a><dfn>focusable element</dfn></dt>
@@ -6077,7 +6037,7 @@ recognize. </dd>
   <dd class="glossary">Information (e.g. text, colors, graphics, images, or <a href="#def-animation">animations</a>)
     rendered for visual consumption.</dd>
   <dt class="glossary"><a name="h" id="h"></a><a name="def-highlight-focus" id="def-highlight-focus"></a><a name="def-highlight" id="def-highlight"></a><dfn>highlight, highlighted, highlighting</dfn></dt>
-  <dd>Emphasis indicated through the user interface. For example, <a href="#def-user-agent">user agents</a> highlight content that is selected, focused, or matched by a search operation. Graphical highlight mechanisms include dotted boxes, changed   colors or fonts, underlining, adjacent icons, magnification, and reverse   video. Synthesized speech highlight mechanisms include alterations of voice pitch and volume ( i.e. speech      prosody). User interface items may also be highlighted, for      example a specific set of foreground and background colors for      the title bar of the active window. Content that is      highlighted may or may not be a <a href="#def-selection">selection</a>.</dd>
+  <dd>Emphasis indicated through the user interface. For example, <a href="#def-user-agent">user agents</a> highlight content that is selected, focused, or matched by a search operation. Graphical highlight mechanisms include dotted boxes, changed   colors or fonts, underlining, adjacent icons, magnification, and reverse   video. Synthesized speech highlight mechanisms include alterations of voice pitch and volume ( i.e. speech      prosody). User interface items can also be highlighted, for      example a specific set of foreground and background colors for      the title bar of the active window. Content that is      highlighted may or may not be a <a href="#def-selection">selection</a>.</dd>
   <dt class="glossary"><a name="i" id="i"></a><a name="def-image"
   id="def-image"><dfn>image</dfn></a></dt>
   <dd class="glossary">Pictorial content that is static (i.e. not moving or changing). Also see  <a class="dfn-instance"
@@ -6085,9 +6045,9 @@ recognize. </dd>
   <dt><dfn>informative (non-normative)</dfn></dt>
   <dd>see <a class="dfn-instance" href="#def-informative">normative</a></dd>
   <dt class="glossary"><a name="k" id="k"></a><a name="def-keyboard" id="def-keyboard"></a><dfn>keyboard</dfn></dt>
-  <dd>The letter, symbol and command keys or key indicators that allow a user to control a computing device. Assistive technologies have traditionally relied on the keyboard interface as a universal, or modality independent interface. In this document references to keyboard include keyboard emulators and <a class="dfn-instance" href="#def-keyboard-interface">keyboard interfaces</a> that make use of the keyboard's role as a modality independent interface (see <a class="dfn-instance" href="http://w3c.github.io/UAAG/UAAG20/#intro-modality-independence">Modality Independent Controls</a>). Keyboard emulators and interfaces may be used on devices which do not have a physical keyboard, such as mobile devices based on touchscreen input.</dd>
+  <dd>The letter, symbol and command keys or key indicators that allow a user to control a computing device. Assistive technologies have traditionally relied on the keyboard interface as a universal, or modality independent interface. In this document references to keyboard include keyboard emulators and <a class="dfn-instance" href="#def-keyboard-interface">keyboard interfaces</a> that make use of the keyboard's role as a modality independent interface (see <a class="dfn-instance" href="http://w3c.github.io/UAAG/UAAG20/#intro-modality-independence">Modality Independent Controls</a>). Keyboard emulators and interfaces can be used on devices which do not have a physical keyboard, such as mobile devices based on touchscreen input.</dd>
   <dt><a name="def-keyboard-interface" id="def-keyboard-interface"><dfn>keyboard interface</dfn></a></dt>
-  <dd>Keyboard interfaces are programmatic services provided by many platforms   that allow operation in a device independent manner. A keyboard   interface can allow keystroke input even if particular devices do not   contain a hardware keyboard (e.g. a touchscreen-controlled device can   have a keyboard interface built into its <a class="dfn-instance" href="#def-operating-system" rel="glossary" title="definition: operating system">operating system</a> to support   onscreen keyboards as well as external keyboards that may be connected). <br />
+  <dd>Keyboard interfaces are programmatic services provided by many platforms   that allow operation in a device independent manner. A keyboard   interface can allow keystroke input even if particular devices do not   contain a hardware keyboard (e.g. a touchscreen-controlled device can   have a keyboard interface built into its <a class="dfn-instance" href="#def-operating-system" rel="glossary" title="definition: operating system">operating system</a> to support   onscreen keyboards as well as external keyboards that can be connected). <br />
     <em>Note:</em> Keyboard-operated mouse emulators, such as MouseKeys,   do not qualify as operation through a keyboard interface because these   emulators use pointing device interfaces, not keyboard interfaces.</dd>
   <dt class="glossary"><a
   name="def-keyboard-command"
@@ -6098,7 +6058,7 @@ recognize. </dd>
   id="def-keyboard-shortcut"><dfn>keyboard shortcuts</dfn></a>, <dfn>accesskey, access key, </dfn><a
   name="def-accelerator-key"
   id="def-accelerator-key"><dfn>accelerator keys</dfn></a>, <dfn>direct keyboard command</dfn>)</dt>
-  <dd>A key or set of keys that are tied to a particular UI control or application function, allowing the user to navigate to or activate the control or function without traversing any intervening controls (e.g. CTRL+&quot;S&quot; to save a document). It is sometimes useful to distinguish keyboard commands that are associated with controls that are rendered in the current context (e.g. ALT+&quot;D&quot; to move focus to the address bar) from those that may be able to activate program functionality that is not associated with any currently rendered controls (e.g. &quot;F1&quot; to open the Help system). Keyboard commands can be triggered using a physical keyboard or keyboard emulator (e.g. on-screen keyboard or speech recognition). (See <a class="dfn-instance" href="#intro-modality-independence">Modality Independent Controls</a>). <a
+  <dd>A key or set of keys that are tied to a particular UI control or application function, allowing the user to navigate to or activate the control or function without traversing any intervening controls (e.g. CTRL+&quot;S&quot; to save a document). It is sometimes useful to distinguish keyboard commands that are associated with controls that are rendered in the current context (e.g. ALT+&quot;D&quot; to move focus to the address bar) from those that can be able to activate program functionality that is not associated with any currently rendered controls (e.g. &quot;F1&quot; to open the Help system). Keyboard commands can be triggered using a physical keyboard or keyboard emulator (e.g. on-screen keyboard or speech recognition). (See <a class="dfn-instance" href="#intro-modality-independence">Modality Independent Controls</a>). <a
   name="def-seq-keyboard-command"
   id="def-seq-keyboard-command"><dfn>Sequential keyboard commands</dfn></a> require multiple keystrokes to carry out an action (e.g. a series of Tab or arrow presses followed by Enter, or a sequence like ALT-F, V to drop down a File menu and choose Print Preview). </dd>
   <dt><dfn><a name="n" id="n"></a>non-text content (non-text element, non-text equivalent)</dfn><span class="glossary"></span></dt>
@@ -6106,13 +6066,13 @@ recognize. </dd>
   <dt class="glossary"><a name="def-normative"
   id="def-normative"><dfn>normative</dfn></a>, <a name="def-informative" id="def-informative"></a><dfn>informative (non-normative)</dfn></dt>
   <dd class="glossary">Required (or not required) for conformance. Abilities  identified as &quot;normative&quot; are required for <a class="dfn-instance"
-      href="#conformance">conformance</a> (noting that one may conform in a
+      href="#conformance">conformance</a> (noting that one can conform in a
     variety of well-defined ways to UAAG 2.0). Abilities identified as
     &quot;informative&quot; (or, &quot;non-normative&quot;) are never required for
     conformance.</dd>
   <dt class="glossary"><a name="def-alert"
   id="def-alert"><dfn>notify</dfn></a></dt>
-  <dd class="glossary">To make the user aware of events or status changes. Notifications can occur within the <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a> (e.g. a status bar) or within the content display. Notifications may be passive and not require user acknowledgment, or they may be presented in the form of a <a href="#def-prompt">prompt</a> requesting a user response (e.g. a confirmation dialog).</dd>
+  <dd class="glossary">To make the user aware of events or status changes. Notifications can occur within the <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a> (e.g. a status bar) or within the content display. Notifications can be passive and not require user acknowledgment, or they can be presented in the form of a <a href="#def-prompt">prompt</a> requesting a user response (e.g. a confirmation dialog).</dd>
   <dt class="glossary"><a name="o" id="o"></a><a
   name="def-obscure"
   id="def-obscure"><dfn>obscure</dfn></a></dt>
@@ -6135,13 +6095,13 @@ recognize. </dd>
     configuration or behavior preference prevails over another. Generally,
     the requirements of UAAG 2.0 involve user preferences prevailing
     over author preferences and user agent default settings and behaviors.
-    Preferences may be multi-valued in general (e.g. the user prefers blue
+    Preferences can be multi-valued in general (e.g. the user prefers blue
     over red or yellow), and include the special case of two values (e.g.
     turn on or off blinking text content).</dd>
   <dt class="glossary"><a name="p" id="p"></a><a name="def-placeholder"
   id="def-placeholder"><dfn>placeholder</dfn></a></dt>
   <dd class="glossary">Content generated by the user agent
-    to replace author-supplied content. A placeholder may be generated as
+    to replace author-supplied content. A placeholder can be generated as
     the result of a user preference (e.g. to not render images) or as <a
       class="dfn-instance" href="#def-repair-content"
       title="definition: Repair content">repair content</a> (e.g. when an
@@ -6149,15 +6109,15 @@ recognize. </dd>
     including text, images, and audio cues. A placeholder should identify
     the technology of the replaced object.</dd>
   <dt class="glossary"><a name="def-platform" id="def-platform"></a><dfn>platform</dfn></dt>
-  <dd class="glossary"> The software and hardware environment(s) within which the <a href="#def-user-agent">user agent</a> operates. Platforms provide a consistent operational environment. There may be layers of software in an hardware architecture and each layer may be considered a platform. Non-web-based platforms include desktop <a class="dfn-instance" href="#def-operating-system" rel="glossary" title="definition: operating system">operating system</a> (e.g. Linux, Mac OS, Windows, etc.), mobile operating systems (e.g. Android, Blackberry, iOS, Windows Phone, etc.), and cross-OS environments (e.g. Java). Web-based platforms are other user agents. User agents may employ server-based processing, such as web content transformations, text-to-speech production, etc.<br />
-    <em>Note 1</em>:  A user agent may include functionality hosted on multiple platforms (e.g. a browser running on the desktop may include server-based pre-processing and web-based documentation).<br />
+  <dd class="glossary"> The software and hardware environment(s) within which the <a href="#def-user-agent">user agent</a> operates. Platforms provide a consistent operational environment. There can be layers of software in an hardware architecture and each layer can be considered a platform. Non-web-based platforms include desktop <a class="dfn-instance" href="#def-operating-system" rel="glossary" title="definition: operating system">operating system</a> (e.g. Linux, Mac OS, Windows, etc.), mobile operating systems (e.g. Android, Blackberry, iOS, Windows Phone, etc.), and cross-OS environments (e.g. Java). Web-based platforms are other user agents. User agents can employ server-based processing, such as web content transformations, text-to-speech production, etc.<br />
+    <em>Note 1</em>:  A user agent can include functionality hosted on multiple platforms (e.g. a browser running on the desktop can include server-based pre-processing and web-based documentation).<br />
     <em>Note 2</em>: Accessibility guidelines for developers exist for many platforms.</dd>
   <dt class="glossary"><a name="def-access-platform-arch"
   id="def-access-platform-arch"><dfn>platform accessibility
     service</dfn></a></dt>
   <dd>A programmatic interface that is  engineered to enhance
     communication between mainstream software applications and assistive
-    technologies (e.g. MSAA, UI Automation, and IAccessible2 for Windows applications,  AXAPI for Mac OSX applications, Gnome Accessibility Toolkit API for  GNOME applications, Java Access for Java applications). On some platforms it may be conventional to enhance
+    technologies (e.g. MSAA, UI Automation, and IAccessible2 for Windows applications,  AXAPI for Mac OSX applications, Gnome Accessibility Toolkit API for  GNOME applications, Java Access for Java applications). On some platforms it can be conventional to enhance
     communication further by implementing a <a class="dfn-instance"
       href="#def-dom" title="definition: Document Object Model">DOM</a>.</dd>
   <dt class="glossary"><dfn>plug-in</dfn></dt>
@@ -6167,20 +6127,20 @@ recognize. </dd>
   <dd class="glossary">The position in <a
       class="dfn-instance" href="#def-rendered-content"
       title="definition: Rendered content">rendered content</a> that the user
-    is presumed to be viewing. The dimensions of the point of regard may
-    vary. For example,it may be a two-dimensional area (e.g. content rendered through a two-dimensional graphical viewport), or a point (e.g. a moment during an audio
+    is presumed to be viewing. The dimensions of the point of regard can
+    vary. For example,it can be a two-dimensional area (e.g. content rendered through a two-dimensional graphical viewport), or a point (e.g. a moment during an audio
     rendering or a cursor position in a graphical rendering), or a range of
     text (e.g. focused text), or a two-dimensional area (e.g. content
     rendered through a two-dimensional graphical viewport). The point of
-    regard is almost always within the viewport, but it may exceed the
+    regard is almost always within the viewport, but it can exceed the
     spatial or temporal <a href="#viewport-dimension">dimensions</a> of the
     viewport (see the definition of <a class="dfn-instance"
       href="#def-rendered-content"
       title="definition: Rendered content">rendered content</a> for more
-    information about viewport dimensions). The point of regard may also
+    information about viewport dimensions). The point of regard can also
     refer to a particular moment in time for content that changes over time
     (e.g. an audio-only
-    presentation). User agents may determine the point of regard in a
+    presentation). User agents can determine the point of regard in a
     number of ways, including based on viewport position in content, <a
       class="dfn-instance" href="#def-keyboard-focus"
       title="definition: content focus">keyboard focus</a>, and <a
@@ -6191,12 +6151,12 @@ recognize. </dd>
   <dt><a name="def-profile"
   id="def-profile"><dfn>profile</dfn></a><span class="glossary"></span></dt>
   <dd class="glossary">A named and persistent representation
-    of user preferences that may be used to configure a <a href="#def-user-agent">user agent</a>.
+    of user preferences that can be used to configure a <a href="#def-user-agent">user agent</a>.
     Preferences include input configurations, style preferences, and
     natural language preferences. In <a class="dfn-instance"
       href="#def-operating-environment"
       title="definition: Operating environment">operating environments</a> with distinct user accounts, profiles enable users to reconfigure
-    software quickly when they log on. Users may share their profiles with
+    software quickly when they log on. Users can share their profiles with
     one another. Platform-independent profiles are useful      for those who use the same user agent on different devices.</dd>
   <dt><a name="def-programmatically-avail"
   id="def-programmatically-avail"><dfn>programmatically available</dfn></a><span class="glossary"></span></dt>
@@ -6213,11 +6173,11 @@ recognize. </dd>
     Formatting depends on a number of factors, including where the document
     is rendered (e.g. on screen, on paper, through loudspeakers, on a braille
     display,  on a mobile device). Style information (e.g. fonts, colors,
-    synthesized speech prosody) may come from the elements themselves
+    synthesized speech prosody) can come from the elements themselves
     (e.g. certain font and phrase elements in HTML), from stylesheets, or
     from user agent settings. For the purposes of these guidelines, each
     formatting or style option is governed by a property and each property
-    may take one value from a set of legal values. Generally in UAAG 2.0, the term &quot;<a
+    can take one value from a set of legal values. Generally in UAAG 2.0, the term &quot;<a
       href="http://www.w3.org/TR/1998/REC-CSS2-19980512/conform.html">property</a>&quot;
     has the meaning defined in <a href="http://www.w3.org/TR/CSS2/conform.html#property">CSS 2.1 Conformance</a> (<cite><a href="#ref-CSS2"
       title="Link to reference CSS2">[CSS21]</a></cite>, ). A
@@ -6251,7 +6211,7 @@ recognize. </dd>
     author has encoded in a markup language or style sheet language. Behaviors, style, meaning encoded in a <a
       class="dfn-instance" href="#def-script"
       title="definition: Script">script</a>, and markup in an unfamiliar XML
-    namespace may not be recognized by the user agent as easily or at all. <br />
+    namespace can not be recognized by the user agent as easily or at all. <br />
     <a name="def-recognized-actions"
   id="def-recognized-actions"><dfn>recognized actions</dfn></a>: Actions or events that can be unambiguously identified by a user agent. This can include actions or events initiated by users, scripts, extensions, or other sources. For example, if the keyboard focus is on a web page when the user presses a key, the user agent can recognize the keystroke and can act upon it. If the keyboard focus is on an embedded media player when the user presses a key, the host user agent may or may not be able to detect the keystroke, depending on the embedding architecture. Similarly, when the user activates an INPUT element with type="submit", the user agent will recognize this as a form submission action and carry out the proper interchange with the server. However, if a page includes a custom control that looks like a button labeled "Submit**" but whose actions are entirely handled by an author-provided script, the user agent would not be able to recognize the user action as equivalent to a form submission. Actions such
         as opening of new browser window would always be implemented by the user agent, so the action would be recognized regardless of whether it was initiated by the user clicking a button or by a script calling a browser function.
@@ -6260,7 +6220,7 @@ recognize. </dd>
   <dd><a href="#def-content">Web content</a> that can be arbitrarily wrapped over multiple lines. The primary exceptions to reflowable content are graphics and <a href="#def-video">video</a>.</dd>
   <dt><a name="def-relative-time-units"
   id="def-relative-time-units"><dfn>relative time units</dfn></a><span class="glossary"></span></dt>
-  <dd class="glossary">Time intervals for navigating media relative to the current point (e.g. move forward 30 seconds). When interacting with a time-based media presentation, a user may find it beneficial to move forward or backward via a time interval relative to their current position. For example, a user may find a concept unclear in a video lecture and elect to skip back 30 seconds from the current position to review what had been described. Relative time units may be preset by the user agent, configurable by the user, and/or automatically calculated based upon media duration (e.g. jump 5 seconds in a 30-second clip, or 5 minutes in a 60-minute clip). Relative time units are distinct from absolute time values such as the 2 minute mark, the half-way point, or the end.</dd>
+  <dd class="glossary">Time intervals for navigating media relative to the current point (e.g. move forward 30 seconds). When interacting with a time-based media presentation, a user can find it beneficial to move forward or backward via a time interval relative to their current position. For example, a user can find a concept unclear in a video lecture and elect to skip back 30 seconds from the current position to review what had been described. Relative time units can be preset by the user agent, configurable by the user, and/or automatically calculated based upon media duration (e.g. jump 5 seconds in a 30-second clip, or 5 minutes in a 60-minute clip). Relative time units are distinct from absolute time values such as the 2 minute mark, the half-way point, or the end.</dd>
   <dt class="glossary"><a name="def-rendered-content"
   id="def-rendered-content"><dfn>rendered content</dfn></a></dt>
   <dd class="glossary">The presentation generated by the user agent based on the author supplied code. This includes: 
@@ -6279,7 +6239,7 @@ recognize. </dd>
   <dd class="glossary">Content generated by the user agent  to correct an error
     condition. &quot;Repair text&quot; refers to the <a class="dfn-instance"
       href="#def-text" title="definition: Text">text</a> portion of repair
-    content. Error conditions that may lead to the generation of
+    content. Error conditions that can lead to the generation of
     repair content include:
     <ul>
       <li>Erroneous or incomplete content (e.g. ill-formed markup, invalid
@@ -6307,7 +6267,7 @@ recognize. </dd>
   id="def-script"><dfn>script</dfn></a></dt>
   <dd class="glossary">Instructions to create dynamic web content that are written in a programming (scripting) language. In guidelines referring to the written (natural) language of content, as referenced in Unicode <cite><a
       href="#ref-UNICODE"
-      title="Link to reference UNICODE">[UNICODE]</a></cite>), script can also refer to &quot;a collection of symbols used to represent textual information in one or more writing systems&quot;. Information encoded in (programming) scripts may be
+      title="Link to reference UNICODE">[UNICODE]</a></cite>), script can also refer to &quot;a collection of symbols used to represent textual information in one or more writing systems&quot;. Information encoded in (programming) scripts can be
     difficult for a user agent to <a class="dfn-instance"
       href="#def-recognize" title="definition: Recognize">recognize</a>. For
     instance, a user agent is not expected to recognize that, when
@@ -6317,8 +6277,8 @@ recognize. </dd>
     the user agent is expected to recognize when a script will open a
   viewport or retrieve a resource from the web).</dd>
   <dt><a name="def-selection" id="def-selection"></a><dfn>selection</dfn><span class="glossary"></span></dt>
-  <dd>A <span class="glossary"><a class="dfn-instance" href="#def-user-agent">user agent</a></span> mechanism for identifying a (possibly empty) range of content that will be the implicit source or target for subsequent operations. The selection may be used for a variety of purposes, including for cut-and-paste operations, to designate a specific element in a document for the purposes of a query, and as an indication of <a class="dfn-instance"
-href="#def-point-of-regard" rel="glossary" title="definition: point of regard">point of regard</a> (e.g. the matched results of a search may be automatically selected). The selection should be <a class="dfn-instance" href="#def-highlight">highlighted</a> in a distinctive manner. On the screen, the selection may be highlighted in a variety of ways, including through colors, fonts, graphics, and magnification. When rendered using synthesized speech, the selection may be highlighted through changes in pitch, speed, or prosody. </dd>
+  <dd>A <span class="glossary"><a class="dfn-instance" href="#def-user-agent">user agent</a></span> mechanism for identifying a (possibly empty) range of content that will be the implicit source or target for subsequent operations. The selection can be used for a variety of purposes, including for cut-and-paste operations, to designate a specific element in a document for the purposes of a query, and as an indication of <a class="dfn-instance"
+href="#def-point-of-regard" rel="glossary" title="definition: point of regard">point of regard</a> (e.g. the matched results of a search can be automatically selected). The selection should be <a class="dfn-instance" href="#def-highlight">highlighted</a> in a distinctive manner. On the screen, the selection can be highlighted in a variety of ways, including through colors, fonts, graphics, and magnification. When rendered using synthesized speech, the selection can be highlighted through changes in pitch, speed, or prosody. </dd>
   <dt class="glossary"><a
   name="def-text-source" id="def-text-source"><dfn>source text</dfn></a></dt>
   <dd class="glossary">Text that the <a href="#def-user-agent">user agent</a> renders upon user request to view the source of  specific <a href="#def-viewport">viewport</a> content (e.g. selected content, frame, page).</dd>
@@ -6349,8 +6309,8 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
   <dt><a name="t" id="t"></a><a id="def-Web-Content-Technology" name="def-Web-Content-Technology"></a><dfn>technology (web content technology)</dfn></dt>
   <dd>A mechanism for encoding instructions to be rendered, played or
     executed by <a href="#def-user-agent">user agents</a>. Web content
-    technologies may include markup languages, data formats, or programming
-    languages that <a href="#def-author">authors</a> may use alone or in
+    technologies can include markup languages, data formats, or programming
+    languages that <a href="#def-author">authors</a> can use alone or in
     combination to create end-user experiences that range from static web
     pages to multimedia presentations to dynamic web applications. Some
     common examples of web content technologies include HTML, CSS, SVG,
@@ -6373,20 +6333,20 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
     sounds such as sound effects. Text transcripts make audio information
     accessible to people who have hearing disabilities and to people who
     cannot play the audio. Text transcripts are usually created by hand but
-    may be generated on the fly (e.g. by voice-to-text converters).</dd>
+    can be generated on the fly (e.g. by voice-to-text converters).</dd>
   <dt><dfn>top-level viewport</dfn><span class="glossary"></span></dt>
   <dd>see <a href="#def-viewport"><strong>viewport</strong></a><strong></strong></dd>
   <dt class="glossary"><a name="u" id="u"></a><a name="def-user-agent" id="def-user-agent"></a><dfn>user agent</dfn></dt>
-  <dd class="glossary">Any software that retrieves, renders and facilitates end user interaction with web content. UAAG 2.0 identifies four user agent architectures:
+  <dd class="glossary">Any software that retrieves, renders and facilitates end user interaction with web content. UAAG 2.0 identifies the following user agent architectures:
     <ul>
       <li><a name="def-stand-alone" id="def-stand-alone"></a><dfn>platform-based user agent, non-web-based user agent</dfn>: User agents that run on non-web platforms (operating  systems and cross-OS platforms, such as Java) and perform content retrieval,  rendering and end-user interaction facilitation themselves (e.g. Firefox,  Internet Explorer, Chrome, Opera, Windows Media Player, QuickTime Pro,  RealPlayer). </li>
       <li><a name="def-plug-in"
   id="def-plug-in"></a><a
-  name="def-embedded" id="def-embedded"><dfn>embedded user agent, plug-in</dfn></a>: User agents that &quot;plug-in&quot; to other user agents or applications (e.g. media player plug-in for a web browser, web view component). Embedded user agents may establish direct connections with the platform (e.g. communication via platform accessibility services). </li>
+  name="def-embedded" id="def-embedded"><dfn>embedded user agent, plug-in</dfn></a>: User agents that &quot;plug-in&quot; to other user agents or applications (e.g. media player plug-in for a web browser, web view component). Embedded user agents can establish direct connections with the platform (e.g. communication via platform accessibility services). </li>
       <li><a
   name="def-web-based" id="def-web-based2"><dfn>web-based user agent</dfn></a>: User agents that have user interfaces that  are implemented using web content technologies and are accessed by users via a  user agent. web-based user agents transform content into web content  technologies that the host user agent can render (e.g.web-based ePub reader, web-based video player).</li>
     </ul>
-    <em>Note:</em> Many web applications retrieve, render and facilitate interaction with very limited data sets (e.g. online ticket booking). In such cases, WCAG 2.0, without UAAG 2.0, may be appropriate for assessing the application's accessibility. <br/>
+    <em>Note:</em> Many web applications retrieve, render and facilitate interaction with very limited data sets (e.g. online ticket booking). In such cases, WCAG 2.0, without UAAG 2.0, can be appropriate for assessing the application's accessibility. <br/>
     Examples of software that are generally considered user agents under UAAG 2.0:
     <ul>
       <li>Desktop web browsers (e.g. Internet Explorer, Firefox, Chrome, Safari, Opera)</li>
@@ -6398,7 +6358,7 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
     Examples of software that are not considered user agents under UAAG 2.0 (in all cases, WCAG 2.0 still applies if the software is web-based):
     <ul>
       <li>Operating environments or software bundles that include platform-based user agents (e.g. Windows, OS X, KDE, iOS), though the included user agents themselves are covered by UAAG 2.0.</li>
-      <li>General-purpose platforms or toolkits that don't use web technologies, even though they may be used by user agents for other purposes (e.g. GNOME, KDE, .NET Framework/CLR).</li>
+      <li>General-purpose platforms or toolkits that don't use web technologies, even though they can be used by user agents for other purposes (e.g. GNOME, KDE, .NET Framework/CLR).</li>
       <li>Narrow-purpose platform-based or web applications (e.g. online ticket booking applications).</li>
       <li>Authoring tools that only display a source view of the web content being edited (e.g. Notepad, Vim).</li>
     </ul>
@@ -6415,11 +6375,11 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
     includes both:
     <ul>
       <li><a name="def-ua-ui" id="def-ua-ui"></a><dfn>user agent user interface (UA user interface)</dfn>: The <a href="#def-ui-control">controls</a> (e.g. menus, buttons, <a href="#def-prompt">prompts</a>, native audio/video player controls, and other components for input and output) and mechanisms (e.g. selection and focus) provided by the <a href="#def-user-agent">user agent</a> that are not created on the basis of the author-supplied <a class="dfn-instance"
-          href="#def-content" title="definition: Content">content</a>. The UA user interface may  include <a href="#def-extension">extensions</a> that become part of the UA user interface (e.g. toolbars, additional menus).</li>
+          href="#def-content" title="definition: Content">content</a>. The UA user interface can  include <a href="#def-extension">extensions</a> that become part of the UA user interface (e.g. toolbars, additional menus).</li>
       <li><a name="def-content-ui" id="def-content-ui"></a><dfn>content user interface</dfn>: The user interface that emerges from the user agent rendering of the author-supplied content. It includes all <a href="#def-rendered-content">rendered content</a> (e.g. <a href="#def-text">text</a>, headings, <a class="dfn-instance"
           href="#def-enabled-element"
           title="definition: Enabled element">enabled elements</a>, disabled elements, author-supplied audio/video controls). <br />
-        <em> Note:</em> There may be a mix of <a href="#def-recognize">recognized</a> and unrecognized user interface controls depending on the author-supplied content.</li>
+        <em> Note:</em> There can be a mix of <a href="#def-recognize">recognized</a> and unrecognized user interface controls depending on the author-supplied content.</li>
     </ul>
     This document distinguishes UA user interface and content user interface only where required for clarity.</dd>
   <dt><a
@@ -6438,13 +6398,13 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
         </ul>
       </li>
       <li><a name="def-source-view"
-  id="def-source-view"><dfn>source view</dfn></a>: A view where  the web content is presented without being rendered, played or executed. The source view may be plain text (i.e. &quot;View Source&quot;) or it may include some other organization (e.g. presenting the markup in a tree).</li>
+  id="def-source-view"><dfn>source view</dfn></a>: A view where  the web content is presented without being rendered, played or executed. The source view can be plain text (i.e. &quot;View Source&quot;) or it can include some other organization (e.g. presenting the markup in a tree).</li>
       <li><a name="def-outline-view"
-  id="def-outline-view"><dfn>outline view</dfn></a>: A view where only a subset of the rendered content is presented, usually composed of labels or placeholders for important structural elements. The important structural elements will depend on the web content technology, but may include headings, table captions, and content sections.</li>
+  id="def-outline-view"><dfn>outline view</dfn></a>: A view where only a subset of the rendered content is presented, usually composed of labels or placeholders for important structural elements. The important structural elements will depend on the web content technology, but can include headings, table captions, and content sections.</li>
     </ul>
     <em>Note: </em>A view can be visual, audio, or tactile.</dd>
   <dt class="glossary"><a name="def-viewport" id="def-viewport"></a><dfn>viewport</dfn></dt>
-  <dd>A mechanism for presenting only part of a visual or tactile <a href="#def-view">view</a> to the user via a screen or tactile display. There may be multiple viewports on to the same underlying view (e.g. when a split-screen is used to present the top and bottom of a document simultaneously) and viewports may be nested (e.g. a scrolling frame located within a larger document). When the viewport is smaller than the view it is presenting, some of the view will not be presented. Mechanisms are typically provided to move the view or the viewport such that all of the view can be brought into the viewport  (e.g. scrollbars). </dd>
+  <dd>A mechanism for presenting only part of a visual or tactile <a href="#def-view">view</a> to the user via a screen or tactile display. There can be multiple viewports on to the same underlying view (e.g. when a split-screen is used to present the top and bottom of a document simultaneously) and viewports can be nested (e.g. a scrolling frame located within a larger document). When the viewport is smaller than the view it is presenting, some of the view will not be presented. Mechanisms are typically provided to move the view or the viewport such that all of the view can be brought into the viewport  (e.g. scrollbars). </dd>
 <dd><span class="glossary-note">Note</span>: In UAAG 1.0 viewports were defined as having a temporal dimension. In UAAG 2.0, this is not the case. Since audio content is inherently time-based, audio viewports are excluded.</dd><dd>
   <ul>
       <li><a name="def-viewport-toplevel" id="def-viewport-toplevel"></a><dfn>top-level viewport</dfn>: A viewport that is not contained within another viewport of a platform-based user agent. Web-based user agents are always displayed inside another viewport, and therefore are never top-level viewports. A popular browser implementation is to provide a window that includes some <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a> elements (e.g., menus) and a series of tabbed panels, each of which contains additional UA user interface elements (e.g., address bar, bookmarks, back/forward buttons) and a top-level viewport for rendering a view of the addressed web resource.</li>
@@ -6517,7 +6477,7 @@ UAAG 2.0 from other documents</h2>
   </div> <!-- example -->
   
   <p>For very general references to this document (where stability of content
-    and anchors is not required), it may be appropriate to refer to the latest
+    and anchors is not required), it can be appropriate to refer to the latest
     version of this document. Other sections of this document explain how to build a <a href="#conformance">conformance
     claim</a>.</p> 
   <hr /> 
