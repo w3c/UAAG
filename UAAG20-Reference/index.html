@@ -4,15 +4,13 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <title>User Agent Accessibility Guidelines (UAAG) 2.0</title>
+  <title>UAAG 2.0 Reference: Explanations, Examples, and Resources for User Agent Accessibility Guidelines 2.0</title>
   <style type="text/css">
 
 
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
-.gl-only {background-color:#FFFFCC}
-.techs-only {background-color:#CCFFCC}
                
 
 h2.principle {
@@ -1133,8 +1131,8 @@ Guideline 1.4 - Provide text configuration
 <p class="summary" id="summary14"><strong>Summary:</strong> The user can set text scale, color, style, line spacing, and font   family globally (1.4.1, Level A). It is recommended that users set text size, color, line spacing, text style and font family   for element types (1.4.2, Level AA); set character spacing,     justification and margin sizes globally (1.4.3,   Level AA);  set capitalization,   hyphenation,  and borders globally (1.4.5, Level AAA); and print   configured and  reflowed text (1.4.4 Level AA). </p>
 <p><em class="note-handle">Note 1: </em>Success criteria 1.4.1, 1.4.3, and 1.4.5 address configuration at a <strong>global</strong> level, that is, it changes all of the text. Success criteria 1.4.2 and 1.4.5 are at an <strong>element type</strong> level, such as configuring just the heading text. </p>
 <p><em class="note-handle">Note 2</em>: All of the success criteria under guideline 1.4 allow   users to override the text characteristics specified by authors, and   override user agent defaults. </p>
-<p><em class="note-handle">Note 3</em>: The success   criteria in guideline 1.4 can be met through user stylesheets. For   platforms without user stylesheets, text configuration needs to be   provide to users    through the user agent's main user interface.  </p>
-<p>Note 4: When it comes to magnification, size, or spacing, the optimum value for a given user would vary based on their visual impairment and the size of the content they’re reading. Therefore it’s recommended that user agents provide a wider range of values, and a greater number of increments, to allow the user to adjust the view for their current task. </p>
+<p><em class="note-handle">Note 3</em>: The success   criteria in guideline 1.4 can be met through user stylesheets. For   platforms without user stylesheets, text configuration needs to be   provided to users    through the user agent's main user interface or via an extension.  </p>
+<p><em  class="note-handle">Note 4:</em> When it comes to magnification, size, or spacing, the optimum value for a given user would vary based on their visual impairment and the size of the content they’re reading. Therefore it’s recommended that user agents provide a wider range of values, and a greater number of increments, to allow the user to adjust the view for their current task. </p>
 <div class="sc-level"><!--A-->
   
   <h4 class="sc-title"><a id="sc_141" name="sc_141"></a>1.4.1 Basic text formatting (Globally): </h4>
@@ -1206,7 +1204,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
 <ul class="sc-bullets">
   <li>Text size or scale</li>
   <li>Text color and background color, choosing from all platform color options</li>
-  <li>Font family, choosing from at least all platform fonts </li>
+  <li>Font family, choosing from at least all installed fonts </li>
   <li>Line spacing, choosing from a range with at least three values</li>
   <li>Text style (underline, italic, bold)</li>
  
@@ -1278,7 +1276,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         <h5 class="implementing-heading"><a id="sc_143-i" name="sc_143-i"></a>Intent  of  Success Criterion 1.4.3:</h5>
           <p>Some users  with low vision, dyslexia, and related conditions and   situations cannot read normally-formatted text. However, they can read   text that has a  format customized to their individual needs (e.g. larger letters,   different font,  more spacing).  In providing  preferences, it is important to avoid making assumptions. For example, 
             some users can increase font size to make text more legible, while 
-          other users can increase font spacing to improve readability. </p>
+          other users can increase font spacing to improve readability. It is recommended to provide a range of character spacing of at least 0.01, 0.03, 0.06, 0.09 times the base character width. </p>
           <p>Calculating font height and base character width can be complicated. For accessibility purposes, the formula is not  important as long as the result gives  users multiple choices of    font height and character kerning. For UAAG 2.0 purposes, it does not matter what unit of measure is used, as long the multiples of that unit are provided.          </p>
           <p>Many users with autism or reading disabilities have difficulty reading justified text, because uneven spacing can create distracting &quot;rivers of white&quot;. These users need to be able to change fully justified text to left or right justified depending on the text language. </p>
        </div>

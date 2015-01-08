@@ -223,7 +223,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 5 January 2015</h2>
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 8 January 2015</h2>
 <dl>
   <dt>This version (Github):</dt>
     <dd><a href="http://w3c.github.io/UAAG/UAAG20/">http://w3c.github.io/UAAG/UAAG20/</a></dd>
@@ -833,7 +833,8 @@ Guideline 1.4 - Provide text configuration
 <p class="summary" id="summary14"><strong>Summary:</strong> The user can set text scale, color, style, line spacing, and font   family globally (1.4.1, Level A). It is recommended that users set text size, color, line spacing, text style and font family   for element types (1.4.2, Level AA); set character spacing,     justification and margin sizes globally (1.4.3,   Level AA);  set capitalization,   hyphenation,  and borders globally (1.4.5, Level AAA); and print   configured and  reflowed text (1.4.4 Level AA). </p>
 <p><em class="note-handle">Note 1: </em>Success criteria 1.4.1, 1.4.3, and 1.4.5 address configuration at a <strong>global</strong> level, that is, it changes all of the text. Success criteria 1.4.2 and 1.4.5 are at an <strong>element type</strong> level, such as configuring just the heading text. </p>
 <p><em class="note-handle">Note 2</em>: All of the success criteria under guideline 1.4 allow   users to override the text characteristics specified by authors, and   override user agent defaults. </p>
-<p><em class="note-handle">Note 3</em>: The success   criteria in guideline 1.4 can be met through user stylesheets. For   platforms without user stylesheets, text configuration needs to be   provide to users    through the user agent's main user interface.  </p>
+<p><em class="note-handle">Note 3</em>: The success   criteria in guideline 1.4 can be met through user stylesheets. For   platforms without user stylesheets, text configuration needs to be   provided to users    through the user agent's main user interface or via an extension.  </p>
+<p><em  class="note-handle">Note 4:</em> When it comes to magnification, size, or spacing, the optimum value for a given user would vary based on their visual impairment and the size of the content they’re reading. Therefore it’s recommended that user agents provide a wider range of values, and a greater number of increments, to allow the user to adjust the view for their current task. </p>
 <div class="sc-level"><!--A-->
   
   <h4 class="sc-title"><a id="sc_141" name="sc_141"></a>1.4.1 Basic text formatting (Globally): </h4>
@@ -845,7 +846,7 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
   <li class="sc-bullet">Text scale with preserved size distinctions (e.g. keeping headings proportional to main font) </li>
   <li class="sc-bullet"> Text color and background color, choosing from all platform color options</li>
   <li class="sc-bullet">Font family,  choosing from all installed fonts</li>
-  <li class="sc-bullet">Line spacing, choosing from a range with at least three values</li>
+  <li class="sc-bullet">Line spacing, choosing from a range with at least three values up to at least 2 times the default</li>
 </ul>
  <ul class="sc-notes">
 <li><em class="note-handle">Note</em>: Any user  settings from the platform for these characteristics are implemented.</li>
@@ -864,7 +865,7 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
 <ul class="sc-bullets">
   <li>Text size or scale</li>
   <li>Text color and background color, choosing from all platform color options</li>
-  <li>Font family, choosing from at least all platform fonts </li>
+  <li>Font family, choosing from at least all installed fonts </li>
   <li>Line spacing, choosing from a range with at least three values</li>
   <li>Text style (underline, italic, bold)</li>
  
