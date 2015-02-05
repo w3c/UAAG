@@ -766,7 +766,7 @@ and rendered content are perceivable</h2>
 <span class="techs-only">Reference for </span>
 Guideline 1.1 - Provide access to alternative content <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-access-alternative-content">Reference for 1.1</a>] </span>
 	  <span class="techs-only">[<a href="http://w3c.github.io/UAAG/UAAG20/#gl-access-alternative-content">Guideline 1.1</a>]</span></h3>
-<p class="summary" id="summary11"><strong>Summary</strong>: The user can choose to render any type of alternative content available (1.1.1) with an indicator that the alternative content is present (1.1.2) or a placeholder replacing the non-text content (1.1.3) . It's recommended that users  can also choose at least one alternative, such as alt text, to be displayed by default (1.1.4).  It's recommended that  caption text or sign language alternative cannot obscure the video or the controls (1.1.5) and that the user can configure the size and position of media alternatives (1.1.6).</p>
+<p class="summary" id="summary11"><strong>Summary</strong>: The user can choose to render any type of alternative content available (1.1.1) with an indicator that the alternative content is present (1.1.2) or a placeholder replacing the non-text content (1.1.3) . It's recommended that users  can also choose at least one alternative, such as alt text, to be displayed by default (1.1.5).  It's recommended that  caption text or sign language alternative cannot obscure the video or the controls (1.1.4) and that the user can configure the size and position of media alternatives (1.1.7).</p>
 
 <div class="sc-level"><!--A-->
 
@@ -914,20 +914,22 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
             <ul>
               <li><a href="#sc_141">1.4.1 Configure Rendered Text</a> for more information
               related to background colors.</li>
-              <li><a href="#sc_113">1.1.4 Configure Alternative Defaults</a> allows the user to hide foreground images by replacing them with alternative content, but 2.11.1 extends this to background images in languages such as HTML that do not support alternative content for background images. </li>
+              <li><a href="#sc_113">1.1.5 Configure Alternative Defaults</a> allows the user to hide foreground images by replacing them with alternative content, but 2.11.1 extends this to background images in languages such as HTML that do not support alternative content for background images. </li>
               <li><a href="http://www.w3.org/TR/2011/REC-CSS2-20110607/colors.html#background">CSS 2.1: section 14.2.1 The Background</a> In CSS, background images can be turned on/off with the background
                 and background-image properties.</li>
               <li><a href="http://www.w3.org/TR/2011/REC-CSS2-20110607/visuren.html#z-index">CSS 2.1: section 9.9.1 Specifying the stack level: the 'z-index' property </a></li>
             </ul>
         </div></div>
-</div><!--end level-->
+ <h4 class="sc-title">      
+<a id="sc_114" name="sc_114"></a>1.1.4 Facilitate Clear Display of Alternative Content for Time-based Media: </h4>
+<p class="sc-text">For  <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a>  on-screen alternative content for time-based media (e.g. captions,  sign language video), the following are all true: <span class="level">(Level&nbsp;A)</span></p>
+	  <ul class="sc-bullets"> 
+        <li class="sc-bullet"> <strong class="handle">Don't obscure controls:</strong> Displaying time-based media alternatives doesn't <a class="dfn-obscure" href="#def-obscure" rel="glossary" title="definition: obscure">obscure</a> recognized controls for the primary time-based media.</li>
+<li class="sc-bullet"><strong class="handle">Don't obscure primary media:</strong> The user can specify that displaying time-based media alternatives doesn't obscure the primary time-based media.  </li>
+</ul>
 
-<div class="sc-level"><!--AA-->
-
-<h4 class="sc-title"><a id="sc_114" name="sc_114"></a>1.1.4 Provide Configurable Alternative Content Defaults: </h4>
-<p class="sc-text">The user can specify which type(s) of <a class="dfn-instance"
-href="#def-conditional-content"
-title="definition: Conditional content">alternative content</a> to render by default for each type of non-text content, including time based media. <span class="level">(Level&nbsp;AA)</span></p>
+<ul class="sc-notes">
+    <li class="sc-note"><em class="note-handle">Note</em>: Depending on the screen area available, the display of the primary time-based media can need to be reduced in size to meet this requirement. </li></ul>
 
 	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_114">Reference for 1.1.4</a></div>
@@ -937,45 +939,41 @@ title="definition: Conditional content">alternative content</a> to render by def
 	   </div>
 
       <div class="techs-only">
-<div class="implementing-section">
+       <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_114-a" name="sc_114-a"></a>Applies to:</h5>
         <p><a class="dfn-instance"
 href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
 href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
-        <h5 class="implementing-heading"><a id="sc_111-t3" name="sc_111-t"></a>Typically Implemented in:</h5>
-        <p>browser, media player, plugin, extension</p>
-</div>
+        <h5 class="implementing-heading"><a id="sc_111-t4" name="sc_111-t"></a>Typically Implemented in:</h5>
+        <p>media player, web-based media players</p>
+        </div>
         <div class="implementing-section">
-  <h5 class="implementing-heading"><a id="sc_114-i" name="sc_114-i"></a>Intent  of  Success Criterion 1.1.4:</h5>
-  <p>Alternative content is wasted if the user agent doesn't render it for users who need it. Default alternative content is a global setting because it is an unreasonable burden for  users  to change the rendering options every time they visit a new page. </p>
-      </div>
+        <h5 class="implementing-heading"><a id="sc_114-i" name="sc_114-i"></a>Intent  of  Success Criterion 1.1.4:</h5>
+        <p>Users who require or can benefit from  alternative media tracks in video or  audio may not find that the default or authored position and size of those tracks is usable. Enabling the user to move and scale any displayed alternate media  tracks (e.g. captions) allows  displayed content to be positioned and  sized to meet the needs of the user. </p>
+       </div>
 
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_114-e" name="sc_114-e"></a>Examples for Success Criterion 1.1.4:</h5>
             <ul>
-              <li class="unclassified-ex">Sally has low vision. In the browser's preferences dialog box, Sally specifies that she wants alt text displayed in place of images, and that the document  reflow to allow the entire alt text to be displayed rather than truncated. </li>
-              <li class="unclassified-ex">Ben has low vision. In the browser's preferences dialog box, he chooses to always display the alternative ("fallback") content for embedded objects, such as a transcript in place of a video.</li>
-              <li  class="mobile-ex">[mobile] Ben has low vision and keeps his mobile phone browser &quot;zoomed&quot; so he can read the text. Because images can become pixelated when enlarged, he prefers the alternative text. In the mobile settings dialog box, he chooses to always display the alternative (&quot;fallback&quot;) content for images and to reflow the page without a  placeholder for the image. This saves screen space and reduces the amount of scrolling he has to do.</li>
-              <li class="unclassified-ex">Brin is deaf. She  toggles a menu item which turns on the display of all captions for video and audio content. </li>
-          </ul>
-        </div>
+              <li class="unclassified-ex">Justin has low vision and works in a noisy environment that makes it difficult  to listen to instructional videos. When he enlarges the text of the captions to  a viewable size, they block most of the video image. To fix this, he selects an option that displays the      caption track in a separate window, which he positions below      the video image so the captions don't block the video      image.</li>
+              <li class="unclassified-ex">Jaime is deaf and is taking courses from on online university. She prefers to  use ASL if it is available for online media. A course she is  taking offers  captions and a signing avatar for the recorded lectures. The  default size of the avatar window is small, making it difficult to follow the  signing. The avatar also overlays a significant part of the lecture video. Jaime  drags the avatar out of the video and enlarges it, so that they are side by side and equally  sized. </li>
+              <li class="mobile-ex">[mobile]  Jaime is deaf and prefers to always display captions on her mobile phone.  She has set her global settings on the phone to turn on closed captions.  All videos displayed on the phone will automatically display captions.</li>
+            </ul></div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_114-r" name="sc_114-r"></a>Related Resources for Success Criterion 1.1.4:</h5>
             <ul>
-              <li>Success criterion 1.1.4 adds additional required options to success criterion <a href="#sc_113">1.1.3 Replace Non-Text Content</a>.</li></ul></div></div>
+              <li><span class="sc-title"><a href="#sc_116">1.1.6 Use Configurable Text for Time-based Media Captions
+</a></span></li>
+            </ul>
+        </div></div>
+</div><!--end level-->
 
-<h4 class="sc-title">
-<a id="sc_115" name="sc_115"></a>1.1.5 Facilitate Clear Display of Alternative Content for Time-based Media: </h4>
-<p class="sc-text">For  <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a>  on-screen alternative content for time-based media (e.g. captions,  sign language video), the following are all true: <span class="level">(Level&nbsp;AA)</span></p>
-	  <ul class="sc-bullets"> 
-        <li class="sc-bullet"> <strong class="handle">Don't obscure controls:</strong> Displaying time-based media alternatives doesn't <a class="dfn-obscure" href="#def-obscure" rel="glossary" title="definition: obscure">obscure</a> recognized controls for the primary time-based media.</li>
-<li class="sc-bullet"><strong class="handle">Don't obscure primary media:</strong> The user can specify that displaying time-based media alternatives doesn't obscure the primary time-based media.  </li>
+<div class="sc-level"><!--AA-->
 
-<li class="sc-bullet"><strong class="handle">Use configurable text:</strong> The user can configure recognized text within time-based media alternatives (e.g. captions) in conformance with <a href="#sc_141">1.4.1</a>.</li>
-</ul>
-
-<ul class="sc-notes">
-    <li class="sc-note"><em class="note-handle">Note</em>: Depending on the screen area available, the display of the primary time-based media can need to be reduced in size to meet this requirement. </li></ul>
+<h4 class="sc-title"><a id="sc_115" name="sc_115"></a>1.1.5 Provide Configurable Alternative Content Defaults: </h4>
+<p class="sc-text">The user can specify which type(s) of <a class="dfn-instance"
+href="#def-conditional-content"
+title="definition: Conditional content">alternative content</a> to render by default for each type of non-text content, including time based media. <span class="level">(Level&nbsp;AA)</span></p>
 
 	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_115">Reference for 1.1.5</a></div>
@@ -985,29 +983,64 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
 	   </div>
 
       <div class="techs-only">
-       <div class="implementing-section">
+<div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_115-a" name="sc_115-a"></a>Applies to:</h5>
         <p><a class="dfn-instance"
 href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
 href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
-        <h5 class="implementing-heading"><a id="sc_111-t4" name="sc_111-t"></a>Typically Implemented in:</h5>
-        <p>media player, web-based media players</p>
-        </div>
+        <h5 class="implementing-heading"><a id="sc_111-t3" name="sc_111-t"></a>Typically Implemented in:</h5>
+        <p>browser, media player, plugin, extension</p>
+</div>
         <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_115-i" name="sc_115-i"></a>Intent  of  Success Criterion 1.1.5:</h5>
-        <p>Users who require or can benefit from  alternative media tracks in video or  audio may not find that the default or authored position and size of those tracks is usable. Enabling the user to move and scale any displayed alternate media  tracks (e.g. captions) allows  displayed content to be positioned and  sized to meet the needs of the user. </p>
-       </div>
+  <h5 class="implementing-heading"><a id="sc_115-i" name="sc_115-i"></a>Intent  of  Success Criterion 1.1.5:</h5>
+  <p>Alternative content is wasted if the user agent doesn't render it for users who need it. Default alternative content is a global setting because it is an unreasonable burden for  users  to change the rendering options every time they visit a new page. </p>
+      </div>
 
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_115-e" name="sc_115-e"></a>Examples for Success Criterion 1.1.5:</h5>
             <ul>
-              <li class="unclassified-ex">Justin has low vision and works in a noisy environment that makes it difficult  to listen to instructional videos. When he enlarges the text of the captions to  a viewable size, they block most of the video image. Justin selects an option  that displays the caption track in a separate window, which he positions below  the video image so the captions don't block the video image.</li>
-              <li class="unclassified-ex">Jaime is deaf and is taking courses from on online university. She prefers to  use ASL if it is available for online media. A course she is  taking offers  captions and a signing avatar for the recorded lectures. The  default size of the avatar window is small, making it difficult to follow the  signing. The avatar also overlays a significant part of the lecture video. Jaime  drags the avatar out of the video and enlarges it, so that they are side by side and equally  sized. </li>
-              <li class="mobile-ex">[mobile]  Jaime is deaf and prefers to always display captions on her mobile phone.  She has set her global settings on the phone to turn on closed captions.  All videos displayed on the phone will automatically display captions.</li>
+              <li class="unclassified-ex">Sally has low vision. In the browser's preferences dialog box, Sally specifies that she wants alt text displayed in place of images, and that the document  reflow to allow the entire alt text to be displayed rather than truncated. </li>
+              <li class="unclassified-ex">Ben has low vision. In the browser's preferences dialog box, he chooses to always display the alternative ("fallback") content for embedded objects, such as a transcript in place of a video.</li>
+              <li  class="mobile-ex">[mobile] Ben has low vision and keeps his mobile phone browser &quot;zoomed&quot; so he can read the text. Because images can become pixelated when enlarged, he prefers the alternative text. In the mobile settings dialog box, he chooses to always display the alternative (&quot;fallback&quot;) content for images and to reflow the page without a  placeholder for the image. This saves screen space and reduces the amount of scrolling he has to do.</li>
+              <li class="unclassified-ex">Brin is deaf. She  toggles a menu item which turns on the display of all captions for video and audio content. </li>
+          </ul>
+        </div>
+        <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_115-r" name="sc_115-r"></a>Related Resources for Success Criterion 1.1.5:</h5>
+            <ul>
+              <li>Success criterion 1.1.5 adds additional required options to success criterion <a href="#sc_113">1.1.3 Replace Non-Text Content</a>.</li></ul></div></div>
+
+<h4 class="sc-title">
+<a id="sc_116" name="sc_116"></a>1.1.6 Use Configurable Text for Time-based Media Captions: </h4>
+<p class="sc-text">For  <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a>  on-screen alternative content for time-based media (e.g. captions,  sign language video), t<span class="sc-bullet">he user can configure recognized text within time-based media alternatives (e.g. captions) in conformance with <a href="#sc_141">1.4.1</a>.</span> <span class="level">(Level&nbsp;AA)</span></p>
+<div class="gl-only">
+        <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_116">Reference for 1.1.6</a></div>
+      </div>
+	   <div class="techs-only">
+	    <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_116">Return to 1.1.6 in Guidelines</a></div>
+	   </div>
+
+      <div class="techs-only">
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_116-a" name="sc_114-a"></a>Applies to:</h5>
+        <p><a class="dfn-instance"
+href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
+href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
+        <h5 class="implementing-heading"><a id="sc_116-t" name="sc_116-t"></a>Typically Implemented in:</h5>
+        <p>media player, web-based media players</p>
+        </div>
+        <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_116-i" name="sc_116-i"></a>Intent  of  Success Criterion 1.1.6:</h5>
+        <p>Users who require or      can benefit from alternative media tracks in video or audio might find      that recognized text displayed within alternate media tracks is      unusable due to its configuration. Enabling the user to configure alternate      media tracks (e.g. changing caption font and color) allows      content to be displayed in a way that      meets the needs of the user.</p>
+        </div>
+
+       <div class="implementing-section">
+        <h5 class="implementing-heading"><a id="sc_116-e" name="sc_116-e"></a>Examples for Success Criterion 1.1.6:</h5>
+            <ul>
               <li class="mobile-ex">[mobile] Ben has low vision that becomes worse throughout the day as he becomes more tired. He keeps a floating control on his mobile phone that allows one touch access to his configuration so that he can change the font size. The floating control can be easily moved around the screen so it is not in the way of other controls, and it becomes translucent after it is idle for a few seconds. </li>
             </ul></div>
         <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_115-r" name="sc_115-r"></a>Related Resources for Success Criterion 1.1.5:</h5>
+        <h5 class="implementing-heading"><a id="sc_116-r" name="sc_116-r"></a>Related Resources for Success Criterion 1.1.6:</h5>
             <ul>
               <li><a href="#sc_141">1.4.1 Configure Rendered Text</a></li></ul>
         </div></div>
@@ -1015,7 +1048,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
 
 <div class="sc-level"><!--AAA-->
 
-<h4 class="sc-title"><a id="sc_116" name="sc_116"></a>1.1.6 Allow Resize and Reposition of Time-based Media Alternatives: </h4>
+<h4 class="sc-title"><a id="sc_117" name="sc_117"></a>1.1.7 Allow Resize and Reposition of Time-based Media Alternatives: </h4>
 <p class="sc-text">The user can configure  <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a>  alternative content for time-based media (e.g. captions,  sign language video) as follows: <span class="level">(Level&nbsp;AAA)</span></p>
 <ul class="sc-bullets"> 
     <li class="sc-bullet"><strong class="handle">Resize:</strong> The user can resize alternative content for time-based media to at least 50% of the size of the <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a>.</li>
@@ -1027,15 +1060,15 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
     <li class="sc-note"><em class="note-handle">Note 2:</em> Implementation can involve displaying alternative content for time-based media in a separate viewport, but this is not required. </li></ul>
 
 	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_116">Reference for 1.1.6</a></div>
+	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_117">Reference for 1.1.7</a></div>
       </div>
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_116">Return to 1.1.6 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_117">Return to 1.1.7 in Guidelines</a></div>
 	   </div>
 
       <div class="techs-only">
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_116-a" name="sc_116-a"></a>Applies to:</h5>
+        <h5 class="implementing-heading"><a id="sc_117-a" name="sc_117-a"></a>Applies to:</h5>
         <p><a class="dfn-instance"
 href="#intro-applies-to-content-ui" title="definition: content user interface">Content user interface</a>, <a class="dfn-instance"
 href="#intro-applies-to-config" title="definition: configuration settings">Configuration settings</a></p>
@@ -1043,19 +1076,19 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
         <p>media player, web-based media players</p>
         </div>
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_116-i" name="sc_116-i"></a>Intent  of  Success Criterion 1.1.6:</h5>
+        <h5 class="implementing-heading"><a id="sc_117-i" name="sc_117-i"></a>Intent  of  Success Criterion 1.1.7:</h5>
         <p>Users can want to reposition the alternative  in close proximity to the most important portion of the main media to reduce the visual scanning distance between them. For example, if the video frequently includes on-screen text near the top of the video then the captions will be easier to read if they are located above the video. </p>
        </div>
 
        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_116-e" name="sc_116-e"></a>Examples for Success Criterion 1.1.6:</h5>
+        <h5 class="implementing-heading"><a id="sc_117-e" name="sc_117-e"></a>Examples for Success Criterion 1.1.7:</h5>
             <ul>
               <li class="unclassified-ex"> Maximilian is hard of hearing and prefers to use captions. He adjusts the position of his captions depending on what he's watching. When watching a sporting event with a dashboard displaying statistics at the top, he positions the captions immediately above the top so the captions are close to the statistics. However, when he watches a movie, he  positions the captions so that they overlap the video frame near the bottom. When he watches financial news with a stock ticker along the bottom, he moves the captions to be immediately below the ticker.</li>
               <li class="mobile-ex">[mobile] Raymond has one functioning hand. He positions  captions so that they're not covered by the hand he's using to hold his tablet.</li>
               <li class="mobile-ex">[mobile] Tom is deaf. When Tom watches narrow-aspect video on a wide-aspect screen or in landscape mode on his mobile device, he moves the window displaying sign language interpretation to the side, allowing the primary video to take up the entire height of the screen without the interpretation getting in the way.</li>
           </ul></div>
         <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_116-r" name="sc_116-r"></a>Related Resources for Success Criterion 1.1.6:</h5>
+        <h5 class="implementing-heading"><a id="sc_117-r" name="sc_117-r"></a>Related Resources for Success Criterion 1.1.7:</h5>
             <ul>
               <li>None</li></ul></div></div>
 </div>

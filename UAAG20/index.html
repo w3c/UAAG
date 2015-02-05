@@ -592,7 +592,7 @@ and rendered content are perceivable</h2>
 
 Guideline 1.1 - Provide access to alternative content <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-access-alternative-content">Reference for 1.1</a>] </span>
 	  </h3>
-<p class="summary" id="summary11"><strong>Summary</strong>: The user can choose to render any type of alternative content available (1.1.1) with an indicator that the alternative content is present (1.1.2) or a placeholder replacing the non-text content (1.1.3) . It's recommended that users  can also choose at least one alternative, such as alt text, to be displayed by default (1.1.4).  It's recommended that  caption text or sign language alternative cannot obscure the video or the controls (1.1.5) and that the user can configure the size and position of media alternatives (1.1.6).</p>
+<p class="summary" id="summary11"><strong>Summary</strong>: The user can choose to render any type of alternative content available (1.1.1) with an indicator that the alternative content is present (1.1.2) or a placeholder replacing the non-text content (1.1.3) . It's recommended that users  can also choose at least one alternative, such as alt text, to be displayed by default (1.1.5).  It's recommended that  caption text or sign language alternative cannot obscure the video or the controls (1.1.4) and that the user can configure the size and position of media alternatives (1.1.7).</p>
 
 <div class="sc-level"><!--A-->
 
@@ -641,14 +641,16 @@ href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a
 	   
 
       
-</div><!--end level-->
+ <h4 class="sc-title">      
+<a id="sc_114" name="sc_114"></a>1.1.4 Facilitate Clear Display of Alternative Content for Time-based Media: </h4>
+<p class="sc-text">For  <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a>  on-screen alternative content for time-based media (e.g. captions,  sign language video), the following are all true: <span class="level">(Level&nbsp;A)</span></p>
+	  <ul class="sc-bullets"> 
+        <li class="sc-bullet"> <strong class="handle">Don't obscure controls:</strong> Displaying time-based media alternatives doesn't <a class="dfn-obscure" href="#def-obscure" rel="glossary" title="definition: obscure">obscure</a> recognized controls for the primary time-based media.</li>
+<li class="sc-bullet"><strong class="handle">Don't obscure primary media:</strong> The user can specify that displaying time-based media alternatives doesn't obscure the primary time-based media.  </li>
+</ul>
 
-<div class="sc-level"><!--AA-->
-
-<h4 class="sc-title"><a id="sc_114" name="sc_114"></a>1.1.4 Provide Configurable Alternative Content Defaults: </h4>
-<p class="sc-text">The user can specify which type(s) of <a class="dfn-instance"
-href="#def-conditional-content"
-title="definition: Conditional content">alternative content</a> to render by default for each type of non-text content, including time based media. <span class="level">(Level&nbsp;AA)</span></p>
+<ul class="sc-notes">
+    <li class="sc-note"><em class="note-handle">Note</em>: Depending on the screen area available, the display of the primary time-based media can need to be reduced in size to meet this requirement. </li></ul>
 
 	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_114">Reference for 1.1.4</a></div>
@@ -656,22 +658,27 @@ title="definition: Conditional content">alternative content</a> to render by def
 	   
 
       
+</div><!--end level-->
 
-<h4 class="sc-title">
-<a id="sc_115" name="sc_115"></a>1.1.5 Facilitate Clear Display of Alternative Content for Time-based Media: </h4>
-<p class="sc-text">For  <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a>  on-screen alternative content for time-based media (e.g. captions,  sign language video), the following are all true: <span class="level">(Level&nbsp;AA)</span></p>
-	  <ul class="sc-bullets"> 
-        <li class="sc-bullet"> <strong class="handle">Don't obscure controls:</strong> Displaying time-based media alternatives doesn't <a class="dfn-obscure" href="#def-obscure" rel="glossary" title="definition: obscure">obscure</a> recognized controls for the primary time-based media.</li>
-<li class="sc-bullet"><strong class="handle">Don't obscure primary media:</strong> The user can specify that displaying time-based media alternatives doesn't obscure the primary time-based media.  </li>
+<div class="sc-level"><!--AA-->
 
-<li class="sc-bullet"><strong class="handle">Use configurable text:</strong> The user can configure recognized text within time-based media alternatives (e.g. captions) in conformance with <a href="#sc_141">1.4.1</a>.</li>
-</ul>
-
-<ul class="sc-notes">
-    <li class="sc-note"><em class="note-handle">Note</em>: Depending on the screen area available, the display of the primary time-based media can need to be reduced in size to meet this requirement. </li></ul>
+<h4 class="sc-title"><a id="sc_115" name="sc_115"></a>1.1.5 Provide Configurable Alternative Content Defaults: </h4>
+<p class="sc-text">The user can specify which type(s) of <a class="dfn-instance"
+href="#def-conditional-content"
+title="definition: Conditional content">alternative content</a> to render by default for each type of non-text content, including time based media. <span class="level">(Level&nbsp;AA)</span></p>
 
 	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_115">Reference for 1.1.5</a></div>
+      </div>
+	   
+
+      
+
+<h4 class="sc-title">
+<a id="sc_116" name="sc_116"></a>1.1.6 Use Configurable Text for Time-based Media Captions: </h4>
+<p class="sc-text">For  <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a>  on-screen alternative content for time-based media (e.g. captions,  sign language video), t<span class="sc-bullet">he user can configure recognized text within time-based media alternatives (e.g. captions) in conformance with <a href="#sc_141">1.4.1</a>.</span> <span class="level">(Level&nbsp;AA)</span></p>
+<div class="gl-only">
+        <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_116">Reference for 1.1.6</a></div>
       </div>
 	   
 
@@ -680,7 +687,7 @@ title="definition: Conditional content">alternative content</a> to render by def
 
 <div class="sc-level"><!--AAA-->
 
-<h4 class="sc-title"><a id="sc_116" name="sc_116"></a>1.1.6 Allow Resize and Reposition of Time-based Media Alternatives: </h4>
+<h4 class="sc-title"><a id="sc_117" name="sc_117"></a>1.1.7 Allow Resize and Reposition of Time-based Media Alternatives: </h4>
 <p class="sc-text">The user can configure  <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a>  alternative content for time-based media (e.g. captions,  sign language video) as follows: <span class="level">(Level&nbsp;AAA)</span></p>
 <ul class="sc-bullets"> 
     <li class="sc-bullet"><strong class="handle">Resize:</strong> The user can resize alternative content for time-based media to at least 50% of the size of the <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a>.</li>
@@ -692,7 +699,7 @@ title="definition: Conditional content">alternative content</a> to render by def
     <li class="sc-note"><em class="note-handle">Note 2:</em> Implementation can involve displaying alternative content for time-based media in a separate viewport, but this is not required. </li></ul>
 
 	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_116">Reference for 1.1.6</a></div>
+	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_117">Reference for 1.1.7</a></div>
       </div>
 	   
 
