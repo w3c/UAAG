@@ -5645,7 +5645,7 @@ href="#intro-applies-to-platform-a11y" title="definition: communication with pla
 
 
 <h4 class="sc-title"><a id="sc_412" name="sc_412"></a>4.1.2 Expose Basic Properties: </h4>
-<p class="sc-text">For all user interface components, including <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a>, <a class="dfn-instance" href="#def-rendered-content" rel="glossary" title="definition: rendered content">rendered content</a>, and generated content, the user agent makes available the following via a <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">platform accessibility service</a>: <span class="level">(Level&nbsp;A)</span> </p>
+<p class="sc-text">For all user interface components, including <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a>, <a class="dfn-instance" href="#def-rendered-content" rel="glossary" title="definition: rendered content">rendered content</a>, and generated content, <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">if the following attributes are present, the user agent makes them available via a platform accessibility service</a>: <span class="level">(Level&nbsp;A)</span> </p>
 <ul class="sc-bullets">
 <li> Name</li>
 <li>Role</li>
@@ -5704,7 +5704,7 @@ href="#intro-applies-to-platform-a11y" title="definition: communication with pla
 
 
 <h4 class="sc-title"><a id="sc_413" name="sc_413"></a>4.1.3 Provide Equivalent Accessible Alternatives: </h4>
-<p class="sc-text"> If a component of the <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a> cannot be exposed through  <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">platform accessibility services</a>, then the user agent provides an equivalent alternative that is exposed through the platform accessibility service. <span class="level">(Level&nbsp;A)</span> </p>
+<p class="sc-text"> If <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a> functionality cannot be exposed through <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">platform accessibility services</a>, then the user agent provides equivalent functionality that can be exposed through the platform accessibility service.  <span class="level">(Level&nbsp;A)</span> </p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_413">Reference for 4.1.3</a></div>
@@ -5729,6 +5729,7 @@ href="#intro-applies-to-uaui" title="definition:user agent user interface">UA us
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_413-e" name="sc_413-e"></a>Examples for Success Criterion 4.1.3:</h5>
             <ul>
+            <li>Xanni is a screen reader user. She wants to bookmark the current page. Her browser allows a bookmark icon to be dragged with a mouse into the current document to bookmark the location. This functionality cannot be accessed effectively with her screen reader. However, the browser does allow her to add a bookmark from the context menu at the current focus. </li>
               <li class="mobile-ex">[mobile] Doug uses a mouse-stick on his smart phone. He uses the assistive touch option on his mobile phone to control an app for 3D design drawing.  The app provides a single, complex control for 3-dimensional manipulation of a virtual object. This custom control cannot be represented in the platform accessibility service, so the app provides Doug the option to achieve the same functionality through an alternate user interface:  a panel that adjusts the yar, spin, and roll independently using  arrow keys. </li>
           </ul>        </div>
         <div class="implementing-section">
@@ -5786,8 +5787,8 @@ href="#intro-applies-to-platform-a11y" title="definition: communication with pla
                 <li>www.w3.org/TR/CDR/</li>
                 <li><a href="http://accessibility.linuxfoundation.org/a11yspecs/atspi/adoc/a11y-dom-apis.html">http://accessibility.linuxfoundation.org/a11yspecs/atspi/adoc/a11y-dom-apis.html</a></li></ul></div></div>
 
-<h4 class="sc-title"><a id="sc_415" name="sc_415"></a>4.1.5 Make Write Access Programmatically Available: </h4>
-<p class="sc-text">If the user can modify the state or value of a piece of content through the user interface (e.g. by checking a box or editing a text area), the same degree of write access is <a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" title="definition: content">programmatically available</a>. 
+<h4 class="sc-title"><a id="sc_415" name="sc_415"></a>4.1.5 Make Content      Interaction Programmatically Available: </h4>
+<p class="sc-text">If the user can      interact with content (e.g. by checking a box or editing a text      area), the same degree of interaction is programmatically      available. 
 <span class="level">(Level&nbsp;A)</span> </p> 
 
 <div class="gl-only">
