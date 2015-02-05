@@ -11,7 +11,8 @@
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
-   
+
+               
 
 h2.principle {
 	background-color:#FFFFFF;
@@ -223,7 +224,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 8 January 2015</h2>
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 5 February 2015</h2>
 <dl>
   <dt>This version (Github):</dt>
     <dd><a href="http://w3c.github.io/UAAG/UAAG20/">http://w3c.github.io/UAAG/UAAG20/</a></dd>
@@ -557,6 +558,7 @@ For these cases, it is important for user agent developers to consider the appli
 </div>
 
 <h3><a name="applicability-notes" id="applicability-notes"></a>UAAG 2.0 Conformance Applicability Notes:</h3>
+<p>The Conformance Applicability Notes are a list of normative conditions that apply broadly to many of the success criteria in these guidelines. Generally, the notes clarify how the success criteria would apply under certain circumstances. </p>
 <ol>
   <li><strong class="handle">Retrieved Content Only</strong>: UAAG 2.0 success criteria only apply to web content that has been retrieved by the user agent (e.g. if a user agent saves bandwidth by retrieving video element content only on demand, then captions associated with that video content do not need to be searchable as per 2.4.5 until the video is retrieved).</li>
   <li><strong class="handle">Current  Content Only</strong>: At any point in time, UAAG 2.0 success criteria only apply to web content that have not been hidden or removed (e.g., a bookmark created as per <a href="#sc_1816">1.8.16</a> will no longer be operable if the content it refers to is hidden or removed).</li>
@@ -847,6 +849,7 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
   <li class="sc-bullet"> Text color and background color, choosing from all platform color options</li>
   <li class="sc-bullet">Font family,  choosing from all installed fonts</li>
   <li class="sc-bullet">Line spacing, choosing from a range with at least three values up to at least 2 times the default</li>
+  <li class="sc-bullet">Text style, choosing to turn on/off underline, italic, bold</li>
 </ul>
  <ul class="sc-notes">
 <li><em class="note-handle">Note</em>: Any user  settings from the platform for these characteristics are implemented.</li>
@@ -863,7 +866,7 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
 <h4 class="sc-title"><a id="sc_142" name="sc_142"></a>1.4.2 Basic text formatting (by Element): </h4>
 <p class="sc-text">The user can set all of the following characteristics of visually rendered text content for text element types including at least headings, input fields, and links: <span class="level">(Level&nbsp;AA) </span> </p>
 <ul class="sc-bullets">
-  <li>Text size or scale</li>
+  <li>Text size (e.g. 18 point) or scale (e.g. 150%)</li>
   <li>Text color and background color, choosing from all platform color options</li>
   <li>Font family, choosing from at least all installed fonts </li>
   <li>Line spacing, choosing from a range with at least three values</li>
@@ -884,10 +887,13 @@ title="definition: rendered text">rendered text</a> content:  <span class="level
 <li>Justification  (left or right, including turning off full justification)</li>
 <li>Margins around blocks of text</li>
 </ul>
-
+<div class="gl-only">
+        <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_143">Reference for 1.4.3</a></div>
+</div>
+	   
  <h4 class="sc-title"><a id="sc_144" name="sc_144"></a>1.4.4 Configured and Reflowed Text Printing: </h4>
  <p class="sc-text">The user can print the <a class="dfn-instance" href="#def-rendered-content"
-title="definition: Rendered content">rendered content</a>, and the following are all true:  <span class="level">(Level&nbsp;AA)</span> @@ </p>
+title="definition: Rendered content">rendered content</a>, and the following are all true:  <span class="level">(Level&nbsp;AA)</span></p>
  <ol type="a">
  <li>any visual, non-time-based, rendered content can be printed </li>
  <li>the user can choose between <a class="dfn-instance" href="#def-printing-devices" rel="glossary" title="definition: available printing devices">available printing devices</a></li>
@@ -904,6 +910,7 @@ title="definition: Rendered content">rendered content</a>, and the following are
   <li>Capitalization (overriding upper case and small caps style)</li>
   <li>Word-breaking properties (e.g. auto-hyphenation)</li>
   <li>Borders</li>
+  <li>Word spacing (choosing from a range of at least 5 values)</li>
 </ul>
 <p><em class="note-handle">Note:</em> This success criteria does not apply  to text entered as all caps. Content authors are encouraged to use styles instead of typing text as all caps.</p>
 <div class="gl-only">
@@ -2578,8 +2585,9 @@ in full.</p>
   level A and level AA Success Criteria.</li>
   <li>Level AAA: For level AAA conformance (advanced), the user agent satisfies all  
   level A, level AA and level AAA Success Criteria.</li>
-</ul> 
-<p>  Note: Although conformance can only be achieved at the stated levels, 
+</ul>
+<p>The <a href="#applicability-notes">Conformance Applicability Notes</a> provide additional guidance on the applicability of the success criteria under certain circumstances.</p>
+<p>  Although conformance can only be achieved at the stated levels, 
   developers are encouraged to report (in their claim) any progress toward 
   meeting success criteria from all levels beyond the achieved level of 
   conformance. </p>
