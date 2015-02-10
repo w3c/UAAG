@@ -11,7 +11,7 @@
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
-    
+               
 
 h2.principle {
 	background-color:#FFFFFF;
@@ -221,7 +221,7 @@ ul.sc-notes {
 	<p><a href="http://www.w3.org/"><img height="48" width="72" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p> 
  
     <h1><a name="title" id="title"></a>UAAG 2.0 Reference: Explanations, Examples, and      Resources for User Agent Accessibility Guidelines 2.0</h1>
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 5 February 2015</h2>
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 10 February 2015</h2>
     <dl> 
   <dt>This version (Github):</dt> 
   <dd><a href="http://w3c.github.io/UAAG/UAAG20-Reference/">http://w3c.github.io/UAAG/UAAG20-Reference/</a></dd> 
@@ -502,7 +502,7 @@ User agent developers should consult ATAG 2.0 to understand the ways in which we
 <p>The Conformance Applicability Notes are a list of normative conditions that apply broadly to many of the success criteria in these guidelines. Generally, the notes clarify how the success criteria would apply under certain circumstances. </p>
 <ol>
   <li><strong class="handle">Retrieved Content Only</strong>: UAAG 2.0 success criteria only apply to web content that has been retrieved by the user agent (e.g. if a user agent saves bandwidth by retrieving video element content only on demand, then captions associated with that video content do not need to be searchable as per 2.4.5 until the video is retrieved).</li>
-  <li><strong class="handle">Current  Content Only</strong>: At any point in time, UAAG 2.0 success criteria only apply to web content that have not been hidden or removed (e.g., a bookmark created as per <a href="#sc_1816">1.8.16</a> will no longer be operable if the content it refers to is hidden or removed).</li>
+  <li><strong class="handle">Current  Content Only</strong>: At any point in time, UAAG 2.0 success criteria only apply to web content that has not been hidden or removed (e.g., a bookmark created as per <a href="#sc_1816">1.8.16</a> will no longer be operable if the content it refers to is hidden or removed).</li>
   <li><strong class="handle">Recognized Content Only: </strong>UAAG 2.0 success criteria only apply to web content and its behaviors that can be <a class="dfn-instance"
 href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a> by user agents.</li>
   <li> <strong class="handle">Optional Settings:</strong> Throughout UAAG 2.0, all  required behaviors  can be      provided as optional preference settings unless a success      criterion explicitly says otherwise. For example, if a success      criterion requires high contrast between foreground text and its      background, the user agent can also provide choices      with low contrast. While it is preferred to have a  required behavior as a default option, it does not need to be,  unless the success criterion explicitly says      otherwise.</li>
@@ -533,7 +533,7 @@ and rendered content are perceivable</h2>
 <span class="techs-only">Reference for </span>
 Guideline 1.1 - Provide access to alternative content 
 	  <span class="techs-only">[<a href="http://w3c.github.io/UAAG/UAAG20/#gl-access-alternative-content">Guideline 1.1</a>]</span></h3>
-<p class="summary" id="summary11"><strong>Summary</strong>: The user can choose to render any type of alternative content available (1.1.1) with an indicator that the alternative content is present (1.1.2) or a placeholder replacing the non-text content (1.1.3) . It's recommended that users  can also choose at least one alternative, such as alt text, to be displayed by default (1.1.5).  It's recommended that  caption text or sign language alternative cannot obscure the video or the controls (1.1.4) and that the user can configure the size and position of media alternatives (1.1.7).</p>
+<p class="summary" id="summary11"><strong>Summary</strong>: The user can choose to render any type of alternative content available (1.1.1) with an indicator that the alternative content is present (1.1.2) or a placeholder replacing the non-text content (1.1.3) . It's recommended that users  can also choose at least one alternative, such as alt text, to be displayed by default (1.1.5).  It's recommended that  caption text or sign language alternative cannot obscure the video or the controls (1.1.4) and that the user can configure the text (1.1.6), size and position of media alternatives (1.1.7).</p>
 
 <div class="sc-level"><!--A-->
 
@@ -1298,7 +1298,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
 </ul>
 
 	   <div class="techs-only">
-	    <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_142">Return to 1.4.3 in Guidelines</a></div>
+	    <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_143">Return to 1.4.3 in Guidelines</a></div>
 <div class="techs-only">
   <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_143-a" name="sc_143-a"></a>Applies to:</h5>
@@ -1340,12 +1340,15 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
  <h4 class="sc-title"><a id="sc_144" name="sc_144"></a>1.4.4 Configured and Reflowed Text Printing: </h4>
  <p class="sc-text">The user can print the <a class="dfn-instance" href="#def-rendered-content"
 title="definition: Rendered content">rendered content</a>, and the following are all true:  <span class="level">(Level&nbsp;AA)</span></p>
- <ol type="a">
+ <ul>
  <li>any visual, non-time-based, rendered content can be printed </li>
  <li>the user can choose between <a class="dfn-instance" href="#def-printing-devices" rel="glossary" title="definition: available printing devices">available printing devices</a></li>
  <li>the user can have content printed as it is rendered on screen, reflecting any user scaling, highlighting, and other modifications</li>
  <li>the user can have printed content reflow as if the <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a> had been resized to match the horizontal dimension of the printing device's printable area</li>
- </ol>
+ </ul>
+ 
+	   <div class="techs-only">
+	    <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_144">Return to 1.4.4 in Guidelines</a></div>
  <div class="techs-only">
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_144-a" name="sc_144-a"></a>Applies to:</h5>
@@ -1389,7 +1392,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
   <li>Borders</li>
   <li>Word spacing (choosing from a range of at least 5 values)</li>
 </ul>
-<p><em class="note-handle">Note:</em> This success criteria does not apply  to text entered as all caps. Content authors are encouraged to use styles instead of typing text as all caps.</p>
+<p class="sc-notes"><em class="note-handle">Note:</em> This success criteria does not apply  to text entered as all caps. Content authors are encouraged to use styles instead of typing text as all caps.</p>
 
 	   <div class="techs-only">
 	    <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_145">Return to 1.4.5 in Guidelines</a></div>
@@ -1803,9 +1806,9 @@ restoring the focus and point of regard when the user returns to a
 previously viewed page (1.8.9, Level AA). The user can specify that all 
 viewports have the same user interface elements (1.8.12, Level AA), if 
 and how new viewports open (1.8.10, Level AA), and whether the new 
-viewport automatically gets focus (1.8.11, Level AA). The user can specifiy that multi-column text blocks be reflowed into a single column (1.8.14, Level AA), that the user can override absolute layout dimensions (1.8.15, Level AA), and linearize the content (1.8.16, Level AA). The user can mark 
+viewport automatically gets focus (1.8.11, Level AA). The user can specify that multi-column text blocks be reflowed into a single column (1.8.13, Level AA), that the user can override absolute layout dimensions (1.8.14, Level AA), and linearize the content (1.8.15, Level AA). The user can mark 
 items in a web page and use shortcuts to navigate back to marked items. 
-(1.8.17, Level AAA).
+(1.8.16, Level AAA).
 </p>
 
 <div class="sc-level"><!--A-->
