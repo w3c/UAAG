@@ -197,6 +197,12 @@ ul.sc-bullets {
     margin-bottom: 0em;
 	list-style-type:disc;
 }
+ol.sc-bullets {
+    display:block;
+    padding-left:2em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
 ul.sc-notes {
     display:block;
     padding-left:1em;
@@ -1598,7 +1604,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
  <h4 class="sc-title"><a id="sc_144" name="sc_144"></a>1.4.4 Configured and Reflowed Text Printing: </h4>
  <p class="sc-text">The user can print the <a class="dfn-instance" href="#def-rendered-content"
 title="definition: Rendered content">rendered content</a>, and the following are all true:  <span class="level">(Level&nbsp;AA)</span></p>
- <ul>
+ <ul class="sc-bullets">
  <li>any visual, non-time-based, rendered content can be printed </li>
  <li>the user can choose between <a class="dfn-instance" href="#def-printing-devices" rel="glossary" title="definition: available printing devices">available printing devices</a></li>
  <li>the user can have content printed as it is rendered on screen, reflecting any user scaling, highlighting, and other modifications</li>
@@ -1675,7 +1681,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
 
  <!--sc-level--></div>
 <div class="sc-level"><!--AAA-->
-<h4 class="sc-title"><a id="sc_146" name="sc_146"></a>1.4.6 <strong>Advanced text formatting</strong>: </h4>
+<h4 class="sc-title"><a id="sc_146" name="sc_146"></a>1.4.6 Advanced text formatting: </h4>
 <p class="sc-text">The user can <a class="dfn-instance" href="#def-global-configuration" rel="glossary" title="definition: globally">globally</a>
  set all of the following characteristics of visually rendered <a class="dfn-instance" href="#def-blocks-of-text" rel="glossary" title="definition: blocks of text">blocks of text</a>: <span class="level">(Level&nbsp;AAA) </span></p>
 <ul class="sc-bullets">
@@ -2485,7 +2491,7 @@ the entire chart to be displayed.</li>
 <p class="sc-text">   For <a class="dfn-instance"
 href="#def-user-agent" rel="glossary" title="definition: User agent">user agents
 </a> that implement a history mechanism for <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a> (e.g. &quot;back&quot; button), the user can return to any state in the viewport history that is allowed by the content, including: <span class="level">(Level&nbsp;AA)</span> </p>
-<ol type="a">
+<ol type="a" class="sc-bullets">
 <li>restored <a class="dfn-instance"
 href="#def-point-of-regard" rel="glossary" title="definition: point of regard">point of regard</a></li>
 <li>input focus, and</li>
@@ -2590,7 +2596,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
               
 <h4 class="sc-title"><a id="sc_1813" name="sc_1813"></a>1.8.13 Multi-Column Text Reflow: </h4>
 <p class="sc-text">The user can specify that recognized multi-column text blocks each be reflowed into a single column.  <span class="level">(Level&nbsp;AA)</span> </p>
-<p><em class="sc-notes">Note</em>: Some layouts may become unusable if author-specified layout is overridden. In this case, the user can turn linearization off and try another strategy. It is recommended that user agents provide a convenient way for the user to turn this behavior on and off.</p>
+<ul class="sc-notes"><li class="sc-note"><em class="note-handle">Note:</em> Some layouts may become unusable if author-specified layout is overridden. In this case, the user can turn linearization off and try another strategy. It is recommended that user agents provide a convenient way for the user to turn this behavior on and off.</li></ul>
 
     	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/UAAG20-Reference/#sc_1813">Reference for 1.8.13</a></div>
