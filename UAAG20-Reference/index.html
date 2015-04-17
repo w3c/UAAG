@@ -196,6 +196,12 @@ ul.sc-bullets {
     margin-bottom: 0em;
 	list-style-type:disc;
 }
+ol.sc-bullets {
+    display:block;
+    padding-left:2em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
 ul.sc-notes {
     display:block;
     padding-left:1em;
@@ -222,7 +228,7 @@ ul.sc-notes {
 	<p><a href="http://www.w3.org/"><img height="48" width="72" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p> 
  
     <h1><a name="title" id="title"></a>UAAG 2.0 Reference: Explanations, Examples, and      Resources for User Agent Accessibility Guidelines 2.0</h1>
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 7 April 2015</h2>
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 16 April 2015</h2>
     <dl> 
   <dt>This version (Github):</dt> 
   <dd><a href="http://w3c.github.io/UAAG/UAAG20-Reference/">http://w3c.github.io/UAAG/UAAG20-Reference/</a></dd> 
@@ -514,14 +520,14 @@ even if these terms appear from time to time they do not have any RFC
   <li><strong class="handle">Vertical layout languages</strong>: 
     When user agents render vertical layout languages (e.g. Mongolian, Han), success criteria normally relating to horizontal rendering should be applied to vertical rendering instead.
   </li>
-  <li><strong class="handle">Add-ons (Extensions and Plug-ins):</strong> Success criteria can be met by a user agent alone or in conjunction with add-ons, as long as those are: 
-  <ol type="a">
+  <li><strong class="handle"><a name="applicability-note-addons"></a>Add-ons (Extensions and Plug-ins):</strong> Success criteria can be met by a user agent alone or in conjunction with <a href="#def-extension" class="dfn-instance">add-on</a>s, as long as those are: 
+    <ol type="a">
   <li>discoverable by the user</li>
   <li>no extra cost to the user</li>
   <li>easily installed (i.e. not requiring expert knowledge or editing of
 
 configuration files, databases, or registry entries)</li></ol> See <a href="#conformance-req-components">Components of UAAG 2.0 Conformance Claims</a>.</li>
-  <li><strong class="handle">Relationship with operating system or platform</strong>: The user agent does      not need to implement every behavior itself. A required      behavior can be provided by the platform, user agent, user      agent extensions, or potentially other layers. All are      acceptable, as long as they are enumerated in the conformance      claim. </li>
+  <li><strong class="handle"><a name="applicability-note-platform"></a>Relationship with operating system or platform</strong>: The user agent does      not need to implement every behavior itself. A required      behavior can be provided by the platform, user agent, user      agent <a href="#def-extension" class="dfn-instance">add-on</a>s, or potentially other layers. All are      acceptable, as long as they are enumerated in the conformance      claim. </li>
   <li><strong class="handle">Override author settings for text configuration</strong>: All of the success criteria under guideline 1.4 allow   users to override the text characteristics specified by authors, and   override user agent defaults. </li>
 </ol>
 
@@ -1233,6 +1239,8 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
   <li>Font family, choosing from at least all installed fonts </li>
   <li><span class="sc-bullet">Line spacing, choosing from a range with at least three values up to at least 2 times the default</span></li>
   <li><span class="sc-bullet">Text style, choosing to turn on/off underline, italic, bold</span></li>
+  <li>Margins around blocks of text</li>
+  <li>Borders</li>
  
 </ul>
   
@@ -1288,6 +1296,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
 <li>Character spacing, choosing from a range with at least 5 values </li>
 <li>Justification  (left or right, including turning off full justification)</li>
 <li>Margins around blocks of text</li>
+<li>Borders</li>
 </ul>
 
 	   <div class="techs-only">
@@ -1333,7 +1342,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
  <h4 class="sc-title"><a id="sc_144" name="sc_144"></a>1.4.4 Configured and Reflowed Text Printing: </h4>
  <p class="sc-text">The user can print the <a class="dfn-instance" href="#def-rendered-content"
 title="definition: Rendered content">rendered content</a>, and the following are all true:  <span class="level">(Level&nbsp;AA)</span></p>
- <ul>
+ <ul class="sc-bullets">
  <li>any visual, non-time-based, rendered content can be printed </li>
  <li>the user can choose between <a class="dfn-instance" href="#def-printing-devices" rel="glossary" title="definition: available printing devices">available printing devices</a></li>
  <li>the user can have content printed as it is rendered on screen, reflecting any user scaling, highlighting, and other modifications</li>
@@ -1406,13 +1415,12 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
 
  <!--sc-level--></div>
 <div class="sc-level"><!--AAA-->
-<h4 class="sc-title"><a id="sc_146" name="sc_146"></a>1.4.6 <strong>Advanced text formatting</strong>: </h4>
+<h4 class="sc-title"><a id="sc_146" name="sc_146"></a>1.4.6 Advanced text formatting: </h4>
 <p class="sc-text">The user can <a class="dfn-instance" href="#def-global-configuration" rel="glossary" title="definition: globally">globally</a>
  set all of the following characteristics of visually rendered <a class="dfn-instance" href="#def-blocks-of-text" rel="glossary" title="definition: blocks of text">blocks of text</a>: <span class="level">(Level&nbsp;AAA) </span></p>
 <ul class="sc-bullets">
   <li>Capitalization (overriding upper case and small caps style)</li>
   <li>Word-breaking properties (e.g. auto-hyphenation)</li>
-  <li>Borders</li>
   <li>Word spacing (choosing from a range of at least 5 values)</li>
 </ul>
 <p class="sc-notes"><em class="note-handle">Note:</em> This success criteria does not apply  to text entered as all caps. Content authors are encouraged to use styles instead of typing text as all caps.</p>
@@ -2178,7 +2186,7 @@ the entire chart to be displayed.</li>
 <p class="sc-text">   For <a class="dfn-instance"
 href="#def-user-agent" rel="glossary" title="definition: User agent">user agents
 </a> that implement a history mechanism for <a href="#def-viewport-toplevel" class="dfn-instance" title="definition: top-level viewport">top-level viewports</a> (e.g. &quot;back&quot; button), the user can return to any state in the viewport history that is allowed by the content, including: <span class="level">(Level&nbsp;AA)</span> </p>
-<ol type="a">
+<ol type="a" class="sc-bullets">
 <li>restored <a class="dfn-instance"
 href="#def-point-of-regard" rel="glossary" title="definition: point of regard">point of regard</a></li>
 <li>input focus, and</li>
@@ -2275,7 +2283,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
               
 <h4 class="sc-title"><a id="sc_1813" name="sc_1813"></a>1.8.13 Multi-Column Text Reflow: </h4>
 <p class="sc-text">The user can specify that recognized multi-column text blocks each be reflowed into a single column.  <span class="level">(Level&nbsp;AA)</span> </p>
-<p><em class="sc-notes">Note</em>: Some layouts may become unusable if author-specified layout is overridden. In this case, the user can turn linearization off and try another strategy. It is recommended that user agents provide a convenient way for the user to turn this behavior on and off.</p>
+<ul class="sc-notes"><li class="sc-note"><em class="note-handle">Note:</em> Some layouts may become unusable if author-specified layout is overridden. In this case, the user can turn linearization off and try another strategy. It is recommended that user agents provide a convenient way for the user to turn this behavior on and off.</li></ul>
 
     	   
 	   <div class="techs-only">
@@ -6413,7 +6421,8 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
       <li><a
   name="def-web-based" id="def-web-based2"><dfn>web-based user agent</dfn></a>: User agents that have user interfaces that  are implemented using web content technologies and are accessed by users via a  user agent. web-based user agents transform content into web content  technologies that the host user agent can render (e.g.web-based ePub reader, web-based video player).</li>
     </ul>
-    <em>Note:</em> Many web applications retrieve, render and facilitate interaction with very limited data sets (e.g. online ticket booking). In such cases, WCAG 2.0, without UAAG 2.0, can be appropriate for assessing the application's accessibility. <br/>
+    <em>Note 1:</em>Success criteria may also be met by other software.  See the applicability notes on <a href="#applicability-note-addons">Add-ons (Extensions and Plug-ins)</a> and <a href="#applicability-note-platform">Relationship with operating system or platform</a>. <br />
+    <em>Note 2:</em> Many web applications retrieve, render and facilitate interaction with very limited data sets (e.g. online ticket booking). In such cases, WCAG 2.0, without UAAG 2.0, can be appropriate for assessing the application's accessibility. <br/>
     Examples of software that are generally considered user agents under UAAG 2.0:
     <ul>
       <li>Desktop web browsers (e.g. Internet Explorer, Firefox, Chrome, Safari, Opera)</li>
@@ -6431,8 +6440,8 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
     </ul>
   </dd>
   <dt class="glossary"><a name="def-extension" id="def-extension"></a><dfn>user agent add-on (add-in, extension, plug-in)</dfn></dt>
-  <dd>Software installed into a <a class="dfn-instance" href="#def-user-agent">user agent</a> that adds one or more additional features that modify the behavior of the user agent. Extensions and plug-ins are types of add-ons. See <a href="#def-plug-in" class="dfn-instance">embedded user agent</a> for additional information. Two common capabilities for user agent add-ons are the ability to
-<ul>
+  <dd>Software installed into a <a class="dfn-instance" href="#def-user-agent">user agent</a> that adds one or more additional features that modify the behavior of the user agent. Extensions and plug-ins are types of add-ons. See <a href="#def-plug-in" class="dfn-instance">embedded user agent</a> and applicability note on <a href="#applicability-note-addons">Add-ons (Extensions and Plug-ins)</a> for additional information. Two common capabilities for user agent add-ons are the ability to
+    <ul>
       <li>modify the <a class="dfn-instance" href="#def-content">content</a> before the user agent renders it (e.g. to add highlights if certain types of alternative content are present), and</li>
       <li>modify the user agent's own <a href="#def-ua-ui" class="dfn-instance"> user interface</a> (e.g. add a headings view).</li>
     </ul>
