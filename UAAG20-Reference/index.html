@@ -11,7 +11,6 @@
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
-
                
 
 h2.principle {
@@ -228,7 +227,7 @@ ul.sc-notes {
 	<p><a href="http://www.w3.org/"><img height="48" width="72" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p> 
  
     <h1><a name="title" id="title"></a>UAAG 2.0 Reference: Explanations, Examples, and      Resources for User Agent Accessibility Guidelines 2.0</h1>
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 16 April 2015</h2>
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 28 May 2015</h2>
     <dl> 
   <dt>This version (Github):</dt> 
   <dd><a href="http://w3c.github.io/UAAG/UAAG20-Reference/">http://w3c.github.io/UAAG/UAAG20-Reference/</a></dd> 
@@ -2583,6 +2582,7 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_1101-r" name="sc_1101-r"></a>Related Resources for Success Criterion 1.10.1:</h5>
             <ul>
+              <li><a href="#sc_412">4.1.2 Expose Basic Properties</a></li>
               <li><a href="http://www.w3.org/TR/wai-aria/states_and_properties#attrs_relationships">WAI-ARIA: 6.5.4 Relationship Attributes</a></li>
               <li><a href="http://www.w3.org/TR/wai-aria-practices/#relations">WAI-ARIA Authoring
 Practices: 4. Relationships</a></li></ul></div></div>
@@ -5211,9 +5211,8 @@ id="principle-AT-access"></a>PRINCIPLE 4: Facilitate programmatic access</h2>
 programmatic access to assistive technology </span> 
 	  <span class="techs-only">[<a href="http://w3c.github.io/UAAG/UAAG20/#gl-AT-access">Guideline 4.1</a>]</span></h3>
 <p class="summary" id="summary41"><strong>Summary</strong>: The user agent supports platform accessibility services (4.1.1, 
-Level A) that are quick and responsive (4.1.7, Level A), including 
-providing information about all controls and operation (4.1.2, Level A &amp; 
-4.1.6, Level AA), access to DOMs (4.1.4, Level A). Controls can be 
+Level A), including 
+providing information about all controls and operation (4.1.2, Level A), access to DOMs when platform accessibility services are not available (4.1.4, Level A). Controls can be 
 adjusted programmatically (4.1.5, Level A). Where something can't be 
 made accessible, provide an accessible alternative version, such as a 
 standard window in place of a customized window (4.1.3, Level A).</p>
@@ -5262,18 +5261,38 @@ href="#intro-applies-to-platform-a11y" title="definition: communication with pla
 <li><a href="http://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2">Iaccessible2 </a></li>
 <li><a href="http://www-03.ibm.com/able/open_computing/open_source_windows.html">Open Source Accessibility for Windows</a></li>
 <li><a href="http://www.mozilla.org/access/platform-apis.html">Accessibility API Cross reference </a>
-</li></ul></div></div>
+</li>
+<li><a href="http://www.w3.org/TR/html-aam-1.0/">HTML  Accessibility API Mappings 1.0</a></li>
+          </ul>
+            <ul>
+              <li><a href="http://www.w3.org/TR/core-aam-1.1/">Core Accessibility API  Mappings 1.1</a></li>
+            </ul>
+            <ul>
+              <li><a href="http://www.w3.org/TR/svg-aam-1.0/">SVG Accessibility API  Mappings</a></li>
+            </ul>
+          <ul>
+              <li><a href="http://www.w3.org/TR/accname-aam-1.1/">Accessible Name and  Description: Computation and API<u></u></a></li>
+            </ul>
+            <ul>
+              <li><a href="http://www.w3.org/TR/html-aapi/">HTML to Platform Accessibility APIs Implementation Guide</a></li>
+            </ul>
+        </div></div>
 
 
 <h4 class="sc-title"><a id="sc_412" name="sc_412"></a>4.1.2 Expose Basic Properties: </h4>
 <p class="sc-text">For all user interface components (including <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a>, <a class="dfn-instance" href="#def-rendered-content" rel="glossary" title="definition: rendered content">rendered content</a>, and generated content) the user agent makes <a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" title="definition: available"> available</a> the following properties and any change notifications via<a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service"> a platform accessibility service</a>: <span class="level">(Level&nbsp;A)</span> </p>
 <ul class="sc-bullets">
-<li> Name</li>
-<li>Role</li>
-<li>State</li>
+<li> Name, Role, State</li>
 <li>Value</li>
 <li>Selection</li>
 <li>Focus </li>
+<li>Bounding dimensions and coordinates</li>
+<li>Font family of text</li>
+<li>Foreground and background color for text</li>
+<li>Highlighting</li>
+<li>Keyboard <a href="Keyboard commands" class="dfn-instance">commands</a></li>
+<li>Caret position</li>
+<li>Explicitly defined relationships  (e.g. ARIA relationships <a href="#ARIA10">[ARIA 1.0]</a>)</li>
 </ul>
 
 
@@ -5318,11 +5337,21 @@ href="#intro-applies-to-platform-a11y" title="definition: communication with pla
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_412-r" name="sc_412-r"></a>Related Resources for Success Criterion 4.1.2:</h5>
             <ul>
-              <li><a href="http://msdn.microsoft.com/en-us/library/ms697187">MSDN: Event Constants</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Implementing_MSAA_server">MDN: Implementing a MSAA server</a></li></ul></div></div>
+              <li><a href="http://msdn.microsoft.com/en-us/library/ms697187">1.10.1 Show Related Elements</a></li>
+              <li><a href="http://www.w3.org/TR/wai-aria/states_and_properties#attrs_relationships">ARIA Relationships</a> <a href="#ARIA10">[ARIA10]</a></li>
+              <li><a href="http://www.w3.org/TR/core-aam-1.1/">Core Accessibility API  Mappings 1.1</a></li>
+            </ul>
+          <ul>
+              <li><a href="http://www.w3.org/TR/svg-aam-1.0/">SVG Accessibility API  Mappings</a></li>
+            </ul>
+            <ul>
+              <li><a href="http://www.w3.org/TR/accname-aam-1.1/">Accessible Name and  Description: Computation and API</a></li>
+            </ul>
+        </div></div>
 
 
-<h4 class="sc-title"><a id="sc_413" name="sc_413"></a>4.1.3 Provide Equivalent Accessible Alternatives: </h4>
+<h4 class="sc-title"><a id="sc_413" name="sc_413"></a>4.1.3 Provide Equivalent Accessibl</h4>
+<h4 class="sc-title">e Alternatives: </h4>
 <p class="sc-text"> If <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a> functionality cannot be exposed through <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">platform accessibility services</a>, then the user agent provides equivalent functionality that can be exposed through the platform accessibility service.  <span class="level">(Level&nbsp;A)</span> </p>
 
 
@@ -5431,53 +5460,6 @@ href="#intro-applies-to-platform-a11y" title="definition: communication with pla
           </ul></div>
         <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_415-r" name="sc_415-r"></a>Related Resources for Success Criterion 4.1.5:</h5>
-            <ul>
-              <li>None</li></ul></div></div>
-
-
-<h4 class="sc-title"><a id="sc_416" name="sc_416"></a>4.1.6 Expose Additional Properties: </h4>
-<p class="sc-text"><p class="sc-text">
-<p class="sc-text">For all user interface components (including <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a>, <a class="dfn-instance" href="#def-rendered-content" rel="glossary" title="definition: rendered content">rendered content</a>, and generated content) the user agent makes <a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" title="definition: available"> available</a> the following properties and any change notifications via<a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service"> a platform accessibility service</a>: <span class="level">(Level&nbsp;AA)</span>
-  </p>
-</p>
-<ul class="sc-bullets">
-  <li class="sc-bullet">Bounding dimensions and coordinates</li>
-  <li class="sc-bullet">Font family of text </li>
-  <li class="sc-bullet">Font size of text </li>
-  <li class="sc-bullet">Foreground and background color for text </li>
-  <li class="sc-bullet">Change state/value notifications</li>
-  <li class="sc-bullet">Highlighting</li>
-  <li class="sc-bullet"><a href="#def-command">Keyboard  commands</a></li>
-</ul>
-
-
-<div class="techs-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20/#sc_416">Return to 4.1.6 in Guidelines</a></div>
-</div> 
-
-      <div class="techs-only">
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_416-a" name="sc_416-a"></a>Applies to:</h5>
-        <p><a class="dfn-instance"
-href="#intro-applies-to-platform-a11y" title="definition: communication with platform accessibility services">Communication with platform accessibility services</a></p>
-        <h5 class="implementing-heading"><a id="sc_111-t103" name="sc_111-t"></a>Typically Implemented in:</h5>
-        <p>browser, media player, plugin @Core</p>
-        </div>
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_416-i" name="sc_416-i"></a>Intent  of  Success Criterion 4.1.6:</h5>
-          <p>These properties are used by assistive technology to create alternative views of the UA user interface and rendered content. They also  provide alternative means for the user to interact with these items. These properties are exposed in the  user agent user interface (e.g. menus and dialog boxes) and to recognized aspects of the user content (e.g. HTML script using ARIA to indicate focus on custom controls). Keyboard commands include direct keyboard commands (e.g. Control-f to select the find box) and keyboard sequences (e.g. Alternate-f, to call up the File menu and select Save As). </p>
-       </div>
-
-       <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_416-e" name="sc_416-e"></a>Examples for Success Criterion 4.1.6:</h5>
-            <ul>
-              <li class="unclassified-ex">Kiara is blind and uses a screenreader. She loads a new version of a popular web browser for the first time. She puts her screen reader into  &quot;explore mode&quot;, which  lets her review what appears on the screen. Using this mode, she identifies the menu bar because her screen reader uses the bounding rectangle of each element to identify that those items all appear on the same horizontal line below the window's title bar.</li>
-              <li class="unclassified-ex">Kiara is blind. She  is using a screen reader at her job at a telephone call center. She needs to know the caller name and banking status to immediately  respond to each customer appropriately. The web application displays caller names in different colors to indicate banking status, instead of indicating the status semantically (which would be more accessible). However, Kiara's browser exposes the font color  to her screenreader, which reads her the customer name followed by the banking status color. </li>
-              <li class="unclassified-ex">
-                Max has low vision. He  uses a screen magnifier that  shows him only a small amount of  screen. Because his browser exposes accessible properties to his screen magnifier, he can pan through different portions of a web page and  quickly pan back to positions of interest, such as the text matched by a recent Search operation, text that he previously selected by dragging the mouse, or the text caret rather than having to manually pan through the document searching for them. </li>
-          </ul></div>
-        <div class="implementing-section">
-        <h5 class="implementing-heading"><a id="sc_416-r" name="sc_416-r"></a>Related Resources for Success Criterion 4.1.6:</h5>
             <ul>
               <li>None</li></ul></div></div>
 </div>
@@ -6573,6 +6555,10 @@ since the publication of UAAG 2.0.</p>
 "[WCAG20]" link to the corresponding entries in this section. These labels
 are also identified as references through markup.</p>
 <dl>
+  
+  <dt><a name="ref-ARIA10" id="ref-ARIA10">[ARIA10]</a></dt>
+  <dd>&quot;Accessible Rich Internet Applications (WAI-ARIA) 1.0" J. Craig, M. Cooper, eds., 20 March 2014. This W3C Recommendation is <a href="http://www.w3.org/TR/2014/REC-wai-aria-20140320/">http://www.w3.org/TR/2014/REC-wai-aria-20140320/</a></dd>
+  <dt>
   <dt><a name="ref-ATAG10" id="ref-ATAG10">[ATAG10]</a></dt>
     <dd><cite><a
       href="http://www.w3.org/TR/2000/REC-ATAG10-20000203/">"Authoring Tool
