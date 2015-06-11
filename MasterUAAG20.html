@@ -744,7 +744,7 @@ User agent developers should consult ATAG 2.0 to understand the ways in which we
   <li><strong class="handle">Current  Content Only</strong>: At any point in time, UAAG 2.0 success criteria only apply to web content that has not been hidden or removed (e.g., a bookmark created as per <a href="#sc_1816">1.8.16</a> will no longer be operable if the content it refers to is hidden or removed).</li>
   <li><strong class="handle">Recognized Content Only: </strong>UAAG 2.0 success criteria only apply to web content and its behaviors that can be <a class="dfn-instance"
 href="#def-recognize" rel="glossary" title="definition: recognize">recognized</a> by user agents.</li>
-  <li> <strong class="handle">Optional Settings:</strong> Throughout UAAG 2.0, all  required behaviors  can be      provided as optional preference settings unless a success      criterion explicitly says otherwise. For example, if a success      criterion requires high contrast between foreground text and its      background, the user agent can also provide choices      with low contrast. While it is preferred to have a  required behavior as a default option, it does not need to be,  unless the success criterion explicitly says      otherwise.</li>
+  <li><strong class="handle">Optional Settings:</strong> Throughout UAAG 2.0, all  required behaviors  can be      provided as optional preference settings unless a success      criterion explicitly says otherwise. For example, if a success      criterion requires high contrast between foreground text and its      background, the user agent can also provide choices      with low contrast. While it is preferred to have a  required behavior as a default option, it does not need to be,  unless the success criterion explicitly says      otherwise.</li>
   <li><strong class="handle">RFC 2119 language not used: </strong>UAAG 2.0 does not use <a class="dfn-instance" href="#def-rfc2119" rel="glossary" title="definition: RFC 2119">RFC 2119</a> language (must, may, should) as it is not  an interoperable specifications. Note, 
 even if these terms appear from time to time they do not have any RFC 
 2119 implication.</li>
@@ -1651,7 +1651,7 @@ href="#intro-applies-to-config" title="definition: configuration settings">Confi
 </div>
 </div></div>
 <h4 class="sc-title"><a id="sc_145" name="sc_145"></a>1.4.5 Default to platform text settings:</h4>
-<p class="sc-text"> The user can specify that platform text settings be used as the default values for text configuration.</a>. <span class="level">(Level&nbsp;AA)</span> </p>
+<p class="sc-text"> The user can specify that platform text settings be used as the default values for text configuration.</a> <span class="level">(Level&nbsp;AA)</span> </p>
 
     	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://www.w3.org/WAI/UA/IMPLEMENTING-UAAG20/#sc_145">Implementing 1.4.5</a></div>
@@ -5837,10 +5837,8 @@ href="#intro-applies-to-uaui" title="definition:user agent user interface">UA us
               <li>None</li></ul></div></div>
 
 
-<h4 class="sc-title"><a id="sc_414" name="sc_414"></a>4.1.4 Make DOMs Programmatically Available: </h4>
-<p class="sc-text">If the user agent implements one or more <a class="dfn-instance"
-      href="#def-dom" title="definition: Document Object Model">Document Object Models</a> (DOM), they must be
-made <a href="#def-programmatically-avail" class="dfn-instance" rel="glossary" title="definition: content">programmatically available</a> to assistive technologies. <span class="level">(Level&nbsp;A)</span> </p>
+<h4 class="sc-title"><a id="sc_414" name="sc_414"></a>4.1.4 DOMs Programmatically Available as fallback: </h4>
+<p class="sc-text">If the user agent accessibility API does not provide sufficient information to one or more platform accessibility services, then Document Object Models (DOM), must be made programmatically available to assistive technologies.  <span class="level">(Level&nbsp;A)</span> </p>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_414">Reference for 4.1.4</a></div>
@@ -5859,7 +5857,7 @@ href="#intro-applies-to-platform-a11y" title="definition: communication with pla
         </div>
        <div class="implementing-section">
         <h5 class="implementing-heading"><a id="sc_414-i" name="sc_414-i"></a>Intent  of  Success Criterion 4.1.4:</h5>
-          <p>Assistive technologies need all possible information. Applications such as user agents and assistive technologies use a combination of DOMs, accessibility Application Programming Interfaces (<a class="dfn-instance" href="#def-api" rel="glossary" title="definition: API">API</a>), native platform APIs, and hard-coded heuristics to provide an accessible user interface and accessible content. It is the user agent's responsibility to expose the DOM to  assistive technology which in many cases is the richest source of information on web content.       </p>
+          <p>Assistive technologies need all possible information. Applications such as user agents and assistive technologies use a combination of DOMs, Accessibility Application Programming Interfaces (<a class="dfn-instance" href="#def-api" rel="glossary" title="definition: API">AAPI</a>), native platform APIs, and hard-coded heuristics to provide an accessible user interface and accessible content. While most assistive technology vendors prefer to use the AAPIs, if the AAPI cannot provide enough access to the content, then it is the user agent's responsibility to expose the DOM to  assistive technology.       </p>
        </div>
 
        <div class="implementing-section">
@@ -6259,7 +6257,7 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
     <li>Configuration changes to the platform that are needed to meet the success criteria (e.g. turn on Sticky Keys, use High Contrast Mode)</li>
   </ol>
 </li>
-<li> <strong>Platform Limitations:</strong> If the platform (hardware or operating system) does not support a capability necessary for a given UAAG 2.0 success criterion, list the success criterion and the feature (e.g. a mobile operating system does not support platform accessibility services, therefore the user agent cannot meet success criterion 4.1.2). For these listed features, the user agent can claim that the success criteria do not apply (see 10.b.1 following). </li>
+<li><strong>Platform Limitations:</strong> If the platform (hardware or operating system) does not support a capability necessary for a given UAAG 2.0 success criterion, list the success criterion and the feature (e.g. a mobile operating system does not support platform accessibility services, therefore the user agent cannot meet success criterion 4.1.2). For these listed features, the user agent can claim that the success criteria do not apply (see 10.b.1 following). </li>
 <li><strong>Web Content Technologies:</strong> List the web content technologies rendered by the user agent that are included in the claim. If there are any web content technologies rendered by the user agent that are excluded from the conformance claim, list these separately. Examples of web content technologies include web markup languages such HTML, XML, CSS, SVG, and MathML, image formats such as PNG, JPG and GIF, scripting languages such as JavaScript/EcmaScript, specific video codecs, and proprietary document formats. </li>
 <li><strong>Declarations:</strong> For each success criterion, provide a declaration of either
   <ol type="a">
@@ -6268,7 +6266,7 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
     <li>declaration that the success criterion is not applicable and a 
       rationale for why not, from the following choices:
       <ol>
-       <li> <strong>Platform</strong>: not applicable due constraints of the platform, per Paragraph 7 above (e.g. color handling on a monochrome device, video handling in a purely audio browser, or interprocess communication on an operating system that does not support multitasking). Describe the specific platform limitation. </li>
+       <li><strong>Platform</strong>: not applicable due constraints of the platform, per Paragraph 7 above (e.g. color handling on a monochrome device, video handling in a purely audio browser, or interprocess communication on an operating system that does not support multitasking). Describe the specific platform limitation. </li>
        <li><strong>Input</strong>: not applicable due to a constrained input set (e.g. a help system that only displays the HTML files included with the product)</li>
        <li><strong>Output</strong>: not applicable due to intentionally limited output modalities (e.g. video handling in a browser that only does audio output, even though the platform can support video)</li>
       </ol></li>
@@ -6684,7 +6682,7 @@ recognize. </dd>
     one another. Platform-independent profiles are useful      for those who use the same user agent on different devices.</dd>
   <dt><a name="def-programmatically-avail"
   id="def-programmatically-avail"><dfn>programmatically available</dfn></a><span class="glossary"></span></dt>
-  <dd>Information that is encoded in a way that allows different software, including <a href="#def-assistive-technology" title="definition: assistive technology">assistive technologies</a>, to extract and use the   information relying on published, supported mechanisms, such as,   platform accessibility services, APIs, or the document object models   (DOM). For <a href="http://www.w3.org/WAI/AU/ATAG20/#def-Web-Based-UI" title="definition: Web-based authoring tool user interface">web-based user interfaces</a>, this means ensuring that the <a href="http://www.w3.org/WAI/AU/ATAG20/#def-User-Agent" title="definition: user agent">user agent</a> can pass on the information (e.g. through the use of WAI-ARIA). Something is  programmatically available  if the      entity presenting the information does so in a way that is      explicit and unambiguous, in a way that can be understood      without reverse-engineering or complex (and thus potentially      fallible) heuristics, and only relying on methods that are      published, and officially supported by the developers of the software being      evaluated. </dd>
+  <dd>Information that is encoded in a way that allows different software, including <a href="#def-assistive-technology" title="definition: assistive technology">assistive technologies</a>, to extract and use the   information relying on published, supported mechanisms, such as,   platform accessibility services, APIs, or the document object models   (DOM). For web-based user interfaces, this means ensuring that the <a href="#def-user-agent" title="definition: user agent">user agent</a> can pass on the information (e.g. through the use of WAI-ARIA). Something is  programmatically available  if the      entity presenting the information does so in a way that is      explicit and unambiguous, in a way that can be understood      without reverse-engineering or complex (and thus potentially      fallible) heuristics, and only relying on methods that are      published, and officially supported by the developers of the software being      evaluated. </dd>
   <dt class="glossary"><a name="def-prompt"
   id="def-prompt"><dfn>prompt</dfn></a></dt>
   <dd>Any <a href="http://www.w3.org/WAI/AU/ATAG20/#def-User-Agent" title="definition: user agent">user agent</a>-initiated request for a decision or piece of
@@ -6868,9 +6866,9 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
   id="def-plug-in"></a><a
   name="def-embedded" id="def-embedded"><dfn>embedded user agent, plug-in</dfn></a>: User agents that &quot;plug-in&quot; to other user agents or applications (e.g. media player plug-in for a web browser, web view component). Embedded user agents can establish direct connections with the platform (e.g. communication via platform accessibility services). See <a href="#def-extension" class="dfn-instance">user agent add-on</a>. </li>
       <li><a
-  name="def-web-based" id="def-web-based2"><dfn>web-based user agent</dfn></a>: User agents that have user interfaces that  are implemented using web content technologies and are accessed by users via a  user agent. web-based user agents transform content into web content  technologies that the host user agent can render (e.g.web-based ePub reader, web-based video player).</li>
+  name="def-web-based" id="def-web-based2"><dfn>web-based user agent</dfn></a>: User agents that have user interfaces that  are implemented using web content technologies and are accessed by users via a  user agent. Web-based user agents transform content into web content  technologies that the host user agent can render (e.g.web-based ePub reader, web-based video player).</li>
     </ul>
-    <em>Note 1:</em>Success criteria may also be met by other software.  See the applicability notes on <a href="#applicability-note-addons">Add-ons (Extensions and Plug-ins)</a> and <a href="#applicability-note-platform">Relationship with operating system or platform</a>. <br />
+    <em>Note 1: </em>Success criteria may also be met by other software.  See the applicability notes on <a href="#applicability-note-addons">Add-ons (Extensions and Plug-ins)</a> and <a href="#applicability-note-platform">Relationship with operating system or platform</a>. <br />
     <em>Note 2:</em> Many web applications retrieve, render and facilitate interaction with very limited data sets (e.g. online ticket booking). In such cases, WCAG 2.0, without UAAG 2.0, can be appropriate for assessing the application's accessibility. <br/>
     Examples of software that are generally considered user agents under UAAG 2.0:
     <ul>
