@@ -705,7 +705,7 @@ levels: levels A (minimum), AA (recommended), and AAA (advanced). The three leve
 <div  class="gl-only">
 <h3><a name="intro-wcag" id="intro-wcag"></a>Relationship to the Web Content Accessibility Guidelines (WCAG) 2.0</h3>
 <p>The W3C recommendation, <a href="http://www.w3.org/WAI/intro/wcag.php">Web Content Accessibility Guidelines (WCAG</a>), applies to all web content; UAAG provides additional advice on the application user interface. </p>
-<p>Some user agents are used to package web content into non-web-based applications, especially on mobile platforms. If the finished application is used to retrieve, render, and facilitate end-user interaction with web content of the end-users choosing, then the application should be considered a stand-alone user agent. If the finished application only renders a constrained set of content specified by the developer, then the application might not be considered a user agent. In both cases, the WCAG 2.0 Guidelines apply to the web content. If the application is not a user agent,   application developers are not responsible for    UAAG 2.0 requirements that extend beyond WCAG 2.0 requirements. For more detail, see the definition of <a class="dfn-instance" href="#def-user-agent" rel="glossary" title="definition: user agent">user agent</a>. </p>
+<p>Some user agents are used to package web content into native applications, especially on mobile platforms. If the finished application is used to retrieve, render, and facilitate end-user interaction with web content of the end-users choosing, then the application should be considered a stand-alone user agent. If the finished application only renders a constrained set of content specified by the developer, then the application might not be considered a user agent. In both cases, the WCAG 2.0 Guidelines apply to the web content. If the application is not a user agent,   application developers are not responsible for    UAAG 2.0 requirements that extend beyond WCAG 2.0 requirements. For more detail, see the definition of <a class="dfn-instance" href="#def-user-agent" rel="glossary" title="definition: user agent">user agent</a>. </p>
 </div><!--gl-only-->
 <div class="gl-only">
   <h3><a name="intro-atag" id="intro-atag"></a>Relationship to the Authoring Tool Accessibility Guidelines (ATAG) 2.0</h3>
@@ -5982,9 +5982,9 @@ report accessibility issues (5.1.6, Level AAA).
   <h4 class="sc-title"><a id="sc_511" name="sc_511"></a>5.1.1 Comply with WCAG: </h4>
   <p class="sc-text">Web-based <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interfaces</a> meet the WCAG 2.0 success criteria. <span class="level">(Level&nbsp;A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; and Level AAA to meet  WCAG 2.0 Level A,  AA, and AAA success criteria)</span></p>
 <ul class="sc-notes">
-    <li class="sc-note"><em class="note-handle">Note:</em> This success criterion does not apply to non-web-based UA user interfaces,
-but does include any parts of non-web-based user agents that are
-web-based (e.g. help systems). However, it is      recommended that developers of non-web-based user agent user      interfaces follow the Guidance on Applying WCAG 2.0 to Non-Web      Information and Communications Technologies (WCAG2ICT) <a href="#ref-wcag2ict">[WCAG2ICT]</a>.</li></ul>
+    <li class="sc-note"><em class="note-handle">Note:</em> This success criterion does not apply to native UA user interfaces,
+but does include any parts of native user agents that are
+web-based (e.g. help systems). However, it is      recommended that developers of native user agent user      interfaces follow the Guidance on Applying WCAG 2.0 to Non-Web      Information and Communications Technologies (WCAG2ICT) <a href="#ref-wcag2ict">[WCAG2ICT]</a>.</li></ul>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_511">Reference for 5.1.1</a></div>
@@ -6067,7 +6067,7 @@ href="#intro-applies-to-content-ui" title="definition: content user interface">C
 
 
 <h4 class="sc-title"><a id="sc_513" name="sc_513"></a>5.1.3 Implement Accessibility Features of the Platform: </h4>  
-<p class="sc-text"> If the user agent contains non-web-based user interfaces, then those non-web-based user interfaces follow user interface accessibility guidelines for the platform. <span class="level">(Level&nbsp;A)</span></p>
+<p class="sc-text"> If the user agent contains native user interfaces, then those native user interfaces follow user interface accessibility guidelines for the platform. <span class="level">(Level&nbsp;A)</span></p>
 <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_513">Reference for 5.1.3</a></div>
 </div>
@@ -6672,7 +6672,7 @@ recognize. </dd>
     including text, images, and audio cues. A placeholder should identify
     the technology of the replaced object.</dd>
   <dt class="glossary"><a name="def-platform" id="def-platform"></a><dfn>platform</dfn></dt>
-  <dd class="glossary"> The software and hardware environment(s) within which the <a href="#def-user-agent">user agent</a> operates. Platforms provide a consistent operational environment. There can be layers of software in an hardware architecture and each layer can be considered a platform. Non-web-based platforms include desktop <a class="dfn-instance" href="#def-operating-system" rel="glossary" title="definition: operating system">operating system</a> (e.g. Linux, Mac OS, Windows, etc.), mobile operating systems (e.g. Android, Blackberry, iOS, Windows Phone, etc.), and cross-OS environments (e.g. Java). Web-based platforms are other user agents. User agents can employ server-based processing, such as web content transformations, text-to-speech production, etc.<br />
+  <dd class="glossary"> The software and hardware environment(s) within which the <a href="#def-user-agent">user agent</a> operates. Platforms provide a consistent operational environment. There can be layers of software in an hardware architecture and each layer can be considered a platform. Native platforms include desktop <a class="dfn-instance" href="#def-operating-system" rel="glossary" title="definition: operating system">operating system</a> (e.g. Linux, Mac OS, Windows, etc.), mobile operating systems (e.g. Android, Blackberry, iOS, Windows Phone, etc.), and cross-OS environments (e.g. Java). Web-based platforms are other user agents. User agents can employ server-based processing, such as web content transformations, text-to-speech production, etc.<br />
     <em>Note 1</em>:  A user agent can include functionality hosted on multiple platforms (e.g. a browser running on the desktop can include server-based pre-processing and web-based documentation).<br />
     <em>Note 2</em>: Accessibility guidelines for developers exist for many platforms.</dd>
   <dt class="glossary"><a name="def-access-platform-arch"
@@ -6902,7 +6902,7 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
   <dt class="glossary"><a name="u" id="u"></a><a name="def-user-agent" id="def-user-agent"></a><dfn>user agent</dfn></dt>
   <dd class="glossary">Any software that retrieves, renders and facilitates end user interaction with web content. UAAG 2.0 identifies the following user agent architectures:
     <ul>
-      <li><a name="def-stand-alone" id="def-stand-alone"></a><dfn>platform-based user agent, non-web-based user agent</dfn>: User agents that run on non-web platforms (operating  systems and cross-OS platforms, such as Java) and perform content retrieval,  rendering and end-user interaction facilitation themselves (e.g. Firefox,  Internet Explorer, Chrome, Opera, Windows Media Player, QuickTime Pro,  RealPlayer). </li>
+      <li><a name="def-stand-alone" id="def-stand-alone"></a><dfn>platform-based user agent, native user agent</dfn>: User agents that run on non-web platforms (operating  systems and cross-OS platforms, such as Java) and perform content retrieval,  rendering and end-user interaction facilitation themselves (e.g. Firefox,  Internet Explorer, Chrome, Opera, Windows Media Player, QuickTime Pro,  RealPlayer). </li>
       <li><a name="def-plug-in"
   id="def-plug-in"></a><a
   name="def-embedded" id="def-embedded"><dfn>embedded user agent, plug-in</dfn></a>: User agents that &quot;plug-in&quot; to other user agents or applications (e.g. media player plug-in for a web browser, web view component). Embedded user agents can establish direct connections with the platform (e.g. communication via platform accessibility services). See <a href="#def-extension" class="dfn-instance">user agent add-on</a>. </li>
