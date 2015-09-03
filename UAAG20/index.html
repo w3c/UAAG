@@ -11,6 +11,8 @@
 .mobile-ex { background-color:#FCF; }
 
 .editor-notes {BORDER: red 1px solid;}
+.gl-only {background-color:#FFFFCC}
+.techs-only {background-color:#CCFFCC}
                
 
 h2.principle {
@@ -229,7 +231,7 @@ src="http://www.w3.org/Icons/w3c_home" width="72" alt="W3C" /></a>
 <h1><a name="title" id="title"></a>User Agent Accessibility Guidelines (UAAG)
 2.0</h1>
 
-<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 24 August 2015</h2>
+<h2><a name="w3c-doctype" id="w3c-doctype"></a>W3C Editors' Draft 31 August 2015</h2>
 <dl>
   <dt>This version (Github):</dt>
     <dd><a href="http://w3c.github.io/UAAG/UAAG20/">http://w3c.github.io/UAAG/UAAG20/</a></dd>
@@ -304,21 +306,18 @@ index</a> at http://www.w3.org/TR/.</em></p>
 <h3><a name="status-status" id="status-status"></a>Editor's Draft of UAAG 2.0</h3>
 <p><strong>This document is the internal working draft used by the <acronym title="User Agent Working Group">UAWG</acronym> and is updated continuously and without notice. This document has no formal standing within W3C. Please consult the <a href="http://www.w3.org/WAI/UA/">group's home page</a> and the <a href="http://www.w3.org/TR/">W3C technical reports index</a> for information about the latest publications by this group.</strong></p>
   <!-- END COMMENT OUT FOR WORKING DRAFT -->
-<!-- <h3 id="W3C-WD">W3C Last Call Working  Draft of UAAG 2.0</h3>
-<p>This is the W3C Last Call Working Draft of 7 November 2013.   This   Last Call Working Draft integrates changes as a result of public comments on the <a href="http://www.w3.org/TR/2013/WD-UAAG20-20130523/">23 May 2013 Working Draft</a>. </p>
-<p>Publication as a Last Call Working Draft indicates that  UAWG      believes it has addressed all substantive issues and that the document      is stable.The first public Working  Draft of UAAG 2.0 was published 12   March 2008. Since then,  UAWG has   published eight Working   Drafts and addressed   hundreds of issues. See <a href="http://www.w3.org/WAI/intro/w3c-process">How WAI Develops Accessibility Guidelines through the W3C Process</a> for more background on document maturity levels. </p>
-<p><a name="status-changes" id="status-changes"></a>Important changes to this draft are highlighted below. A complete listing of the substantive changes is in <a href="http://www.w3.org/WAI/UA/2013/LCchanges.html">UAAG 2.0 Last Call Working Draft: Substantive Changes</a>.</p>
+<!-- <h3 id="W3C-WD">W3C Working  Draft of UAAG 2.0</h3>
+<!-- <p>This is the W3C Working Draft of @@ September 2015.   This   Working Draft integrates changes</p>
+<p><a name="status-changes" id="status-changes"></a>Important changes to this draft </p>
 <ul>
-  <li>  </li>
-  
+  <li></li>
 </ul>
-<p>UAWG welcomes feedback on these changes and other areas of UAAG 2.0. UAWG particularly requests that the product development teams of browsers (desktop and mobile), media players, browser extensions, and web applications review and comment on this Last Call working draft and make plans to  implement these guidelines. </p>
-<p>Comments on this working draft are <strong>due on or before 16 December 2013</strong>. Comments on the draft should be sent to <a href="mailto:public-uaag2-comments@w3.org">public-uaag2-comments@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/public-uaag2-comments/">Public Archive</a>). </p>
-<p>Publication as a Last Call Working Draft does not imply endorsement   by the W3C Membership. This is a draft document and may be updated,   replaced or obsoleted by other documents at any time. It is   inappropriate to cite this document as other than work in progress.</p> -->
-
+<p>Comments on this working draft are <strong>due on or before @@ September 2015</strong>. Comments on the draft should be sent to <a href="mailto:public-uaag2-comments@w3.org">public-uaag2-comments@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/public-uaag2-comments/">Public Archive</a>). </p>
+<p>Publication as a Last Call Working Draft does not imply endorsement   by the W3C Membership. This is a draft document and may be updated,   replaced or obsoleted by other documents at any time. It is   inappropriate to cite this document as other than work in progress.</p>
+-->
  <!-- END COMMENT OUT FOR EDITOR'S DRAFT -->
  
-<p>The <a href="http://www.w3.org/WAI/UA/"> User Agent Accessibility Guidelines Working Group (UAWG)</a> intends to publish UAAG 2.0 as a W3C Recommendation. Until that time <a href="http://www.w3.org/TR/UAAG10/">User Agent Accessibility Guidelines (UAAG) 1.0</a> <a href="#ref-UAAG10" title="reference: UAAG10">[UAAG10]</a> is the stable, referenceable version. This Working Draft does not supersede UAAG 1.0. </p> 
+<p>The <a href="http://www.w3.org/WAI/UA/"> User Agent Accessibility Guidelines Working Group (UAWG)</a> intends to publish UAAG 2.0 as a Working Group Note.  <a href="http://www.w3.org/TR/UAAG10/">User Agent Accessibility Guidelines (UAAG) 1.0</a> <a href="#ref-UAAG10" title="reference: UAAG10">[UAAG10]</a> is the stable, referenceable version. This Working Draft does not supersede UAAG 1.0. </p> 
 
 <h3><a name="status-wai" id="status-wai"></a>Web Accessibility Initiative</h3>
 
@@ -326,10 +325,7 @@ index</a> at http://www.w3.org/TR/.</em></p>
 title="World Wide Web Consortium">W3C</acronym> <a
 href="http://www.w3.org/WAI/">Web Accessibility Initiative</a> (WAI). The
 goals of the User Agent Working Group (UAWG) are discussed in the <a
-href="http://www.w3.org/WAI/UA/2010/uawg_charter.html">Working Group charter</a>. The
-<acronym title="User Agent Working Group">UAWG</acronym> is part of the <a
-href="http://www.w3.org/WAI/Technical/Activity">WAI Technical
-Activity</a>.</p>
+href="http://www.w3.org/WAI/UA/2010/uawg_charter.html">Working Group charter</a>. </p>
 
 <h3><a name="status-no-endorsement" id="status-no-endorsement"></a>No
 Endorsement</h3>
@@ -400,13 +396,12 @@ href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">secti
           <li><a href="#gl-direct-navigation-and-activation">Guideline 2.3: Direct navigation and activation</a></li>
           <li><a href="#gl-search-text">Guideline 2.4: Text Search</a></li>
           <li><a href="#gl-nav-structure">Guideline 2.5: Structural navigation</a></li>
-          <li><a href="#gl-device-independent-handlers">Guideline 2.6: Event handlers</a></li>
-          <li><a href="#gl-store-prefs">Guideline 2.7: Preference settings</a></li>
-          <li><a href="#gl-configure-controls">Guideline 2.8: Graphical controls</a></li>
-          <li><a href="#gl-time-independent">Guideline 2.9: Time-independent interaction</a></li>
-          <li><a href="#gl-prevent-flash">Guideline 2.10: Flashing</a></li>
-          <li><a href="#gl-control-inaccessible-content">Guideline 2.11: Time-based media</a></li>
-          <li><a href="#gl-other-devices">Guideline 2.12: Other Input Devices</a></li>
+          <li><a href="#gl-store-prefs">Guideline 2.6: Preference settings</a></li>
+          <li><a href="#gl-configure-controls">Guideline 2.7: Graphical controls</a></li>
+          <li><a href="#gl-time-independent">Guideline 2.8: Time-independent interaction</a></li>
+          <li><a href="#gl-prevent-flash">Guideline 2.9: Flashing</a></li>
+          <li><a href="#gl-control-inaccessible-content">Guideline 2.10: Time-based media</a></li>
+          <li><a href="#gl-other-devices">Guideline 2.11: Other Input Devices</a></li>
         </ul>
       </li>
       <li><a href="#principle-understandable">PRINCIPLE 3: Understandable</a>
@@ -545,7 +540,7 @@ levels: levels A (minimum), AA (recommended), and AAA (advanced). The three leve
 <div  class="gl-only">
 <h3><a name="intro-wcag" id="intro-wcag"></a>Relationship to the Web Content Accessibility Guidelines (WCAG) 2.0</h3>
 <p>The W3C recommendation, <a href="http://www.w3.org/WAI/intro/wcag.php">Web Content Accessibility Guidelines (WCAG</a>), applies to all web content; UAAG provides additional advice on the application user interface. </p>
-<p>Some user agents are used to package web content into non-web-based applications, especially on mobile platforms. If the finished application is used to retrieve, render, and facilitate end-user interaction with web content of the end-users choosing, then the application should be considered a stand-alone user agent. If the finished application only renders a constrained set of content specified by the developer, then the application might not be considered a user agent. In both cases, the WCAG 2.0 Guidelines apply to the web content. If the application is not a user agent,   application developers are not responsible for    UAAG 2.0 requirements that extend beyond WCAG 2.0 requirements. For more detail, see the definition of <a class="dfn-instance" href="#def-user-agent" rel="glossary" title="definition: user agent">user agent</a>. </p>
+<p>Some user agents are used to package web content into native applications, especially on mobile platforms. If the finished application is used to retrieve, render, and facilitate end-user interaction with web content of the end-users choosing, then the application should be considered a stand-alone user agent. If the finished application only renders a constrained set of content specified by the developer, then the application might not be considered a user agent. In both cases, the WCAG 2.0 Guidelines apply to the web content. If the application is not a user agent,   application developers are not responsible for    UAAG 2.0 requirements that extend beyond WCAG 2.0 requirements. For more detail, see the definition of <a class="dfn-instance" href="#def-user-agent" rel="glossary" title="definition: user agent">user agent</a>. </p>
 </div><!--gl-only-->
 <div class="gl-only">
   <h3><a name="intro-atag" id="intro-atag"></a>Relationship to the Authoring Tool Accessibility Guidelines (ATAG) 2.0</h3>
@@ -584,7 +579,8 @@ even if these terms appear from time to time they do not have any RFC
   <li>easily installed (i.e. not requiring expert knowledge or editing of
 
 configuration files, databases, or registry entries)</li></ol> See <a href="#conformance-req-components">Components of UAAG 2.0 Conformance Claims</a>.</li>
-  <li><strong class="handle"><a name="applicability-note-platform"></a>Relationship with operating system or platform</strong>: The user agent does      not need to implement every behavior itself. A required      behavior can be provided by the platform, user agent, user      agent <a href="#def-extension" class="dfn-instance">add-on</a>s, or potentially other layers. All are      acceptable, as long as they are enumerated in the conformance      claim. </li>
+  <li><strong class="handle"><a name="#applicability-note-platform" id="#applicability-note-platform"></a>Relationship with operating system or platform</strong>: The user agent does      not need to implement every behavior itself. A required      behavior can be provided by the platform, user agent, user      agent <a href="#def-extension" class="dfn-instance">add-on</a>s, or potentially other layers. All are      acceptable, as long as they are enumerated in the conformance      claim. </li>
+  <li><strong class="handle"><a name="#applicabilitynote-platform_limitations" id="#applicabilitynote-platform_limitations"></a>Platform limitations:</strong> If the platform (hardware or   operating system) does not support a capability necessary for a given   UAAG 2.0 success criterion, see <a href="#conformance-req-components">Components of UAAG 2.0 Conformance Claims</a> #8. </li>
   <li><strong class="handle">Override author settings for text configuration</strong>: All of the success criteria under guideline 1.4 allow   users to override the text characteristics specified by authors, and   override user agent defaults. </li>
 </ol>
 
@@ -842,7 +838,7 @@ Guideline 1.4 - Provide text configuration
 
 </h3>
 <p class="summary" id="summary14"><strong>Summary:</strong> The user can set text scale, color, style, line spacing, and font   family globally (1.4.1, Level A). It is recommended that the user agent implement the user-selected text configuration settings of the platform (1.4.5 Level AA), users set text size, color, line spacing, text style and font family   for element types (1.4.2, Level AA); set character spacing,     justification and margin sizes globally (1.4.3,   Level AA);  set capitalization,   hyphenation,  and borders globally (1.4.6, Level AAA); and print   configured and  reflowed text (1.4.4 Level AA). </p>
-<p><em class="note-handle">Note 1</em>: The success   criteria in guideline 1.4 can be met through user stylesheets. For   platforms without user stylesheets, text configuration needs to be   provided to users    through the user agent's main user interface or via an extension.  </p>
+<p><em class="note-handle">Note 1</em>: The success   criteria in guideline 1.4 can be met through user stylesheets. For   platforms without user stylesheets, text configuration needs to be   provided to users    through the user agent's main user interface or via an add-on.  </p>
 <p><em  class="note-handle">Note 2:</em> Users have varying needs for text size and spacing. Therefore, it’s recommended that user agents provide a wider range of values, and a greater number of increments, to allow the user to adjust the view for their current task. </p>
 <div class="sc-level"><!--A-->
   
@@ -980,7 +976,7 @@ Guideline 1.6 - Provide synthesized speech configuration
 </h3>
 <p class="summary" id="summary16"><strong>Summary</strong>: If synthesized speech is produced, the user can specify speech   rate, volume, and voice (1.6.1, Level A), pitch and pitch range (1.6.2,   Level AA), advanced synthesizer speech characteristics such as emphasis   (1.6.3, Level AAA) and features such as spelling (1.6.3, Level AAA).</p>
 
-<p class="sc-notes"><em class="note-handle">Note</em>: If browsers provide speech output for mainstream users, they should make the speech configurable enough to be usable by a wide range of individuals. When an extension adds speech output to the user agent, it becomes part of the user agent, and therefore should meet the requirements of 1.6. </p>
+<p class="sc-notes"><em class="note-handle">Note</em>: If browsers provide speech output for mainstream users, they should make the speech configurable enough to be usable by a wide range of individuals. When an add-on adds speech output to the user agent, it becomes part of the user agent, and therefore should meet the requirements of 1.6. </p>
 
 <div class="sc-level"><!--A-->
 
@@ -1025,7 +1021,7 @@ Guideline 1.6 - Provide synthesized speech configuration
   <h4 class="sc-title"><a id="sc_163" name="sc_163"></a>1.6.3 Synthesized Speech Features: </h4>
   <p class="sc-text"> If synthesized speech is produced,  the following features are provided: <span class="level">(Level&nbsp;AA)</span> </p>
   <ul class="sc-bullets">
-  <li class="sc-bullet"><strong class="handle">User-defined extensions</strong> to the
+  <li class="sc-bullet"><strong class="handle">User-defined add-ons</strong> to the
     synthesized speech dictionary.</li>
   <li class="sc-bullet"><strong class="handle">"Spell-out":</strong> text is spelled
     one character at a time, or according to language-dependent pronunciation
@@ -1077,42 +1073,37 @@ Guideline 1.7 - Enable configuration of user stylesheets
 <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-style-sheets-config">Reference for 1.7</a>] </span>
 
 </h3>
-<p class="summary" id="summary17"><strong>Summary</strong>: The user agent supports user stylesheets (1.7.1, Level A), the 
-user can choose which if any user-supplied (1.7.2, Level A) and 
-author-supplied (1.7.3, Level A) stylesheets to use, and the user can 
+<p class="summary" id="summary17"><strong>Summary</strong>: The user agent can disable author stylesheets (1.7.1, Level A) , supports user stylesheets or style mechanism (1.7.2, Level A), the 
+user can choose which if any user-supplied (1.7.3, Level A) stylesheets to use, and the user can 
 save stylesheets (1.7.4, Level AA).</p>
 
 <div class="sc-level"><!--A-->
 
-<h4 class="sc-title"><a id="sc_171" name="sc_171"></a>1.7.1 Support User Stylesheet or User Style Modification Mechanism:</h4>
+<h4 class="sc-title"><a id="sc_171" name="sc_171"></a>1.7.1 Disable Author Stylesheets: </h4>
+<p class="sc-text">If the user agent  supports a mechanism for <a class="dfn-instance" href="#def-author-styles"
+    title="definition: author styles">author styles</a>, the user can disable the use of  author styles on the current page. <span class="level">(Level&nbsp;A)</span></p>
+<div class="gl-only">
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_171">Reference for 1.7.1</a></div>
+</div>
+
+<h4 class="sc-title"><a id="sc_172" name="sc_172"></a>1.7.2 Support User Stylesheet or User Style Modification Mechanism:</h4>
 If the user agent supports a mechanism for  <a class="dfn-instance" href="#def-author-styles"
     title="definition: author styles">author styles</a>, the user agent also provides a mechanism for a user styling to override author styling. <span class="level">(Level&nbsp;A)</span> 
 <div class="gl-only">
-      <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_171">Reference for 1.7.1</a></div>
+      <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_172">Reference for 1.7.2</a></div>
     </div>
 	    
 
-<h4 class="sc-title"><a id="sc_172" name="sc_172"></a>1.7.2 Apply User Stylesheets: </h4> <p class="sc-text"> If <a  class="dfn-instance"  href="#def-user-styles" title="definition: User Styles">user styles</a> are supported, then the      user can enable or disable user styles for:   <span class="level">(Level&nbsp;A)</span>
+<h4 class="sc-title"><a id="sc_173" name="sc_173"></a>1.7.3 Apply User Stylesheets: </h4> <p class="sc-text"> If <a  class="dfn-instance"  href="#def-user-styles" title="definition: User Styles">user styles</a> are supported, then the      user can enable or disable user styles for:   <span class="level">(Level&nbsp;A)</span>
 </p>
 <ul class="sc-bullets">
   <li class="sc-bullet">All pages on specified websites, or</li>
   <li  class="sc-bullet">All pages</li>
 </ul>
     	   <div class="gl-only">
-	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_172">Reference for 1.7.2</a></div>
-      </div>
-	    
-       
-<h4 class="sc-title"><a id="sc_173" name="sc_173"></a>1.7.3 Disable Author Stylesheets: </h4>
-<p class="sc-text">If the user agent  supports a mechanism for  <a class="dfn-instance" href="#def-author-styles"
-    title="definition: author styles">author styles</a>, the user can disable the use of  author styles on the current page.
-<span class="level">(Level&nbsp;A)</span></p>
-
-    	   <div class="gl-only">
 	     <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_173">Reference for 1.7.3</a></div>
       </div>
-	    
-
+	   
       
   
 <h4 class="sc-title"><a id="sc_174" name="sc_174"></a>1.7.4 Save Copies of  Stylesheets: </h4>
@@ -1746,24 +1737,12 @@ title="definition: notify">notification</a> when there is no match to a search o
 <a name="gl-nav-structure" id="gl-nav-structure"></a>
 Guideline 2.5 - Provide structural navigation <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-nav-structure">Reference for 2.5</a>] </span>
 	  </h3>
-<p class="summary" id="summary25"><strong>Summary</strong>: Users can view (2.5.1, Level AA), navigate (2.5.2, Level A), and 
-configure the elements used in navigating (2.5.3, Level AAA) content 
+<p class="summary" id="summary25"><strong>Summary</strong>: Users can navigate (2.5.1, Level A) content 
 hierarchy.
 </p>
 
 <div class="sc-level">  
-<h4 class="sc-title"><a id="sc_251" name="sc_251"></a><span class="diff-old">2.5.1 Show Location in Hierarchy: </span></h4>
-<p class="diff-old"> When the user agent is presenting hierarchical information, but the hierarchy is not reflected in a standardized fashion in the <a class="dfn-instance"
-      href="#def-dom" title="definition: Document Object Model">DOM</a> or <a href="#def-access-platform-arch" class="dfn-instance" title="definition: Platform Accessibility Service">platform accessibility services</a>, the user can view the path of nodes leading from the root of the hierarchy to a specified element. (Level&nbsp;AA)</p>
-
-  <div class="gl-only">
-  <div class="diff-old"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_251">Reference for 2.5.1</a></div>
-  </div>
- 
-
-      
-
-<h4 class="sc-title"><a id="sc_252" name="sc_252"></a>2.5.2 Provide Structural Navigation by Heading and within Tables: </h4> 
+<h4 class="sc-title"><a id="sc_251" name="sc_251"></a>2.5.1 Provide Structural Navigation by Heading and within Tables: </h4> 
 <p class="sc-text">The user agent provides at least the following types of <a class="dfn-instance" href="#def-structural-navigation" rel="glossary" title="definition: structural navigation">structural navigation</a>, where the structure types are recognized: <span class="level">(Level&nbsp;AA)</span></p>
 <ul class="sc-bullets">
    <li class="sc-bullet">By heading</li>
@@ -1772,19 +1751,7 @@ hierarchy.
 </ul>
 
   <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_252">Reference for 2.5.2</a></div>
-  </div>
- 
-
-      
-</div>
-
-<div class="sc-level">
-<h4 class="sc-title"><a id="sc_253" name="sc_253"></a><span class="diff-old">2.5.3 Configure Structural Navigation and Views: </span></h4>
-<p class="diff-old">The user can configure which elements are used for structural navigation and outline views.   (<span class="diff-old">Level&nbsp;AAA)</span></p>
-
-  <div class="gl-only">
-  <div class="diff-old"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_253">Reference for 2.5.3</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_251">Reference for 2.5.1</a></div>
   </div>
  
 
@@ -1792,93 +1759,69 @@ hierarchy.
 </div>     
 </div>
 
-<div class="guideline-box" id="g-2-6">
-<h3 class="guideline">
-<a name="gl-device-independent-handlers" id="gl-device-independent-handlers"></a>
-
-Guideline 2.6 - Provide access to event handlers
-<span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-device-independent-handlers">Reference for 2.6</a>] </span>
-	  </h3>
-
-<p class="summary" id="summary26"><strong>Summary</strong>: Users can interact with web content by mouse, keyboard, voice input, gesture, or a combination of input methods. Users can discover what event handlers (e.g. onmouseover) are available at each element and  activate an element's events individually (2.6.1). </p>
-
-<div class="sc-level">
-<h4 class="sc-title"><a id="sc_261" name="sc_261"></a><span class="diff-old">2.6.1 Allow Access and Activation of Input Methods: </span></h4>
-<p class="diff-old">The user agent provides a means for the user to determine <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a> input methods explicitly associated with an element, and a means for the user to activate those methods in a modality independent manner. (Level&nbsp;AA)</p>
- 
-   <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_261">Reference for 2.6.1</a></div>
-  </div>
- 
- 
-      
-
-</div>
-</div>
-
 <div class="guideline-box" id="g-2-7">
-<h3 class="guideline">
+  <h3 class="guideline">
 <a name="gl-store-prefs" id="gl-store-prefs"></a>
 
-Guideline 2.7 - Configure and store preference settings
-<span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-store-prefs">Reference for 2.7</a>] </span>
+Guideline 2.6 - Configure and store preference settings
+<span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-store-prefs">Reference for 2.6</a>] </span>
 	  </h3>
-<p class="summary" id="summary27"><strong>Summary</strong>: Users can restore preference settings to default (2.7.2, Level 
-A), and accessibility settings persist between sessions (2.7.1, Level 
-A). Users can manage multiple sets of preference settings (2.7.3, Level 
+<p class="summary" id="summary27"><strong>Summary</strong>: Users can restore preference settings to default (2.6.2, Level 
+A), and accessibility settings persist between sessions (2.6.1, Level 
+A). Users can manage multiple sets of preference settings (2.6.3, Level 
 AA), and adjust preference settings outside the user interface so the 
-current user interface does not prevent access (2.7.4, Level AA), and 
-transport settings to compatible systems (2.7.5, Level AA).</p>
+current user interface does not prevent access (2.6.4, Level AA), and 
+transport settings to compatible systems (2.6.5, Level AA).</p>
 
 <div class="sc-level">
-<h4 class="sc-title"><a id="sc_271" name="sc_271"></a>2.7.1 Allow Persistent Accessibility Settings: </h4>
+<h4 class="sc-title"><a id="sc_261" name="sc_261"></a>2.6.1 Allow Persistent Accessibility Settings: </h4>
 <p class="sc-text">User agent accessibility preference settings persist between sessions. <span class="level">(Level&nbsp;A)</span> </p>
 <ul class="sc-notes">
     <li class="sc-note"><em class="note-handle">Note:</em> User agents may have a public access setting that turns this off. </li></ul>
 
    <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_271">Reference for 2.7.1</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_261">Reference for 2.6.1</a></div>
   </div>
  
 
         
 
  
- <h4 class="sc-title"><a id="sc_272" name="sc_272"></a>2.7.2 Allow Restore All to Default: </h4>
+ <h4 class="sc-title"><a id="sc_262" name="sc_262"></a>2.6.2 Allow Restore All to Default: </h4>
  <p class="sc-text">The user can restore all preference settings to  default values. <span class="level">(Level&nbsp;A)</span> </p>
  
     <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_272">Reference for 2.7.2</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_262">Reference for 2.6.2</a></div>
   </div>
  
 
        
 
-<h4 class="sc-title"><a id="sc_273" name="sc_273"></a>2.7.3 Allow Multiple Sets of Preference Settings: </h4>
+<h4 class="sc-title"><a id="sc_263" name="sc_263"></a>2.6.3 Allow Multiple Sets of Preference Settings: </h4>
 <p class="sc-text">The user can save and retrieve multiple sets of user agent preference settings. <span class="level">(Level&nbsp;AA)</span> </p>
 
 <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_273">Reference for 2.7.3</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_263">Reference for 2.6.3</a></div>
   </div>
  
 
       
 
-  <h4 class="sc-title"><a id="sc_274" name="sc_274"></a>2.7.4 Allow Preference Changes from outside the User Interface: </h4>
+  <h4 class="sc-title"><a id="sc_264" name="sc_264"></a>2.6.4 Allow Preference Changes from outside the User Interface: </h4>
   <p class="sc-text">The user can adjust any preference settings required to meet the User Agent Accessibility Guidelines (UAAG) 2.0 from outside the <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a>. <span class="level">(Level&nbsp;AAA)</span></p>
   
 <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_274">Reference for 2.7.4</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_264">Reference for 2.6.4</a></div>
   </div>
  
 
         
 
- <h4 class="sc-title"><a id="sc_275" name="sc_275"></a>2.7.5 Make Preference Settings Transferable: </h4>
+ <h4 class="sc-title"><a id="sc_265" name="sc_265"></a>2.6.5 Make Preference Settings Transferable: </h4>
  <p class="sc-text">The user can transfer all compatible user agent preference settings between devices. <span class="level">(Level&nbsp;AAA)</span> </p>
  
  <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_275">Reference for 2.7.5</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_265">Reference for 2.6.5</a></div>
   </div>
  
  
@@ -1890,20 +1833,20 @@ transport settings to compatible systems (2.7.5, Level AA).</p>
 <h3 class="guideline">
 <a name="gl-configure-controls" id="gl-configure-controls"></a>
 
-Guideline 2.8 - Customize display of graphical controls <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-configure-controls">Reference for 2.8</a>] </span>
+Guideline 2.7 - Customize display of graphical controls <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-configure-controls">Reference for 2.7</a>] </span>
   </h3>
 <p class="summary" id="summary28"><strong>Summary</strong>: It's recommended that users can add, remove, reposition, and 
 assign shortcuts to user agent controls, and restore them to their 
-default settings (2.8.1, Level AA).</p>
+default settings (2.7.1, Level AA).</p>
 
 <div class="sc-level">
-<h4 class="sc-title"><a id="sc_281" name="sc_281"></a>2.8.1  Customize Display of Controls for User Interface Commands, Functions, and Extensions: </h4>
-  <p class="sc-text">The user can customize which user agent commands, functions, and extensions are displayed within the
+<h4 class="sc-title"><a id="sc_271" name="sc_271"></a>2.7.1  Customize Display of Controls for User Interface Commands, Functions, and Add-ons: </h4>
+  <p class="sc-text">The user can customize which user agent commands, functions, and add-ons are displayed within the
 user agent user interface as follows: <span class="level">(Level&nbsp;AA)</span> </p>
 
 <ul class="sc-bullets">
 <li class="sc-bullet"><strong class="handle">Show:</strong> The user can choose to display any controls available within the user agent
-user interface, including user-installed extensions.  It is acceptable to limit the total number of controls that are displayed  onscreen. </li>
+user interface, including user-installed add-ons.  It is acceptable to limit the total number of controls that are displayed  onscreen. </li>
 <li class="sc-bullet"><strong class="handle">Simplify:</strong> The user can simplify the default user
 interface by choosing to display only commands essential for basic operation (e.g.
 by hiding some controls). </li>
@@ -1920,7 +1863,7 @@ by hiding some controls). </li>
 </ul>
 
  <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_281">Reference for 2.8.1</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_271">Reference for 2.7.1</a></div>
   </div>
  
 
@@ -1932,14 +1875,14 @@ by hiding some controls). </li>
 <div class="guideline-box" id="g-2-9">
 <h3 class="guideline">
 <a name="gl-time-independent" id="gl-time-independent"></a>
-Guideline 2.9 - Allow time-independent interaction <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-time-independent">Reference for 2.9</a>] </span>
+Guideline 2.8 - Allow time-independent interaction <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-time-independent">Reference for 2.8</a>] </span>
 	  </h3>
 <p class="summary" id="summary29"><strong>Summary</strong>: Users can extend the time limits for user input when such 
-  limits are controllable by the user agent (2.9.1, Level A).
+  limits are controllable by the user agent (2.8.1, Level A).
 </p>
 
 <div class="sc-level">
-  <h4 class="sc-title"><a id="sc_291" name="sc_291"></a>2.9.1 Adjustable Time Limits: </h4>
+  <h4 class="sc-title"><a id="sc_281" name="sc_281"></a>2.8.1 Adjustable Time Limits: </h4>
 <p class="sc-text">
 The <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a> does not include time limits or at least one of the following is true:  <span class="level">(Level&nbsp;A)</span> </p>
 <ol type="a">
@@ -1957,7 +1900,7 @@ The <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: 
 </li>
 </ol>
  <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_291">Reference for 2.9.1</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_281">Reference for 2.8.1</a></div>
   </div>
  
 
@@ -1969,20 +1912,20 @@ The <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: 
 
 <div class="guideline-box" id="g-2-10">
 <h3 class="guideline"><a name="gl-prevent-flash"
-id="gl-prevent-flash"></a>Guideline 2.10 - Help users avoid flashing that could cause seizures <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-prevent-flash">Reference for 2.10</a>]</span> 
+id="gl-prevent-flash"></a>Guideline 2.9 - Help users avoid flashing that could cause seizures <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-prevent-flash">Reference for 2.9</a>]</span> 
 	  </h3>
 <p class="summary" id="summary210"><strong>Summary</strong>: To help users avoid seizures, the default configuration 
 prevents the browser user interface  from flashing 
 more than three times a second above luminescence or color thresholds 
-(2.10.1, Level A), or even below the thresholds (2.10.2, Level AAA).
+(2.9.1, Level A), or even below the thresholds (2.9.2, Level AAA).
 </p>
 
 <div class="sc-level">
-<h4 class="sc-title"><a id="sc_2101" name="sc_2101"></a>2.10.1 Three Flashes or Below Threshold: </h4>
+<h4 class="sc-title"><a id="sc_291" name="sc_291"></a>2.9.1 Three Flashes or Below Threshold: </h4>
 <p class="sc-text">In its default configuration, the user agent does not display any UA user interface components that flashes more than three times in any one-second period, unless the flash is below  general flash and red flash thresholds. <span class="level">(Level&nbsp;A)</span> </p>
 
  <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2101">Reference for 2.10.1</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_291">Reference for 2.9.1</a></div>
   </div>
  
 
@@ -1990,11 +1933,11 @@ more than three times a second above luminescence or color thresholds
 </div>
 
 <div class="sc-level">
-<h4 class="sc-title"><a id="sc_2102" name="sc_2102"></a>2.10.2 Three Flashes: </h4>
+<h4 class="sc-title"><a id="sc_292" name="sc_292"></a>2.9.2 Three Flashes: </h4>
 <p class="sc-text">In its default configuration, the user agent does not display any UA user interface components that flashes more than three times in any one-second period (regardless of whether not the flash is below the general flash and red flash thresholds). <span class="level">(Level&nbsp;AAA)</span> </p>
 
  <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2102">Reference for 2.10.2</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_292">Reference for 2.9.2</a></div>
   </div>
  
 
@@ -2006,35 +1949,35 @@ more than three times a second above luminescence or color thresholds
 
 <div class="guideline-box" id="g-2-11">
 <h3 class="guideline"><a name="gl-control-inaccessible-content"
-id="gl-control-inaccessible-content">Guideline 2.11 - </a> Provide control of
-time-based media <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-control-inaccessible-content">Reference for 2.11</a>] </span>
+id="gl-control-inaccessible-content">Guideline 2.10 - </a> Provide control of
+time-based media <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-control-inaccessible-content">Reference for 2.10</a>] </span>
 	  </h3>
 
-<p class="summary" id="summary211"><strong>Summary</strong>: The user can present placeholders for time-based media (2.11.1, 
-Level A) and executable regions (2.11.2, Level A), or block all 
-executable content (2.11.3, Level A), adjust playback (2.11.4, Level A), 
-stop/pause/resume (2.11.5, Level A), navigate by time (2.11.6, Level A) 
-or semantic structures such as chapter (2.11.7, Level AA). It is recommended that the user can adjust contrast and brightness of 
-visual time-based media (2.11.8, Level AAA).
+<p class="summary" id="summary211"><strong>Summary</strong>: The user can present placeholders for time-based media (2.10.1, 
+Level A) and executable regions (2.10.2, Level A), or block all 
+executable content (2.10.3, Level A), adjust playback (2.10.4, Level A), 
+stop/pause/resume (2.10.5, Level A), navigate by time (2.10.6, Level A) 
+or semantic structures such as chapter (2.10.7, Level AA). It is recommended that the user can adjust contrast and brightness of 
+visual time-based media (2.10.8, Level AAA).
 Enable or disable tracks is included in <a href="#sc_111">1.1.1 Render Alternative Content</a>.</p>
 
 
 <div class="sc-level">
-<h4 class="sc-title"><a id="sc_2111" name="sc_2111"></a>2.11.1 Time-Based Media Load-Only: </h4>
+<h4 class="sc-title"><a id="sc_2101" name="sc_2101"></a>2.10.1 Time-Based Media Load-Only: </h4>
 <p class="sc-text">The user can override the play on
 load of  <a class="dfn-instance" href="#def-recognize" rel="glossary" title="definition:recognized">recognized</a>  time-based media content such that the content is not played
 until <a class="dfn-instance" href="#def-user-request"
 title="definition: Explicit user request">explicit user request</a>. <span class="level">(Level&nbsp;A)</span></p>
 
  <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2111">Reference for 2.11.1</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2101">Reference for 2.10.1</a></div>
   </div>
  
 
       
 
 
-<h4 class="sc-title"><a id="sc_2112" name="sc_2112"></a>2.11.2  Execution Placeholder: </h4>
+<h4 class="sc-title"><a id="sc_2102" name="sc_2102"></a>2.10.2  Execution Placeholder: </h4>
 <p class="sc-text"> The user can
 request a <a href="#def-placeholder">placeholder</a> instead of executable
 content that would normally be contained within an on-screen area (e.g. Applet, Flash), until <a class="dfn-instance" href="#def-user-request"
@@ -2042,27 +1985,27 @@ title="definition: Explicit user request">explicit user request</a> to
 execute. <span class="level">(Level&nbsp;A)</span></p>
 
  <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2112">Reference for 2.11.2</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2102">Reference for 2.10.2</a></div>
   </div>
  
 
       
 
 
-<h4 class="sc-title"><a id="sc_2113" name="sc_2113"></a>2.11.3 Execution Toggle: </h4>
+<h4 class="sc-title"><a id="sc_2103" name="sc_2103"></a>2.10.3 Execution Toggle: </h4>
 <p class="sc-text"> The
  user can turn on/off the execution
   of dynamic or executable content (e.g. Javascript, canvas, media). <span class="level">(Level&nbsp;A)</span> </p>
   
    <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2113">Reference for 2.11.3</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2103">Reference for 2.10.3</a></div>
   </div>
  
 
         
 
 
-<h4 class="sc-title"><a id="sc_2114" name="sc_2114"></a>2.11.4 Adjustable Playback Rate for Prerecorded Content: </h4>
+<h4 class="sc-title"><a id="sc_2104" name="sc_2104"></a>2.10.4 Adjustable Playback Rate for Prerecorded Content: </h4>
 <p class="sc-text"> The user can adjust the playback rate of prerecorded time-based media  content, such that all of the following are true: <span class="level">(Level&nbsp;AA)</span> </p>
 <ul class="sc-bullets">
 <li class="sc-bullet"><strong class="handle">Playback Rate:</strong> The user can adjust the playback rate of the time-based media  tracks to between 50% and 250% of real time. </li>
@@ -2072,14 +2015,14 @@ execute. <span class="level">(Level&nbsp;A)</span></p>
 </ul>
 
    <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2114">Reference for 2.11.4</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2104">Reference for 2.10.4</a></div>
   </div>
  
 
       
               
               
-<h4 class="sc-title"><a id="sc_2115" name="sc_2115"></a>2.11.5 Stop/Pause/Resume Time-Based Media: </h4>
+<h4 class="sc-title"><a id="sc_2105" name="sc_2105"></a>2.10.5 Stop/Pause/Resume Time-Based Media: </h4>
 <p class="sc-text"> The user can stop, pause, and resume rendered audio and
 <a class="dfn-instance" href="#def-animation"
 title="definition: Animation">animation</a> content (e.g video, 
@@ -2087,7 +2030,7 @@ animation,  changing text) that lasts three or more seconds at the default playb
 rate. <span class="level">(Level&nbsp;A)</span> </p>
 
    <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2115">Reference for 2.11.5</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2105">Reference for 2.10.5</a></div>
   </div>
  
 
@@ -2095,11 +2038,11 @@ rate. <span class="level">(Level&nbsp;A)</span> </p>
 
 
    
-<h4 class="sc-title"><a id="sc_2116" name="sc_2116"></a>2.11.6  Navigation of Time-Based Media by Time: </h4>
+<h4 class="sc-title"><a id="sc_2106" name="sc_2106"></a>2.10.6  Navigation of Time-Based Media by Time: </h4>
 <p class="sc-text"> If time-based media lasts three or more seconds at the default playback rate, the user can navigate it using a continuous scale and by <a class="dfn-instance"
 href="#def-relative-time-units" rel="glossary" title="definition: relative time units">relative time units</a>. <span class="level">(Level&nbsp;A)</span></p> 
 <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2116">Reference for 2.11.6</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2106">Reference for 2.10.6</a></div>
   </div>
  
       
@@ -2107,11 +2050,11 @@ href="#def-relative-time-units" rel="glossary" title="definition: relative time 
 
 
 <div class="sc-level">
-<h4 class="sc-title"><a id="sc_2117" name="sc_2117"></a>2.11.7 Navigation of Time-Based Media by Semantics: </h4>
+<h4 class="sc-title"><a id="sc_2107" name="sc_2107"></a>2.10.7 Navigation of Time-Based Media by Semantics: </h4>
 <p class="sc-text"> The user can navigate by semantic structure within the time-based media, such as by chapters or scenes present in the media. <span class="level">(Level&nbsp;AA)</span> </p>
 
    <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2117">Reference for 2.11.7</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2107">Reference for 2.10.7</a></div>
   </div>
  
 
@@ -2119,11 +2062,11 @@ href="#def-relative-time-units" rel="glossary" title="definition: relative time 
 </div>
 
 <div class="sc-level">
-<h4 class="sc-title"><a id="sc_2118" name="sc_2118"></a>2.11.8 Video Contrast and Brightness: </h4>
+<h4 class="sc-title"><a id="sc_2108" name="sc_2108"></a>2.10.8 Video Contrast and Brightness: </h4>
 <p class="sc-text"> Users can adjust the contrast and brightness of visual time-based media. <span class="level">(Level&nbsp;AAA)</span></p>
 
    <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2118">Reference for 2.11.8</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2108">Reference for 2.10.8</a></div>
   </div>
  
 
@@ -2133,49 +2076,19 @@ href="#def-relative-time-units" rel="glossary" title="definition: relative time 
 
 <div class="guideline-box" id="g-2-12">
 <h3 class="guideline"><a name="gl-other-devices"
-id="gl-other-devices">Guideline 2.12 - </a> Support other input devices  <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-other-devices">Reference for 2.12</a>] </span>
+id="gl-other-devices">Guideline 2.11 - </a> Support other input devices  <span class="gl-only">[<a href="http://w3c.github.io/UAAG/UAAG20-Reference/#gl-other-devices">Reference for 2.11</a>] </span>
 	  </h3>
       
-      <p class="summary" id="summary212"><strong>Summary</strong>: User agents support all of the platform text input devices 
-(2.12.1, Level A), and for all input devices the user can input text 
-(2.12.3, Level AAA) and perform all other functions (2.12.2, Level AA).
+      <p class="summary" id="summary212"><strong>Summary</strong>: User agents support platform text input devices including text input
+(2.11.1, Level AA).
 </p>
-
-<div class="sc-level">
-<h4 class="sc-title"><a id="sc_2121" name="sc_2121"></a><span class="diff-old">2.12.1 Platform Text Input Devices: </span></h4>
-<p class="diff-old">If the <a class="dfn-instance"
-href="#def-platform" rel="glossary" title="definition: platform">platform</a>
- supports text input using an input device, the user agent is compatible with this functionality.  (Level&nbsp;A) </p>
-
-   <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2121">Reference for 2.12.1</a></div>
-  </div>
- 
-
-      
-</div>
-
-<div class="sc-level">  
-  <h4 class="sc-title"><a id="sc_2122" name="sc_2122"></a><span class="diff-old">2.12.2  Operation With Any Device: </span></h4>
-<p class="diff-old"> If an input device is supported by the <a class="dfn-instance"
-href="#def-platform" rel="glossary" title="definition: platform">platform</a>, all user agent functionality other than text input can be operated using that device. (Level&nbsp;AA) </p>
-
-   <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2122">Reference for 2.12.2</a></div>
-  </div>
- 
-
-      
-</div>
-
-
-<div class="sc-level">  
-<h4 class="sc-title"><a id="sc_2123" name="sc_2123"></a>2.12.3 Text Input With Any Device: </h4>
+    <div class="sc-level">  
+  <h4 class="sc-title"><a id="sc_2111" name="sc_2111"></a>2.11.1 Text Input With Any Device: </h4>
 <p class="sc-text"> If an input device is supported by the <a class="dfn-instance"
 href="#def-platform" rel="glossary" title="definition: platform">platform</a>, all user agent functionality including text input can be operated using that device. <span class="level">(Level&nbsp;AA)</span> </p>
 
    <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2123">Reference for 2.12.3</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_2111">Reference for 2.11.1</a></div>
   </div>
  
 
@@ -2496,16 +2409,16 @@ id="gl-obs-env-conventions"></a>Guideline 5.1 - Comply with applicable specifica
 standards, they need to meet W3C's Web Content Accessibility Guidelines 
 (5.1.1, Levels A, AA, AAA). The user agent supports the accessibility 
 features of content formats (5.1.2, Level A) and of the platform (5.1.3, 
-Level A), allows handling of unrendered technologies (5.1.4, Level A), allows alternative viewers (5.1.5, Level AA), and allows users to 
-report accessibility issues (5.1.6, Level AAA).
+Level A), allows handling of unrendered technologies (5.1.4, Level A), allows alternative viewers (5.1.4, Level AA), and allows users to 
+report accessibility issues (5.1.5, Level AAA).
 </p>
 <div class="sc-level">
   <h4 class="sc-title"><a id="sc_511" name="sc_511"></a>5.1.1 Comply with WCAG: </h4>
   <p class="sc-text">Web-based <a class="dfn-instance" href="#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interfaces</a> meet the WCAG 2.0 success criteria. <span class="level">(Level&nbsp;A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; and Level AAA to meet  WCAG 2.0 Level A,  AA, and AAA success criteria)</span></p>
 <ul class="sc-notes">
-    <li class="sc-note"><em class="note-handle">Note:</em> This success criterion does not apply to non-web-based UA user interfaces,
-but does include any parts of non-web-based user agents that are
-web-based (e.g. help systems). However, it is      recommended that developers of non-web-based user agent user      interfaces follow the Guidance on Applying WCAG 2.0 to Non-Web      Information and Communications Technologies (WCAG2ICT) <a href="#ref-wcag2ict">[WCAG2ICT]</a>.</li></ul>
+    <li class="sc-note"><em class="note-handle">Note:</em> This success criterion does not apply to native UA user interfaces,
+but does include any parts of native user agents that are
+web-based (e.g. help systems). However, it is      recommended that developers of native user agent user      interfaces follow the Guidance on Applying WCAG 2.0 to Non-Web      Information and Communications Technologies (WCAG2ICT) <a href="#ref-wcag2ict">[WCAG2ICT]</a>.</li></ul>
 
 <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_511">Reference for 5.1.1</a></div>
@@ -2535,7 +2448,7 @@ requirement of the other specification and still satisfy this guideline.</li></u
 
 
 <h4 class="sc-title"><a id="sc_513" name="sc_513"></a>5.1.3 Implement Accessibility Features of the Platform: </h4>  
-<p class="sc-text"> If the user agent contains non-web-based user interfaces, then those non-web-based user interfaces follow user interface accessibility guidelines for the platform. <span class="level">(Level&nbsp;A)</span></p>
+<p class="sc-text"> If the user agent contains native user interfaces, then those native user interfaces follow user interface accessibility guidelines for the platform. <span class="level">(Level&nbsp;A)</span></p>
 <div class="gl-only">
   <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_513">Reference for 5.1.3</a></div>
 </div>
@@ -2546,11 +2459,11 @@ requirement of the other specification and still satisfy this guideline.</li></u
 
 
 
-<h4 class="sc-title"><a id="sc_515" name="sc_515"></a>5.1.5 Allow Content Elements to be Rendered in Alternative Viewers: </h4>
+<h4 class="sc-title"><a id="sc_514" name="sc_514"></a>5.1.4 Allow Content Elements to be Rendered in Alternative Viewers: </h4>
 <p class="sc-text">The user can select content elements and have them rendered in alternative viewers. <span class="level">(Level&nbsp;AA)</span></p>
 
 <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_515">Reference for 5.1.5</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_514">Reference for 5.1.4</a></div>
   </div>
  
 
@@ -2558,11 +2471,11 @@ requirement of the other specification and still satisfy this guideline.</li></u
   
   
 <h4 class="sc-title">
-<a id="sc_516" name="sc_516"></a>5.1.6 Enable Reporting of User Agent Accessibility Faults: </h4>
+<a id="sc_515" name="sc_515"></a>5.1.5 Enable Reporting of User Agent Accessibility Faults: </h4>
 <p class="sc-text">The user agent provides a mechanism for users to report user agent accessibility issues. <span class="level">(Level&nbsp;AAA)</span></p>
 
 <div class="gl-only">
-  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_516">Reference for 5.1.6</a></div>
+  <div class="implementing-link"><a href="http://w3c.github.io/UAAG/UAAG20-Reference/#sc_515">Reference for 5.1.5</a></div>
   </div>
  
 
@@ -2623,8 +2536,8 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
     <li>Name and manufacturer</li>
     <li>Version number or version range</li>
     <li>Required patches or updates,  language of the user interface and documentation (e.g. English, French, Chinese)</li>
-    <li>Plug-ins or extensions (including version numbers)  needed to meet the success criteria (e.g. mouseless browsing)</li>
-    <li>Configuration changes to the user agent, plug-ins and extensions that are needed to meet the success criteria   (e.g. ignore author foreground/background color, turn on Carat Browsing)</li>
+    <li>Plug-ins or add-ons (including version numbers)  needed to meet the success criteria (e.g. mouseless browsing)</li>
+    <li>Configuration changes to the user agent, plug-ins and add-ons that are needed to meet the success criteria   (e.g. ignore author foreground/background color, turn on Carat Browsing)</li>
     
   </ol>
 </li>
@@ -2656,21 +2569,21 @@ of the User Agent Accessibility Guidelines Recommendation. </li>
 </li>
 </ol>
 <h4><a name="conformance-limited" id="conformance-limited"></a>Limited Conformance for Add-ons</h4>
-<p> This option can be used for a user agent extension or plug-in with 
+<p> This option can be used for a user agent add-on or plug-in with 
 limited functionality that wishes to claim UAAG 2.0 conformance. An 
-extension or plug-in can claim conformance for a specific success 
+add-on or plug-in can claim conformance for a specific success 
 criterion or a narrow range of success criteria as stated in the claim. 
 All other success criteria can be denoted as Not Applicable. </p>
 <p>UAAG 
-  recognizes that some extensions can be so specialized to the needs of a 
-  particular disability that the extension is  mutually exclusive with 
-  other success criteria of UAAG, but the goal would be for extensions to 
+  recognizes that some add-ons can be so specialized to the needs of a 
+  particular disability that the add-on is  mutually exclusive with 
+  other success criteria of UAAG, but the goal would be for add-ons to 
   work with the user agent so that any features of the user agent needed 
-  for UAAG conformance are not broken by one extension. If the extension 
+  for UAAG conformance are not broken by one add-on. If the add-on 
   limits other accessibility features of the user agent, then include a 
-  statement to that effect, such as: "This extension breaks success criterion  
+  statement to that effect, such as: "This add-on breaks success criterion  
   x.x.x because it is intended to meet [foo] need 
-  of [this] class of user." An example would be a (hypothetical) extension that breaks 1.8.2 and 1.8.3 (viewport navigation) to provide a simplified page for people with  high distraction levels. </p>
+  of [this] class of user." An example would be a (hypothetical) add-on that breaks 1.8.2 and 1.8.3 (viewport navigation) to provide a simplified page for people with  high distraction levels. </p>
 <h4><a name="conformance-opt-components" id="conformance-opt-conponents"></a>Optional Components of an UAAG 2.0 Conformance Claim</h4>
 <p>A description of how the UAAG 2.0 success criteria were met where this 
 is not obvious. </p>
@@ -3013,7 +2926,7 @@ recognize. </dd>
     including text, images, and audio cues. A placeholder should identify
     the technology of the replaced object.</dd>
   <dt class="glossary"><a name="def-platform" id="def-platform"></a><dfn>platform</dfn></dt>
-  <dd class="glossary"> The software and hardware environment(s) within which the <a href="#def-user-agent">user agent</a> operates. Platforms provide a consistent operational environment. There can be layers of software in an hardware architecture and each layer can be considered a platform. Non-web-based platforms include desktop <a class="dfn-instance" href="#def-operating-system" rel="glossary" title="definition: operating system">operating system</a> (e.g. Linux, Mac OS, Windows, etc.), mobile operating systems (e.g. Android, Blackberry, iOS, Windows Phone, etc.), and cross-OS environments (e.g. Java). Web-based platforms are other user agents. User agents can employ server-based processing, such as web content transformations, text-to-speech production, etc.<br />
+  <dd class="glossary"> The software and hardware environment(s) within which the <a href="#def-user-agent">user agent</a> operates. Platforms provide a consistent operational environment. There can be layers of software in an hardware architecture and each layer can be considered a platform. Native platforms include desktop <a class="dfn-instance" href="#def-operating-system" rel="glossary" title="definition: operating system">operating system</a> (e.g. Linux, Mac OS, Windows, etc.), mobile operating systems (e.g. Android, Blackberry, iOS, Windows Phone, etc.), and cross-OS environments (e.g. Java). Web-based platforms are other user agents. User agents can employ server-based processing, such as web content transformations, text-to-speech production, etc.<br />
     <em>Note 1</em>:  A user agent can include functionality hosted on multiple platforms (e.g. a browser running on the desktop can include server-based pre-processing and web-based documentation).<br />
     <em>Note 2</em>: Accessibility guidelines for developers exist for many platforms.</dd>
   <dt class="glossary"><a name="def-access-platform-arch"
@@ -3117,7 +3030,7 @@ recognize. </dd>
       title="definition: Script">script</a>, and markup in an unfamiliar XML
     namespace can not be recognized by the user agent as easily or at all. <br />
     <a name="def-recognized-actions"
-  id="def-recognized-actions"><dfn>recognized actions</dfn></a>: Actions or events that can be unambiguously identified by a user agent. This can include actions or events initiated by users, scripts, extensions, or other sources. For example, if the keyboard focus is on a web page when the user presses a key, the user agent can recognize the keystroke and can act upon it. If the keyboard focus is on an embedded media player when the user presses a key, the host user agent may or may not be able to detect the keystroke, depending on the embedding architecture. Similarly, when the user activates an INPUT element with type="submit", the user agent will recognize this as a form submission action and carry out the proper interchange with the server. However, if a page includes a custom control that looks like a button labeled "Submit**" but whose actions are entirely handled by an author-provided script, the user agent would not be able to recognize the user action as equivalent to a form submission. Actions such
+  id="def-recognized-actions"><dfn>recognized actions</dfn></a>: Actions or events that can be unambiguously identified by a user agent. This can include actions or events initiated by users, scripts, add-ons, or other sources. For example, if the keyboard focus is on a web page when the user presses a key, the user agent can recognize the keystroke and can act upon it. If the keyboard focus is on an embedded media player when the user presses a key, the host user agent may or may not be able to detect the keystroke, depending on the embedding architecture. Similarly, when the user activates an INPUT element with type="submit", the user agent will recognize this as a form submission action and carry out the proper interchange with the server. However, if a page includes a custom control that looks like a button labeled "Submit**" but whose actions are entirely handled by an author-provided script, the user agent would not be able to recognize the user action as equivalent to a form submission. Actions such
         as opening of new browser window would always be implemented by the user agent, so the action would be recognized regardless of whether it was initiated by the user clicking a button or by a script calling a browser function.
   </dd>
   <dt><a name="def-reflow-content" id="def-reflow-content"><dfn>reflowable content<span class="glossary"></span></dfn></a></dt>
@@ -3243,7 +3156,7 @@ href="#def-point-of-regard" rel="glossary" title="definition: point of regard">p
   <dt class="glossary"><a name="u" id="u"></a><a name="def-user-agent" id="def-user-agent"></a><dfn>user agent</dfn></dt>
   <dd class="glossary">Any software that retrieves, renders and facilitates end user interaction with web content. UAAG 2.0 identifies the following user agent architectures:
     <ul>
-      <li><a name="def-stand-alone" id="def-stand-alone"></a><dfn>platform-based user agent, non-web-based user agent</dfn>: User agents that run on non-web platforms (operating  systems and cross-OS platforms, such as Java) and perform content retrieval,  rendering and end-user interaction facilitation themselves (e.g. Firefox,  Internet Explorer, Chrome, Opera, Windows Media Player, QuickTime Pro,  RealPlayer). </li>
+      <li><a name="def-stand-alone" id="def-stand-alone"></a><dfn>platform-based user agent, native user agent</dfn>: User agents that run on non-web platforms (operating  systems and cross-OS platforms, such as Java) and perform content retrieval,  rendering and end-user interaction facilitation themselves (e.g. Firefox,  Internet Explorer, Chrome, Opera, Windows Media Player, QuickTime Pro,  RealPlayer). </li>
       <li><a name="def-plug-in"
   id="def-plug-in"></a><a
   name="def-embedded" id="def-embedded"><dfn>embedded user agent, plug-in</dfn></a>: User agents that &quot;plug-in&quot; to other user agents or applications (e.g. media player plug-in for a web browser, web view component). Embedded user agents can establish direct connections with the platform (e.g. communication via platform accessibility services). See <a href="#def-extension" class="dfn-instance">user agent add-on</a>. </li>
